@@ -4,3 +4,6 @@
 .Ruserdata
 .DS_Store
 doc/
+R/scrap.R
+R/check_old.R
+history/

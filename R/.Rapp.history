@@ -1,0 +1,13 @@
+source("R/data_prep.R")#
+source("R/params.R")
+rm(list = ls())#
+#
+library("MASS") #
+library("reshape2")#
+library("ggplot2")#
+library("cowplot")#
+inv.logit <- function(x) {exp(x)/(1+exp(x))}#
+#
+# load scripts#
+source("R/data_prep.R")#
+source("R/params.R")

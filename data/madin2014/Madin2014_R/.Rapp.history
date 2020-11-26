@@ -1,0 +1,262 @@
+rm(list = ls())#
+setwd("~/Desktop/Archive")#
+#
+# Data prep for mortality analysis#
+#
+# Find most recent data file from trimodal (i.e., tagged_YYYYMMDD.csv)#
+files <- dir("data/", "tagged*")#
+current <- sort(files, decreasing = T)[1]#
+tag <- read.csv(paste("data/", current, sep = ""), as.is = T)#
+#
+# Only keep F3-F6 data (F6 is F11 in database...)#
+tag$fieldtrip_id[tag$fieldtrip_id == "F11"] <- "F6"#
+tag <- tag[tag$fieldtrip_id %in% c("F3", "F4", "F5", "F6", "F7", "F8", "F9"),]#
+unique(tag$fieldtrip_id)#
+# Only keep area data where photos and outlines are acceptable#
+tag <- tag[as.character(tag$outline_acceptable) != "f" & as.character(tag$photo_acceptable) != "f",]#
+#
+# Only keep colonies that were:#
+tag <- tag[tag$action == "photographed" | tag$action == "dead" | tag$action == "gone",]#
+# tag <- tag[tag$action == "photographed" | tag$action == "dead" | tag$action == "gone" | tag$action == "not found",]#
+# tag <- tag[tag$action == "not found",]#
+#
+# Remove GP colony under hyacinthus#
+tag <- tag[tag$colony_id != 329,]
+mor <- data.frame(#
+  species_code=tapply(tag$species_code, list(tag$colony_id), max),#
+  colony_id=unique(tag$colony_id),#
+  tapply(log(tag$area_cm2/10000), list(tag$colony_id, tag$fieldtrip_id), mean),#
+  tapply(tag$action, list(tag$colony_id, tag$fieldtrip_id), max)#
+)#
+#
+mor$form[mor$species_code == "AC" | mor$species_code == "AH"] <- "table"#
+mor$form[mor$species_code == "AD" | mor$species_code == "AS"] <- "digitate"#
+mor$form[mor$species_code == "AI" | mor$species_code == "AR"] <- "branching"#
+mor$form[mor$species_code == "GR" | mor$species_code == "GP"] <- "massive"#
+mor$form[mor$species_code == "AL" | mor$species_code == "AM" | mor$species_code == "AN"] <- "corymbose"
+head(mor)
+mor$F6[mor$F6.1=="photographed"]
+mor$F7[mor$F7.1=="photographed"]
+mor$F6[mor$F6.1=="photographed"] <- 1#
+#mor$F7[mor$F7.1=="photographed"] <- 1#
+#mor$F8[mor$F8.1=="photographed"] <- 1#
+#mor$F9[mor$F9.1=="photographed"] <- 1#
+# a
+# again, not elegant, but concatenate mortality data and add year column#
+sr34 <- mor[!is.na(mor$F3) & mor$F3.1 == "photographed",]#
+sr45 <- mor[!is.na(mor$F4) & mor$F4.1 == "photographed",]#
+sr56 <- mor[!is.na(mor$F5) & mor$F5.1 == "photographed",]#
+sr67 <- mor[!is.na(mor$F6) & mor$F6.1 == "photographed",]#
+#sr78 <- mor[!is.na(mor$F7) & mor$F7.1 == "photographed",]#
+#sr89 <- mor[!is.na(mor$F8) & mor$F8.1 == "photographed",]
+sr34$survival[!is.na(sr34$F4.1) & sr34$F4.1 == "photographed"] <- 0#
+sr34$survival[!is.na(sr34$F4.1) & (sr34$F4.1 == "dead" | sr34$F4.1 == "gone")] <- 1#
+# sr34$survival[!is.na(sr34$F4.1) & (sr34$F4.1 == "dead" | sr34$F4.1 == "gone" | sr34$F4.1 == "not found")] <- 1#
+sr45$survival[!is.na(sr45$F5.1) & sr45$F5.1 == "photographed"] <- 0#
+sr45$survival[!is.na(sr45$F5.1) & (sr45$F5.1 == "dead" | sr45$F5.1 == "gone")] <- 1#
+# sr45$survival[!is.na(sr45$F5.1) & (sr45$F5.1 == "dead" | sr45$F5.1 == "gone" | sr45$F5.1 == "not found")] <- 1#
+sr56$survival[!is.na(sr56$F6.1) & sr56$F6.1 == "photographed"] <- 0#
+sr56$survival[!is.na(sr56$F6.1) & (sr56$F6.1 == "dead" | sr56$F6.1 == "gone")] <- 1#
+# sr56$survival[!is.na(sr56$F6.1) & (sr56$F6.1 == "dead" | sr56$F6.1 == "gone" | sr56$F6.1 == "not found")] <- 1
+# add area squared for quadratic models#
+sr34$F3_2 <- sr34$F3^2#
+sr45$F4_2 <- sr45$F4^2#
+sr56$F5_2 <- sr56$F5^2
+# combine#
+srt <- data.frame(#
+  species_code = c(sr34$species_code, sr45$species_code, sr56$species_code),#
+  form = c(sr34$form, sr45$form, sr56$form),#
+  action = c(sr34$F4.1, sr45$F5.1, sr56$F6.1),#
+  year = c(rep("3_4", length(sr34$species_code)), rep("4_5", length(sr45$species_code)), rep("5_6", length(sr56$species_code))),#
+  area = c(sr34$F3, sr45$F4, sr56$F5),#
+  area_2 = c(sr34$F3_2, sr45$F4_2, sr56$F5_2),#
+  survival = c(sr34$survival, sr45$survival, sr56$survival#
+  )#
+)
+# combine Andrew#
+dat_andrew <- data.frame(#
+  species_code = c(sr34$species_code, sr45$species_code, sr56$species_code, sr67$species_code, sr78$species_code, sr89$species_code),#
+  form = c(sr34$form, sr45$form, sr56$form, sr67$form, sr78$form, sr89$form),#
+  action = c(sr34$F4.1, sr45$F5.1, sr56$F6.1, sr67$F7.1, sr78$F8.1, sr89$F9.1),#
+  year = c(rep("3_4", length(sr34$species_code)), rep("4_5", length(sr45$species_code)), rep("5_6", length(sr56$species_code)), rep("6_7", length(sr67$species_code)), rep("7_8", length(sr78$species_code)), rep("8_9", length(sr89$species_code))),#
+  survival = c(sr34$survival, sr45$survival, sr56$survival, sr67$survival, sr78$survival, sr89$survival)#
+)
+dat <- data.frame(srt)#
+#
+dat_sav <- data.frame(species=dat$species_code, growth_form=dat$form, log_area_cm2=dat$area, mortality=dat$survival)#
+dat_sav <- dat_sav[!is.na(dat_sav$mortality),]#
+dat_sav <- data.frame(lapply(dat_sav, as.character), stringsAsFactors=FALSE)#
+dat_sav$growth_form[dat_sav$growth_form == "table"] <- "tabular"#
+dat_sav$growth_form[dat_sav$growth_form == "branching"] <- "arborescent"#
+dat_sav$species[dat_sav$species == "AC"] <- "Acropora cytherea"#
+dat_sav$species[dat_sav$species == "AH"] <- "Acropora hyacinthus"#
+dat_sav$species[dat_sav$species == "AD"] <- "Acropora cf digitifera"#
+dat_sav$species[dat_sav$species == "AS"] <- "Acropora humilis"#
+dat_sav$species[dat_sav$species == "AL"] <- "Acropora spathulata"#
+dat_sav$species[dat_sav$species == "AI"] <- "Acropora intermedia"#
+dat_sav$species[dat_sav$species == "AR"] <- "Acropora robusta"#
+dat_sav$species[dat_sav$species == "AM"] <- "Acropora millepora"#
+dat_sav$species[dat_sav$species == "AN"] <- "Acropora nasuta"#
+dat_sav$species[dat_sav$species == "GR"] <- "Goniastrea retiformis"#
+dat_sav$species[dat_sav$species == "GP"] <- "Goniastrea pectinata"#
+#
+# dat_sav$survival <- abs(as.numeric(dat_sav$survival) - 1)#
+#
+dat_sav <- dat_sav[order(dat_sav$species),]
+write.csv(dat_sav, "output/data_mortality.csv", row.names = FALSE, quote=FALSE)
+head(srt)
+head(sr34)
+head(sr34)#
+#
+# combine#
+srt <- data.frame(#
+  species_code = c(sr34$species_code, sr45$species_code, sr56$species_code),#
+  form = c(sr34$form, sr45$form, sr56$form),#
+  action = c(sr34$F4.1, sr45$F5.1, sr56$F6.1),#
+  colony_id<-c(sr34$colony_id, sr45$colony_id, sr56$colony_id)#
+  year = c(rep("3_4", length(sr34$species_code)), rep("4_5", length(sr45$species_code)), rep("5_6", length(sr56$species_code))),#
+  area = c(sr34$F3, sr45$F4, sr56$F5),#
+  area_2 = c(sr34$F3_2, sr45$F4_2, sr56$F5_2),#
+  survival = c(sr34$survival, sr45$survival, sr56$survival#
+  )#
+)#
+#
+head(srt)
+# combine#
+srt <- data.frame(#
+  species_code = c(sr34$species_code, sr45$species_code, sr56$species_code),#
+  form = c(sr34$form, sr45$form, sr56$form),#
+  action = c(sr34$F4.1, sr45$F5.1, sr56$F6.1),#
+  colony_id<-c(sr34$colony_id, sr45$colony_id, sr56$colony_id),#
+  year = c(rep("3_4", length(sr34$species_code)), rep("4_5", length(sr45$species_code)), rep("5_6", length(sr56$species_code))),#
+  area = c(sr34$F3, sr45$F4, sr56$F5),#
+  area_2 = c(sr34$F3_2, sr45$F4_2, sr56$F5_2),#
+  survival = c(sr34$survival, sr45$survival, sr56$survival#
+  )#
+)
+head(srt)
+head(sr34)#
+#
+# combine#
+srt <- data.frame(#
+  species_code = c(sr34$species_code, sr45$species_code, sr56$species_code),#
+  form = c(sr34$form, sr45$form, sr56$form),#
+  action = c(sr34$F4.1, sr45$F5.1, sr56$F6.1),#
+  colony_id = c(sr34$colony_id, sr45$colony_id, sr56$colony_id),#
+  year = c(rep("3_4", length(sr34$species_code)), rep("4_5", length(sr45$species_code)), rep("5_6", length(sr56$species_code))),#
+  area = c(sr34$F3, sr45$F4, sr56$F5),#
+  area_2 = c(sr34$F3_2, sr45$F4_2, sr56$F5_2),#
+  survival = c(sr34$survival, sr45$survival, sr56$survival#
+  )#
+)#
+#
+head(srt)
+dat <- data.frame(srt)#
+#
+dat_sav <- data.frame(colony_id=dat$colony_id, species_code=dat$species_code, growth_form=dat$form, log_area_cm2=dat$area, mortality=dat$survival, year=dat$year)#
+dat_sav <- dat_sav[!is.na(dat_sav$mortality),]#
+dat_sav <- data.frame(lapply(dat_sav, as.character), stringsAsFactors=FALSE)#
+dat_sav$growth_form[dat_sav$growth_form == "table"] <- "tabular"#
+dat_sav$growth_form[dat_sav$growth_form == "branching"] <- "staghorn"#
+#dat_sav$species[dat_sav$species == "AC"] <- "Acropora cytherea"#
+#dat_sav$species[dat_sav$species == "AH"] <- "Acropora hyacinthus"#
+#dat_sav$species[dat_sav$species == "AD"] <- "Acropora cf digitifera"#
+#dat_sav$species[dat_sav$species == "AS"] <- "Acropora humilis"#
+#dat_sav$species[dat_sav$species == "AL"] <- "Acropora spathulata"#
+#dat_sav$species[dat_sav$species == "AI"] <- "Acropora intermedia"#
+#dat_sav$species[dat_sav$species == "AR"] <- "Acropora robusta"#
+#dat_sav$species[dat_sav$species == "AM"] <- "Acropora millepora"#
+#dat_sav$species[dat_sav$species == "AN"] <- "Acropora nasuta"#
+#dat_sav$species[dat_sav$species == "GR"] <- "Goniastrea retiformis"#
+#dat_sav$species[dat_sav$species == "GP"] <- "Goniastrea pectinata"#
+#
+# dat_sav$survival <- abs(as.numeric(dat_sav$survival) - 1)#
+#
+dat_sav <- dat_sav[order(dat_sav$species),]
+write.csv(dat_sav, "output/data_mortality.csv", row.names = FALSE, quote=FALSE)
+library(mgcv)#
+# mortality analysis#
+rm(list=ls())#
+source("R/data_prep.r")#
+source("R/functions.r")#
+#
+# Get area/gf to csf conversions for colonies at trimodal site#
+csf_mod <- glm(lcsf ~ larea * gf, data = csf[csf$exp=="E4" | csf$exp=="E5",])#
+co <- coef(csf_mod)#
+summary(csf_mod)#
+#
+write.table(round(coef(summary(csf_mod)), 3), "output/growthform_csf.csv", sep = ",")#
+#
+# Comparing species and growth forms#
+# spp_q = glm(survival ~ area:species_code + area_2:species_code + species_code, family = binomial, data = dat)#
+# summary(spp_q)#
+##
+# for_q = glm(survival ~ area:form + area_2:form + form, family = binomial, data = dat)#
+# summary(for_q)#
+##
+# jAICc(spp_q)#
+# jAICc(for_q)#
+#
+# Large robusta that was "gone" because whole reef was removed...#
+# missing large robusta#
+# http://acropora.bio.mq.edu.au:3000/corals/251#
+# dat <- dat[c(-803),]#
+#
+br <- run_test("branching")#
+br#
+write.table(round(coef(summary(br$r)), 3), "output/branching.csv", sep = ",")#
+#
+tb <- run_test("table")#
+tb#
+write.table(round(coef(summary(tb$gfMOD)), 3), "output/table.csv", sep = ",")#
+#
+cb <- run_test("corymbose")#
+cb#
+write.table(round(coef(summary(cb$gfMOD)), 3), "output/corymbose.csv", sep = ",")#
+#
+dt <- run_test("digitate")#
+dt#
+write.table(round(coef(summary(dt$gfMOD)), 3), "output/digitate.csv", sep = ",")#
+#
+ms <- run_test("massive")#
+ms#
+write.table(round(coef(summary(ms$gfMOD)), 3), "output/massive.csv", sep = ",")#
+#
+# Plotting#
+#
+source("R/make_figs.r")#
+#
+# growth, longevity#
+#
+gro <- read.table("data/hya_growth.txt", header= TRUE) / 10000 # m^2#
+gro <- gro[gro[,2] > 0,][-33,] # colonies that dies and an outlier#
+gro$linit <- log(gro$Initial)#
+gro$lnext <- log(gro$Next)#
+#
+mod_gro <- lm(lnext ~ linit, data=gro)#
+x <- log(0.005)#
+p <- c(1)#
+for (i in 1:10) {#
+	x <- c(x, predict(mod_gro, list(linit = x[i])))#
+	p <- c(p, p[i] * predict(tb$gfMOD, list(area = x[i+1], area_2 = x[i+1]^2), type="response"))#
+}#
+#
+tb$gfMOD#
+# For Andrew's mortality paper#
+#
+species_mort <- function(sp, yr) {#
+  per <- sum(dat_andrew$survival[dat_andrew$species_code == sp & dat_andrew$year==yr], na.rm = T) / sum(!is.na(dat_andrew$survival[dat_andrew$species_code == sp & dat_andrew$year==yr]))#
+  num <- sum(!is.na(dat_andrew$survival[dat_andrew$species_code == sp & dat_andrew$year==yr]))#
+  return(per)#
+}#
+#
+spp <- c("AC", "AD", "AH", "AI", "AL", "AM", "AN", "AR", "AS", "GP", "GR")#
+#
+keep <- data.frame(spp=spp, f3_4=as.vector(sapply(spp, species_mort, yr="3_4")))#
+keep <- data.frame(keep, f4_5=as.vector(sapply(spp, species_mort, yr="4_5")))#
+keep <- data.frame(keep, f5_6=as.vector(sapply(spp, species_mort, yr="5_6")))#
+keep <- data.frame(keep, f6_7=as.vector(sapply(spp, species_mort, yr="6_7")))#
+keep <- data.frame(keep, f7_8=as.vector(sapply(spp, species_mort, yr="7_8")))#
+keep <- data.frame(keep, f8_9=as.vector(sapply(spp, species_mort, yr="8_9")))#
+keep[,2:7] <- round(keep[,2:7], 3) * 100#
+write.csv(keep, "output/yearly_mort.csv")
