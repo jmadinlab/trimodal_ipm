@@ -14,7 +14,24 @@ spp<-params$spp[order(params$spp)]
 params$abundance<-ifelse(params$abundance_05<500, "Rare", ifelse(params$abundance_05>1500, "Dominant","Common"))
 params$abundance<-factor(params$abundance, levels=c("Rare", "Common", "Dominant"))
 cols<-as.character(params$cols)
+names(cols) <- params$spp
 
+#spp names
+#################################### 
+head(dat)
+dat$spp <- params$spp[match(dat$species, params$species)]
+gdat$spp <- params$spp[match(gdat$species, params$species)]
+sdat$spp <- params$spp[match(sdat$species, params$species)]
+fec$spp <- params$spp[match(fec$species, params$species)]
+ss$spp <- params$spp[match(ss$species, params$species)]
+
+
+# ordering
+#################################### 
+order <- c("Ahy","Acy","Ain","Aro","Ana","Asp","Ami","Adi","Ahu", "Gre","Gpe")
+params$spp <- factor(params$spp, levels=order)
+labs <- params$species[order(params$spp)]
+labs
 
 #################################### 
 # ---- remove F9 (hurricane)
@@ -32,11 +49,13 @@ sdat$surv <- ifelse(sdat$year==2014, NA, sdat$surv)
 
 # ----------------------------# mean polyp density
 pd <- read.csv("data/polyp_density.csv")
+pd$spp <- params$spp[match(pd$species, params$species)] 
 pd.mean <- aggregate(list(polyps_cm2=pd$polyps_cm2),list(spp=pd$spp),mean)
-pd.mean <- rbind(pd.mean, data.frame(spp="AM", polyps_cm2=pd.mean$polyps_cm2[pd.mean$spp=="AL"]))
+pd.mean <- rbind(pd.mean, data.frame(spp="Ami", polyps_cm2=pd.mean$polyps_cm2[pd.mean$spp=="Asp"]))
 params<-merge(params, pd.mean)
 # ---------------------------# mean energetics
 ec <- read.csv("data/egg_energy.csv")
+ec$spp <- params$spp[match(ec$species, params$species)] 
 ec.mean <- aggregate(list(eggC=ec$Carbon_ug_corrected, eggN=ec$Nitrogen_ug) ,list(spp=ec$spp), mean)
 params<-merge(params, ec.mean)
 # fec
@@ -60,6 +79,13 @@ gdat$morphology <- params$morphology[match(gdat$spp, params$spp)]
 sdat$morphology <- params$morphology[match(sdat$spp, params$spp)]
 
 
+# --- Lit review for recruit success/size
+##################################
+
+tiles <- read.csv("data/recruitment/recruitment.csv")
+tiles <- aggregate(N_m2_year~Study+Location+Family,tiles, mean) # sum?? No mean
+
+rsize <- read.csv("data/recruitment/recsize.csv")
 
 
 

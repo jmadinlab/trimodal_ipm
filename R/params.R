@@ -20,21 +20,22 @@ for(sp in spp){
 params$m.int<-m.int
 params$m.slp<-m.slp
 
+m.pred$spp <- factor(m.pred$spp, levels=order)
+
 # -------- plot
-pdf("figs/p1_maturity.pdf" )
+#pdf("figs/p1_maturity.pdf" )
 
 p1<-ggplot()+
   geom_jitter(data=fec, 
     aes(x= area, reproductive), 
       height=0.02, shape=21, col="grey")+
   geom_line(data=m.pred, 
-    aes(area, pred, col=spp), 
-      size=1)+
-  scale_colour_manual(values=cols)+
+    aes(area, pred, col=spp))+
+  scale_colour_manual(values=cols, labels=labs)+
   theme_classic()
 
-show(p1)
-dev.off()
+#show(p1)
+#dev.off()
 
 #######################################
 # FECUNDITY  
@@ -42,10 +43,10 @@ dev.off()
 # eggs per cm2
 fec$f.cm2<-fec$polyps_cm2*fec$eggs 
 # eggs per colony
-# fec$f.colony<-fec$f.cm2*fec$area_cm2 # *fec$eggC 
+ fec$fecundity<-fec$f.cm2*fec$area_cm2 
 # egg energy per colony
 # make energy a survival proportion, and round to 0
-fec$fecundity<-round(fec$f.cm2*fec$area_cm2 * (fec$eggC/max(fec$eggC)) ,0) 
+#fec$fecundity<-round(fec$f.cm2*fec$area_cm2 * (fec$eggC/max(fec$eggC)) ,0) 
 
 f.int<-NULL
 f.slp<-NULL
@@ -64,21 +65,20 @@ params$f.int<-f.int
 params$f.slp<-f.slp
 
 # -------- plot
-pdf("figs/p2_fecundity.pdf")
+#pdf("figs/p2_fecundity.pdf")
 
 p2<-ggplot()+ 
   geom_point(data=fec[fec$reproductive==1, ], 
     aes(area, fecundity), 
       shape=21, col="grey")+
   geom_line(data=f.pred, 
-    aes(area, pred, col=spp), 
-      size=1)+
+    aes(area, pred, col=spp))+
   scale_y_log10()+
   scale_colour_manual(values=cols)+
   theme_classic()
 
-show(p2)
-dev.off()
+#show(p2)
+#dev.off()
 
 
 
@@ -105,7 +105,7 @@ params$g.int<-g.int
 params$g.slp<-g.slp
 params$g.var<-g.var
 
-pdf("figs/p3_growth.pdf")
+#pdf("figs/p3_growth.pdf")
 
 p3<-ggplot()+ 
   geom_abline(slope=1, linetype="dotted")+
@@ -113,14 +113,13 @@ p3<-ggplot()+
     aes(area, area_next), 
       shape=21, col="grey")+
   geom_line(data=g.pred, 
-    aes(area, pred, col=spp), 
-      size=1)+
+    aes(area, pred, col=spp))+
   scale_colour_manual(values=cols)+
   #facet_wrap(~spp)+
  theme_classic()
 
-show(p3)
-dev.off() 
+#show(p3)
+#dev.off() 
   
 
 #######################################
@@ -133,38 +132,43 @@ s.int<-NULL
 s.slp<-NULL
 s.slp2<-NULL
 s.pred<-NULL
+#s.rec <- NULL
 for(sp in spp){
 	sub<-sdat[sdat$spp==sp,]
-	#s.mod<-glm(surv ~ area, family="binomial", data=sub) 
+	s.mod<-glm(surv ~ area, family="binomial", data=sub) 
 	s.mod2<-glm(surv ~ area + area_sq, family="binomial", data=sub) 
-	s.int<-c(s.int, coef(s.mod2)[1])
-	s.slp<-c(s.slp, coef(s.mod2)[2])
-	s.slp2<-c(s.slp2, coef(s.mod2)[3])
+	s.mod.c <- s.mod2
+	s.int<-c(s.int, coef(s.mod.c)[1])
+	s.slp<-c(s.slp, coef(s.mod.c)[2])
+	s.slp2<-c(s.slp2, coef(s.mod.c)[3])
 	new<-data.frame(area=seq(min(sub$area), max(sub$area), 0.1), 
 	  spp=sp, morph=sub$morphology[1])
 	new$area_sq <- new$area^2
-	new$pred<-predict(s.mod2, new, type="response")
+	new$pred<-predict(s.mod.c, new, type="response")
+	#new2<-data.frame(area=params[params$spp==sp,"rec.size"], spp=sp, morph=sub$morphology[1])
+	#new2$area_sq <- new2$area^2
+	#new2$pred<-predict(s.mod2, new2, type="response")
+	#s.rec <- rbind(s.rec, new2)
 	s.pred<-rbind(s.pred, new)
 	}
 params$s.int<-s.int
 params$s.slp<-s.slp
 params$s.slp.2<-s.slp2
 
-pdf("figs/p4_survival.pdf")
+#pdf("figs/p4_survival.pdf")
 
 p4<-ggplot()+ 
   geom_jitter(data=sdat, 
     aes(area, surv), 
       shape=21, col="grey",height=0.02)+
   geom_line(data=s.pred, 
-    aes(area, pred, col=spp), 
-      size=0.75)+
+    aes(area, pred, col=spp))+
       #facet_wrap(~spp)+
   scale_colour_manual(values=cols)+
  theme_classic()
-
-show(p4)
-dev.off() 
+p4
+#show(p4)
+#dev.off() 
 
 
 
@@ -196,7 +200,7 @@ params$r.int<-r.int
 params$r.slp<-r.slp
 params$r.err<-r.err
 
-pdf("figs/p5_maxgrowth.pdf", )
+#pdf("figs/p5_maxgrowth.pdf", )
 
 p5<-ggplot()+
  geom_point(data=gdat, aes(x=area, y=g_radius), col="grey", shape=21)+
@@ -205,8 +209,8 @@ p5<-ggplot()+
    #+facet_wrap(~spp)+
     theme_classic()
 
-show(p5)
-dev.off() 
+#show(p5)
+#dev.off() 
    
 
 
@@ -243,7 +247,7 @@ params$p.int<-p.int
 params$p.slp<-p.slp
 params$p.sig<-p.sig
 
-pdf("figs/p6_partialmort.pdf")
+#pdf("figs/p6_partialmort.pdf")
 
 p6<-ggplot()+
   geom_point(data=pdat, 
@@ -256,8 +260,35 @@ p6<-ggplot()+
      #facet_wrap(~spp)+
      theme_classic()
 
-show(p6)
-dev.off() 
+#show(p6)
+#dev.off() 
 
 
+#######################################
+# PLOT PARAMETERS
+#######################################
+
+partheme <- theme(axis.text=element_text(size=7), axis.title=element_text(size=8),
+plot.title=element_text(size=8, hjust=0.5, face="bold"), legend.title=element_blank(), legend.text=element_text(face="italic"))
+
+xlab <- expression(log[10]*(area[~t]))
+
+fig.s1 <- plot_grid(plot_grid(
+p1+guides(col="none")+partheme+ggtitle("reproductive maturity")+
+labs(x=xlab,y="probability of maturity"), 
+p2+guides(col="none")+partheme+ggtitle("fecundity")+
+labs(x=xlab,y=expression("eggs per colony")),
+p3+guides(col="none")+partheme+ggtitle("growth rate")+
+labs(x=xlab, y=expression(log[10]*(area[~t~+1]))),  
+p4+guides(col="none")+partheme+ggtitle("survival rate")+
+labs(x=xlab, y="annual survival rate"), 
+p5+guides(col="none")+partheme+ggtitle("maximum growth")+
+labs(x=xlab, y=expression(log[10]*(radial~growth))),
+p6+guides(col="none")+partheme+ggtitle("partial mortality")+
+labs(x=xlab, y="logit(proportion area lost)"), 
+nrow=2, align="hv", labels="AUTO", label_size=8),
+get_legend(p1+partheme), rel_widths=c(1,0.2))
+fig.s1
+
+ggsave("figs/fig.s1.png", fig.s1, width=25, height=13, units="cm", dpi = 300)
 

@@ -11,3 +11,303 @@ inv.logit <- function(x) {exp(x)/(1+exp(x))}#
 # load scripts#
 source("R/data_prep.R")#
 source("R/params.R")
+rm(list = ls())#
+#
+########################################
+# LOAD SCRIPTS#
+########################################
+source("R/functions.R")#
+source("R/data_prep.R")#
+sdat<-sdat[!sdat$colony_id==287,]#
+gdat<-gdat[!gdat$colony_id==287,]#
+source("R/params.R")
+ggplot(params, aes(x=reorder(spp, -eggC/50.6), y=eggC/50.6, fill=spp))+guides(fill="none")+#
+geom_bar(stat="identity")+#
+scale_fill_manual(values=cols)
+y
+?draw_line
+??draw_line
+?dnorm
+rm(list = ls())#
+#
+########################################
+# LOAD SCRIPTS#
+########################################
+source("R/functions.R")#
+source("R/data_prep.R")#
+sdat<-sdat[!sdat$colony_id==287,]#
+gdat<-gdat[!gdat$colony_id==287,]#
+source("R/params.R")#
+library("ggrepel")#
+library("grid")#
+library("png")#
+#
+########################################
+# PARAMETER SPACE#
+########################################
+#
+# proportion mortality at 100cm2#
+params$p_mort<-inv.logit((params$p.slp*log10(0.01))+params$p.int)#
+#
+# average modelled survival#
+params$av.surv<-aggregate(pred~spp, s.pred,mean)$pred#
+#
+# recruit survival#
+rec.cm <- 11#
+params$survcm<-aggregate(pred~spp, s.pred[s.pred$area<log10(pi*(rec.cm/100/2)^2),], FUN=mean)$pred#
+#
+# size at maximum survival #
+max.surv<-do.call(rbind, lapply(split(s.pred, as.factor(s.pred$spp)), function(x) {return(x[which.max(x$pred),])}))#
+params$safe.size<-max.surv$area#
+#
+# fecundity per area#
+params$f.cm2<-aggregate(f.cm2~spp, fec,mean)$f.cm2#
+#ggplot(params, aes(f.cm2, f.int))+geom_text(aes(label=spp))#
+#
+# total fecundity#
+head(fec)#
+params$f.colony<-aggregate(fecundity~spp, fec,mean)$fecundity#
+#ggplot(params, aes(f.cm2, f.int))+geom_text(aes(label=spp))#
+#
+# average size#
+size.av <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)#
+params$size.av <- size.av$area[match(params$spp, size.av$spp)]#
+#
+# egg energy per area#
+params$en.cm2<-params$f.cm2*params$eggC#
+#
+# minimum at reproductive maturity#
+params$min.r<-1/aggregate(area_cm2~spp, fec[fec$reproductive==1,], min)$area_cm2#
+#
+# PCA of demographic parameters#
+colnames(params)#
+rownames(params) <- params$spp#
+pca<-prcomp(params[,c("r.int","f.int","f.cm2","survcm", "av.surv","p_mort", "min.r", "f.colony")], scale=T, center=T)#
+biplot(pca)#
+#
+exp<-round(c(summary(pca)[[1]][1]^2/sum(summary(pca)[[1]]^2),summary(pca)[[1]][2]^2/sum(summary(pca)[[1]]^2)),3)*100#
+exp#
+#
+# abundance#
+ggplot(params, aes(reorder(spp, abundance_05), abundance_05))+geom_bar(stat="identity")+facet_wrap(~morphology, scales="free_x")#
+#
+# pair differences#
+# Q: Is AL (middle man) classed as a rare or common?#
+# params$abundance_pair[params$spp=="AL"] <- "Rare"#
+params2<-rbind(params, params[6,]) #duplicate AN (or AM=6)#
+params2$morph<-as.character(params2$morph)#
+params2$morph[c(7, 12)]<-c("corymbose_2","corymbose_2")#AN/AM#
+comp<-dcast(params2, morph~abundance_pair, value.var="spp")#
+comp$AC<-params2$abundance_05[match(comp$Common, params2$spp)]#
+comp$AR<-params2$abundance_05[match(comp$Rare, params2$spp)]#
+comp$diff <- comp$AC/comp$AR#
+comp#
+#
+# size#
+ggplot(ss, aes(x=area))+#
+geom_density()+#
+facet_wrap(~spp)#
+#
+# FIGURE 1#
+source("R/fig.1.R")#
+fig.1#
+#ggsave("figs/fig.1.png", fig.1, width=15, height=10, units="cm", dpi = 300)#
+#
+########################################
+# IPM FUNCTIONS#
+########################################
+#------------------------------- growth#
+g.yx <- function(y, x) {#
+	dnorm(y, mean=params$g.int[params$spp==sp] + #
+	  params$g.slp[params$spp==sp]*x,#
+	    sd=sqrt(params$g.var[params$spp==sp]))#
+	    }#
+#-------------------------------survival#
+s.x <- function(x) { #
+	u <- params$s.int[params$spp==sp] + #
+	  params$s.slp[params$spp==sp] * x + #
+	    params$s.slp.2[params$spp==sp] * x^2#
+  return(inv.logit(u)) #
+}#
+#
+#------------------------------- growth & partial morality#
+p.yx <- function(y, x) {#
+  # x <- -4#
+  g <- a_func(r_func(10^x) + params$r.int[params$spp==sp] )#
+  #+ 1.96 * params$r.err[params$spp==sp])#
+  temp <- 10^y / g#
+  temp[temp > 1] <- 1#
+  dnorm(logit(1 - temp), params$p.int[params$spp==sp] + x * params$p.slp[params$spp==sp], params$p.sig[params$spp==sp])#
+}#
+#
+#------------------------------- reproduction#
+ r.yx <- function(y, x) {	#
+ 	mat<- inv.logit(params$m.int[params$spp==sp] + #
+ 	  params$m.slp[params$spp==sp] *x)#
+ 	fec<- exp(params$f.int[params$spp==sp] + #
+ 	  params$f.slp[params$spp==sp] *x) #
+ 	 En <-  params$eggC[params$spp==sp]#
+   #siz<- rnorm(y,mean=params$rec.size[params$spp==sp], sd=0.05) #
+   out <- (rec* mat * fec) #* (En/max(params$eggC))#
+   out[x < rec.size | y >= rec.size] <- 0 #if x is below recruitment size#
+   return(out)#
+   } #
+#
+ggplot(params, aes(x=reorder(spp, -eggC/50.6), y=eggC/50.6, fill=spp))+guides(fill="none")+#
+geom_bar(stat="identity")+#
+scale_fill_manual(values=cols)#
+#
+ggplot(params, aes(x=reorder(spp, -f.slp), y=f.slp, fill=spp))+guides(fill="none")+#
+coord_cartesian(ylim=c(2.3,2.8))+#
+facet_wrap(~morphology, scales="free_x", nrow=1)+#
+geom_bar(stat="identity")+#
+scale_fill_manual(values=cols)#
+ #------------------------------- kernel#
+pmort<-T#
+#
+bigmatrix <- function() {#
+    if (pmort) {#
+    G <- h * outer(y, y, p.yx)#
+  } else {#
+    G <- h * outer(y, y, g.yx)#
+  }#
+  G <- t(t(G) / apply(G, 2, sum))#
+  S <- s.x(y)#
+  P <- G #
+  for(i in 1:n) P[,i]=G[,i]*S[i]#
+  R <- h * outer(y, y, r.yx) #
+  #R <- h * outer(y, pmin(y, smax), r.yx) #  ceiling#
+  K <- P + R#
+  lam <- Re(eigen(K)$values[1])#
+	w <- abs(Re(eigen(K)$vectors[,1])) #
+	v <- abs(Re(eigen(t(K))$vectors[,1]))#
+	return(list(K=K, lam=lam, w=w, v=v, G=G, S=S, R=R, P=P)) }#
+########################################
+# MESH AND BOUNDARIES#
+########################################
+#
+params$rec.size <- log10(pi*params$r.int^2)#
+params$rec.size2 <- log10(pi*(params$r.int*(10/12))^2)#
+max.size <- 1 #
+n <- 100#
+rec <- 0.001#
+#rec <- 1*10^-8#
+#min.size <- -3.5 #
+#rec.size <- -2.21 #
+# Maximum size windows, constant or vary by species? #
+#params$smax<-aggregate(area_cm2~spp, dat, max)$area#
+#params$smin<-aggregate(area_cm2~spp, dat, min)$area#
+########################################
+# PLOT IPMS#
+########################################
+#
+par(mfcol=c(2, 6))#
+#
+lam_const <- NULL#
+ipm.k.list <- list()#
+ipm.p.list <- list()#
+ipm.r.list <- list()#
+y.list <- list()#
+#
+for (sp in spp) {#
+	rec <- 1#
+	#sp <- "AC"#
+	#smax<-params[params$spp==sp, "smax"]#
+	rec.size <- params$rec.size[params$spp==sp]#
+	#rec.size <- max(params$rec.size)#
+	b <- seq(rec.size, max.size, length=n)#
+	h <- b[2] - b[1]#
+	b <- c(min(b)-(2*h), min(b)-h, b)#
+	y <- 0.5 * (b[1:n]+b[2:(n+1)])#
+	I <- y >= rec.size#
+  	sub<-gdat[gdat$spp==sp,]#
+    mod <- bigmatrix()#
+	image(y, y, t(mod$P)^0.3)   #
+	points(sub$area, sub$area_next, cex=0.25)#
+	title(sp, line=-1)#
+	abline(0, 1, lty=2)#
+	y.list[[sp]] <- y #
+	ipm.k.list[[sp]] <- mod$P#
+	ipm.p.list[[sp]] <- mod$P#
+	ipm.r.list[[sp]] <- mod$R#
+	lam_const<-c(lam_const,bigmatrix()$lam) #
+	}#
+# Figure 2#
+source("R/fig.S2.R")	#
+fig.s2
+rm(list = ls())#
+#
+########################################
+# LOAD SCRIPTS#
+########################################
+source("R/functions.R")#
+source("R/data_prep.R")#
+#
+source("R/goni.R") # removes smalls to fix growth curve#
+#
+sdat<-sdat[!sdat$colony_id==287,]#
+gdat<-gdat[!gdat$colony_id==287,]#
+source("R/params.R")#
+library("ggrepel")#
+library("grid")#
+library("png")#
+#
+########################################
+# PARAMETER SPACE#
+########################################
+#
+# proportion mortality at 100cm2#
+params$p_mort<-inv.logit((params$p.slp*log10(0.01))+params$p.int)#
+#
+# average modelled survival#
+params$av.surv<-aggregate(pred~spp, s.pred,mean)$pred#
+#
+# recruit survival#
+rec.cm <- 11#
+params$survcm<-aggregate(pred~spp, s.pred[s.pred$area<log10(pi*(rec.cm/100/2)^2),], FUN=mean)$pred#
+#
+# size at maximum survival #
+max.surv<-do.call(rbind, lapply(split(s.pred, as.factor(s.pred$spp)), function(x) {return(x[which.max(x$pred),])}))#
+params$safe.size<-max.surv$area#
+#
+# fecundity per area#
+params$f.cm2<-aggregate(f.cm2~spp, fec,mean)$f.cm2#
+#ggplot(params, aes(f.cm2, f.int))+geom_text(aes(label=spp))#
+#
+# total fecundity#
+head(fec)#
+params$f.colony<-aggregate(fecundity~spp, fec,mean)$fecundity#
+#ggplot(params, aes(f.cm2, f.int))+geom_text(aes(label=spp))#
+#
+# average size#
+size.av <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)#
+params$size.av <- size.av$area[match(params$spp, size.av$spp)]#
+#
+# egg energy per area#
+params$en.cm2<-params$f.cm2*params$eggC#
+#
+# minimum at reproductive maturity#
+params$min.r<-1/aggregate(area_cm2~spp, fec[fec$reproductive==1,], min)$area_cm2#
+#
+# PCA of demographic parameters#
+colnames(params)#
+rownames(params) <- params$spp#
+pca<-prcomp(params[,c("r.int","f.int","f.cm2","survcm", "av.surv","p_mort", "min.r", "f.colony")], scale=T, center=T)#
+biplot(pca)#
+#
+exp<-round(c(summary(pca)[[1]][1]^2/sum(summary(pca)[[1]]^2),summary(pca)[[1]][2]^2/sum(summary(pca)[[1]]^2)),3)*100#
+exp#
+#
+# abundance#
+ggplot(params, aes(reorder(spp, abundance_05), abundance_05))+geom_bar(stat="identity")+facet_wrap(~morphology, scales="free_x")#
+#
+# Is AL (middle man) classed as a rare or common?#
+# params$abundance_pair[params$spp=="AL"] <- "Rare"#
+params2<-rbind(params, params[6,]) #duplicate AN (or AM=6)#
+params2$morph<-as.character(params2$morph)#
+params2$morph[c(7, 12)]<-c("corymbose_2","corymbose_2")#AN/AM#
+comp<-dcast(params2, morph~abundance_pair, value.var="spp")#
+comp$AC<-params2$abundance_05[match(comp$Common, params2$spp)]#
+comp$AR<-params2$abundance_05[match(comp$Rare, params2$spp)]#
+comp$diff <- comp$AC/comp$AR#
+comp
