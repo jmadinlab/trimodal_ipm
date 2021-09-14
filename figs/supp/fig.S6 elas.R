@@ -27,8 +27,8 @@ for (sp in spp) {
 plotE<-ggplot()+
 	geom_raster(data=e.k, aes(id, time,fill=X1))+
 		geom_point(data=sub, aes(x=area, y=area_next), col="grey", size=0.01)+
-	#scale_fill_viridis(n.breaks=3, trans="sqrt")+
-	scale_fill_viridis(n.breaks=3)+
+	scale_fill_viridis(n.breaks=3, trans="sqrt")+
+	#scale_fill_viridis(n.breaks=3)+
 	theme_bw()+
 	guides(alpha="none", fill=guide_colourbar(order=1), colour=guide_colourbar(order=2))+
 	geom_abline(col="black", slope=1, size=0.1, linetype="dashed")+

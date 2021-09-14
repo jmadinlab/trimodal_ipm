@@ -253,11 +253,23 @@ p6<-ggplot()+
   geom_point(data=pdat, 
     aes(x=area, y=pm_logit), 
        shape=21, col="grey")+
-    geom_line(data=pdat, aes(x=area, y=p_stasis, group=spp), linetype="dotted")+
+    geom_line(data=pdat, aes(x=area, y=logit(p_stasis), group=spp), linetype="dotted")+
    geom_line(data=p.pred, 
      aes(x=area, y=pred, col=spp))+
      scale_colour_manual(values=c(cols))+
      #facet_wrap(~spp)+
+     theme_classic()
+
+
+ggplot()+
+  geom_point(data=pdat, 
+    aes(x=area, y=inv.logit(pm_logit)), 
+       shape=21, col="grey")+
+    geom_line(data=pdat, aes(x=area, y=p_stasis, group=spp, col=spp), linetype="dotted")+
+   geom_line(data=p.pred, 
+     aes(x=area, y=inv.logit(pred), col=spp))+
+     scale_colour_manual(values=c(cols))+
+     facet_wrap(~spp)+
      theme_classic()
 
 #show(p6)
@@ -290,5 +302,4 @@ nrow=2, align="hv", labels="AUTO", label_size=8),
 get_legend(p1+partheme), rel_widths=c(1,0.2))
 fig.s1
 
-ggsave("figs/fig.s1.png", fig.s1, width=25, height=13, units="cm", dpi = 300)
 
