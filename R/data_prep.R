@@ -1,5 +1,4 @@
 
-
 #######################################
 # DATA
 #######################################
@@ -87,6 +86,74 @@ tiles <- aggregate(N_m2_year~Study+Location+Family,tiles, mean) # sum?? No mean
 
 rsize <- read.csv("data/recruitment/recsize.csv")
 
+
+#######################################
+# ABUNDANCE TRIMODAL
+#######################################
+
+# 2005
+
+d08 <- read.csv("data/abundance/Trimodaldata2005forMike.csv")
+d08$Species[d08$Species == "Acropora fat dig"] <- "Acropora cf. digitifera"
+d08A <- d08[d08$Species %in% params$species,]
+
+params[,c("spp","abundance_05")]
+aggregate(Abundance~Species, d08A, sum)
+aggregate(Abundance/270/10~Species, d08A, sum)
+
+# add zeros 
+d08B<-data.frame(ID=rep(unique(d08A$ID), length(unique(d08A$Species))), Species=rep(unique(d08A$Species), each=length(unique(d08A$ID))))
+d08B$N <- d08A$Abundance[match(paste(d08B$ID, d08B$Species), paste(d08A$ID, d08A$Species))]
+d08B$N[is.na(d08B$N)]<-0
+
+aggregate(N/10~Species, d08B, mean)
+
+
+# 2011-14
+
+ab <- read.csv("data/abundance/lit_merged_20180412.csv")
+
+ab$species[ab$species %in% c("Acropora fat_digitifera", "Acropora difitifera_fat", "Acropora sp. Fat dig")] <- "Acropora cf. digitifera"
+
+ab$species[ab$species=="Acropora robustea"]<-"Acropora robusta"
+
+ab$genus <- substr(ab$species, 1, 5)
+
+# post 1990s
+ab <- subset(ab, campaign >1997)
+
+# all transects
+unique(ab[,c("site","transect", "campaign")])
+
+# all species
+unique(ab$species)
+
+# For TB, Goniastrea sp. == retiformis
+ab$species <- ifelse(ab$species=="Goniastrea sp." & ab$observer=="TB", "Goniastrea retiformis", ab$species)
+
+# IDs
+ab$ID <- paste(ab$site, ab$campaign, ab$transect, sep="_")
+
+# trimodal only
+tri <- subset(ab, site=="Trimodal")
+tri <- tri[tri$species %in% params$species,]
+tri <- tri[tri$campaign %in% c(2011, 2014),]
+head(tri)
+
+# cover and N
+tri2 <- aggregate(intercept_cm~., subset(tri, select=-c(site, observer,genus)), length)
+tri2$cover <- aggregate(intercept_cm~., subset(tri, select=-c(site, observer,genus)), sum)$intercept_cm/10
+head(tri2)
+
+# add zeros
+abun<-data.frame(ID=rep(unique(tri2$ID), length(unique(params$species))), species=rep(unique(params$species), each=length(unique(tri2$ID))))
+abun$N <- tri2$intercept_cm[match(paste(abun$ID, abun$species), paste(tri2$ID, tri2$species))]
+abun$cover <- tri2$cover[match(paste(abun$ID, abun$species),paste(tri2$ID, tri2$species))]
+abun$cover[is.na(abun$cover)]<-0
+abun$N[is.na(abun$N)]<-0
+abun[,c("year")]<-tri2[match(abun$ID, tri2$ID),"campaign"]
+abun$tran<-substr(abun$ID, 15,15)
+head(abun)
 
 
 

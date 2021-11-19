@@ -1,0 +1,1966 @@
+date,reef,site,site_ID,depth (m),transect,observer,image,species,intercept_1 (cm),intercept_2,intercept_3,intercept_4,intercept_5,intercept_6,intercept_7,intercept_8,intercept_9,intercept_10,intercept_11,n,total_cm,cover
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,7899,Acropora elseyi,5,,,,,,,,,,,1,5,0.5
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,,Acropora hyacinthus,19,,,,,,,,,,,1,19,1.9
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,7897,Acropora latistella,33,34,,,,,,,,,,2,67,6.7
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,7895,Acropora microclados,16,,,,,,,,,,,1,16,1.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,,Acropora nasuta,19,20,,,,,,,,,,2,39,3.9
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,,Acropora tenuis,10,,,,,,,,,,,1,10,1
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,7900,Dipsastreae pallida,8,,,,,,,,,,,1,8,0.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,7893,Pocillopora verrucosa,35,,,,,,,,,,,1,35,3.5
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,,Porites massive,11,12,6,,,,,,,,,3,29,2.9
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,1,AHB,,Turbinaria mesenterina,16,,,,,,,,,,,1,16,1.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Acropora intermedia,5,,,,,,,,,,,1,5,0.5
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Acropora nasuta,11,23,,,,,,,,,,2,34,3.4
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Acropora valenciennesi,143,,,,,,,,,,,1,143,14.3
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Goniastrea pectinata,6,,,,,,,,,,,1,6,0.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Lobophyllia hemprichii,13,,,,,,,,,,,1,13,1.3
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Porites massive,21,,,,,,,,,,,1,21,2.1
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,2,AHB,,Seriatopora hystrix,11,5,,,,,,,,,,2,16,1.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Acropora humilis,11,,,,,,,,,,,1,11,1.1
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,7904,Acropora longicyathus,12,,,,,,,,,,,1,12,1.2
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Acropora nasuta,7,,,,,,,,,,,1,7,0.7
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Acropora valida,18,,,,,,,,,,,1,18,1.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Dipsastreae pallida,8,,,,,,,,,,,1,8,0.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Galaxea fascicularis,7,11,,,,,,,,,,2,18,1.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Porites massive,8,25,,,,,,,,,,2,33,3.3
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,,Stylophora pistillata,13,,,,,,,,,,,1,13,1.3
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,3,AHB,7902,Turbinaria radicalis,7,,,,,,,,,,,1,7,0.7
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Acropora elseyi,16,,,,,,,,,,,1,16,1.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Acropora latistella,35,,,,,,,,,,,1,35,3.5
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Acropora millepora,8,,,,,,,,,,,1,8,0.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Acropora sarmentosa,6,,,,,,,,,,,1,6,0.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Acropora tenuis,21,,,,,,,,,,,1,21,2.1
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,7905,Dipsastreae matthaii,16,,,,,,,,,,,1,16,1.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Pocillopora damicornis,26,,,,,,,,,,,1,26,2.6
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Pocillopora eydouxi,28,,,,,,,,,,,1,28,2.8
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Pocillopora verrucosa,5,,,,,,,,,,,1,5,0.5
+05/09/2013,Scott Reef,Scott Reef site 1,1705_1,2,4,AHB,,Porites massive,8,8,,,,,,,,,,2,16,1.6
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,1,AHB,,baeodactyla,5,,,,,,,,,,,1,5,0.5
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,1,AHB,,Acropora hyacinthus,13,,,,,,,,,,,1,13,1.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,1,AHB,,Acropora lutkeni,20,,,,,,,,,,,1,20,2
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,1,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Acropora cerealis,11,18,,,,,,,,,,2,29,2.9
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,baeodactyla,6,8,12,6,15,,,,,,,5,47,4.7
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Acropora hyacinthus,10,14,13,9,,,,,,,,4,46,4.6
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Acropora muricata,12,17,,,,,,,,,,2,29,2.9
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Acropora tenuis,15,,,,,,,,,,,1,15,1.5
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,2,AHB,,Pocillopora meandrina,6,,,,,,,,,,,1,6,0.6
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,baeodactyla,24,16,17,,,,,,,,,3,57,5.7
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Acropora gemmifera,13,,,,,,,,,,,1,13,1.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Acropora humilis,14,,,,,,,,,,,1,14,1.4
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Acropora hyacinthus,24,12,13,,,,,,,,,3,49,4.9
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Acropora spathulata,31,,,,,,,,,,,1,31,3.1
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Galaxea fascicularis,13,,,,,,,,,,,1,13,1.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Goniastrea retiformis,12,,,,,,,,,,,1,12,1.2
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Lobophyllia recta,10,,,,,,,,,,,1,10,1
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,3,AHB,,Pocillopora verrucosa,12,,,,,,,,,,,1,12,1.2
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora digitifera,33,,,,,,,,,,,1,33,3.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,baeodactyla,16,,,,,,,,,,,1,16,1.6
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora humilis,13,,,,,,,,,,,1,13,1.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora hyacinthus,12,10,8,13,,,,,,,,4,43,4.3
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora muricata,12,,,,,,,,,,,1,12,1.2
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora nasuta,9,,,,,,,,,,,1,9,0.9
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Acropora tenuis,20,,,,,,,,,,,1,20,2
+06/09/2013,Evening Reef,Evenening Reef site 1,1589_1,2,4,AHB,,Pocillopora verrucosa,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Acropora hyacinthus,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Acropora muricata,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Acropora nasuta,35,10,,,,,,,,,,2,45,4.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Lithophyllon repanda,15,,,,,,,,,,,1,15,1.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Porites cylindrica,9,12,26,18,17,14,,,,,,6,96,9.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Porites massive,85,23,18,,,,,,,,,3,126,12.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Porites rus,12,,,,,,,,,,,1,12,1.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,1,AHB,,Seriatopora hystrix,5,,,,,,,,,,,1,5,0.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Acropora cerealis,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Acropora hyacinthus,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Acropora intermedia,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Acropora sarmentosa,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Acropora spathulata,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Astrea curta,9,,,,,,,,,,,1,9,0.9
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Pavona cactus,25,,,,,,,,,,,1,25,2.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Porites annae,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Porites cylindrica,16,22,4,15,12,14,18,,,,,7,101,10.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Porites massive,16,95,45,,,,,,,,,3,156,15.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Seriatopora hystrix,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,2,AHB,,Stylophora pistillata,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Acropora florida,75,,,,,,,,,,,1,75,7.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Acropora sarmentosa,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Acropora spathulata,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Acropora tenuis,42,,,,,,,,,,,1,42,4.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Coscinaraea columna,35,,,,,,,,,,,1,35,3.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Goniastrea retiformis,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Merulina ampliata,14,,,,,,,,,,,1,14,1.4
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,7917,Montipora floweri,14,5,,,,,,,,,,2,19,1.9
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Montipora foliosa,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Porites cylindrica,8,15,14,,,,,,,,,3,37,3.7
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Porites massive,35,26,23,,,,,,,,,3,84,8.4
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Porites rus,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,3,AHB,,Stylophora pistillata,22,,,,,,,,,,,1,22,2.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora florida,31,,,,,,,,,,,1,31,3.1
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora grandis,15,,,,,,,,,,,1,15,1.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora hyacinthus,55,,,,,,,,,,,1,55,5.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora millepora,15,10,,,,,,,,,,2,25,2.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora nasuta,25,,,,,,,,,,,1,25,2.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Acropora tenuis,23,,,,,,,,,,,1,23,2.3
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Coscinaraea columna,22,,,,,,,,,,,1,22,2.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Echinopora lamellosa,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Gardineroseris planulata,22,,,,,,,,,,,1,22,2.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Goniastrea favulus,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Leptastrea transversa,5,,,,,,,,,,,1,5,0.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Pocillopora damicornis,12,48,30,27,35,,,,,,,5,152,15.2
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Porites massive,65,,,,,,,,,,,1,65,6.5
+07/09/2013,Martin Reef,Martin Reef site 1,1475_1,2,4,AHB,,Porites rus,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Acropora hyacinthus,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Acropora spathulata,51,,,,,,,,,,,1,51,5.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Echinopora horrida,16,,,,,,,,,,,1,16,1.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Favites abdita,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Goniastrea pectinata,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Leptastrea transversa,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Leptoria phrygia,16,,,,,,,,,,,1,16,1.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Montipora tuberculosa,22,,,,,,,,,,,1,22,2.2
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,7920,Montipora venosa,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Porites massive,6,18,70,18,12,13,16,40,,,,8,193,19.3
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,1,AHB,,Stylophora pistillata,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora hyacinthus,22,,,,,,,,,,,1,22,2.2
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora intermedia,39,,,,,,,,,,,1,39,3.9
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora latistella,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora loripes,30,,,,,,,,,,,1,30,3
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora spathulata,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Acropora tenuis,18,14,,,,,,,,,,2,32,3.2
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Astreopora myriophthalma,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Goniastrea stelligera,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Leptoria phrygia,6,,,,,,,,,,,1,6,0.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Montipora foveolata,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Porites annae,13,,,,,,,,,,,1,13,1.3
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Porites cylindrica,12,,,,,,,,,,,1,12,1.2
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Porites massive,60,18,6,12,8,12,,,,,,6,116,11.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,2,AHB,,Seriatopora hystrix,17,,,,,,,,,,,1,17,1.7
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,,Acropora nasuta,23,,,,,,,,,,,1,23,2.3
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,7922,Leptastrea transversa,11,,,,,,,,,,,1,11,1.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,,Lobophyllia recta,16,,,,,,,,,,,1,16,1.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,,Montipora hoffmeisteri,24,,,,,,,,,,,1,24,2.4
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,,Porites massive,18,30,28,14,28,,,,,,,5,118,11.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,3,AHB,,Seriatopora hystrix,11,6,,,,,,,,,,2,17,1.7
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Acropora florida,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Acropora spathulata,13,,,,,,,,,,,1,13,1.3
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,7923,Cyphastrea serailia,5,,,,,,,,,,,1,5,0.5
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Favites abdita,16,,,,,,,,,,,1,16,1.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Gardineroseris planulata,26,35,,,,,,,,,,2,61,6.1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Lobophyllia radians,10,,,,,,,,,,,1,10,1
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,7925,Montipora hoffmeisteri,17,,,,,,,,,,,1,17,1.7
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,7924,Montipora informis,16,,,,,,,,,,,1,16,1.6
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Porites massive,10,11,18,,,,,,,,,3,39,3.9
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Porites rus,8,,,,,,,,,,,1,8,0.8
+07/09/2013,Martin Reef,Martin Reef site 2,1475_2,2,4,AHB,,Stylophora pistillata,12,,,,,,,,,,,1,12,1.2
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Acropora hyacinthus,12,15,,,,,,,,,,2,27,2.7
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Acropora nasuta,15,,,,,,,,,,,1,15,1.5
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Astrea curta,9,,,,,,,,,,,1,9,0.9
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Astreopora myriophthalma,22,,,,,,,,,,,1,22,2.2
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Favites halicora,15,,,,,,,,,,,1,15,1.5
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Lobophyllia recta,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Montipora tuberculosa,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,1,AHB,,Pocillopora verrucosa,19,15,7,20,,,,,,,,4,61,6.1
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,7934,baeodactyla,25,,,,,,,,,,,1,25,2.5
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Acropora hyacinthus,17,,,,,,,,,,,1,17,1.7
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Acropora spathulata,18,,,,,,,,,,,1,18,1.8
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,7937,Astreopora listeri,13,,,,,,,,,,,1,13,1.3
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Dipsastreae lizardensis,18,,,,,,,,,,,1,18,1.8
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Dipsastreae speciosa,10,,,,,,,,,,,1,10,1
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Favites abdita,9,,,,,,,,,,,1,9,0.9
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Pocillopora verrucosa,25,16,,,,,,,,,,2,41,4.1
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,2,AHB,,Porites massive,7,,,,,,,,,,,1,7,0.7
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Acropora humilis,22,,,,,,,,,,,1,22,2.2
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Goniastrea edwardsi,26,15,,,,,,,,,,2,41,4.1
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,7939,Montipora hoffmeisteri,12,7,,,,,,,,,,2,19,1.9
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Montipora verrucosa,12,,,,,,,,,,,1,12,1.2
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Platygyra pini,19,,,,,,,,,,,1,19,1.9
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,3,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,4,AHB,,Acropora cerealis,14,,,,,,,,,,,1,14,1.4
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,4,AHB,,Acropora hyacinthus,15,,,,,,,,,,,1,15,1.5
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,4,AHB,,Lobophyllia radians,35,,,,,,,,,,,1,35,3.5
+08/09/2013,Switzer Reef,Switzer Reef site 1,1434_1,2,4,AHB,,Porites massive,9,,,,,,,,,,,1,9,0.9
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora anthocercis,14,,,,,,,,,,,1,14,1.4
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora otteri,15,12,,,,,,,,,,2,27,2.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora millepora,10,,,,,,,,,,,1,10,1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora nasuta,8,7,,,,,,,,,,2,15,1.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora spathulata,11,22,,,,,,,,,,2,33,3.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Acropora tenuis,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Dipsastreae speciosa,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Favites halicora,10,,,,,,,,,,,1,10,1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Goniastrea edwardsi,8,25,,,,,,,,,,2,33,3.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Lobactis scutaria,17,8,,,,,,,,,,2,25,2.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Lobophyllia hemprichii,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Montipora foveolata,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Montipora hoffmeisteri,18,,,,,,,,,,,1,18,1.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Montipora tuberculosa,23,11,,,,,,,,,,2,34,3.4
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Pavona venosa,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Platygyra daedalea,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Platygyra pini,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Platygyra ryukyuensis,18,,,,,,,,,,,1,18,1.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Pocillopora damicornis,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Pocillopora verrucosa,7,,,,,,,,,,,1,7,0.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,1,AHB,,Porites massive,17,8,,,,,,,,,,2,25,2.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Acropora divaricata,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Acropora spathulata,12,,,,,,,,,,,1,12,1.2
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Astrea curta,5,,,,,,,,,,,1,5,0.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Coeloseris mayeri,18,13,8,,,,,,,,,3,39,3.9
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Diploastrea heliopora,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Dipsastraea truncata,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Goniastrea edwardsi,15,12,10,,,,,,,,,3,37,3.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,7941,Goniopora fruticosa,16,6,8,,,,,,,,,3,30,3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Platygyra pini,13,,,,,,,,,,,1,13,1.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Pocillopora damicornis,12,,,,,,,,,,,1,12,1.2
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,2,AHB,,Porites massive,6,9,,,,,,,,,,2,15,1.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Acropora austera,31,,,,,,,,,,,1,31,3.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Acropora muricata,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Acropora spathulata,7,,,,,,,,,,,1,7,0.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Dipsastreae matthaii,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Favites halicora,32,,,,,,,,,,,1,32,3.2
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Goniastrea edwardsi,8,5,,,,,,,,,,2,13,1.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,7942,Gonipora spp,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Montipora informis,14,,,,,,,,,,,1,14,1.4
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Montipora tuberculosa,18,5,,,,,,,,,,2,23,2.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Platygyra daedalea,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Platygyra pini,7,12,,,,,,,,,,2,19,1.9
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Porites massive,13,11,,,,,,,,,,2,24,2.4
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,3,AHB,,Turbinaria radicalis,5,,,,,,,,,,,1,5,0.5
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Acropora millepora,7,8,11,,,,,,,,,3,26,2.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Acropora nasuta,10,,,,,,,,,,,1,10,1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Acropora spathulata,7,,,,,,,,,,,1,7,0.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Astreopora myriophthalma,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,7919,Cyphastrea serailia,8,,,,,,,,,,,1,8,0.8
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Goniastrea edwardsi,16,5,7,25,32,18,,,,,,6,103,10.3
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Montipora hoffmeisteri,11,,,,,,,,,,,1,11,1.1
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Montipora tuberculosa,14,,,,,,,,,,,1,14,1.4
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Oulastrea crispata,7,,,,,,,,,,,1,7,0.7
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Platygyra daedalea,6,,,,,,,,,,,1,6,0.6
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Polyphyllia talpina,12,,,,,,,,,,,1,12,1.2
+08/09/2013,Switzer Reef,Switzer Reef site 2,1434_2,2,4,AHB,,Porites massive,8,10,,,,,,,,,,2,18,1.8
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Acropora divaricata,11,,,,,,,,,,,1,11,1.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Acropora humilis,6,,,,,,,,,,,1,6,0.6
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Acropora hyacinthus,43,,,,,,,,,,,1,43,4.3
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Acropora millepora,16,,,,,,,,,,,1,16,1.6
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Acropora muricata,13,,,,,,,,,,,1,13,1.3
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Lobophyllia hemprichii,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Platygyra daedalea,9,,,,,,,,,,,1,9,0.9
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Pocillopora damicornis,9,,,,,,,,,,,1,9,0.9
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Pocillopora eydouxi,20,,,,,,,,,,,1,20,2
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Porites massive,71,18,,,,,,,,,,2,89,8.9
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,1,AHB,,Stylophora pistillata,31,8,12,,,,,,,,,3,51,5.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Acanthastrea echinata,11,,,,,,,,,,,1,11,1.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Acropora intermedia,24,11,12,13,45,,,,,,,5,105,10.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Acropora muricata,210,42,,,,,,,,,,2,252,25.2
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Acropora spathulata,36,,,,,,,,,,,1,36,3.6
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Acropora tenuis,12,,,,,,,,,,,1,12,1.2
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Echinopora lamellosa,15,,,,,,,,,,,1,15,1.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Pocillopora damicornis,13,,,,,,,,,,,1,13,1.3
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,2,AHB,,Porites massive,120,22,,,,,,,,,,2,142,14.2
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora gemmifera,32,,,,,,,,,,,1,32,3.2
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora intermedia,62,21,,,,,,,,,,2,83,8.3
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora longicyathus,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora muricata,35,62,,,,,,,,,,2,97,9.7
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora spathulata,10,,,,,,,,,,,1,10,1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Acropora valida,15,,,,,,,,,,,1,15,1.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,7959,Montipora cocosensis,`6,,,,,,,,,,,0,0,0
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,7957,Montipora efflorescens,21,,,,,,,,,,,1,21,2.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Pocillopora damicornis,15,21,,,,,,,,,,2,36,3.6
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,3,AHB,,Porites massive,11,8,12,13,,,,,,,,4,44,4.4
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Acropora florida,22,12,,,,,,,,,,2,34,3.4
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Acropora gemmifera,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Acropora intermedia,11,220,30,,,,,,,,,3,261,26.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Acropora microphthalma,11,,,,,,,,,,,1,11,1.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Goniastrea edwardsi,11,,,,,,,,,,,1,11,1.1
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,7961,Montipora monasteriata,35,,,,,,,,,,,1,35,3.5
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Platygyra sinensis,40,,,,,,,,,,,1,40,4
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Pocillopora damicornis,25,60,12,,,,,,,,,3,97,9.7
+09/09/2013,Mid Reef,Mid Reef site 1,1444_1,2,4,AHB,,Porites massive,45,35,,,,,,,,,,2,80,8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Acropora hyacinthus,10,14,,,,,,,,,,2,24,2.4
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Acropora intermedia,15,95,,,,,,,,,,2,110,11
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Acropora loripes,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Acropora tenuis,7,,,,,,,,,,,1,7,0.7
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Echinopora lamellosa,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Favites abdita,6,,,,,,,,,,,1,6,0.6
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Favites halicora,9,,,,,,,,,,,1,9,0.9
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Goniastrea pectinata,28,,,,,,,,,,,1,28,2.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,7966,Montipora spumosa,17,,,,,,,,,,,1,17,1.7
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Porites cylindrica,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Porites massive,35,32,26,,,,,,,,,3,93,9.3
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Seriatopora hystrix,8,9,,,,,,,,,,2,17,1.7
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,1,AHB,,Stylophora pistillata,14,,,,,,,,,,,1,14,1.4
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora divaricata,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora donei,105,,,,,,,,,,,1,105,10.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora hyacinthus,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora intermedia,37,,,,,,,,,,,1,37,3.7
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora millepora,10,,,,,,,,,,,1,10,1
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora muricata,45,50,,,,,,,,,,2,95,9.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Acropora nasuta,18,,,,,,,,,,,1,18,1.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Diploastrea heliopora,46,,,,,,,,,,,1,46,4.6
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Goniastrea edwardsi,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Goniastrea stelligera,10,,,,,,,,,,,1,10,1
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Porites cylindrica,12,,,,,,,,,,,1,12,1.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Porites massive,30,42,,,,,,,,,,2,72,7.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,2,AHB,,Stylophora pistillata,6,10,,,,,,,,,,2,16,1.6
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,baeodactyla,12,,,,,,,,,,,1,12,1.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Acropora florida,55,,,,,,,,,,,1,55,5.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Acropora muricata,11,,,,,,,,,,,1,11,1.1
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Acropora tenuis,13,,,,,,,,,,,1,13,1.3
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Astreopora myriophthalma,55,,,,,,,,,,,1,55,5.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Cyphastrea microphthalma,12,,,,,,,,,,,1,12,1.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Dipsastreae matthaii,10,,,,,,,,,,,1,10,1
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Dipsastreae pallida,12,,,,,,,,,,,1,12,1.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Lobophyllia hemprichii,9,,,,,,,,,,,1,9,0.9
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Montipora tuberculosa,8,,,,,,,,,,,1,8,0.8
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Pavona venosa,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,3,AHB,,Seriatopora hystrix,10,14,22,,,,,,,,,3,46,4.6
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Acropora cytherea,22,12,,,,,,,,,,2,34,3.4
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Acropora hyacinthus,27,,,,,,,,,,,1,27,2.7
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Acropora otteri,45,,,,,,,,,,,1,45,4.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Acropora muricata,16,,,,,,,,,,,1,16,1.6
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Dipsastreae matthaii,5,,,,,,,,,,,1,5,0.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Platygyra daedalea,25,8,,,,,,,,,,2,33,3.3
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Porites cylindrica,35,,,,,,,,,,,1,35,3.5
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Seriatopora hystrix,22,,,,,,,,,,,1,22,2.2
+09/09/2013,Mid Reef,Mid Reef site 2,1444_2,2,4,AHB,,Stylophora pistillata,21,12,22,,,,,,,,,3,55,5.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,baeodactyla,23,10,,,,,,,,,,2,33,3.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Acropora gemmifera,10,13,,,,,,,,,,2,23,2.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Acropora hyacinthus,25,12,45,47,,,,,,,,4,129,12.9
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Acropora spathulata,9,,,,,,,,,,,1,9,0.9
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Isopora palifera,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Platygyra sinensis,45,,,,,,,,,,,1,45,4.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Pocillopora damicornis,12,,,,,,,,,,,1,12,1.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Pocillopora verrucosa,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,1,AHB,,Porites massive,21,,,,,,,,,,,1,21,2.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,baeodactyla,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Acropora gemmifera,15,,,,,,,,,,,1,15,1.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Acropora nana,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Acropora spathulata,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Goniastrea retiformis,12,,,,,,,,,,,1,12,1.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Pocillopora damicornis,11,8,16,,,,,,,,,3,35,3.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Pocillopora eydouxi,15,,,,,,,,,,,1,15,1.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,2,AHB,,Pocillopora verrucosa,27,10,,,,,,,,,,2,37,3.7
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora digitifera,20,,,,,,,,,,,1,20,2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora gemmifera,13,24,,,,,,,,,,2,37,3.7
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora hyacinthus,25,22,10,10,35,,,,,,,5,102,10.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora lutkeni,14,,,,,,,,,,,1,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora spathulata,14,,,,,,,,,,,1,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Acropora valida,8,9,11,15,,,,,,,,4,43,4.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Favites halicora,14,,,,,,,,,,,1,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Isopora palifera,4,,,,,,,,,,,1,4,0.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Pocillopora damicornis,8,9,,,,,,,,,,2,17,1.7
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Pocillopora eydouxi,16,,,,,,,,,,,1,16,1.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Pocillopora meandrina,13,24,,,,,,,,,,2,37,3.7
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,3,AHB,,Pocillopora verrucosa,11,,,,,,,,,,,1,11,1.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,baeodactyla,9,7,8,12,10,,,,,,,5,46,4.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Acropora gemmifera,11,7,,,,,,,,,,2,18,1.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Acropora hyacinthus,40,64,,,,,,,,,,2,104,10.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Acropora lutkeni,18,,,,,,,,,,,1,18,1.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Acropora spathulata,12,,,,,,,,,,,1,12,1.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Pocillopora eydouxi,22,,,,,,,,,,,1,22,2.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Pocillopora meandrina,18,,,,,,,,,,,1,18,1.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 1,1487_1,2,4,AHB,,Pocillopora verrucosa,8,14,12,14,,,,,,,,4,48,4.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Acropora cytherea,71,23,,,,,,,,,,2,94,9.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,baeodactyla,25,6,,,,,,,,,,2,31,3.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Acropora lutkeni,13,,,,,,,,,,,1,13,1.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Favites halicora,11,,,,,,,,,,,1,11,1.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Pocillopora verrucosa,13,10,,,,,,,,,,2,23,2.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,1,AHB,,Stylophora pistillata,3,,,,,,,,,,,1,3,0.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,baeodactyla,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Acropora humilis,13,,,,,,,,,,,1,13,1.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Acropora hyacinthus,11,,,,,,,,,,,1,11,1.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Acropora polystoma,14,,,,,,,,,,,1,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Isopora palifera,21,,,,,,,,,,,1,21,2.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Pocillopora damicornis,5,,,,,,,,,,,1,5,0.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Pocillopora verrucosa,11,12,,,,,,,,,,2,23,2.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,2,AHB,,Porites vaughani,6,8,,,,,,,,,,2,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Acropora cerealis,9,,,,,,,,,,,1,9,0.9
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Acropora hyacinthus,31,30,,,,,,,,,,2,61,6.1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Favites magnistellata,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Goniastrea pectinata,9,,,,,,,,,,,1,9,0.9
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Pocillopora damicornis,12,18,13,,,,,,,,,3,43,4.3
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,3,AHB,,Pocillopora meandrina,12,28,,,,,,,,,,2,40,4
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Acropora florida,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Acropora hyacinthus,23,45,27,,,,,,,,,3,95,9.5
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Acropora sarmentosa,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Acropora yongei,17,,,,,,,,,,,1,17,1.7
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Dipsastraea truncata,12,,,,,,,,,,,1,12,1.2
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Favites magnistellata,18,,,,,,,,,,,1,18,1.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Lobophyllia hemprichii,9,,,,,,,,,,,1,9,0.9
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Lobophyllia radians,26,,,,,,,,,,,1,26,2.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Pocillopora verrucosa,10,,,,,,,,,,,1,10,1
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,8017,Porites rus,14,,,,,,,,,,,1,14,1.4
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Porites vaughani,8,,,,,,,,,,,1,8,0.8
+10/09/2013,Rocky Islet B,Rocky Islet B site 2,1487_2,2,4,AHB,,Seriatopora hystrix,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Acropora florida,25,,,,,,,,,,,1,25,2.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Acropora hyacinthus,13,,,,,,,,,,,1,13,1.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Acropora intermedia,31,,,,,,,,,,,1,31,3.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Acropora spathulata,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Astrea curta,7,,,,,,,,,,,1,7,0.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Dipsastreae pallida,5,,,,,,,,,,,1,5,0.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Galaxea fascicularis,17,5,,,,,,,,,,2,22,2.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Leptastrea transversa,9,,,,,,,,,,,1,9,0.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Leptoria phrygia,17,,,,,,,,,,,1,17,1.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Lobophyllia radians,14,,,,,,,,,,,1,14,1.4
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Pocillopora damicornis,23,10,22,,,,,,,,,3,55,5.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Pocillopora eydouxi,15,,,,,,,,,,,1,15,1.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Pocillopora verrucosa,10,12,,,,,,,,,,2,22,2.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Porites cylindrica,36,,,,,,,,,,,1,36,3.6
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,8082,Porites horizontalata,45,,,,,,,,,,,1,45,4.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Porites lichen,16,,,,,,,,,,,1,16,1.6
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Porites massive,32,8,52,45,11,,,,,,,5,148,14.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,1,AHB,,Stylophora pistillata,13,,,,,,,,,,,1,13,1.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Acropora florida,36,,,,,,,,,,,1,36,3.6
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Acropora nasuta,17,,,,,,,,,,,1,17,1.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Acropora sarmentosa,19,,,,,,,,,,,1,19,1.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Coscinaraea columna,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Dipsastreae matthaii,9,,,,,,,,,,,1,9,0.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Favites halicora,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Galaxea fascicularis,6,,,,,,,,,,,1,6,0.6
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Goniastrea pectinata,11,24,13,,,,,,,,,3,48,4.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Hydnophora exesa,17,,,,,,,,,,,1,17,1.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Lobophyllia radians,8,16,,,,,,,,,,2,24,2.4
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Merulina ampliata,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Platygyra daedalea,13,,,,,,,,,,,1,13,1.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Pleuractis granulosa,10,11,,,,,,,,,,2,21,2.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Pocillopora damicornis,7,22,,,,,,,,,,2,29,2.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Porites annae,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Porites lichen,14,,,,,,,,,,,1,14,1.4
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,2,AHB,,Stylophora pistillata,35,,,,,,,,,,,1,35,3.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Acropora tenuis,14,35,14,,,,,,,,,3,63,6.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Favites halicora,7,,,,,,,,,,,1,7,0.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Galaxea fascicularis,6,5,,,,,,,,,,2,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Goniastrea pectinata,7,,,,,,,,,,,1,7,0.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Lobophyllia corymbosa,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Lobophyllia hemprichii,15,,,,,,,,,,,1,15,1.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,8083,Montipora efflorescens,7,,,,,,,,,,,1,7,0.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Pachyseris speciosa,27,,,,,,,,,,,1,27,2.7
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Platygyra daedalea,15,,,,,,,,,,,1,15,1.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Platygyra pini,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Pleuractis paumotensis,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Pocillopora damicornis,13,12,30,,,,,,,,,3,55,5.5
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Pocillopora verrucosa,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Porites cylindrica,13,,,,,,,,,,,1,13,1.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Porites massive,13,6,,,,,,,,,,2,19,1.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,3,AHB,,Porites vaughani,13,8,,,,,,,,,,2,21,2.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,8087,Acropora efflorescens,62,,,,,,,,,,,1,62,6.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Acropora hyacinthus,48,35,,,,,,,,,,2,83,8.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Acropora nasuta,20,,,,,,,,,,,1,20,2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Acropora selago,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Caulastrea furcata,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Dipsastreae pallida,26,,,,,,,,,,,1,26,2.6
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Herpolitha limax,3,,,,,,,,,,,1,3,0.3
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Pavona clavus,48,,,,,,,,,,,1,48,4.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Pleuractis granulosa,8,11,,,,,,,,,,2,19,1.9
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Pocillopora damicornis,28,,,,,,,,,,,1,28,2.8
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Pocillopora verrucosa,22,,,,,,,,,,,1,22,2.2
+11/09/2013,Jess Reef,Jess Reef site 1,1544_1,2,4,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,8121,Acropora austera,6,,,,,,,,,,,1,6,0.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Acropora grandis,13,15,,,,,,,,,,2,28,2.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Acropora hyacinthus,25,,,,,,,,,,,1,25,2.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Acropora loripes,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Acropora nasuta,5,16,,,,,,,,,,2,21,2.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Acropora spathulata,24,,,,,,,,,,,1,24,2.4
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Cyphastrea microphthalma,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Diploastrea heliopora,105,,,,,,,,,,,1,105,10.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Echinopora gemmacea,26,,,,,,,,,,,1,26,2.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Galaxea fascicularis,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Goniastrea pectinata,5,16,,,,,,,,,,2,21,2.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Goniastrea retiformis,16,,,,,,,,,,,1,16,1.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Lithophyllon repanda,5,,,,,,,,,,,1,5,0.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Lobactis scutaria,5,,,,,,,,,,,1,5,0.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Lobophyllia hemprichii,11,13,,,,,,,,,,2,24,2.4
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Lobophyllia radians,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Montipora aequituberculata,105,,,,,,,,,,,1,105,10.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Pavona venosa,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Platygyra pini,62,,,,,,,,,,,1,62,6.2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Pocillopora damicornis,26,15,,,,,,,,,,2,41,4.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Porites annae,13,,,,,,,,,,,1,13,1.3
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Porites massive,8,12,,,,,,,,,,2,20,2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Psammocora contigua,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,1,AHB,,Stylophora pistillata,6,13,,,,,,,,,,2,19,1.9
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Acropora anthocercis,22,,,,,,,,,,,1,22,2.2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Acropora cytherea,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Acropora hyacinthus,39,,,,,,,,,,,1,39,3.9
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Acropora nasuta,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Ctenactis crassa,5,,,,,,,,,,,1,5,0.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Diploastrea heliopora,140,,,,,,,,,,,1,140,14
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Galaxea fascicularis,9,8,,,,,,,,,,2,17,1.7
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Lithophyllon repanda,12,,,,,,,,,,,1,12,1.2
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Porites massive,16,87,,,,,,,,,,2,103,10.3
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,2,AHB,,Stylophora pistillata,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Acropora digitifera,26,,,,,,,,,,,1,26,2.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Acropora nasuta,11,,,,,,,,,,,1,11,1.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Acropora sarmentosa,17,,,,,,,,,,,1,17,1.7
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Goniastrea pectinata,14,,,,,,,,,,,1,14,1.4
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,8125,Montipora grisea,10,,,,,,,,,,,1,10,1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Oxypora lacera,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Pocillopora damicornis,13,12,16,,,,,,,,,3,41,4.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Porites massive,21,10,35,60,70,,,,,,,5,196,19.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,3,AHB,,Stylophora pistillata,16,,,,,,,,,,,1,16,1.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Acropora cerealis,14,,,,,,,,,,,1,14,1.4
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Acropora hyacinthus,35,,,,,,,,,,,1,35,3.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Acropora nasuta,35,,,,,,,,,,,1,35,3.5
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Acropora sarmentosa,16,,,,,,,,,,,1,16,1.6
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Acropora tenuis,40,,,,,,,,,,,1,40,4
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Galaxea fascicularis,8,,,,,,,,,,,1,8,0.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Pocillopora damicornis,18,,,,,,,,,,,1,18,1.8
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Porites massive,31,5,15,,,,,,,,,3,51,5.1
+11/09/2013,Jess Reef,Jess Reef site 2,1544_2,2,4,AHB,,Stylophora pistillata,20,,,,,,,,,,,1,20,2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Acropora abrotanoides,16,,,,,,,,,,,1,16,1.6
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,baeodactyla,22,15,,,,,,,,,,2,37,3.7
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Acropora hyacinthus,55,6,13,,,,,,,,,3,74,7.4
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Acropora otteri,10,12,,,,,,,,,,2,22,2.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Isopora palifera,7,15,7,,,,,,,,,3,29,2.9
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,8163,Platygyra sinensis,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Pocillopora eydouxi,22,,,,,,,,,,,1,22,2.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Pocillopora meandrina,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,1,AHB,,Stylophora pistillata,5,,,,,,,,,,,1,5,0.5
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Acropora abrotanoides,140,,,,,,,,,,,1,140,14
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Acropora otteri,24,,,,,,,,,,,1,24,2.4
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Acropora secale,11,,,,,,,,,,,1,11,1.1
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Acropora valida,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Isopora palifera,14,21,,,,,,,,,,2,35,3.5
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Pocillopora eydouxi,31,,,,,,,,,,,1,31,3.1
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Pocillopora verrucosa,10,8,22,,,,,,,,,3,40,4
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,2,AHB,,Porites massive,15,,,,,,,,,,,1,15,1.5
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Acropora cytherea,60,,,,,,,,,,,1,60,6
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Acropora gemmifera,22,18,,,,,,,,,,2,40,4
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Acropora otteri,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Acropora nana,9,,,,,,,,,,,1,9,0.9
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Acropora nasuta,9,,,,,,,,,,,1,9,0.9
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Echinopora lamellosa,20,,,,,,,,,,,1,20,2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Galaxea fascicularis,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Goniastrea retiformis,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Isopora palifera,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Lobophyllia radians,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Montipora caliculata,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Pocillopora meandrina,20,18,7,,,,,,,,,3,45,4.5
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,3,AHB,,Pocillopora verrucosa,20,,,,,,,,,,,1,20,2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,baeodactyla,8,15,,,,,,,,,,2,23,2.3
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Acropora hyacinthus,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Acropora otteri,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Acropora nasuta,20,,,,,,,,,,,1,20,2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Favites magnistellata,11,,,,,,,,,,,1,11,1.1
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Goniastrea retiformis,23,,,,,,,,,,,1,23,2.3
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Goniastrea stelligera,17,41,,,,,,,,,,2,58,5.8
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Lobophyllia radians,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Pocillopora damicornis,8,21,13,,,,,,,,,3,42,4.2
+12/09/2013,Morning Reef,Morning Reef site 1,1595_1,2,4,AHB,,Pocillopora meandrina,27,,,,,,,,,,,1,27,2.7
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,baeodactyla,22,7,,,,,,,,,,2,29,2.9
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Acropora gemmifera,14,7,,,,,,,,,,2,21,2.1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Acropora hyacinthus,31,42,10,19,,,,,,,,4,102,10.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Acropora nana,5,,,,,,,,,,,1,5,0.5
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Acropora robusta,35,,,,,,,,,,,1,35,3.5
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Acropora valida,10,14,,,,,,,,,,2,24,2.4
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,8200,Montipora caliculata,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,1,AHB,,Pocillopora damicornis,16,19,11,13,7,12,6,6,15,,,9,105,10.5
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Acropora gemmifera,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Acropora humilis,8,11,,,,,,,,,,2,19,1.9
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Acropora listeri,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Acropora nana,11,5,,,,,,,,,,2,16,1.6
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Acropora valida,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Isopora palifera,13,8,,,,,,,,,,2,21,2.1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Montipora caliculata,11,25,,,,,,,,,,2,36,3.6
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Pocillopora damicornis,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,2,AHB,,Pocillopora meandrina,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acanthastrea echinata,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora digitifera,12,,,,,,,,,,,1,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora gemmifera,22,,,,,,,,,,,1,22,2.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora hyacinthus,8,,,,,,,,,,,1,8,0.8
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora listeri,21,,,,,,,,,,,1,21,2.1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora nana,5,7,,,,,,,,,,2,12,1.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora robusta,25,,,,,,,,,,,1,25,2.5
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Acropora valida,9,,,,,,,,,,,1,9,0.9
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Hydnophora exesa,10,,,,,,,,,,,1,10,1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Isopora palifera,4,,,,,,,,,,,1,4,0.4
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Pocillopora damicornis,16,8,11,8,,,,,,,,4,43,4.3
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Pocillopora meandrina,11,,,,,,,,,,,1,11,1.1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Pocillopora verrucosa,6,8,,,,,,,,,,2,14,1.4
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,3,AHB,,Porites murrayensis,9,10,,,,,,,,,,2,19,1.9
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,baeodactyla,13,,,,,,,,,,,1,13,1.3
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Acropora gemmifera,14,,,,,,,,,,,1,14,1.4
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Acropora hyacinthus,6,9,20,14,24,14,,,,,,6,87,8.7
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Acropora nasuta,11,,,,,,,,,,,1,11,1.1
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Acropora secale,32,,,,,,,,,,,1,32,3.2
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Acropora valida,25,10,12,15,14,,,,,,,5,76,7.6
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Isopora palifera,8,20,,,,,,,,,,2,28,2.8
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Montipora foveolata,6,,,,,,,,,,,1,6,0.6
+12/09/2013,Morning Reef,Morning Reef site 2,1595_2,2,4,AHB,,Pocillopora damicornis,10,8,8,,,,,,,,,3,26,2.6
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acanthastrea echinata,15,,,,,,,,,,,1,15,1.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acropora hyacinthus,10,8,6,,,,,,,,,3,24,2.4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acropora monticulosa,75,,,,,,,,,,,1,75,7.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acropora nana,9,,,,,,,,,,,1,9,0.9
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acropora nasuta,8,8,,,,,,,,,,2,16,1.6
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Acropora robusta,13,,,,,,,,,,,1,13,1.3
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Favites halicora,6,,,,,,,,,,,1,6,0.6
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Goniastrea retiformis,14,,,,,,,,,,,1,14,1.4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Hydnophora microconos,11,,,,,,,,,,,1,11,1.1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Isopora palifera,7,10,16,8,13,10,15,,,,,7,79,7.9
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Pocillopora eydouxi,14,,,,,,,,,,,1,14,1.4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,1,AHB,,Pocillopora verrucosa,20,,,,,,,,,,,1,20,2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Acropora hyacinthus,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Acropora otteri,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Acropora nasuta,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Acropora robusta,45,,,,,,,,,,,1,45,4.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Acropora valida,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Echinopora gemmacea,30,,,,,,,,,,,1,30,3
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Isopora palifera,12,22,,,,,,,,,,2,34,3.4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,8283,Montipora peltiformis,12,,,,,,,,,,,1,12,1.2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,2,AHB,,Pocillopora meandrina,20,,,,,,,,,,,1,20,2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Acropora austera,14,,,,,,,,,,,1,14,1.4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Acropora digitifera,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,baeodactyla,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Acropora otteri,13,3,,,,,,,,,,2,16,1.6
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Acropora valida,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Acropora verweyi,12,,,,,,,,,,,1,12,1.2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Goniastrea retiformis,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Isopora palifera,10,8,,,,,,,,,,2,18,1.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,8284,Montipora efflorescens,13,,,,,,,,,,,1,13,1.3
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Pocillopora damicornis,9,13,,,,,,,,,,2,22,2.2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Pocillopora eydouxi,25,,,,,,,,,,,1,25,2.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Pocillopora verrucosa,11,,,,,,,,,,,1,11,1.1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,3,AHB,,Porites murrayensis,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Acanthastrea echinata,15,,,,,,,,,,,1,15,1.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Acropora otteri,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Acropora microclados,11,,,,,,,,,,,1,11,1.1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Acropora monticulosa,82,,,,,,,,,,,1,82,8.2
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Acropora nana,10,15,,,,,,,,,,2,25,2.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,8286,Coscinaraea columna,35,,,,,,,,,,,1,35,3.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Echinopora gemmacea,17,,,,,,,,,,,1,17,1.7
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Isopora palifera,14,10,16,,,,,,,,,3,40,4
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Lobophyllia radians,10,,,,,,,,,,,1,10,1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,8287,Montipora caliculata,5,,,,,,,,,,,1,5,0.5
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Platygyra sinensis,11,,,,,,,,,,,1,11,1.1
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+13/09/2013,Michaelmas Reef,Michaelmas Reef site 1,1655_1,2,4,AHB,,Stylophora pistillata,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Acropora cerealis,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Acropora humilis,7,,,,,,,,,,,1,7,0.7
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Acropora hyacinthus,22,14,10,22,11,,,,,,,5,79,7.9
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Acropora intermedia,16,,,,,,,,,,,1,16,1.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Acropora yongei,21,15,,,,,,,,,,2,36,3.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Astrea curta,6,,,,,,,,,,,1,6,0.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,8390,Cyphastrea microphthalma,10,14,,,,,,,,,,2,24,2.4
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Dipsastreae lizardensis,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Dipsastreae matthaii,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Echinopora gemmacea,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Favites halicora,9,,,,,,,,,,,1,9,0.9
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,8388,Mycedium elephantotus,12,8,,,,,,,,,,2,20,2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Pocillopora verrucosa,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Porites vaughani,9,,,,,,,,,,,1,9,0.9
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,1,AHB,,Stylophora pistillata,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora hyacinthus,10,20,11,7,11,13,,,,,,6,72,7.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora listeri,26,,,,,,,,,,,1,26,2.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora muricata,35,,,,,,,,,,,1,35,3.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora nasuta,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora valida,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Acropora yongei,61,,,,,,,,,,,1,61,6.1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,8393,Caulastrea furcata,25,,,,,,,,,,,1,25,2.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,8394,Cyphastrea microphthalma,5,,,,,,,,,,,1,5,0.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Echinopora gemmacea,11,20,,,,,,,,,,2,31,3.1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Favites halicora,6,,,,,,,,,,,1,6,0.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Goniastrea pectinata,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Montipora aequituberculata,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Mycedium elephantotus,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Platygyra daedalea,25,7,,,,,,,,,,2,32,3.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Pleisastrea versipora,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Porites annae,9,,,,,,,,,,,1,9,0.9
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,2,AHB,,Seriatopora hystrix,5,8,18,10,16,,,,,,,5,57,5.7
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora austera,25,20,20,,,,,,,,,3,65,6.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora donei,35,,,,,,,,,,,1,35,3.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora hyacinthus,15,14,11,,,,,,,,,3,40,4
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora muricata,22,32,31,,,,,,,,,3,85,8.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Acropora yongei,22,16,,,,,,,,,,2,38,3.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Echinopora gemmacea,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Favites halicora,6,,,,,,,,,,,1,6,0.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Galaxea fascicularis,15,6,,,,,,,,,,2,21,2.1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Hydnophora grandis,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Pleuractis granulosa,13,22,,,,,,,,,,2,35,3.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Pocillopora eydouxi,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Porites annae,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,3,AHB,,Seriatopora hystrix,31,5,16,,,,,,,,,3,52,5.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora abrotanoides,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora austera,16,,,,,,,,,,,1,16,1.6
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora gemmifera,23,,,,,,,,,,,1,23,2.3
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora humilis,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora hyacinthus,10,10,8,,,,,,,,,3,28,2.8
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora latistella,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora nasuta,17,,,,,,,,,,,1,17,1.7
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Acropora spathulata,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Pocillopora damicornis,16,24,,,,,,,,,,2,40,4
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Porites annae,22,,,,,,,,,,,1,22,2.2
+14/09/2013,Peart Reef,Peart Reef site 1,1746_1,2,4,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora digitifera,11,17,,,,,,,,,,2,28,2.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,baeodactyla,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora gemmifera,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora hyacinthus,47,63,34,10,32,42,,,,,,6,228,22.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora listeri,43,,,,,,,,,,,1,43,4.3
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora otteri,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora muricata,31,,,,,,,,,,,1,31,3.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora nasuta,16,,,,,,,,,,,1,16,1.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Acropora valida,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Goniastrea pectinata,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Montipora aequituberculata,16,17,,,,,,,,,,2,33,3.3
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,1,AHB,,Stylophora pistillata,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora cerealis,9,,,,,,,,,,,1,9,0.9
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora gemmifera,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora hyacinthus,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora monticulosa,22,,,,,,,,,,,1,22,2.2
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora nasuta,16,,,,,,,,,,,1,16,1.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Acropora tenuis,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Dipsastreae speciosa,17,,,,,,,,,,,1,17,1.7
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Echinopora gemmacea,21,,,,,,,,,,,1,21,2.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Favites halicora,14,,,,,,,,,,,1,14,1.4
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Montipora aequituberculata,6,,,,,,,,,,,1,6,0.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,8449,Montipora efflorescens,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Porites annae,14,,,,,,,,,,,1,14,1.4
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,2,AHB,,Stylophora pistillata,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora cytherea,25,,,,,,,,,,,1,25,2.5
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora digitifera,10,,,,,,,,,,,1,10,1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,baeodactyla,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora gemmifera,13,,,,,,,,,,,1,13,1.3
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora hyacinthus,10,8,25,29,22,,,,,,,5,94,9.4
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora otteri,14,,,,,,,,,,,1,14,1.4
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora muricata,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora nasuta,6,12,8,,,,,,,,,3,26,2.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora spathulata,12,,,,,,,,,,,1,12,1.2
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora tenuis,10,17,,,,,,,,,,2,27,2.7
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Acropora valida,15,,,,,,,,,,,1,15,1.5
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Hydnophora rigida,24,,,,,,,,,,,1,24,2.4
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Isopora palifera,22,,,,,,,,,,,1,22,2.2
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,3,AHB,,Pocillopora damicornis,9,,,,,,,,,,,1,9,0.9
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,baeodactyla,8,,,,,,,,,,,1,8,0.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora hyacinthus,38,70,10,,,,,,,,,3,118,11.8
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora intermedia,15,12,60,,,,,,,,,3,87,8.7
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora otteri,41,,,,,,,,,,,1,41,4.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora monticulosa,6,,,,,,,,,,,1,6,0.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora nasuta,12,10,,,,,,,,,,2,22,2.2
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Acropora valida,16,,,,,,,,,,,1,16,1.6
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Pocillopora damicornis,8,9,,,,,,,,,,2,17,1.7
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Porites annae,11,,,,,,,,,,,1,11,1.1
+14/09/2013,Peart Reef,Peart Reef site 2,1746_2,2,4,AHB,,Stylophora pistillata,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Acropora cerealis,10,,,,,,,,,,,1,10,1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Acropora digitifera,14,20,,,,,,,,,,2,34,3.4
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Acropora gemmifera,7,10,,,,,,,,,,2,17,1.7
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Acropora robusta,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Porites annae,7,,,,,,,,,,,1,7,0.7
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Porites massive,5,8,5,4,,,,,,,,4,22,2.2
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,1,AHB,,Porites murrayensis,11,,,,,,,,,,,1,11,1.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acanthastrea echinata,16,,,,,,,,,,,1,16,1.6
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acropora digitifera,11,,,,,,,,,,,1,11,1.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,baeodactyla,22,5,11,12,15,,,,,,,5,65,6.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acropora gemmifera,10,10,,,,,,,,,,2,20,2
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acropora humilis,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acropora hyacinthus,8,,,,,,,,,,,1,8,0.8
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Acropora nasuta,7,,,,,,,,,,,1,7,0.7
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Isopora palifera,11,,,,,,,,,,,1,11,1.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Platygyra daedalea,14,,,,,,,,,,,1,14,1.4
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Pocillopora damicornis,7,,,,,,,,,,,1,7,0.7
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Pocillopora verrucosa,6,,,,,,,,,,,1,6,0.6
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,2,AHB,,Porites murrayensis,10,,,,,,,,,,,1,10,1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Acropora digitifera,33,20,,,,,,,,,,2,53,5.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,baeodactyla,5,20,15,32,8,15,20,,,,,7,115,11.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Acropora hyacinthus,20,7,8,,,,,,,,,3,35,3.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,8560,Acropora otteri,14,6,12,,,,,,,,,3,32,3.2
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Acropora lutkeni,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Acropora valida,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Lobophyllia radians,15,,,,,,,,,,,1,15,1.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Platygyra sinensis,26,,,,,,,,,,,1,26,2.6
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,3,AHB,,Pocillopora verrucosa,15,6,8,,,,,,,,,3,29,2.9
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,baeodactyla,13,15,,,,,,,,,,2,28,2.8
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora gemmifera,26,,,,,,,,,,,1,26,2.6
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora hyacinthus,10,,,,,,,,,,,1,10,1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora intermedia,21,,,,,,,,,,,1,21,2.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora otteri,17,,,,,,,,,,,1,17,1.7
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora lutkeni,21,22,,,,,,,,,,2,43,4.3
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora nasuta,21,,,,,,,,,,,1,21,2.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora robusta,14,,,,,,,,,,,1,14,1.4
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Acropora valida,8,,,,,,,,,,,1,8,0.8
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Pocillopora eydouxi,22,18,15,,,,,,,,,3,55,5.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Pocillopora verrucosa,21,,,,,,,,,,,1,21,2.1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Porites lichen,10,,,,,,,,,,,1,10,1
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Porites massive,5,,,,,,,,,,,1,5,0.5
+15/09/2013,Bramble Reef,Bramble Reef site 1,1843_1,2,4,AHB,,Porites murrayensis,12,,,,,,,,,,,1,12,1.2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,1,AHB,,Acropora cerealis,6,,,,,,,,,,,1,6,0.6
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,1,AHB,,baeodactyla,22,,,,,,,,,,,1,22,2.2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,1,AHB,,Acropora hyacinthus,25,16,65,21,8,88,,,,,,6,223,22.3
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,1,AHB,,Acropora polystoma,28,21,,,,,,,,,,2,49,4.9
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,1,AHB,,Pocillopora verrucosa,14,,,,,,,,,,,1,14,1.4
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,2,AHB,,Acropora cerealis,22,,,,,,,,,,,1,22,2.2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,2,AHB,,Acropora cytherea,42,72,,,,,,,,,,2,114,11.4
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,2,AHB,,Acropora digitifera,20,18,,,,,,,,,,2,38,3.8
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,2,AHB,,Acropora gemmifera,28,,,,,,,,,,,1,28,2.8
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,2,AHB,,Acropora hyacinthus,59,26,36,40,22,18,55,,,,,7,256,25.6
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora digitifera,22,30,11,25,,,,,,,,4,88,8.8
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,baeodactyla,17,12,,,,,,,,,,2,29,2.9
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora gemmifera,16,,,,,,,,,,,1,16,1.6
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora humilis,9,,,,,,,,,,,1,9,0.9
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora hyacinthus,21,8,42,22,,,,,,,,4,93,9.3
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora nasuta,20,11,,,,,,,,,,2,31,3.1
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora secale,42,,,,,,,,,,,1,42,4.2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,3,AHB,,Acropora spathulata,18,,,,,,,,,,,1,18,1.8
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Acropora cytherea,45,125,,,,,,,,,,2,170,17
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Acropora digitifera,26,20,8,,,,,,,,,3,54,5.4
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,baeodactyla,12,17,,,,,,,,,,2,29,2.9
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Acropora hyacinthus,72,26,31,7,42,41,30,,,,,7,249,24.9
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Acropora nana,11,,,,,,,,,,,1,11,1.1
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Acropora valida,12,,,,,,,,,,,1,12,1.2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,,Isopora palifera,20,,,,,,,,,,,1,20,2
+15/09/2013,Otter Reef,Otter Reef site 1,1808_1,2,4,AHB,8490,Montipora venosa,14,,,,,,,,,,,1,14,1.4
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,1,AHB,,Acropora digitifera,17,11,,,,,,,,,,2,28,2.8
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,1,AHB,,Acropora gemmifera,11,10,,,,,,,,,,2,21,2.1
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,2,AHB,,Acropora cerealis,18,,,,,,,,,,,1,18,1.8
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,2,AHB,,Acropora gemmifera,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,2,AHB,,Favites magnistellata,12,,,,,,,,,,,1,12,1.2
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,2,AHB,8519,Montipora grisea,22,,,,,,,,,,,1,22,2.2
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,2,AHB,,Platygyra lamellina,7,,,,,,,,,,,1,7,0.7
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,3,AHB,,baeodactyla,13,,,,,,,,,,,1,13,1.3
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,3,AHB,,Echinopora gemmacea,6,,,,,,,,,,,1,6,0.6
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,3,AHB,,Platygyra sinensis,12,,,,,,,,,,,1,12,1.2
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,4,AHB,,Acropora digitifera,30,25,,,,,,,,,,2,55,5.5
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,4,AHB,,Acropora otteri,14,,,,,,,,,,,1,14,1.4
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,4,AHB,,Acropora lutkeni,12,,,,,,,,,,,1,12,1.2
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,4,AHB,,Acropora valida,10,10,12,,,,,,,,,3,32,3.2
+15/09/2013,Otter Reef,Otter Reef site 2,1808_2,2,4,AHB,,Platygyra daedalea,11,,,,,,,,,,,1,11,1.1
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora cerealis,18,,,,,,,,,,,1,18,1.8
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora gemmifera,35,,,,,,,,,,,1,35,3.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora grandis,20,,,,,,,,,,,1,20,2
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora humilis,10,,,,,,,,,,,1,10,1
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora sarmentosa,21,,,,,,,,,,,1,21,2.1
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Acropora spathulata,25,,,,,,,,,,,1,25,2.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Pocillopora damicornis,11,,,,,,,,,,,1,11,1.1
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Pocillopora eydouxi,75,,,,,,,,,,,1,75,7.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Porites annae,8,10,,,,,,,,,,2,18,1.8
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,1,AHB,,Seriatopora hystrix,14,,,,,,,,,,,1,14,1.4
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Acropora gemmifera,35,,,,,,,,,,,1,35,3.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Acropora hyacinthus,13,,,,,,,,,,,1,13,1.3
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Acropora spathulata,43,,,,,,,,,,,1,43,4.3
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Hydnophora rigida,25,,,,,,,,,,,1,25,2.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Porites annae,4,,,,,,,,,,,1,4,0.4
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Seriatopora hystrix,12,,,,,,,,,,,1,12,1.2
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,2,AHB,,Stylophora pistillata,5,,,,,,,,,,,1,5,0.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Acropora intermedia,24,,,,,,,,,,,1,24,2.4
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Acropora muricata,8,,,,,,,,,,,1,8,0.8
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Acropora nasuta,30,,,,,,,,,,,1,30,3
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Acropora spathulata,20,5,12,,,,,,,,,3,37,3.7
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Galaxea fascicularis,9,,,,,,,,,,,1,9,0.9
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Goniastrea retiformis,6,,,,,,,,,,,1,6,0.6
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,3,AHB,,Porites annae,5,,,,,,,,,,,1,5,0.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,4,AHB,,baeodactyla,12,,,,,,,,,,,1,12,1.2
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,4,AHB,,Acropora humilis,15,,,,,,,,,,,1,15,1.5
+16/09/2013,Bramble Reef,Bramble Reef site 2,1843_2,2,4,AHB,,Acropora spathulata,42,,,,,,,,,,,1,42,4.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora austera,33,16,11,,,,,,,,,3,60,6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora digitifera,12,7,16,14,10,,,,,,,5,59,5.9
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora muricata,25,,,,,,,,,,,1,25,2.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora robusta,14,11,,,,,,,,,,2,25,2.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora 77-9870,12,11,12,,,,,,,,,3,35,3.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Acropora valida,14,5,5,7,5,,,,,,,5,36,3.6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Isopora cuneata,15,30,17,,,,,,,,,3,62,6.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Montipora foveolata,23,,,,,,,,,,,1,23,2.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,1,AHB,,Stylophora pistillata,7,,,,,,,,,,,1,7,0.7
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora austera,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora cytherea,15,,,,,,,,,,,1,15,1.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora digitifera,9,13,10,11,,,,,,,,4,43,4.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora hyacinthus,7,23,12,8,7,10,,,,,,6,67,6.7
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora muricata,16,,,,,,,,,,,1,16,1.6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora nasuta,15,,,,,,,,,,,1,15,1.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora retusa,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora robusta,13,,,,,,,,,,,1,13,1.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora 77-9870,10,11,14,,,,,,,,,3,35,3.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Acropora valida,5,11,19,13,10,8,5,,,,,7,71,7.1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Favites halicora,6,,,,,,,,,,,1,6,0.6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Galaxea fascicularis,7,,,,,,,,,,,1,7,0.7
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Isopora cuneata,18,10,26,,,,,,,,,3,54,5.4
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,2,AHB,,Stylophora pistillata,5,8,6,,,,,,,,,3,19,1.9
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora cytherea,8,10,5,,,,,,,,,3,23,2.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora digitifera,8,14,,,,,,,,,,2,22,2.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora gemmifera,10,,,,,,,,,,,1,10,1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora hyacinthus,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora nasuta,11,10,,,,,,,,,,2,21,2.1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora 77-9870,11,,,,,,,,,,,1,11,1.1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Acropora valida,11,7,11,10,,,,,,,,4,39,3.9
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Hydnophora microconos,6,,,,,,,,,,,1,6,0.6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Isopora cuneata,7,8,,,,,,,,,,2,15,1.5
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,3,AHB,,Montipora foveolata,20,,,,,,,,,,,1,20,2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora anthocercis,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora digitifera,15,18,,,,,,,,,,2,33,3.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora gemmifera,13,,,,,,,,,,,1,13,1.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora hyacinthus,16,15,,,,,,,,,,2,31,3.1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora 77-9875,10,16,,,,,,,,,,2,26,2.6
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora listeri,13,,,,,,,,,,,1,13,1.3
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora nasuta,12,10,,,,,,,,,,2,22,2.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora paniculata,10,,,,,,,,,,,1,10,1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora 77-9870,12,10,,,,,,,,,,2,22,2.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Acropora valida,8,10,,,,,,,,,,2,18,1.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Dipsastreae matthaii,10,,,,,,,,,,,1,10,1
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Goniastrea stelligera,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Hydnophora pilosa,12,,,,,,,,,,,1,12,1.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Isopora cuneata,12,,,,,,,,,,,1,12,1.2
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Platygyra verweyi,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Porites lichen,8,,,,,,,,,,,1,8,0.8
+16/10/2013,Fitzroy Reef,Fitzroy Reef site 1,2360_1,2,4,AHB,,Stylophora pistillata,8,11,10,,,,,,,,,3,29,2.9
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,9884,Acropora globiceps,42,51,,,,,,,,,,2,93,9.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Acropora 77-2452,7,9,,,,,,,,,,2,16,1.6
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Acropora 77-9870,25,28,,,,,,,,,,2,53,5.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Acropora valida,8,13,,,,,,,,,,2,21,2.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Acropora verweyi,8,,,,,,,,,,,1,8,0.8
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Astreopora myriophthalma,8,12,,,,,,,,,,2,20,2
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Goniastrea retiformis,12,,,,,,,,,,,1,12,1.2
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Leptoria phrygia,12,38,,,,,,,,,,2,50,5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Montipora aequituberculata,13,,,,,,,,,,,1,13,1.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,9881,Montipora aequituberculata,16,,,,,,,,,,,1,16,1.6
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,9880,Montipora efflorescens,21,,,,,,,,,,,1,21,2.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,9879,Montipora effusa,23,,,,,,,,,,,1,23,2.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Pocillopora damicornis,5,,,,,,,,,,,1,5,0.5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,1,AHB,,Stylophora pistillata,7,14,,,,,,,,,,2,21,2.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Acropora digitifera,12,11,8,41,11,22,,,,,,6,105,10.5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,9884,Acropora globiceps,24,7,8,,,,,,,,,3,39,3.9
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Acropora 77-2452,7,8,,,,,,,,,,2,15,1.5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Acropora monticulosa,15,28,35,,,,,,,,,3,78,7.8
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Acropora retusa,21,,,,,,,,,,,1,21,2.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Acropora schmitti,83,5,,,,,,,,,,2,88,8.8
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Goniastrea retiformis,16,,,,,,,,,,,1,16,1.6
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Isopora cuneata,10,7,,,,,,,,,,2,17,1.7
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Montipora effusa,5,,,,,,,,,,,1,5,0.5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,2,AHB,,Stylophora pistillata,11,,,,,,,,,,,1,11,1.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Acropora austera,38,16,55,,,,,,,,,3,109,10.9
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Acropora otteri,23,,,,,,,,,,,1,23,2.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Acropora valida,18,9,25,,,,,,,,,3,52,5.2
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Acropora verweyi,11,22,,,,,,,,,,2,33,3.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Galaxea fascicularis,7,,,,,,,,,,,1,7,0.7
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Isopora cuneata,16,,,,,,,,,,,1,16,1.6
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Montipora aequituberculata,14,16,23,,,,,,,,,3,53,5.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Montipora caliculata,19,,,,,,,,,,,1,19,1.9
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Montipora efflorescens,22,,,,,,,,,,,1,22,2.2
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Pocillopora verrucosa,11,,,,,,,,,,,1,11,1.1
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,3,AHB,,Stylophora pistillata,13,,,,,,,,,,,1,13,1.3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Acropora digitifera,8,13,12,14,22,12,25,20,,,,8,126,12.6
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Acropora globiceps,25,5,,,,,,,,,,2,30,3
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Acropora robusta,25,6,5,18,10,24,26,,,,,7,114,11.4
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Acropora valida,8,,,,,,,,,,,1,8,0.8
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Acropora verweyi,10,5,,,,,,,,,,2,15,1.5
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Favites halicora,7,,,,,,,,,,,1,7,0.7
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Isopora cuneata,12,16,6,14,,,,,,,,4,48,4.8
+17/10/2013,Fitzroy Reef,Fitzroy Reef site 2,2360_2,2,4,AHB,,Stylophora pistillata,6,,,,,,,,,,,1,6,0.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora cytherea,35,,,,,,,,,,,1,35,3.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora 77-9875,20,26,10,32,,,,,,,,4,88,8.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora nasuta,15,9,,,,,,,,,,2,24,2.4
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora tenuis,26,,,,,,,,,,,1,26,2.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora valida,10,10,14,7,,,,,,,,4,41,4.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Acropora verweyi,8,12,7,,,,,,,,,3,27,2.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Astrea curta,5,13,,,,,,,,,,2,18,1.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Favites abdita,16,,,,,,,,,,,1,16,1.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Goniastrea stelligera,15,4,,,,,,,,,,2,19,1.9
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Isopora cuneata,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Leptastrea transversa,14,,,,,,,,,,,1,14,1.4
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,9920,Montipora cocosensis,18,,,,,,,,,,,1,18,1.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Montipora peltiformis,17,,,,,,,,,,,1,17,1.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Montipora spumosa,6,,,,,,,,,,,1,6,0.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Porites lichen,4,,,,,,,,,,,1,4,0.4
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Seriatopora hystrix,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,1,AHB,,Stylophora pistillata,6,,,,,,,,,,,1,6,0.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora humilis,6,,,,,,,,,,,1,6,0.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora 77-9875,45,26,54,,,,,,,,,3,125,12.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora latistella,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora loripes,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora nasuta,32,,,,,,,,,,,1,32,3.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora robusta,36,,,,,,,,,,,1,36,3.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora 77-9870,25,,,,,,,,,,,1,25,2.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora valida,13,,,,,,,,,,,1,13,1.3
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Acropora verweyi,13,8,,,,,,,,,,2,21,2.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Favites abdita,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Galaxea fascicularis,5,6,,,,,,,,,,2,11,1.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Goniastrea retiformis,18,,,,,,,,,,,1,18,1.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Goniastrea retiformis,8,,,,,,,,,,,1,8,0.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Goniastrea stelligera,18,17,,,,,,,,,,2,35,3.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Isopora cuneata,11,14,23,,,,,,,,,3,48,4.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Leptoria phrygia,28,,,,,,,,,,,1,28,2.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Montipora spumosa,5,,,,,,,,,,,1,5,0.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Pocillopora damicornis,5,,,,,,,,,,,1,5,0.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,2,AHB,,Seriatopora hystrix,10,17,12,,,,,,,,,3,39,3.9
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora austera,16,,,,,,,,,,,1,16,1.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora cytherea,70,,,,,,,,,,,1,70,7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora glauca,27,,,,,,,,,,,1,27,2.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora humilis,20,,,,,,,,,,,1,20,2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora 77-9875,13,18,,,,,,,,,,2,31,3.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora 77-9959,18,,,,,,,,,,,1,18,1.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora nasuta,22,,,,,,,,,,,1,22,2.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora valida,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Acropora verweyi,17,6,,,,,,,,,,2,23,2.3
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Favites abdita,18,17,,,,,,,,,,2,35,3.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Favites halicora,35,,,,,,,,,,,1,35,3.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Galaxea fascicularis,19,8,8,10,8,,,,,,,5,53,5.3
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Goniastrea pectinata,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Goniastrea retiformis,15,,,,,,,,,,,1,15,1.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Isopora cuneata,21,6,10,,,,,,,,,3,37,3.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,9922,Montipora monasteriata,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Platygyra sinensis,36,,,,,,,,,,,1,36,3.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Pocillopora damicornis,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Porites lichen,7,,,,,,,,,,,1,7,0.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Seriatopora hystrix,7,,,,,,,,,,,1,7,0.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,3,AHB,,Stylophora pistillata,26,,,,,,,,,,,1,26,2.6
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora cytherea,20,,,,,,,,,,,1,20,2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora digitifera,6,26,,,,,,,,,,2,32,3.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora glauca,14,,,,,,,,,,,1,14,1.4
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora 77-9875,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora samoensis,32,,,,,,,,,,,1,32,3.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora schmitti,27,,,,,,,,,,,1,27,2.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora 77-9870,13,,,,,,,,,,,1,13,1.3
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Acropora verweyi,16,11,,,,,,,,,,2,27,2.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Astrea curta,20,12,16,,,,,,,,,3,48,4.8
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Echinopora gemmacea,43,,,,,,,,,,,1,43,4.3
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Galaxea fascicularis,9,8,14,,,,,,,,,3,31,3.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Goniastrea stelligera,21,,,,,,,,,,,1,21,2.1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Isopora cuneata,19,20,8,12,49,50,24,,,,,7,182,18.2
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Montipora efflorescens,17,,,,,,,,,,,1,17,1.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Montipora hoffmeisteri,35,,,,,,,,,,,1,35,3.5
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Platygyra sinensis,16,31,,,,,,,,,,2,47,4.7
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Pocillopora damicornis,10,,,,,,,,,,,1,10,1
+17/10/2013,North West Reef,North West Reef site 1,2331_1,2,4,AHB,,Seriatopora hystrix,19,,,,,,,,,,,1,19,1.9
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,9977,Acropora austera,25,,,,,,,,,,,1,25,2.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora digitifera,9,20,7,8,10,15,,,,,,6,69,6.9
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,9976,Acropora glauca,14,13,,,,,,,,,,2,27,2.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora hyacinthus,48,,,,,,,,,,,1,48,4.8
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora monticulosa,82,,,,,,,,,,,1,82,8.2
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora muricata,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora nasuta,15,,,,,,,,,,,1,15,1.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora robusta,21,37,26,,,,,,,,,3,84,8.4
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Acropora spicifera,27,31,,,,,,,,,,2,58,5.8
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,9979,Acropora valida,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Goniastrea stelligera,16,,,,,,,,,,,1,16,1.6
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Isopora cuneata,10,32,8,12,11,23,10,,,,,7,106,10.6
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Platygyra sinensis,14,,,,,,,,,,,1,14,1.4
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Pocillopora damicornis,11,6,7,,,,,,,,,3,24,2.4
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,1,AHB,,Stylophora pistillata,7,,,,,,,,,,,1,7,0.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora digitifera,15,18,25,16,,,,,,,,4,74,7.4
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,9976,Acropora glauca,20,17,,,,,,,,,,2,37,3.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora globiceps,8,11,,,,,,,,,,2,19,1.9
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora monticulosa,65,,,,,,,,,,,1,65,6.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora robusta,18,45,,,,,,,,,,2,63,6.3
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora schmitti,63,,,,,,,,,,,1,63,6.3
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Acropora valida,11,12,,,,,,,,,,2,23,2.3
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Isopora cuneata,16,14,35,42,18,,,,,,,5,125,12.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Pocillopora damicornis,6,12,13,18,,,,,,,,4,49,4.9
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,2,AHB,,Seriatopora hystrix,7,,,,,,,,,,,1,7,0.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora digitifera,28,15,12,20,26,,,,,,,5,101,10.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora glauca,30,10,30,,,,,,,,,3,70,7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora globiceps,20,22,,,,,,,,,,2,42,4.2
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora humilis,15,,,,,,,,,,,1,15,1.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,9984,Acropora intermedia,35,36,,,,,,,,,,2,71,7.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora monticulosa,27,38,,,,,,,,,,2,65,6.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora robusta,6,35,14,,,,,,,,,3,55,5.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Acropora valida,11,,,,,,,,,,,1,11,1.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Isopora cuneata,36,12,18,17,10,12,,,,,,6,105,10.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,3,AHB,,Pocillopora damicornis,7,,,,,,,,,,,1,7,0.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora digitifera,26,10,,,,,,,,,,2,36,3.6
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora otteri,6,,,,,,,,,,,1,6,0.6
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora monticulosa,15,21,11,,,,,,,,,3,47,4.7
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora muricata,18,17,,,,,,,,,,2,35,3.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora robusta,35,,,,,,,,,,,1,35,3.5
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora spicifera,16,95,,,,,,,,,,2,111,11.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Acropora valida,22,18,,,,,,,,,,2,40,4
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Isopora cuneata,30,45,55,15,20,13,40,18,15,,,9,251,25.1
+17/10/2013,North West Reef,North West Reef site 2,2331_2,2,4,AHB,,Pocillopora damicornis,10,5,8,9,8,,,,,,,5,40,4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora cerealis,14,8,12,,,,,,,,,3,34,3.4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora digitifera,25,5,10,,,,,,,,,3,40,4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora gemmifera,21,,,,,,,,,,,1,21,2.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora listeri,22,13,,,,,,,,,,2,35,3.5
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora nana,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Acropora verweyi,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,73,Cyphastrea serailia,17,,,,,,,,,,,1,17,1.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Goniastrea retiformis,25,40,,,,,,,,,,2,65,6.5
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Isopora cuneata,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,74,Montipora caliculata,33,,,,,,,,,,,1,33,3.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Montipora peltiformis,20,8,,,,,,,,,,2,28,2.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Platygyra daedalea,7,,,,,,,,,,,1,7,0.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Pocillopora damicornis,10,14,7,,,,,,,,,3,31,3.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Pocillopora verrucosa,13,,,,,,,,,,,1,13,1.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,1,AHB,,Stylophora mordax,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora abrotanoides,20,,,,,,,,,,,1,20,2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora cerealis,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora digitifera,13,8,14,,,,,,,,,3,35,3.5
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora hyacinthus,15,8,,,,,,,,,,2,23,2.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora 77-2452,18,,,,,,,,,,,1,18,1.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora robusta,27,,,,,,,,,,,1,27,2.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora schmitti,24,,,,,,,,,,,1,24,2.4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,77,Acropora spicifera,19,,,,,,,,,,,1,19,1.9
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Acropora valida,5,4,8,,,,,,,,,3,17,1.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Goniastrea edwardsi,10,,,,,,,,,,,1,10,1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Goniastrea retiformis,18,18,,,,,,,,,,2,36,3.6
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Hydnophora microconos,5,,,,,,,,,,,1,5,0.5
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Isopora cuneata,9,18,,,,,,,,,,2,27,2.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Montipora aequituberculata,7,,,,,,,,,,,1,7,0.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Montipora caliculata,15,8,,,,,,,,,,2,23,2.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Pocillopora damicornis,11,6,8,5,,,,,,,,4,30,3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Porites massive,4,4,5,,,,,,,,,3,13,1.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,2,AHB,,Stylophora mordax,12,8,,,,,,,,,,2,20,2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora anthocercis,6,,,,,,,,,,,1,6,0.6
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora cerealis,7,6,5,10,,,,,,,,4,28,2.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora digitifera,8,19,9,6,13,8,,,,,,6,63,6.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,baeodactyla,10,,,,,,,,,,,1,10,1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora gemmifera,14,,,,,,,,,,,1,14,1.4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora hyacinthus,9,,,,,,,,,,,1,9,0.9
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora 77-2452,10,11,,,,,,,,,,2,21,2.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora nana,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora nasuta,13,,,,,,,,,,,1,13,1.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Acropora robusta,11,,,,,,,,,,,1,11,1.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,78,Cyphastrea microphthalma,21,,,,,,,,,,,1,21,2.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Goniastrea edwardsi,11,,,,,,,,,,,1,11,1.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Goniastrea retiformis,28,15,17,11,15,,,,,,,5,86,8.6
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Leptoria phrygia,9,,,,,,,,,,,1,9,0.9
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Montipora caliculata,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,80,Montipora cocosensis,5,8,,,,,,,,,,2,13,1.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Pocillopora damicornis,6,6,,,,,,,,,,2,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Porites massive,8,11,4,,,,,,,,,3,23,2.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,3,AHB,,Stylophora mordax,9,8,,,,,,,,,,2,17,1.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora cerealis,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora digitifera,8,22,11,12,,,,,,,,4,53,5.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora globiceps,14,,,,,,,,,,,1,14,1.4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora otteri,22,,,,,,,,,,,1,22,2.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora retusa,11,,,,,,,,,,,1,11,1.1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora spathulata,13,,,,,,,,,,,1,13,1.3
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Acropora valida,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Goniastrea retiformis,36,36,35,,,,,,,,,3,107,10.7
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Isopora cuneata,24,11,6,7,,,,,,,,4,48,4.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Montipora caliculata,8,,,,,,,,,,,1,8,0.8
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Montipora cocosensis,10,,,,,,,,,,,1,10,1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Pocillopora damicornis,7,5,12,,,,,,,,,3,24,2.4
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Porites annae,12,,,,,,,,,,,1,12,1.2
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Porites lichen,10,,,,,,,,,,,1,10,1
+18/10/2013,Hackie Reef,Hackie Reef site 2,2226_2,2,4,AHB,,Stylophora mordax,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Acropora abrotanoides,32,11,,,,,,,,,,2,43,4.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Acropora hyacinthus,30,9,20,15,,,,,,,,4,74,7.4
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Acropora otteri,18,21,,,,,,,,,,2,39,3.9
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Acropora monticulosa,13,26,5,,,,,,,,,3,44,4.4
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Isopora cuneata,11,6,6,7,19,11,116,31,13,15,20,11,255,25.5
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Pocillopora damicornis,6,6,16,23,,,,,,,,4,51,5.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Porites lichen,6,4,7,,,,,,,,,3,17,1.7
+19/10/2013,21-467,21-467 site 1,2188_1,2,1,AHB,,Stylophora mordax,11,7,,,,,,,,,,2,18,1.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,baeodactyla,10,,,,,,,,,,,1,10,1
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Acropora hyacinthus,25,,,,,,,,,,,1,25,2.5
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Acropora monticulosa,32,22,12,10,16,8,,,,,,6,100,10
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Acropora nasuta,11,,,,,,,,,,,1,11,1.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Acropora schmitti,18,,,,,,,,,,,1,18,1.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Favites halicora,35,,,,,,,,,,,1,35,3.5
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Isopora cuneata,18,6,19,25,31,24,21,12,13,24,12,11,205,20.5
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Montipora peltiformis,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Pocillopora damicornis,15,5,7,,,,,,,,,3,27,2.7
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Porites lichen,6,7,,,,,,,,,,2,13,1.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,2,AHB,,Porites massive,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Acropora abrotanoides,7,11,,,,,,,,,,2,18,1.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Acropora anthocercis,8,,,,,,,,,,,1,8,0.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Acropora humilis,11,,,,,,,,,,,1,11,1.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Acropora hyacinthus,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Acropora monticulosa,18,,,,,,,,,,,1,18,1.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Astreopora incrustans,12,,,,,,,,,,,1,12,1.2
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Goniastrea retiformis,21,,,,,,,,,,,1,21,2.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Isopora cuneata,18,6,15,17,24,13,42,25,18,,,9,178,17.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Pocillopora damicornis,7,5,10,4,,,,,,,,4,26,2.6
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Porites lichen,5,9,12,,,,,,,,,3,26,2.6
+19/10/2013,21-467,21-467 site 1,2188_1,2,3,AHB,,Porites massive,8,,,,,,,,,,,1,8,0.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora abrotanoides,21,,,,,,,,,,,1,21,2.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora cerealis,16,,,,,,,,,,,1,16,1.6
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,baeodactyla,13,16,,,,,,,,,,2,29,2.9
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora globiceps,10,,,,,,,,,,,1,10,1
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora otteri,23,,,,,,,,,,,1,23,2.3
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora monticulosa,15,45,31,,,,,,,,,3,91,9.1
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora lutkeni,13,11,,,,,,,,,,2,24,2.4
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Acropora selago,22,,,,,,,,,,,1,22,2.2
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Isopora cuneata,10,22,31,35,,,,,,,,4,98,9.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Lobophyllia recta,10,,,,,,,,,,,1,10,1
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Montipora aequituberculata,18,,,,,,,,,,,1,18,1.8
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Montipora caliculata,19,,,,,,,,,,,1,19,1.9
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Porites lichen,8,21,,,,,,,,,,2,29,2.9
+19/10/2013,21-467,21-467 site 1,2188_1,2,4,AHB,,Stylophora mordax,11,,,,,,,,,,,1,11,1.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Acropora cerealis,14,,,,,,,,,,,1,14,1.4
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Acropora digitifera,6,6,5,,,,,,,,,3,17,1.7
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,baeodactyla,20,16,10,,,,,,,,,3,46,4.6
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Acropora lutkeni,11,,,,,,,,,,,1,11,1.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Astrea annuligera,10,,,,,,,,,,,1,10,1
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Astrea curta,8,6,,,,,,,,,,2,14,1.4
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Isopora cuneata,24,11,13,,,,,,,,,3,48,4.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Pocillopora damicornis,13,5,,,,,,,,,,2,18,1.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,1,AHB,,Porites massive,8,,,,,,,,,,,1,8,0.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Acropora cerealis,5,,,,,,,,,,,1,5,0.5
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Acropora digitifera,19,14,,,,,,,,,,2,33,3.3
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,baeodactyla,12,14,16,7,,,,,,,,4,49,4.9
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Acropora humilis,22,,,,,,,,,,,1,22,2.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Dipsastreae matthaii,8,,,,,,,,,,,1,8,0.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Goniastrea favulus,5,7,,,,,,,,,,2,12,1.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Isopora cuneata,12,,,,,,,,,,,1,12,1.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Lobophyllia recta,12,,,,,,,,,,,1,12,1.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Pocillopora damicornis,10,18,11,,,,,,,,,3,39,3.9
+19/10/2013,21-467,21-467 site 2,2188_2,2,2,AHB,,Porites massive,7,16,5,4,8,11,,,,,,6,51,5.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Acanthastrea echinata,6,,,,,,,,,,,1,6,0.6
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,baeodactyla,25,16,,,,,,,,,,2,41,4.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Acropora hyacinthus,35,,,,,,,,,,,1,35,3.5
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Acropora lutkeni,7,15,,,,,,,,,,2,22,2.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Astrea curta,10,,,,,,,,,,,1,10,1
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Favites flexuosa,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Goniastrea stelligera,19,,,,,,,,,,,1,19,1.9
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Isopora cuneata,26,11,,,,,,,,,,2,37,3.7
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Leptoria phrygia,5,,,,,,,,,,,1,5,0.5
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Platygyra sinensis,8,,,,,,,,,,,1,8,0.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Porites massive,5,11,8,5,7,,,,,,,5,36,3.6
+19/10/2013,21-467,21-467 site 2,2188_2,2,3,AHB,,Stylophora mordax,7,,,,,,,,,,,1,7,0.7
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Acropora abrotanoides,61,,,,,,,,,,,1,61,6.1
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Acropora cerealis,9,,,,,,,,,,,1,9,0.9
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Acropora digitifera,13,,,,,,,,,,,1,13,1.3
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Acropora monticulosa,35,,,,,,,,,,,1,35,3.5
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Astrea curta,7,,,,,,,,,,,1,7,0.7
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Isopora cuneata,12,21,38,9,8,,,,,,,5,88,8.8
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Pocillopora damicornis,5,7,,,,,,,,,,2,12,1.2
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Porites massive,5,5,,,,,,,,,,2,10,1
+19/10/2013,21-467,21-467 site 2,2188_2,2,4,AHB,,Stylophora mordax,4,,,,,,,,,,,1,4,0.4
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,baeodactyla,7,25,9,,,,,,,,,3,41,4.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Acropora loripes,20,,,,,,,,,,,1,20,2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Acropora millepora,18,,,,,,,,,,,1,18,1.8
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Acropora rosaria,20,,,,,,,,,,,1,20,2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Acropora spathulata,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Goniastrea retiformis,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Isopora palifera,10,13,,,,,,,,,,2,23,2.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Leptoria phrygia,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Lobophyllia hemprichii,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Montipora efflorescens,26,5,,,,,,,,,,2,31,3.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Pocillopora damicornis,10,8,13,,,,,,,,,3,31,3.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Porites lichen,6,5,,,,,,,,,,2,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Porites massive,8,7,7,,,,,,,,,3,22,2.2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Seriatopora hystrix,12,,,,,,,,,,,1,12,1.2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,1,AHB,,Stylophora pistillata,10,15,,,,,,,,,,2,25,2.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Acropora aculeus,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,baeodactyla,18,21,,,,,,,,,,2,39,3.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Acropora gemmifera,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Astrea curta,8,5,,,,,,,,,,2,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Cyphastrea chalcidicum,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Dipsastreae matthaii,3,6,,,,,,,,,,2,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Favites flexuosa,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Favites halicora,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Favites valenciennesi,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Galaxea fascicularis,3,,,,,,,,,,,1,3,0.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Lithophyllon repanda,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Montipora aequituberculata,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Montipora efflorescens,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Porites lichen,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Seriatopora caliendrum,5,12,,,,,,,,,,2,17,1.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,2,AHB,,Seriatopora hystrix,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Acropora cerealis,14,,,,,,,,,,,1,14,1.4
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Acropora humilis,13,,,,,,,,,,,1,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Acropora nasuta,21,28,,,,,,,,,,2,49,4.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Dipsastreae favus,3,6,,,,,,,,,,2,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Dipsastreae matthaii,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Dipsastreae pallida,12,,,,,,,,,,,1,12,1.2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Favites halicora,4,,,,,,,,,,,1,4,0.4
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Goniastrea pectinata,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Hydnophora pilosa,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Isopora palifera,14,6,,,,,,,,,,2,20,2
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Montipora efflorescens,25,,,,,,,,,,,1,25,2.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Pocillopora damicornis,13,20,,,,,,,,,,2,33,3.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Porites lichen,12,15,,,,,,,,,,2,27,2.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Porites massive,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Seriatopora hystrix,22,5,,,,,,,,,,2,27,2.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,3,AHB,,Stylophora pistillata,24,10,,,,,,,,,,2,34,3.4
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Acropora anthocercis,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Acropora hyacinthus,21,,,,,,,,,,,1,21,2.1
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Goniastrea stelligera,3,,,,,,,,,,,1,3,0.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Isopora palifera,31,11,11,,,,,,,,,3,53,5.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Montipora aequituberculata,9,4,,,,,,,,,,2,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Platygyra verweyi,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Pocillopora damicornis,26,5,4,10,6,8,17,,,,,7,76,7.6
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Pocillopora verrucosa,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Porites lichen,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 1,2131_1,2,4,AHB,,Seriatopora hystrix,15,,,,,,,,,,,1,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Acropora austera,7,8,,,,,,,,,,2,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,baeodactyla,20,9,,,,,,,,,,2,29,2.9
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Acropora humilis,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Acropora hyacinthus,21,11,,,,,,,,,,2,32,3.2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Acropora muricata,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Acropora nasuta,22,16,,,,,,,,,,2,38,3.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Astrea annuligera,15,,,,,,,,,,,1,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Astrea curta,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Isopora cuneata,15,13,,,,,,,,,,2,28,2.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Montipora caliculata,10,,,,,,,,,,,1,10,1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,287,Montipora venosa,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Porites massive,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Seriatopora hystrix,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,1,AHB,,Stylophora pistillata,20,,,,,,,,,,,1,20,2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Acropora cerealis,9,18,,,,,,,,,,2,27,2.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Acropora hyacinthus,18,10,87,,,,,,,,,3,115,11.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Acropora latistella,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Acropora muricata,13,,,,,,,,,,,1,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Acropora nasuta,15,7,27,,,,,,,,,3,49,4.9
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Favites halicora,13,,,,,,,,,,,1,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Galaxea fascicularis,10,5,,,,,,,,,,2,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Goniastrea pectinata,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Goniastrea stelligera,15,,,,,,,,,,,1,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Isopora cuneata,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Lobophyllia radians,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,289,Montipora effusa,17,,,,,,,,,,,1,17,1.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Pocillopora damicornis,25,10,35,11,,,,,,,,4,81,8.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Porites lichen,5,,,,,,,,,,,1,5,0.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Porites massive,11,10,5,,,,,,,,,3,26,2.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,2,AHB,,Stylophora pistillata,5,7,,,,,,,,,,2,12,1.2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora cerealis,9,,,,,,,,,,,1,9,0.9
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora cytherea,13,,,,,,,,,,,1,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora humilis,17,,,,,,,,,,,1,17,1.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora hyacinthus,91,31,,,,,,,,,,2,122,12.2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora latistella,26,,,,,,,,,,,1,26,2.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora longicyathus,25,,,,,,,,,,,1,25,2.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora muricata,6,25,31,12,,,,,,,,4,74,7.4
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora nasuta,17,,,,,,,,,,,1,17,1.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora willisae,18,,,,,,,,,,,1,18,1.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Acropora yongei,34,22,28,32,,,,,,,,4,116,11.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Lobophyllia radians,21,,,,,,,,,,,1,21,2.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Pocillopora damicornis,22,,,,,,,,,,,1,22,2.2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Porites massive,11,,,,,,,,,,,1,11,1.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,3,AHB,,Seriatopora hystrix,26,,,,,,,,,,,1,26,2.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora abrotanoides,13,,,,,,,,,,,1,13,1.3
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora austera,7,,,,,,,,,,,1,7,0.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora hyacinthus,12,9,33,,,,,,,,,3,54,5.4
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora muricata,13,18,17,60,,,,,,,,4,108,10.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Acropora spathulata,25,,,,,,,,,,,1,25,2.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Gonipora spp,15,,,,,,,,,,,1,15,1.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Isopora cuneata,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Leptoria phrygia,17,,,,,,,,,,,1,17,1.7
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Montipora aequituberculata,8,10,33,,,,,,,,,3,51,5.1
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,292,Montipora efflorescens,14,,,,,,,,,,,1,14,1.4
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Pocillopora damicornis,15,20,24,16,20,,,,,,,5,95,9.5
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Pocillopora verrucosa,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Porites massive,6,,,,,,,,,,,1,6,0.6
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Seriatopora hystrix,8,,,,,,,,,,,1,8,0.8
+20/10/2013,Paul Reef,Paul Reef site 2,2131_2,2,4,AHB,,Stylophora pistillata,16,4,,,,,,,,,,2,20,2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora digitifera,41,,,,,,,,,,,1,41,4.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora gemmifera,28,,,,,,,,,,,1,28,2.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora hyacinthus,36,,,,,,,,,,,1,36,3.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora monticulosa,65,,,,,,,,,,,1,65,6.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora muricata,26,,,,,,,,,,,1,26,2.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Astrea curta,4,6,,,,,,,,,,2,10,1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Isopora cuneata,6,11,,,,,,,,,,2,17,1.7
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Lobophyllia recta,20,12,,,,,,,,,,2,32,3.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Porites massive,2,9,4,6,,,,,,,,4,21,2.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,1,AHB,,Stylophora pistillata,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora cerealis,10,,,,,,,,,,,1,10,1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,baeodactyla,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora gemmifera,13,,,,,,,,,,,1,13,1.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora humilis,15,,,,,,,,,,,1,15,1.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora otteri,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora nasuta,28,32,,,,,,,,,,2,60,6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Acropora sarmentosa,9,,,,,,,,,,,1,9,0.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Astrea curta,3,5,,,,,,,,,,2,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Favites halicora,3,,,,,,,,,,,1,3,0.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Isopora cuneata,29,7,8,,,,,,,,,3,44,4.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,323,Montipora venosa,4,,,,,,,,,,,1,4,0.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Pocillopora damicornis,13,,,,,,,,,,,1,13,1.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,2,AHB,,Porites massive,4,4,7,4,,,,,,,,4,19,1.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,baeodactyla,29,16,,,,,,,,,,2,45,4.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Acropora gemmifera,20,,,,,,,,,,,1,20,2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Acropora otteri,13,6,,,,,,,,,,2,19,1.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Acropora nasuta,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Favites halicora,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Goniastrea pectinata,14,,,,,,,,,,,1,14,1.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Isopora cuneata,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,324,Montipora floweri,5,,,,,,,,,,,1,5,0.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,325,Montipora grisea,8,22,,,,,,,,,,2,30,3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Platygyra daedalea,12,13,,,,,,,,,,2,25,2.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Platygyra pini,10,,,,,,,,,,,1,10,1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Porites massive,4,5,,,,,,,,,,2,9,0.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,3,AHB,,Stylophora pistillata,6,,,,,,,,,,,1,6,0.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Acanthastrea echinata,11,10,,,,,,,,,,2,21,2.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Acropora cerealis,33,6,,,,,,,,,,2,39,3.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Acropora secale,12,22,,,,,,,,,,2,34,3.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Goniastrea pectinata,10,18,,,,,,,,,,2,28,2.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Isopora cuneata,16,8,,,,,,,,,,2,24,2.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Leptoria phrygia,38,,,,,,,,,,,1,38,3.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Lobophyllia radians,20,,,,,,,,,,,1,20,2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Lobophyllia recta,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,326,Montipora monasteriata,21,10,,,,,,,,,,2,31,3.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Porites massive,18,5,6,,,,,,,,,3,29,2.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 1,2058_1,2,4,AHB,,Stylophora pistillata,4,,,,,,,,,,,1,4,0.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Acanthastrea echinata,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Acropora gemmifera,36,,,,,,,,,,,1,36,3.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Acropora humilis,8,,,,,,,,,,,1,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Acropora muricata,22,,,,,,,,,,,1,22,2.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Cyphastrea serailia,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Dipsastreae matthaii,6,,,,,,,,,,,1,6,0.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Dipsastreae pallida,8,,,,,,,,,,,1,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Dipsastreae veroni,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Goniastrea stelligera,13,,,,,,,,,,,1,13,1.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Isopora palifera,15,13,,,,,,,,,,2,28,2.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Leptoria phrygia,24,,,,,,,,,,,1,24,2.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Lobophyllia radians,22,21,,,,,,,,,,2,43,4.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Platygyra daedalea,16,,,,,,,,,,,1,16,1.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Porites massive,7,,,,,,,,,,,1,7,0.7
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,1,AHB,,Stylophora pistillata,5,,,,,,,,,,,1,5,0.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Acropora hyacinthus,22,17,,,,,,,,,,2,39,3.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Acropora nasuta,24,23,,,,,,,,,,2,47,4.7
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Acropora sarmentosa,13,,,,,,,,,,,1,13,1.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Acropora spathulata,23,33,27,,,,,,,,,3,83,8.3
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Astrea curta,5,,,,,,,,,,,1,5,0.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Dipsastreae lizardensis,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Isopora palifera,24,28,16,10,,,,,,,,4,78,7.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Pocillopora damicornis,14,,,,,,,,,,,1,14,1.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,2,AHB,,Porites massive,5,,,,,,,,,,,1,5,0.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Acropora nasuta,15,,,,,,,,,,,1,15,1.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Acropora spathulata,7,,,,,,,,,,,1,7,0.7
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Acropora valida,41,28,,,,,,,,,,2,69,6.9
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Acropora willisae,26,,,,,,,,,,,1,26,2.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Favites valenciennesi,6,,,,,,,,,,,1,6,0.6
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Isopora palifera,8,,,,,,,,,,,1,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Leptoria phrygia,8,,,,,,,,,,,1,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Lobophyllia radians,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Pocillopora damicornis,15,,,,,,,,,,,1,15,1.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,3,AHB,,Porites massive,4,,,,,,,,,,,1,4,0.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,baeodactyla,18,,,,,,,,,,,1,18,1.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora hyacinthus,14,,,,,,,,,,,1,14,1.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora loripes,8,,,,,,,,,,,1,8,0.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora nasuta,7,10,,,,,,,,,,2,17,1.7
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora samoensis,28,,,,,,,,,,,1,28,2.8
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora spathulata,26,58,14,22,,,,,,,,4,120,12
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Acropora valida,12,,,,,,,,,,,1,12,1.2
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Galaxea fascicularis,11,,,,,,,,,,,1,11,1.1
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Goniastrea retiformis,14,,,,,,,,,,,1,14,1.4
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Pocillopora damicornis,7,8,20,,,,,,,,,3,35,3.5
+21/10/2013,Little Steven's Reef,Little Steven's Reef site 2,2058_2,2,4,AHB,,Porites massive,6,,,,,,,,,,,1,6,0.6
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,baeodactyla,20,13,6,,,,,,,,,3,39,3.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,Acropora humilis,12,10,,,,,,,,,,2,22,2.2
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,Acropora robusta,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,Isopora cuneata,11,,,,,,,,,,,1,11,1.1
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,Pocillopora verrucosa,5,14,,,,,,,,,,2,19,1.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,1,AHB,,Porites massive,7,6,5,,,,,,,,,3,18,1.8
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,baeodactyla,13,,,,,,,,,,,1,13,1.3
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Acropora hyacinthus,13,52,,,,,,,,,,2,65,6.5
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Acropora otteri,21,32,,,,,,,,,,2,53,5.3
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Acropora lutkeni,20,,,,,,,,,,,1,20,2
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Acropora nasuta,16,,,,,,,,,,,1,16,1.6
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Goniastrea retiformis,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Isopora cuneata,38,11,,,,,,,,,,2,49,4.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Platygyra verweyi,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Porites lichen,13,,,,,,,,,,,1,13,1.3
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,2,AHB,,Porites massive,6,7,,,,,,,,,,2,13,1.3
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,baeodactyla,20,5,14,,,,,,,,,3,39,3.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora gemmifera,22,15,,,,,,,,,,2,37,3.7
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora humilis,5,,,,,,,,,,,1,5,0.5
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora hyacinthus,12,25,14,13,31,,,,,,,5,95,9.5
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora lutkeni,18,,,,,,,,,,,1,18,1.8
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora secale,14,,,,,,,,,,,1,14,1.4
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Acropora spathulata,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Astrea curta,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Isopora cuneata,18,8,,,,,,,,,,2,26,2.6
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Platygyra sinensis,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Platygyra verweyi,7,,,,,,,,,,,1,7,0.7
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,3,AHB,,Pocillopora verrucosa,7,10,12,,,,,,,,,3,29,2.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Acropora hyacinthus,28,45,16,,,,,,,,,3,89,8.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Acropora monticulosa,9,,,,,,,,,,,1,9,0.9
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Acropora lutkeni,15,10,,,,,,,,,,2,25,2.5
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Astrea curta,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Isopora cuneata,10,31,8,13,,,,,,,,4,62,6.2
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Lobophyllia radians,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Pocillopora verrucosa,14,7,,,,,,,,,,2,21,2.1
+22/10/2013,Block Reef,Block Reef site 1,1980_1,2,4,AHB,,Porites massive,5,4,5,6,8,6,,,,,,6,34,3.4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora gemmifera,10,18,,,,,,,,,,2,28,2.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora humilis,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora hyacinthus,21,,,,,,,,,,,1,21,2.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora monticulosa,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora lutkeni,11,,,,,,,,,,,1,11,1.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Acropora nasuta,11,,,,,,,,,,,1,11,1.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Favites valenciennesi,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Isopora cuneata,16,5,19,,,,,,,,,3,40,4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Pocillopora damicornis,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Porites massive,7,5,,,,,,,,,,2,12,1.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Stylophora mordax,5,12,,,,,,,,,,2,17,1.7
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,1,AHB,,Stylophora pistillata,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Acropora cerealis,16,12,14,,,,,,,,,3,42,4.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Acropora digitifera,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,baeodactyla,15,17,,,,,,,,,,2,32,3.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Acropora lutkeni,28,,,,,,,,,,,1,28,2.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Acropora spathulata,24,,,,,,,,,,,1,24,2.4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Astrea curta,7,,,,,,,,,,,1,7,0.7
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Goniastrea stelligera,21,,,,,,,,,,,1,21,2.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Porites massive,6,5,,,,,,,,,,2,11,1.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,2,AHB,,Stylophora mordax,10,11,,,,,,,,,,2,21,2.1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Acropora cerealis,13,5,,,,,,,,,,2,18,1.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,baeodactyla,10,14,,,,,,,,,,2,24,2.4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Acropora hyacinthus,30,8,,,,,,,,,,2,38,3.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Acropora spathulata,25,,,,,,,,,,,1,25,2.5
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Isopora cuneata,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Porites lichen,6,,,,,,,,,,,1,6,0.6
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,3,AHB,,Stylophora pistillata,9,8,,,,,,,,,,2,17,1.7
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,baeodactyla,15,21,10,,,,,,,,,3,46,4.6
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora gemmifera,10,16,,,,,,,,,,2,26,2.6
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora hyacinthus,52,20,8,,,,,,,,,3,80,8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora nasuta,10,,,,,,,,,,,1,10,1
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora secale,16,,,,,,,,,,,1,16,1.6
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora spathulata,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Acropora yongei,8,16,,,,,,,,,,2,24,2.4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Echinopora lamellosa,18,,,,,,,,,,,1,18,1.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Favites abdita,12,,,,,,,,,,,1,12,1.2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Leptoria phrygia,7,,,,,,,,,,,1,7,0.7
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Lobophyllia recta,14,,,,,,,,,,,1,14,1.4
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Pocillopora damicornis,5,15,,,,,,,,,,2,20,2
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Porites lichen,6,,,,,,,,,,,1,6,0.6
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Porites massive,8,,,,,,,,,,,1,8,0.8
+22/10/2013,Block Reef,Block Reef site 2,1980_2,2,4,AHB,,Stylophora mordax,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,baeodactyla,7,16,13,7,18,,,,,,,5,61,6.1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Acropora gemmifera,26,21,22,10,,,,,,,,4,79,7.9
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Acropora hyacinthus,30,,,,,,,,,,,1,30,3
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Acropora otteri,5,,,,,,,,,,,1,5,0.5
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Acropora monticulosa,5,25,,,,,,,,,,2,30,3
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Acropora secale,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Isopora cuneata,11,13,10,5,8,7,8,20,,,,8,82,8.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Pocillopora eydouxi,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Pocillopora verrucosa,8,13,7,,,,,,,,,3,28,2.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Porites massive,7,,,,,,,,,,,1,7,0.7
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,1,AHB,,Stylophora mordax,24,,,,,,,,,,,1,24,2.4
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora gemmifera,18,,,,,,,,,,,1,18,1.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora hyacinthus,45,18,25,,,,,,,,,3,88,8.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora otteri,18,24,,,,,,,,,,2,42,4.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora monticulosa,13,20,,,,,,,,,,2,33,3.3
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora lutkeni,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora palmerae,12,,,,,,,,,,,1,12,1.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Acropora robusta,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Astrea curta,22,,,,,,,,,,,1,22,2.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Isopora cuneata,11,13,8,13,11,9,12,7,18,13,15,11,130,13
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Pocillopora damicornis,9,,,,,,,,,,,1,9,0.9
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,2,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Acropora anthocercis,7,,,,,,,,,,,1,7,0.7
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Acropora gemmifera,23,10,,,,,,,,,,2,33,3.3
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Acropora hyacinthus,14,,,,,,,,,,,1,14,1.4
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Acropora monticulosa,16,5,28,22,,,,,,,,4,71,7.1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Acropora robusta,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Isopora cuneata,7,12,13,8,22,20,31,8,5,7,9,11,142,14.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,3,AHB,,Porites massive,18,10,,,,,,,,,,2,28,2.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Acropora hyacinthus,21,24,,,,,,,,,,2,45,4.5
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Acropora palmerae,152,,,,,,,,,,,1,152,15.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Acropora robusta,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Isopora cuneata,11,15,8,12,35,8,13,20,38,32,,10,192,19.2
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Pocillopora eydouxi,11,18,9,,,,,,,,,3,38,3.8
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Pocillopora verrucosa,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 1,1923_1,2,4,AHB,,Porites massive,9,12,10,,,,,,,,,3,31,3.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Acropora anthocercis,14,,,,,,,,,,,1,14,1.4
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,baeodactyla,22,16,,,,,,,,,,2,38,3.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Acropora hyacinthus,14,21,,,,,,,,,,2,35,3.5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Acropora otteri,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Acropora monticulosa,10,45,19,28,,,,,,,,4,102,10.2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Acropora lutkeni,25,,,,,,,,,,,1,25,2.5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Isopora cuneata,3,8,23,8,10,7,10,8,13,11,16,11,117,11.7
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Leptoria phrygia,15,,,,,,,,,,,1,15,1.5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Platygyra daedalea,12,,,,,,,,,,,1,12,1.2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Pocillopora verrucosa,6,10,,,,,,,,,,2,16,1.6
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Porites massive,8,8,,,,,,,,,,2,16,1.6
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,1,AHB,,Stylophora mordax,13,8,,,,,,,,,,2,21,2.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Acropora hyacinthus,22,32,,,,,,,,,,2,54,5.4
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Acropora monticulosa,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Acropora lutkeni,13,,,,,,,,,,,1,13,1.3
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Acropora palmerae,48,,,,,,,,,,,1,48,4.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Acropora robusta,14,,,,,,,,,,,1,14,1.4
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Astrea annuligera,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Isopora cuneata,17,8,16,5,18,12,14,16,,,,8,106,10.6
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Pocillopora verrucosa,22,9,8,,,,,,,,,3,39,3.9
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,2,AHB,,Porites massive,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora digitifera,20,,,,,,,,,,,1,20,2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,baeodactyla,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora gemmifera,16,6,,,,,,,,,,2,22,2.2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora monticulosa,21,,,,,,,,,,,1,21,2.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora lutkeni,5,,,,,,,,,,,1,5,0.5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora palmerae,65,26,,,,,,,,,,2,91,9.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Acropora robusta,16,,,,,,,,,,,1,16,1.6
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Cyphastrea serailia,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Isopora cuneata,7,5,8,8,13,14,5,8,12,,,9,80,8
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,3,AHB,,Porites massive,7,9,4,,,,,,,,,3,20,2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,baeodactyla,8,18,5,11,8,,,,,,,5,50,5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Acropora gemmifera,5,15,,,,,,,,,,2,20,2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Acropora hyacinthus,16,20,5,12,,,,,,,,4,53,5.3
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Acropora palmerae,10,,,,,,,,,,,1,10,1
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Astrea curta,5,,,,,,,,,,,1,5,0.5
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Isopora cuneata,11,10,12,9,,,,,,,,4,42,4.2
+23/10/2013,Darley Reef,Darley Reef site 2,1923_2,2,4,AHB,,Pocillopora verrucosa,6,6,20,12,,,,,,,,4,44,4.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Acropora abrotanoides,14,,,,,,,,,,,1,14,1.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Acropora cerealis,7,,,,,,,,,,,1,7,0.7
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Acropora gemmifera,12,,,,,,,,,,,1,12,1.2
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Leptoria phrygia,8,,,,,,,,,,,1,8,0.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Pocillopora damicornis,6,,,,,,,,,,,1,6,0.6
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Pocillopora verrucosa,8,,,,,,,,,,,1,8,0.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,1,AHB,,Stylophora mordax,7,5,6,,,,,,,,,3,18,1.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Acropora cerealis,11,10,,,,,,,,,,2,21,2.1
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,baeodactyla,14,,,,,,,,,,,1,14,1.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Acropora hyacinthus,11,,,,,,,,,,,1,11,1.1
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Isopora cuneata,5,8,8,5,14,12,6,,,,,7,58,5.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Platygyra daedalea,14,,,,,,,,,,,1,14,1.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Pocillopora damicornis,8,6,,,,,,,,,,2,14,1.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Pocillopora meandrina,26,,,,,,,,,,,1,26,2.6
+31/03/2016,Centipede,Centipede site 1,1873_1,2,2,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Acropora abrotanoides,65,,,,,,,,,,,1,65,6.5
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,baeodactyla,16,8,,,,,,,,,,2,24,2.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Acropora gemmifera,8,,,,,,,,,,,1,8,0.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Acropora hyacinthus,16,,,,,,,,,,,1,16,1.6
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Acropora monticulosa,27,,,,,,,,,,,1,27,2.7
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Isopora cuneata,6,18,,,,,,,,,,2,24,2.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Lobophyllia hemprichii,30,,,,,,,,,,,1,30,3
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Porites massive,14,,,,,,,,,,,1,14,1.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,3,AHB,,Porites solida,8,,,,,,,,,,,1,8,0.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Acropora abrotanoides,8,32,11,,,,,,,,,3,51,5.1
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,baeodactyla,20,14,,,,,,,,,,2,34,3.4
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Acropora hyacinthus,12,,,,,,,,,,,1,12,1.2
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Acropora valida,13,,,,,,,,,,,1,13,1.3
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Favites halicora,8,,,,,,,,,,,1,8,0.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Isopora cuneata,14,15,4,8,8,6,8,9,10,16,,10,98,9.8
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Pocillopora damicornis,12,,,,,,,,,,,1,12,1.2
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Pocillopora eydouxi,19,,,,,,,,,,,1,19,1.9
+31/03/2016,Centipede,Centipede site 1,1873_1,2,4,AHB,,Porites massive,6,5,5,6,6,,,,,,,5,28,2.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Acropora elseyi,8,,,,,,,,,,,1,8,0.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Acropora latistella,25,,,,,,,,,,,1,25,2.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Acropora nasuta,10,,,,,,,,,,,1,10,1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Isopora cuneata,13,,,,,,,,,,,1,13,1.3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Isopora palifera,21,,,,,,,,,,,1,21,2.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Montipora grisea,5,,,,,,,,,,,1,5,0.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Pocillopora damicornis,12,10,15,8,10,13,,,,,,6,68,6.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,1,AHB,,Seriatopora hystrix,12,13,,,,,,,,,,2,25,2.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Acropora cerealis,11,,,,,,,,,,,1,11,1.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Acropora hyacinthus,23,,,,,,,,,,,1,23,2.3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Acropora nasuta,13,,,,,,,,,,,1,13,1.3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Astrea curta,5,,,,,,,,,,,1,5,0.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Dipsastraea pallida,8,,,,,,,,,,,1,8,0.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Isopora cuneata,5,,,,,,,,,,,1,5,0.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Isopora palifera,12,21,12,,,,,,,,,3,45,4.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Montipora foveolata,10,8,,,,,,,,,,2,18,1.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Montipora monasteriata,8,,,,,,,,,,,1,8,0.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Pocillopora damicornis,11,10,6,8,16,,,,,,,5,51,5.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Pocillopora damicornis,10,,,,,,,,,,,1,10,1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Seriatopora hystrix,6,8,13,,,,,,,,,3,27,2.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,2,AHB,,Stylophora mordax,11,10,,,,,,,,,,2,21,2.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Acropora gemmifera,6,,,,,,,,,,,1,6,0.6
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Acropora otteri,5,6,,,,,,,,,,2,11,1.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Acropora lutkeni,10,,,,,,,,,,,1,10,1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Cyphastrea microphthalma,9,8,,,,,,,,,,2,17,1.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Goniastrea retiformis,8,10,,,,,,,,,,2,18,1.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Goniastrea stelligera,15,,,,,,,,,,,1,15,1.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Isopora cuneata,18,4,9,,,,,,,,,3,31,3.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Montipora grisea,12,,,,,,,,,,,1,12,1.2
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Pocillopora damicornis,7,8,5,11,,,,,,,,4,31,3.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,3,AHB,,Seriatopora hystrix,5,12,10,,,,,,,,,3,27,2.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Acropora otteri,8,,,,,,,,,,,1,8,0.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Acropora lutkeni,13,,,,,,,,,,,1,13,1.3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Acropora nasuta,13,,,,,,,,,,,1,13,1.3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Acropora tenuis,9,8,,,,,,,,,,2,17,1.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Isopora cuneata,10,5,3,,,,,,,,,3,18,1.8
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Isopora palifera,11,7,22,,,,,,,,,3,40,4
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Montipora grisea,5,4,,,,,,,,,,2,9,0.9
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Montipora millepora,4,,,,,,,,,,,1,4,0.4
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Platygyra daedalea,9,,,,,,,,,,,1,9,0.9
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Pocillopora damicornis,12,18,,,,,,,,,,2,30,3
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Porites massive,5,,,,,,,,,,,1,5,0.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,4,AHB,,Seriatopora hystrix,8,9,,,,,,,,,,2,17,1.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,baeodactyla,12,,,,,,,,,,,1,12,1.2
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Acropora gemmifera,13,8,26,,,,,,,,,3,47,4.7
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Acropora hyacinthus,15,,,,,,,,,,,1,15,1.5
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Astreopora myriophthalma,12,,,,,,,,,,,1,12,1.2
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Favites halicora,16,,,,,,,,,,,1,16,1.6
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Goniastrea retiformis,4,,,,,,,,,,,1,4,0.4
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Isopora cuneata,21,,,,,,,,,,,1,21,2.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Isopora palifera,14,12,,,,,,,,,,2,26,2.6
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Montipora foveolata,11,,,,,,,,,,,1,11,1.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Montipora millepora,6,,,,,,,,,,,1,6,0.6
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Pocillopora damicornis,12,6,5,8,,,,,,,,4,31,3.1
+01/04/2016,Centipede,Centipede site 2,1873_2,2,5,AHB,,Seriatopora hystrix,7,11,,,,,,,,,,2,18,1.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora hyacinthus,25,18,45,,,,,,,,,3,88,8.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora intermedia,120,12,,,,,,,,,,2,132,13.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora longicyathus,20,,,,,,,,,,,1,20,2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora millepora,27,,,,,,,,,,,1,27,2.7
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora nasuta,18,44,,,,,,,,,,2,62,6.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora spathulata,22,,,,,,,,,,,1,22,2.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Acropora yongei,16,,,,,,,,,,,1,16,1.6
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Pocillopora acuta,24,,,,,,,,,,,1,24,2.4
+10/04/2016,Zenith,Zenith site 1,1276_1,2,1,AHB,,Porites massive,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora aspera,28,,,,,,,,,,,1,28,2.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora hyacinthus,12,80,,,,,,,,,,2,92,9.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora intermedia,31,,,,,,,,,,,1,31,3.1
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora muricata,30,33,,,,,,,,,,2,63,6.3
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora spathulata,22,,,,,,,,,,,1,22,2.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,2,AHB,,Acropora yongei,110,105,,,,,,,,,,2,215,21.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Acropora hyacinthus,32,,,,,,,,,,,1,32,3.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Acropora intermedia,26,,,,,,,,,,,1,26,2.6
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Acropora muricata,110,16,,,,,,,,,,2,126,12.6
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Acropora nasuta,41,,,,,,,,,,,1,41,4.1
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Acropora spathulata,25,,,,,,,,,,,1,25,2.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Montipora tuberculosa,8,,,,,,,,,,,1,8,0.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Pocillopora damicornis,8,,,,,,,,,,,1,8,0.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,3,AHB,,Porites massive,30,,,,,,,,,,,1,30,3
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora cytherea,35,,,,,,,,,,,1,35,3.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora humilis,9,,,,,,,,,,,1,9,0.9
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora intermedia,20,25,,,,,,,,,,2,45,4.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora otteri,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora millepora,35,11,42,,,,,,,,,3,88,8.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora muricata,36,,,,,,,,,,,1,36,3.6
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora nasuta,26,12,,,,,,,,,,2,38,3.8
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Acropora sarmentosa,14,,,,,,,,,,,1,14,1.4
+10/04/2016,Zenith,Zenith site 1,1276_1,2,4,AHB,,Pocillopora damicornis,12,24,26,,,,,,,,,3,62,6.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora hyacinthus,11,40,,,,,,,,,,2,51,5.1
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora intermedia,16,70,,,,,,,,,,2,86,8.6
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora millepora,12,,,,,,,,,,,1,12,1.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora muricata,21,24,,,,,,,,,,2,45,4.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora nasuta,19,,,,,,,,,,,1,19,1.9
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora sarmentosa,15,,,,,,,,,,,1,15,1.5
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Acropora spathulata,42,,,,,,,,,,,1,42,4.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Pocillopora eydouxi,22,,,,,,,,,,,1,22,2.2
+10/04/2016,Zenith,Zenith site 1,1276_1,2,5,AHB,,Pocillopora verrucosa,18,,,,,,,,,,,1,18,1.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora elseyi,7,,,,,,,,,,,1,7,0.7
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora florida,18,8,,,,,,,,,,2,26,2.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora hyacinthus,52,6,,,,,,,,,,2,58,5.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora intermedia,42,,,,,,,,,,,1,42,4.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora latistella,15,,,,,,,,,,,1,15,1.5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora muricata,190,,,,,,,,,,,1,190,19
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora nasuta,22,9,,,,,,,,,,2,31,3.1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Acropora yongei,55,,,,,,,,,,,1,55,5.5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Galaxea fascicularis,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Goniastrea pectinata,16,,,,,,,,,,,1,16,1.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Montipora crassituberculata,7,22,,,,,,,,,,2,29,2.9
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Montipora efflorescens,8,,,,,,,,,,,1,8,0.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Platygyra daedalea,16,,,,,,,,,,,1,16,1.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,1,AHB,,Pocillopora damicornis,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora cytherea,43,,,,,,,,,,,1,43,4.3
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora florida,12,12,,,,,,,,,,2,24,2.4
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora hyacinthus,55,,,,,,,,,,,1,55,5.5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora intermedia,32,21,80,,,,,,,,,3,133,13.3
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora millepora,16,15,,,,,,,,,,2,31,3.1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora muricata,15,35,,,,,,,,,,2,50,5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora nasuta,34,10,24,,,,,,,,,3,68,6.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora tenuis,21,,,,,,,,,,,1,21,2.1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Acropora yongei,44,,,,,,,,,,,1,44,4.4
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Goniastrea stelligera,19,,,,,,,,,,,1,19,1.9
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Merulina ampliata,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Montipora crassituberculata,41,26,,,,,,,,,,2,67,6.7
+10/04/2016,Zenith,Zenith site 2,1276_2,2,2,AHB,,Pocillopora damicornis,20,12,,,,,,,,,,2,32,3.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Acropora longicyathus,22,,,,,,,,,,,1,22,2.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Acropora millepora,26,,,,,,,,,,,1,26,2.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Acropora muricata,25,110,90,21,,,,,,,,4,246,24.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Acropora nasuta,5,,,,,,,,,,,1,5,0.5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Acropora tenuis,8,65,22,35,26,,,,,,,5,156,15.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Galaxea fascicularis,7,,,,,,,,,,,1,7,0.7
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Montipora crassituberculata,10,,,,,,,,,,,1,10,1
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Pocillopora acuta,7,,,,,,,,,,,1,7,0.7
+10/04/2016,Zenith,Zenith site 2,1276_2,2,3,AHB,,Pocillopora damicornis,18,,,,,,,,,,,1,18,1.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Acropora hyacinthus,105,62,105,,,,,,,,,3,272,27.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Acropora latistella,16,,,,,,,,,,,1,16,1.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Acropora longicyathus,15,,,,,,,,,,,1,15,1.5
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Acropora muricata,82,151,30,,,,,,,,,3,263,26.3
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Acropora tenuis,8,,,,,,,,,,,1,8,0.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,4,AHB,,Galaxea fascicularis,12,,,,,,,,,,,1,12,1.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora cytherea,20,45,18,,,,,,,,,3,83,8.3
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,baeodactyla,20,,,,,,,,,,,1,20,2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora hyacinthus,72,21,31,180,,,,,,,,4,304,30.4
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora longicyathus,18,,,,,,,,,,,1,18,1.8
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora millepora,44,,,,,,,,,,,1,44,4.4
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora muricata,42,40,,,,,,,,,,2,82,8.2
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora nasuta,35,31,,,,,,,,,,2,66,6.6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora spathulata,60,,,,,,,,,,,1,60,6
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Acropora tenuis,30,,,,,,,,,,,1,30,3
+10/04/2016,Zenith,Zenith site 2,1276_2,2,5,AHB,,Galaxea fascicularis,13,10,,,,,,,,,,2,23,2.3
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Acropora millepora,9,,,,,,,,,,,1,9,0.9
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Acropora muricata,25,,,,,,,,,,,1,25,2.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Acropora spathulata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Acropora tenuis,42,,,,,,,,,,,1,42,4.2
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Montipora efflorescens,19,,,,,,,,,,,1,19,1.9
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Seriatopora hystrix,11,,,,,,,,,,,1,11,1.1
+15/04/2016,Bayag,Bayag site 1,1056_1,2,1,AHB,,Stylophora pistillata,27,,,,,,,,,,,1,27,2.7
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Acropora elseyi,34,,,,,,,,,,,1,34,3.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Acropora tenuis,28,,,,,,,,,,,1,28,2.8
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Acropora yongei,20,,,,,,,,,,,1,20,2
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Astreopora myriophthalma,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Goniastrea pectinata,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Goniastrea retiformis,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Lobophyllia hemprichii,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Lobophyllia recta,14,10,,,,,,,,,,2,24,2.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,2,AHB,,Porites massive,7,8,,,,,,,,,,2,15,1.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Acropora cytherea,100,,,,,,,,,,,1,100,10
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,baeodactyla,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Acropora florida,15,,,,,,,,,,,1,15,1.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Echinopora horrida,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Goniastrea favulus,9,,,,,,,,,,,1,9,0.9
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Montipora foveolata,11,,,,,,,,,,,1,11,1.1
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Platygyra daedalea,24,,,,,,,,,,,1,24,2.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,3,AHB,,Porites massive,8,16,,,,,,,,,,2,24,2.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Acropora hyacinthus,35,,,,,,,,,,,1,35,3.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Acropora muricata,7,,,,,,,,,,,1,7,0.7
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Astreopora myriophthalma,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Dipsastraea pallida,21,10,,,,,,,,,,2,31,3.1
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Dipsastraea truncata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Montipora efflorescens,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Montipora millepora,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Platygyra daedalea,10,,,,,,,,,,,1,10,1
+15/04/2016,Bayag,Bayag site 1,1056_1,2,4,AHB,,Porites massive,11,12,14,8,,,,,,,,4,45,4.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Acropora hyacinthus,60,20,56,,,,,,,,,3,136,13.6
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Acropora intermedia,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Acropora muricata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Astreopora myriophthalma,20,,,,,,,,,,,1,20,2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Echinopora gemmacea,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Echinopora lamellosa,7,55,,,,,,,,,,2,62,6.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Goniastrea pectinata,7,,,,,,,,,,,1,7,0.7
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Isopora cuneata,14,31,,,,,,,,,,2,45,4.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Pocillopora damicornis,26,,,,,,,,,,,1,26,2.6
+15/04/2016,Bayag,Bayag site 2,1056_2,2,1,AHB,,Seriatopora hystrix,6,,,,,,,,,,,1,6,0.6
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora cytherea,73,,,,,,,,,,,1,73,7.3
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora florida,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora hyacinthus,26,,,,,,,,,,,1,26,2.6
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora intermedia,24,51,,,,,,,,,,2,75,7.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora millepora,34,,,,,,,,,,,1,34,3.4
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Acropora muricata,13,,,,,,,,,,,1,13,1.3
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Echinopora lamellosa,36,44,,,,,,,,,,2,80,8
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Galaxea fascicularis,7,4,,,,,,,,,,2,11,1.1
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Leptastrea transversa,13,,,,,,,,,,,1,13,1.3
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Montipora tuberculosa,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Bayag,Bayag site 2,1056_2,2,2,AHB,,Stylophora pistillata,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Bayag,Bayag site 2,1056_2,2,3,AHB,,Acropora elseyi,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,3,AHB,,Acropora hyacinthus,15,,,,,,,,,,,1,15,1.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,3,AHB,,Acropora intermedia,35,30,55,18,,,,,,,,4,138,13.8
+15/04/2016,Bayag,Bayag site 2,1056_2,2,3,AHB,,Acropora muricata,110,80,,,,,,,,,,2,190,19
+15/04/2016,Bayag,Bayag site 2,1056_2,2,3,AHB,,Isopora cuneata,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Acropora elseyi,15,,,,,,,,,,,1,15,1.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Acropora hyacinthus,50,,,,,,,,,,,1,50,5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Acropora intermedia,35,,,,,,,,,,,1,35,3.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Acropora muricata,12,10,,,,,,,,,,2,22,2.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Acropora nasuta,25,,,,,,,,,,,1,25,2.5
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Isopora cuneata,31,,,,,,,,,,,1,31,3.1
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Porites massive,10,22,,,,,,,,,,2,32,3.2
+15/04/2016,Bayag,Bayag site 2,1056_2,2,4,AHB,,Seriatopora hystrix,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Acanthastrea echinata,16,,,,,,,,,,,1,16,1.6
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Acropora elseyi,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Acropora florida,20,,,,,,,,,,,1,20,2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Acropora hyacinthus,15,35,29,25,55,,,,,,,5,159,15.9
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Acropora muricata,10,14,35,,,,,,,,,3,59,5.9
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Echinopora lamellosa,26,,,,,,,,,,,1,26,2.6
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Favites halicora,8,16,,,,,,,,,,2,24,2.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Galaxea fascicularis,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Goniastrea pectinata,25,10,8,,,,,,,,,3,43,4.3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Goniastrea retiformis,4,,,,,,,,,,,1,4,0.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Hydnophora rigida,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Montipora efflorescens,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Porites massive,22,20,,,,,,,,,,2,42,4.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,1,AHB,,Psammocora digitata,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Acropora gemmifera,30,,,,,,,,,,,1,30,3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Acropora hyacinthus,35,16,12,,,,,,,,,3,63,6.3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Acropora muricata,38,32,,,,,,,,,,2,70,7
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Acropora sarmentosa,6,,,,,,,,,,,1,6,0.6
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Acropora tenuis,20,,,,,,,,,,,1,20,2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Coeloseris mayeri,24,25,,,,,,,,,,2,49,4.9
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Cyphastrea serailia,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Favites halicora,11,,,,,,,,,,,1,11,1.1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Favites pentagona,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Lithophyllon repanda,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Lobophyllia hemprichii,17,,,,,,,,,,,1,17,1.7
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Montipora tuberculosa,4,,,,,,,,,,,1,4,0.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Platygyra lamellina,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Pocillopora damicornis,22,11,,,,,,,,,,2,33,3.3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Porites massive,30,,,,,,,,,,,1,30,3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,2,AHB,,Psammocora contigua,8,15,,,,,,,,,,2,23,2.3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora elseyi,21,,,,,,,,,,,1,21,2.1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora gemmifera,24,,,,,,,,,,,1,24,2.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora hyacinthus,100,70,65,,,,,,,,,3,235,23.5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora muricata,60,40,12,,,,,,,,,3,112,11.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora tenuis,40,,,,,,,,,,,1,40,4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Acropora yongei,25,,,,,,,,,,,1,25,2.5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Dipsastraea matthaii,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Goniastrea pectinata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,3,AHB,,Porites massive,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora florida,16,,,,,,,,,,,1,16,1.6
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora hyacinthus,42,,,,,,,,,,,1,42,4.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora otteri,10,8,,,,,,,,,,2,18,1.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora muricata,70,28,15,25,,,,,,,,4,138,13.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora spathulata,45,,,,,,,,,,,1,45,4.5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora tenuis,30,,,,,,,,,,,1,30,3
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora valida,18,20,,,,,,,,,,2,38,3.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Acropora yongei,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Dipsastraea pallida,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Echinopora gemmacea,14,31,,,,,,,,,,2,45,4.5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Galaxea fascicularis,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Goniastrea pectinata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Goniastrea stelligera,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Lobophyllia hemprichii,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Lobophyllia radians,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Montipora efflorescens,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Pocillopora damicornis,26,24,,,,,,,,,,2,50,5
+15/04/2016,Dugong,Dugong site 1,1052_1,2,4,AHB,,Porites massive,50,10,,,,,,,,,,2,60,6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acanthastrea echinata,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acropora cytherea,17,26,,,,,,,,,,2,43,4.3
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acropora florida,10,22,,,,,,,,,,2,32,3.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acropora hyacinthus,35,80,135,20,40,,,,,,,5,310,31
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acropora muricata,35,14,12,,,,,,,,,3,61,6.1
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Acropora nasuta,22,,,,,,,,,,,1,22,2.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Favites pentagona,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Goniastrea pectinata,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Dugong,Dugong site 2,1052_2,2,1,AHB,,Montipora grisea,130,,,,,,,,,,,1,130,13
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora elseyi,16,20,,,,,,,,,,2,36,3.6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora florida,14,,,,,,,,,,,1,14,1.4
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora hyacinthus,42,52,,,,,,,,,,2,94,9.4
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora otteri,22,,,,,,,,,,,1,22,2.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora muricata,30,50,,,,,,,,,,2,80,8
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Acropora nasuta,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Coeloseris mayeri,26,,,,,,,,,,,1,26,2.6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Echinopora gemmacea,18,5,,,,,,,,,,2,23,2.3
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Goniastrea pectinata,10,8,,,,,,,,,,2,18,1.8
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Goniastrea retiformis,16,,,,,,,,,,,1,16,1.6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Lobophyllia hemprichii,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Pocillopora damicornis,24,,,,,,,,,,,1,24,2.4
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,4113,Porites cylindrica,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Porites massive,175,,,,,,,,,,,1,175,17.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,2,AHB,,Seriatopora hystrix,10,,,,,,,,,,,1,10,1
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Acropora intermedia,45,,,,,,,,,,,1,45,4.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Acropora muricata,10,50,22,,,,,,,,,3,82,8.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Acropora nasuta,7,,,,,,,,,,,1,7,0.7
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Acropora spathulata,30,,,,,,,,,,,1,30,3
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Dipsastraea matthaii,18,,,,,,,,,,,1,18,1.8
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Dipsastraea pallida,30,35,,,,,,,,,,2,65,6.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Favites flexuosa,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Montipora efflorescens,15,,,,,,,,,,,1,15,1.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Montipora grisea,5,,,,,,,,,,,1,5,0.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,4414,Montipora monasteriata,35,40,,,,,,,,,,2,75,7.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Seriatopora hystrix,35,10,,,,,,,,,,2,45,4.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,3,AHB,,Stylophora pistillata,15,,,,,,,,,,,1,15,1.5
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Acropora gemmifera,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Acropora hyacinthus,12,32,42,,,,,,,,,3,86,8.6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Acropora nasuta,12,,,,,,,,,,,1,12,1.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Astreopora myriophthalma,32,,,,,,,,,,,1,32,3.2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Favites halicora,21,,,,,,,,,,,1,21,2.1
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Galaxea fascicularis,8,,,,,,,,,,,1,8,0.8
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Goniastrea pectinata,13,7,,,,,,,,,,2,20,2
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Isopora palifera,60,,,,,,,,,,,1,60,6
+15/04/2016,Dugong,Dugong site 2,1052_2,2,4,AHB,,Pocillopora damicornis,5,6,,,,,,,,,,2,11,1.1

@@ -1,54 +1,95 @@
 
-# source("analysis.R")
-
 rm(list = ls())
 library("ggrepel")
 library("grid")
 library("png")
+library("MASS") 
+library("reshape2")
+library("ggplot2")
+library("cowplot")
+library("stats4")
 
 #######################################
-# LOAD SCRIPTS
+# TO DO: 
+# bootstrapping
+# fix goni
+# density dependence
+# storms
+
+#######################################
+# LOAD DATA
 #######################################
 source("R/functions.R")
 source("R/data_prep.R")
+#sdat<-sdat[!sdat$colony_id==287,]
+#gdat<-gdat[!gdat$colony_id==287,]
 
-#source("R/goni.R") # removes smalls to fix growth curve
-sdat<-sdat[!sdat$colony_id==287,]
-gdat<-gdat[!gdat$colony_id==287,]
+#sdat<-sdat[!sdat$colony_id==358,]
+#gdat<-gdat[!gdat$colony_id==358,]
+
+#sdat<-sdat[!sdat$colony_id==337,]
+#gdat<-gdat[!gdat$colony_id==337,]
+
+#gdat<-gdat[!gdat$colony_id==345,]
+#sdat<-sdat[!sdat$colony_id==345,]
+
+#gdat<-gdat[!gdat$colony_id==341,]
+#sdat<-sdat[!sdat$colony_id==341,]
+
 
 #gdat <- gdat[!gdat$colony_id==356,]
+#sdat <- sdat[!sdat$colony_id==356,]
+
 #gdat <- gdat[!gdat$colony_id==331,]
+#sdat <- sdat[!sdat$colony_id==331,]
+
 #gdat <- gdat[!gdat$colony_id==351,]
+#sdat <- sdat[!sdat$colony_id==351,]
+
 #gdat <- gdat[!gdat$colony_id==349,]
+#sdat <- sdat[!sdat$colony_id==349,]
 
-cutoff_diam<-10
-cutoff_a <- log10(a_func(cutoff_diam/2/100))
-#gdat <- subset(gdat, area > cutoff_a  )
-#gdat <- subset(gdat, area_next > cutoff_a  )
 
+
+# most
+gdat <- subset(gdat, area > log10((pi*(3/2)^2)/10000))
+sdat <- subset(sdat, area > log10((pi*(3/2)^2)/10000))
+fec <- subset(fec, area > log10((pi*(3/2)^2)/10000))
+
+#gdat <- subset(gdat, area > log10((pi*(1)^2)/10000))
+#sdat <- subset(sdat, area > log10((pi*(1)^2)/10000))
+#fec <- subset(fec, area > log10((pi*(1)^2)/10000))
+
+#######################################
+# When a colony shrinks to under 5cm it dies..? 
+#######################################
+
+
+
+
+#######################################
+# MODEL PARAMETERS
+#######################################
 source("R/params.R")
-params[,c("spp", "g.slp")]
+#fig.s1
+
+params[params$spp=="Acy",]
+#ggsave("figs/supp/fig.s1.png", fig.s1, width=25, height=13, units="cm", dpi = 300)
+params
+#write.csv(params, "params.csv")
+
+
+params[params$spp=="Gre", c("p.int", "p.slp","p.sig")] <- params[params$spp=="Gpe", c("p.int", "p.slp","p.sig")]
+
+params[params$spp=="Gre", c("g.int", "g.slp","g.var")] <- params[params$spp=="Gpe", c("g.int", "g.slp","g.var")]
+
 
 #######################################
-# SADs
+# DEMOGRAPHIC SPACE
 #######################################
-
-sad <- read.csv("data/dornelas2008.csv")
-plot_grid(
-ggplot(params, aes(y=morphology, x=abundance_05))+
-geom_line(aes(col=morphology), arrow=arrow(length=unit(1,"mm")))+
-xlim(c(-100, max(sad$abundance)+100))+
-guides(col="none", fill="none"),
-ggplot(sad, aes(x=abundance))+
-geom_histogram(bins=30, col="white")+
-#scale_y_sqrt(expand=c(0,0), breaks=c(5,25,55,100))+
-xlim(c(-100, max(sad$abundance)+100))+
-labs(x="Abundance (N)", y="N species"),
-ncol=1, align="v", axis="lr", rel_heights=c(0.5,1))
-
-#######################################
-# PARAMETER SPACE
-#######################################
+# size
+#ggplot(ss, aes(x=area, col=spp))+
+#geom_density()+scale_colour_manual(values=cols)
 
 # proportion mortality at 100cm2
 params$p_mort<-inv.logit((params$p.slp*log10(0.01))+params$p.int)
@@ -71,14 +112,10 @@ params$f.cm2<-aggregate(f.cm2~spp, fec,mean)$f.cm2
 # total fecundity
 head(fec)
 params$f.colony<-aggregate(fecundity~spp, fec,mean)$fecundity
-#ggplot(params, aes(f.cm2, f.int))+geom_text(aes(label=spp))
 
 # average size
 size.av <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)
 params$size.av <- size.av$area[match(params$spp, size.av$spp)]
-
-# egg energy per area
-params$en.cm2<-params$f.cm2*params$eggC
 
 # minimum at reproductive maturity
 params$min.r<-1/aggregate(area_cm2~spp, fec[fec$reproductive==1,], min)$area_cm2
@@ -90,87 +127,51 @@ traits <- c("r.int","f.cm2","survcm", "av.surv","p_mort", "min.r", "f.colony")
 pca<-prcomp(params[,traits], scale=T, center=T)
 biplot(pca)
 
+# explained variation
 exp<-round(c(summary(pca)[[1]][1]^2/sum(summary(pca)[[1]]^2),summary(pca)[[1]][2]^2/sum(summary(pca)[[1]]^2)),3)*100
 exp
 
-# abundance
-ggplot(params, aes(reorder(spp, abundance_05), abundance_05))+geom_bar(stat="identity")+facet_wrap(~morphology, scales="free_x")
+# Figure S2 - fast/slow continuum
+#source("figs/supp/fig.S2_lms.R")	
+#fig.s2
 
-# size
-ggplot(ss, aes(x=area))+
-geom_density()+
-facet_wrap(~spp)
+#######################################
+# ABUNDANCE
+#######################################
 
+
+head(abun)
+ab2005 <- ggplot(data=d08B, aes(x=N/10, y=Species))+
+stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
+stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
+ggtitle("2005")+xlab("colonies per m2")
+ab2011_14 <- ggplot(data=abun, aes(x=N/10, y=species))+
+stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
+stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
+facet_grid(.~year, scales="free_x", space="free_x")+xlab("Colonies per m")
+
+#plot_grid(ab2005, ab2011_14, rel_widths=c(1,1.5))
+
+
+# Figure S3 - abundances
+#source("figs/supp/fig.S3_abun.R")	
+#fig.s3
+
+#######################################
 # FIGURE 1
+#######################################
+
 source("figs/fig.1.R")
 fig.1
-#ggsave("figs/fig.1.png", fig.1, width=13.7, height=9, units="cm", dpi = 300)
-
+#ggsave("figs/fig.1.png", fig.1, width=15, height=9.5, units="cm", dpi = 300)
 
 #######################################
-# IPM FUNCTIONS
+# IPM MESH AND BOUNDARIES
 #######################################
 
-#-------------------------------survival
-s.x <- function(x) { 
-	u <- params$s.int[params$spp==sp] + 
-	  params$s.slp[params$spp==sp] * x + 
-	    params$s.slp.2[params$spp==sp] * x^2
-  return(inv.logit(u)) 
-}
-
-#------------------------------- growth & partial mortality
-p.yx <- function(y, x) {
-  # x <- -3
-  g <- a_func(r_func(10^x) + params$r.int[params$spp==sp] )
-  #+ 1.96 * params$r.err[params$spp==sp])
-  temp <- 10^y / g  # proportion of max reached. 
-  temp[temp > 1] <- 1
-  dnorm(logit(1 - temp), params$p.int[params$spp==sp] + x * params$p.slp[params$spp==sp], params$p.sig[params$spp==sp])
-}
-
-#------------------------------- reproduction
- r.yx <- function(y, x) {	
- 	mat<- inv.logit(params$m.int[params$spp==sp] + 
- 	  params$m.slp[params$spp==sp] *x)
- 	fec<- exp(params$f.int[params$spp==sp] + 
- 	  params$f.slp[params$spp==sp] *x) 
-   #siz<- rnorm(y,mean=params$rec.size[params$spp==sp], sd=0.05) 
-   out <- (rec* mat * fec)
-   out[x < rec.size | y >= rec.size] <- 0 #if x is below recruitment size
-   return(out)
-   } 
-
- #------------------------------- kernel
-pmort<-T
-
-bigmatrix <- function() {
-    if (pmort) {
-    G <- h * outer(y, y, p.yx)
-  } else {
-    G <- h * outer(y, y, g.yx)
-  }
-  G <- t(t(G) / apply(G, 2, sum))
-  S <- s.x(y)
-  P <- G 
-  for(i in 1:n) P[,i]=G[,i]*S[i]
-  R <- h * outer(y, y, r.yx) 
-  #R <- h * outer(y, pmin(y, smax), r.yx) #  ceiling
-  K <- P + R
-  lam <- Re(eigen(K)$values[1])
-	w <- abs(Re(eigen(K)$vectors[,1])) 
-	v <- abs(Re(eigen(t(K))$vectors[,1]))
-	return(list(K=K, lam=lam, w=w, v=v, G=G, S=S, R=R, P=P)) }
-		
-#######################################
-# MESH AND BOUNDARIES
-#######################################
-
-max.size <- 1 
+max.size <- 0.3 # max(ss$area)
 n <- 100
-
 mesh <- function(){
-	#min.size <- -4
 	min.size <- rec.size
 	b <- seq(min.size, max.size, length=n)
 	h <- b[2] - b[1]
@@ -178,16 +179,12 @@ mesh <- function(){
 	y <- 0.5 * (b[1:n]+b[2:(n+1)])
 	I <- y >= rec.size
 	return(list(b=b,h=h,y=y,I=I, rec.size = rec.size))}
-
-
+	
 #######################################
 # RECRUITMENT LIT REVIEW
 #######################################
 
-# RECRUITMENT MODEL, Assume:
-# (A) closed system at trimodal
-# (B) 11 species constitute all acroporids/favids
-
+#  Assume: (A) closed system, (B) 11 species = all acroporids/favids
 density <- params$abundance_05/2700# 275*1*10m 
 area.m2 <- log10(density*(10^(params$size.av)))
 params$fec.m2 <- exp(params$f.int+params$f.slp*area.m2) 
@@ -197,64 +194,40 @@ tiles$N_m2_year[tiles$N_m2_year==0] <-1
 tiles$p.rec <- tiles$N_m2_year/tiles$eggs
 rec.fam <- aggregate(p.rec~Family, tiles, median)
 
-ggplot(tiles, aes(x=(N_m2_year/eggs), y=Family))+
-geom_boxplot()+scale_x_log10()
+#plot_grid(ggplot(tiles, aes(x=(N_m2_year/eggs), y=Family))+
+#geom_boxplot()+scale_x_log10()+ggtitle("Recruitment"),
+#ggplot(rsize, aes(x=recsize_1yr, y=Family))+geom_boxplot()+ggtitle("Recruit size"), ncol=1)
 
-# recruit size
-ggplot(rsize, aes(x=recsize_1yr, y=Family))+geom_boxplot()
-rsize.fam <- aggregate(recsize_1yr~Family, rsize, median)
 
-#######################################
-# ESTIMATE REC/LAM
-#######################################
-
-# recsize growth
-params$rsize.gr <- log10(pi*(params$r.int*(9/12))^2)
+# recsize
+rec.size.const <- log10(pi*((5/2)/100)^2) # 5cm diameter
+params$rec.size <- log10(pi*(params$r.int*(12/12))^2)
+agg <- aggregate(rec.size~morphology, params, mean)
+params$rec.size <- agg$rec.size[match(params$morphology, agg$morphology)]
 r.limit <- log10(pi*((10/100)/2)^2)
-params$rsize.gr <- ifelse(params$rsize.gr>r.limit,r.limit,params$rsize.gr)
+params$rec.size <- ifelse(params$rec.size > r.limit,r.limit,params$rec.size)
 
-# recsize family
-params$rsize.fam <- log10(pi*((rsize.fam$recsize_1yr[match(params$family, rsize.fam$Family)]/2)/100)^2)
 
-# recsize constant
-params$rsize.const <- log10(pi*((5/2)/100)^2)
 
-# recruitment family
-params$rec.fam <- rec.fam$p.rec[match(params$family, rec.fam$Family)]
-
-# recruitment energy
-#eggCscale <- (scale(params$eggC)/max(abs(scale(params$eggC))))*params$rec.fam
-params$recEn <- params$rec.fam * (10^(scale(params$eggC)/max(abs(scale(params$eggC))))) 
-
-# SELECT!!!
-params$rec <- params$rec.fam
-params$rec.size <- params$rsize.gr
-
-lam.est <- NULL
-for (sp in spp) {
-rec.size <- params$rec.size[params$spp==sp]
-rec <- params$rec[params$spp==sp]
-h <- mesh()$h
-y <- mesh()$y
-mod <- bigmatrix()
-lam.est<-rbind(lam.est, data.frame(sp, lam=bigmatrix()$lam))}
- lam.est
-params$lam.est <- lam.est$lam
+# recruitment 
+rec.const <- 10^-3
+#params$rec <- rec.fam$p.rec[match(params$family, rec.fam$Family)]
+params$rec <- ifelse(params$family=="Merulinidae", 5.900139e-05, 2*10^-3)
 
 
 #######################################
-# PLOT IPMS
+# GENERATE IPMS
 #######################################
 
-par(mfcol=c(2, 6))
+#par(mfcol=c(2, 6))
 
-lam_const <- NULL
 ipm.k.list <- list()
 ipm.p.list <- list()
 ipm.r.list <- list()
 y.list <- list()
 
 for (sp in spp) {
+	#sp<-"Ahy"
 	rec <- 1
 	rec.size <- params$rec.size[params$spp==sp]
 	h <- mesh()$h
@@ -262,155 +235,282 @@ for (sp in spp) {
 	sub<-gdat[gdat$spp==sp,]
     mod <- bigmatrix()
    # plot
-	image(y, y, t(mod$P)^0.3)   
-	points(sub$area, sub$area_next, cex=0.25)
-	title(sp, line=-1)
-	abline(0, 1, lty=2)
+	#image(y, y, t(mod$P)^0.3)   
+	#points(sub$area, sub$area_next, cex=0.25)
+	#title(sp, line=-1)
+	#abline(0, 1, lty=2)
 	y.list[[sp]] <- y 
 	ipm.k.list[[sp]] <- mod$P
 	ipm.p.list[[sp]] <- mod$P
 	ipm.r.list[[sp]] <- mod$R
 	}
 
-# Figure S2
-source("figs/fig.S2.R")	
-#fig.s2
-
-
 #######################################
-# COMPARE MORPHS
+# ESTIMATE LAM
 #######################################
 
-# Is AL (middle man) classed as a rare or common?
-# params$abundance_pair[params$spp=="Asp"] <- "Rare"
-params2<-rbind(params, params[6,]) #duplicate AN, 7 (or AM=6)
-params2$morph<-as.character(params2$morph)
-params2$morph[c(7, 12)]<-c("corymbose_2","corymbose_2")#AN/AM
-comp<-dcast(params2, morph~abundance_pair, value.var="spp")
-comp$AC<-params2$abundance_05[match(comp$Common, params2$spp)]
-comp$AR<-params2$abundance_05[match(comp$Rare, params2$spp)]
-comp$diff <- comp$AC/comp$AR
-comp
-
-colsC <- cols[names(cols) %in% comp$Common]
-names(colsC)<-comp$morph[match(names(colsC),comp$Common)]
-colsC
-
-#######################################
-# MULTIPLE REC
-#######################################
-
-rec.x <- 10^(seq(-6,-2,0.5))
-
-store<-data.frame()
+lam.est <- NULL
+lam.const <- NULL
 for (sp in spp) {
-	for (rec in rec.x){
-	  rec.size <- params$rec.size[params$spp==sp]
-	  h <- mesh()$h
-	  y <- mesh()$y
-  sub<-dat[dat$spp==sp,]
-   mod <- bigmatrix()
-  store<-rbind(store, data.frame(sp=sp, rec=rec, lam=bigmatrix()$lam))
-   } 
-  }
- 
- pairs <- NULL 
-	for (rec in rec.x){
-		df <- store[store$rec==rec,]
-		temp <- comp
-		temp$c.lam <- df$lam[match(temp$Common, df$sp)]
-		temp$r.lam <- df$lam[match(temp$Rare, df$sp)]
-		#temp$diff <- temp$c.lam - temp$r.lam
-		#temp$ratio <- temp$c.lam / temp$r.lam
-		temp$logdiff <- log(temp$c.lam) - log(temp$r.lam)
-		temp$rec <- rec
-		pairs <- rbind(pairs, temp)
+rec.size <- params$rec.size[params$spp==sp]
+rec <- params$rec[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+lam.est<-rbind(lam.est, data.frame(sp, lam=bigmatrix()$lam))
+rec.size <- rec.size.const
+rec <- rec.const
+h <- mesh()$h
+y <- mesh()$y
+lam.const<-rbind(lam.const, data.frame(sp, lam=bigmatrix()$lam))
+}
+params$lam.est <- lam.est$lam
+params$lam.const <- lam.const$lam
+
+ggplot(params, aes(reorder(spp, -lam.est), lam.est))+geom_bar(stat="identity", aes(fill=spp))+scale_fill_manual(values=cols)+geom_hline(yintercept=1)
+
+params[,c("spp","lam.est", "g.slp")]
+
+
+
+
+#######################################
+# REC FIT TO SIZE STRUCTURE
+#######################################
+max.size <- 0.3 # max(ss$area)
+n <- 100
+mesh <- function(){
+	min.size <- rec.size
+	b <- seq(min.size, max.size, length=n)
+	h <- b[2] - b[1]
+	b <- c(min(b)-(2*h), min(b)-h, b)
+	y <- 0.5 * (b[1:n]+b[2:(n+1)])
+	I <- y >= rec.size
+	return(list(b=b,h=h,y=y,I=I, rec.size = rec.size))}
+	
+
+rec.ll <- function(x) {
+  cnt <- size.dist$count[II] # non-recruits
+  rec <<- x[1] 
+  mod <- bigmatrix()
+  eig.vec <- mod$w[II]/sum(mod$w[II])
+  return(-sum(cnt * log(eig.vec), na.rm=TRUE)) } # log-likelihood 
+
+rec.ss <- function(x) {
+  cnt <- size.dist$count[II] # non-recruits
+  cnt <- cnt / sum(cnt)
+  rec <<- x[1] 
+  mod <- bigmatrix()
+  eig.vec <- mod$w[II]/sum(mod$w[II])
+  return(sum((cnt - eig.vec)^2)) } # log-likelihood 
+  
+  
+# ss_vec <- 10^seq(-3, -7, -0.01)
+# store <- data.frame()
+# for (ss in ss_vec) {
+	
+ # cnt <- size.dist$count[II] # non-recruits
+ # cnt <- cnt / sum(cnt)
+ # rec <- ss 
+ # mod <- bigmatrix()
+ # eig.vec <- mod$w[II]/sum(mod$w[II])
+ # store <- rbind(store, data.frame(rec=ss, ss=sum((cnt - eig.vec)^2)))
+
+# }  
+
+# plot(ss ~ rec, store)
+# store[which.min(store$ss),]
+
+dev.off()  
+par(mfcol=c(4, 3), mar=c(3,3,1,1))
+
+n <- 12
+
+params$rec_fit <- NA
+params$lam_fit <- NA 
+
+for (sp in spp) {
+#sp <- "Asp"
+  # Model
+rec.size <- params$rec.size[params$spp==sp]
+rec <- params$rec[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+b <- mesh()$b 
+I <- mesh()$I
+II <- I
+II[1:6] <- FALSE
+
+max.size <- 1
+size.dist <- hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b, plot=FALSE)
+
+# hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b)
+#, lower = 0, upper=10000 removed
+# x is a startin rec value?
+# mle takes a function and finds the most likely value of x ? 
+
+	rec.fit <- optimise(rec.ss, c(0, 1))
+	rec <- rec.fit$minimum
+	rec
+	
+	#rec.fit <- mle(rec.ll, start = list(x = 0.001), method="Brent", lower = 0, upper=1 )
+	rec.fit <- optimise(rec.ll, c(0, 100))
+	rec <- rec.fit$minimum
+	rec
+
+#rec <- 0.00001
+  mod <- bigmatrix()
+	#image(y, y, log(t(mod$K)))
+	#title(sp, line=-1)
+	#abline(0, 1, lty=2)
+mod$lam
+
+	hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b, freq=FALSE, main="", ylim=c(0, 2))
+	lines(y[II], (mod$w[II]/sum(mod$w[II]))/h/2, col="red")
+	abline(v=y[45], lty=2)
+	title(sp, line=-1)
+text(0,1, round(mod$lam, 3))
+
+
+  params$lam_fit[params$spp==sp] <- mod$lam
+  params$rec_fit[params$spp==sp]<- rec
+}
+
+params$rec_fit
+
+
+ggplot(params, aes(reorder(spp, -lam_fit), lam_fit))+geom_bar(stat="identity", aes(fill=spp))+scale_fill_manual(values=cols)+geom_hline(yintercept=1)
+
+
+
+##### CHANGE REC?  #!!!!!!!
+params$rec <- params$rec_fit
+
+#######################################
+# ELASTICITY & IPM MEASURES 
+#######################################
+ # eigen-things combined to get sensitivity/elasticity matrices.
+
+s.list <- list()
+eK.list <- list()
+eR.list <- list()
+eP.list <- list()
+demovals <- NULL
+sizevals <- NULL
+
+for (sp in spp) {
+	#sp <- "Ahy"
+	rec <- params$rec[params$spp==sp]
+	rec.size <- params$rec.size[params$spp==sp]
+	h <- mesh()$h
+	y <- mesh()$y
+	K <- bigmatrix()$K
+	P <- bigmatrix()$P
+	R <- bigmatrix()$R
+	#image(t(K^0.2))
+	
+	lam <- Re(eigen(K)$values[1]) # population growth
+	w.eigen<-Re(eigen(K)$vectors[,1]) # right eigenvec
+	stable.size <- w.eigen/sum(w.eigen) # sable size dist 
+	v.eigen<-Re(eigen(t(K))$vectors[,1]) # left eigenvec
+	repro.val <- v.eigen/v.eigen[1] # rel. reprodutive values 
+	v.dot.w<-sum(stable.size*repro.val*h) # reproductive val * stable size
+	sens<-outer(repro.val,stable.size,"*")/v.dot.w   # sensitivity matrix
+	K.elas <- sens*(K/h)/lam *h^2 # elasticity matrices (h varies)
+	P.elas<-(P/h)*sens/lam # survival elasticity matrix
+	eP=sum(P.elas)*h^2 # total survival elasticity
+	R.elas<-(R/h)*sens/lam # reproduction elasticity matrix
+	eR=sum(R.elas)*h^2 # total reproduction elasticity
+	
+	# Net reproductive rate/Generation time from IPMbook monocarp
+	N <- solve(diag(n)-P)
+	R0 <- abs(eigen(R %*% N)$values[1])
+	GT <- log(R0)/log(lam)
+	
+	demovals <- rbind(demovals, data.frame(spp=sp, eR, eP, R0, GT))
+	sizevals <- rbind(sizevals, data.frame(spp=sp, area=y, stable.size, repro.val, v.dot.w))
+		s.list[[sp]] <- sens
+		eR.list[[sp]] <- R.elas
+		eP.list[[sp]] <- P.elas
+		eK.list[[sp]] <- K.elas
 		}
+
+params[,colnames(demovals)]<- demovals[match(demovals$spp, params$spp),]
+lapply(eK.list, function(x){sum(x)})
+rowSums(demovals[,c("eP","eR")]) # summing to 1
 
 plot_grid(
-ggplot(store, aes(x=rec, y=log(lam), col=sp))+
-geom_hline(yintercept=0)+geom_line()+
- scale_x_log10()+scale_colour_manual(values=cols)+
- labs(x="probability of recruitment", y=expression(log(lambda))), 
-	ggplot(pairs,aes(rec, logdiff, col=morph))+
-	geom_hline(yintercept=0)+
-		geom_line()+
-		scale_x_log10()+
-		labs(x="probability of recruitment", y=expression(Delta~log*(lambda)~(common~-~rare))))
-		
-# Rgrowth = rec required to grow..
+ggplot(sizevals, aes(x=area, y=repro.val, col=spp))+geom_line()+
+scale_colour_manual(values=cols)+
+scale_y_log10()+guides(col="none"),
+ggplot(sizevals, aes(x=area, y=stable.size, col=spp))+geom_line()+
+scale_colour_manual(values=cols)+guides(col="none"),
+ggplot(params, aes(reorder(spp, -eR), eR, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none"), 
+ggplot(params, aes(reorder(spp, -R0), R0, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none")+scale_y_log10(),
+ggplot(params, aes(reorder(spp, -GT), GT, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none")+scale_y_log10(),
+ggplot(params, aes(r.int, eR))+geom_text(aes(label=spp))+scale_y_sqrt()+scale_x_log10())
 
-Rgrow <- subset(store, lam>1)
-Rg <- NULL
-for (sp in unique(Rgrow$sp)){
-	#sp <- "A"
-	sub <- Rgrow[Rgrow$sp==sp,]
-	min <- sub[which.min(sub$lam),"rec"]
-	Rg <- rbind(Rg, data.frame(sp, min))}
-params$Rgrow <- Rg$min[match(params$spp, Rg$sp)]
+#######################################
+# ELASTICITY ACROSS SIZES
+#######################################
 
-ggplot(params, aes(y=reorder(spp, -Rgrow), x=Rgrow,fill=spp))+geom_point(shape=21, size=4)+
-scale_fill_manual(values=cols)+guides(fill="none")+scale_x_log10()
+spp2 <- spp
+ek.hist <- NULL
+for (sp in spp2) {
+#	sp <- "Gpe"
+	y <- y.list[[sp]]
+	e.k <- melt(eK.list[[sp]])
+	e.k$y <- rep(y, length(y))
+	e.k.sum <- aggregate(value~Var1+y, e.k, sum)
+	ek.hist <- rbind(ek.hist, cbind(e.k.sum, spp=sp))
+	}
+head(ek.hist)
+
+ek.hist$size <- round(ek.hist$y/0.45)*0.45
+ek.av <- aggregate(value~size+spp, ek.hist, sum)
+ek.av$morphology<-params$morphology[match(ek.av$spp, params$spp)]
+ek.av$X2 <- ek.av$value#*h^2  #/ek.av$max
+
+ggplot(ek.av[!ek.av$spp=="Asp",], aes(size,X2))+
+geom_bar(stat="identity", position=position_dodge(preserve = "single"), aes(fill=spp), col="black", size=0.1, width=0.33)+
+facet_wrap(~morphology, scales="free", ncol=1)+
+scale_fill_manual(values=cols)
+
+
+
+
+
 
 
 #######################################
-# MULTIPLE REC. SIZE
+# INCREASE/DECREASE
 #######################################
 
-recsize.x <- seq(min(params$rec.size)-0.2, max(params$rec.size)+0.2,0.1)
+head(abun)
+diffs <- data.frame(dcast(abun, species+tran~year, value.var="N"))
+sp.avs<-aggregate(N~species, abun, mean)
+diffs$orig <- sp.avs$N[match(diffs$species, sp.avs$species)]
+diffs$diff <- (diffs$X2014-diffs$X2011)/diffs$orig
 
-store2 <- NULL
-for (sp in spp) {
-	for (rec.size in recsize.x){
-	  rec <- params$rec[params$spp==sp]
-	  h <- mesh()$h
-	  y <- mesh()$y
-  sub<-dat[dat$spp==sp,]
-   mod <- bigmatrix()
-  store2<-rbind(store2, data.frame(sp=sp, rec.size=rec.size, lam=bigmatrix()$lam))
-   } 
-  }
- 
-pairs2 <- NULL 
-	for (rec.size in recsize.x){
-		df <- store2[store2$rec.size==rec.size,]
-		temp <- comp
-		temp$c.lam <- df$lam[match(temp$Common, df$sp)]
-		temp$r.lam <- df$lam[match(temp$Rare, df$sp)]
-		#temp$diff <- temp$c.lam - temp$r.lam
-		#temp$ratio <- temp$c.lam / temp$r.lam
-		temp$logdiff <- log(temp$c.lam) - log(temp$r.lam)
-		temp$rec.size <- rec.size
-		pairs2 <- rbind(pairs2, temp)
-		}
-			
-plot_grid(ggplot(store2, aes(sqrt(((10^rec.size)*10000)/pi)*2, log(lam), col=sp))+
-geom_hline(yintercept=0)+
- geom_line(size=1)+
- scale_colour_manual(values=cols)+
- labs(x="rec size (diam)", y=expression(log(lambda))),
- ggplot(pairs2,aes(sqrt(((10^rec.size)*10000)/pi)*2, logdiff, col=morph))+geom_line(size=1)+labs(x="rec.size (diam)", y=expression(Delta~log*(lambda)~(common~-~rare))))
-		
-# Rgrowth = rec required to grow..
+diffsC <- data.frame(dcast(abun, species+tran~year, value.var="cover"))
+sp.avs<-aggregate(cover~species, abun, mean)
+diffsC$orig <- sp.avs$cover[match(diffsC$species, sp.avs$species)]
+diffs$cover <- (diffsC$X2014 - diffsC$X2011)/diffsC$orig
 
-Sgrow <- subset(store2, lam>1)
-Sg <- NULL
-for (sp in unique(Sgrow$sp)){
-	#sp <- "Ahy"
-	sub <- Sgrow[Sgrow$sp==sp,]
-	min <- sub[which.min(sub$lam),"rec.size"]
-	Sg <- rbind(Sg, data.frame(sp, min))}
-params$Sgrow <- Sg$min[match(params$spp, Sg$sp)]
+diffs$spp<-params$spp[match(diffs$species, params$species)]
+diffs$lam <- params$lam_fit[match(diffs$spp, params$spp)]
 
-ggplot(params, aes(y=reorder(spp, -Sgrow), x=Sgrow,fill=spp))+geom_point(shape=21, size=4)+
-scale_fill_manual(values=cols)+guides(fill="none")
-		
+ggplot(diffs, aes(reorder(spp, -lam), diff, fill=spp))+
+stat_summary(geom="bar", fun="mean", col="black", size=0.1)+
+stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
+stat_summary(aes(reorder(spp, -lam), cover, fill=spp), geom="point", fun="mean")
+
 #######################################
-# MULTIPLE REC AND REC.SIZE
-#######################################
- 
+# RECRUITMENT SENSITIVITY I
+#######################################	
+
+# lambda at different rec/recsize combinations
 rec.x <- 10^(seq(-6,-2,0.5))
-
+recsize.x <- seq(min(params$rec.size)-0.05, max(params$rec.size)+0.1,0.1)
 store3 <- list()
 for (sp in spp) {
 	temp<-matrix(NA,length(rec.x), length(recsize.x))
@@ -422,52 +522,218 @@ for (sp in spp) {
 		y <- mesh()$y	
    mod <- bigmatrix()
    temp[i,j] <- mod$lam
-  #store3<-rbind(store3, data.frame(sp=sp, rec=rec, lam=mod$lam))
   }
  } 
  store3[[sp]] <- temp  
   }
- 
-  minlam <- min(log(do.call("rbind", store3)))
-  maxlam <- max(log(do.call("rbind", store3)))
-  
+
+minlam <- min(log(do.call("rbind", store3)))
+maxlam <- max(log(do.call("rbind", store3)))
+
 par(mfrow=c(3,4))
+sp.conts <- NULL
 for(sp in spp){
+	#sp<-"Ahy"
   image(log10(rec.x), recsize.x, log(store3[[sp]]), main=sp, zlim=c(minlam, maxlam))
   abline(h=params[params$spp==sp, "rec.size"], lty=2)
   contour(log10(rec.x), recsize.x, log(store3[[sp]]), add=TRUE, levels=0)
   }
    contour(log10(rec.x), recsize.x, log(store3[[spp[1]]]), levels=0, col=cols[1], lwd=3)
-   #abline(h=params[params$spp==spp[1], "rec.size"], lty=2, col=cols[1], lwd=3)
- for(i in 2:length(spp)){
+ for(i in 1:length(spp)){
  	sp <- spp[i]
- 	#abline(h=params[params$spp==sp, "rec.size"], lty=2, col=cols[i], lwd=3)
   contour(log10(rec.x), recsize.x, log(store3[[sp]]), add=TRUE, levels=0, col=cols[i], lwd=3)
+  conts <- melt(store3[[spp[i]]])
+  sp.conts <- rbind(sp.conts, cbind(conts,rec = rep(rec.x, length(recsize.x)), recsize = rep(recsize.x, each=length(rec.x)), spp=sp))
   }
+head(sp.conts)
+
+#######################################
+# FIG2
+#######################################
+
+# Figure S4
+#source("figs/supp/fig.s4_ipms.R")	
+#fig.s4
+
+#speed <- 0.1 # slow but final
+#speed <- 0.5 # fast
+#source("figs/fig.2.R")
+#fig2
+#ggsave("figs/fig.2.png", fig2, width=15, height=8, units="cm", dpi = 250)
 
 
+
+#######################################
+# COMPARE MORPHOLOGIES
+#######################################
+
+params2<-rbind(params, params[6,]) 
+params2$morph<-as.character(params2$morph)
+params2$morph[c(7, 12)]<-c("corymbose_2","corymbose_2")#AN/AM
+comp<-dcast(params2, morph~abundance_pair, value.var="spp")
+
+colsC <- cols[names(cols) %in% comp$Common]
+names(colsC)<-comp$morph[order(comp$Common)]
+
+morph.diff <- function(x){
+	#x <-"m.int"
+	params2$x.temp <-params[match(params2$spp, params$spp), x]
+	comp$x.common <- params2$x.temp[match(comp$Common, params2$spp)]
+	comp$x.rare <- params2$x.temp[match(comp$Rare, params2$spp)]
+	comp$x.diff <- comp$x.common-comp$x.rare
+	comp$x.div <- comp$x.common/comp$x.rare
+	comp
+	}
+
+comp$AC<-morph.diff("abundance_05")$x.common
+comp$AR<-morph.diff("abundance_05")$x.rare
+comp$abundiff <- morph.diff("abundance_05")$x.div
+
+comp$lamC <- morph.diff("lam_fit")$x.common
+comp$lamR <- morph.diff("lam_fit")$x.rare
+comp$lamdiff <- morph.diff("lam_fit")$x.diff
+comp$logdiff <- log(comp$lamC) - log(comp$lamR)
+
+
+# Double recruitment
+doub_lam <- NULL
+for(sp in spp){
+	rec <- params$rec[params$spp==sp] * 2
+	rec.size <- params$rec.size[params$spp==sp]
+	h <- mesh()$h
+	y <- mesh()$y
+	doub_lam <- rbind(doub_lam, data.frame(spp=sp, lam=bigmatrix()$lam))
+	}
+comp$doubC <- doub_lam$lam[match(comp$Common, doub_lam$spp)]
+comp$doubR <- doub_lam$lam[match(comp$Rare, doub_lam$spp)]
+comp$doubdiff <- comp$doubC - comp$doubR
+
+ggplot(comp)+
+geom_bar(aes(y=reorder(morph, -lamdiff), x=lamdiff), stat="identity")+
+geom_segment(aes(y=reorder(morph, -lamdiff), yend=reorder(morph, -lamdiff), x=lamdiff, xend=doubdiff), arrow=arrow(length=unit(1,"mm")))
+
+#######################################
+# TIME NEEDED TO GET DIFFERENCES
+#######################################
+
+# method 1 
+
+comp$doub.time <- log(2)/log(1+comp$lamdiff)
+comp$difftime <- log(comp$abundiff)/log(1+comp$lamdiff)
+		
+ggplot(comp[comp$difftime>0,], aes(x=difftime, y=reorder(morph, -difftime)))+
+geom_bar(stat="Identity", aes(fill=morph))+
+labs(x="Years to project \nabundance differences")+
+guides(fill="none")+scale_fill_manual(values=colsC)
+
+
+# method 2 - projecting lamda
+
+n1 <- 100
+ngen <- 100
+pars <- params2[, c("spp","morph", "abundance_pair","lam.est")]
+proj <- merge(pars, data.frame(gen=1:ngen))
+proj$n <- n1*proj$lam.est^proj$gen
+
+ggplot(proj, aes(gen, n))+geom_line(aes(group=spp, col=spp))+scale_colour_manual(values=cols)+facet_wrap(~morph, scales="free_y")
+
+proj2 <- dcast(morph+gen~abundance_pair, data=proj, value.var="n")
+proj2$diff <- proj2$Common/proj2$Rare
+proj2$real <- comp$abundiff[match(proj2$morph, comp$morph)]
+gens <- aggregate(gen~morph, proj2[proj2$diff<proj2$real,], max)
+proj2$maxgen <- gens$gen[match(proj2$morph, gens$morph)] +1 #to cross the line
+head(proj2)
+
+ggplot(proj2, aes(gen, diff, col=morph))+geom_line(linetype="dotted")+coord_cartesian(ylim=c(0,60))+geom_line(data=proj2[proj2$gen<=proj2$maxgen,])+geom_point(data=proj2[proj2$gen==proj2$maxgen,])
+	
+# method 3 - projecting lamda
+
+#for(sp in spp){
+	sp <-"Ahy"
+	rec <- params$rec[params$spp==sp] 
+	rec.size <- params$rec.size[params$spp==sp]
+	h <- mesh()$h
+	y <- mesh()$y
+	lam=bigmatrix()$lam
+	v=bigmatrix()$v
+	w=bigmatrix()$w
+	ggplot(NULL, aes(y, v))+geom_point()
+
+pop  <- matrix(nrow=100, ncol=50)
+  pop[,1] <- round(v * 1000) # this is the inital population size for the EvoPop
+  for(j in 2:50){
+    pop[,j] <- pop[,j-1]*lam
+  }
+head(pop)
+
+head(melt(pop))
+ggplot(data=melt(pop), aes(x=Var1, y=value, col=Var2, group=Var2))+geom_line()+scale_y_log10()
+psize<-	aggregate(value~Var2, data=melt(pop), sum)
+psize$n <- 1000*lam^psize$Var2
+
+	ggplot()+
+	geom_point(data=psize, aes(Var2, value))+
+	geom_point(data=psize, aes(Var2, n), col="red")+scale_y_log10()
+	
+	
+	
+#######################################
+# STORMS - WRONG>> currently
+#######################################		
+
+
+params2$lam.pos <- comp$lamdiff[match(params2$morph, comp$morph)]
+params2$lam.pos <- ifelse(params2$abundance_pair=="Rare",1.1,  1.1+params2$lam.pos)
+#params2$lam.pos[params2$spp=="Gpe"]<-1.01
+
+n1 <- 100
+ngen <- 30
+pars <- params2[, c("spp","morph", "abundance_pair","lam.pos", "lam.est")]
+proj <- merge(pars, data.frame(gen=1:ngen))
+proj$n <- n1*proj$lam.pos^proj$gen
+
+proj$mort <- ifelse(proj$morph=="tabular", 0.05,ifelse(proj$morph=="staghorn", 0.35,ifelse(proj$morph=="corymbose", 0.1,ifelse(proj$morph=="corymbose_2",0.1,  0.8))))
+proj$n2 <- ifelse(proj$gen>10, proj$n*proj$mort, proj$n)
+proj$n3 <- ifelse(proj$gen>20, proj$n2*proj$mort, proj$n2)
+
+
+ggplot(proj[proj$n3<4000,], aes(gen, n3))+geom_line(aes(group=spp, col=spp))+scale_colour_manual(values=cols)+facet_wrap(~morph, scale="free_y")+
+#scale_y_log10()+
+geom_segment(data=params2, aes(x=-Inf, xend=Inf, y=abundance_05, yend=abundance_05, col=spp), linetype="dotted")
+	
+
+	
+	
+	
+	
+	
+#######################################
+# RECRUITMENT SENSITIVITY II
+#######################################	
+comp$rec <- params2$rec[match(comp$morph, params2$morph)] 
+comp$rec.size <- params2$rec.size[match(comp$morph, params2$morph)] 
+comp$rec.size.cm <- sqrt(((10^comp$rec.size)*10000)/pi)*2	
+
+# difference in lambda across rec/recsize combinations
 pairs3 <- NULL
 for(m in comp$morph){
 	#m <- "tabular"
 	spC <- comp$Common[comp$morph==m]
 	spR <- comp$Rare[comp$morph==m]
 	logdiff <- log(store3[[spC]]) - log(store3[[spR]])
-	temp <- reshape(data.frame(logdiff), direction="long",
-    varying=list(c(1:ncol(logdiff))), ids=rec.x, times=recsize.x,
-    new.row.names=c(1:(length(recsize.x)*length(rec.x))))
-    #names(temp) <- c("recsize", "lam", "rec")
-    temp$scaled <- (temp$X1-mean(temp$X1))/sd(temp$X1)
+	temp <- melt(logdiff)
+	temp$rec <- rep(rec.x, length(recsize.x))
+	temp$recsize <- rep(recsize.x, each=length(rec.x))
     pairs3 <- rbind(pairs3, cbind(temp, morph=m))
 }
 head(pairs3)
 
-pairs3$lam2 <- ifelse(pairs3$X1 < 0, NA, pairs3$X1)
-
+pairs3$lam2 <- ifelse(pairs3$value < 0, NA, pairs3$value)
 
 ggplot()+
-geom_raster(data=pairs3, aes(x=id, y=time, fill=lam2))+
-geom_point(data=params2, aes(rec.fam, rsize.fam ), col="white", shape=3, stroke=1, size=0.3)+
-geom_point(data=params2, aes(recEn, rec.size ), col="white", shape=3)+
+geom_raster(data=pairs3, aes(x=rec, y=recsize, fill=lam2))+
+geom_point(data=params2, aes(rec.const, rec.size.const ), col="white", shape=3, stroke=1, size=0.3)+
+geom_point(data=params2, aes(rec, rec.size ), col="white", shape=3)+
 	scale_y_continuous(expand=c(0,0))+
 	scale_x_log10(expand=c(0,0))+
 	scale_fill_distiller(palette="Spectral")+
@@ -475,39 +741,263 @@ geom_point(data=params2, aes(recEn, rec.size ), col="white", shape=3)+
 	labs(x="rec rate", y="rec size")+
 	theme(strip.background=element_blank())
 
-#######################################
-# MORPH PAIRS
-#######################################
+# Figure S5
+#source("figs/supp/fig.s5_rec.R")	
+#fig.s5
 	
-	
-comp$rec <- params2$rec[match(comp$morph, params2$morph)] 
-comp$rec.size <- params2$rec.size[match(comp$morph, params2$morph)] 
-comp$rec.size.cm <- sqrt(((10^comp$rec.size)*10000)/pi)*2		
-comp$lamC <- params$lam.est[match(comp$Common, params$spp)]	
-comp$lamR <- params$lam.est[match(comp$Rare, params$spp)]
-
-comp$lamdiff <- comp$lamC - comp$lamR
-comp$logdiff <- log(comp$lamC) - log(comp$lamR)
-comp$doub.time <- log(2)/log(1+comp$lamdiff)
-comp$difftime <- log(comp$diff)/log(1+comp$lamdiff)
-		
-ggplot(comp[comp$difftime>0,], aes(x=difftime, y=reorder(morph, -difftime)))+geom_bar(stat="Identity")
-
 #######################################
-# FIG2
+# FIG3
 #######################################
 
-# Figure 2
-source("figs/fig.2.R")
-fig2
-#ggsave("figs/fig.2.png", fig2, width=13, height=10.5, units="cm", dpi = 300)
+# Figure 3
+#source("figs/fig.3.R")
+#fig3
+#ggsave("figs/fig.3.png", fig3, width=14, height=9, units="cm", dpi = 250)
 
 
 
 #######################################
-# ELASTICITY & IPM MEASURES
 #######################################
- # eigen-things can be combined to obtain the sensitivity and elasticity matrices.
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
+# params_orig <- params # CAREFUL set original
+
+
+#######################################
+# SENSITIVITY ANALYSIS!!  
+# Change each param by 10%... 
+#######################################
+
+pars <- c("m.int", "m.slp","f.int","f.slp","r.int","p.int","p.slp","p.sig", "s.int", "s.slp") #"s.slp.2"
+
+p.types <- data.frame(pars, type = c("reproduction","reproduction","reproduction","reproduction","growth","growth","growth", "growth", "survival","survival"))
+#p.types <- data.frame(pars, type = c("maturity","maturity","fecundity","fecundity","growth","growth","growth", "growth", "survival","survival","survival"))
+
+types <- unique(p.types$type)
+
+sens <- NULL
+sens2 <- NULL
+for (i in pars) {
+#i <- "m.int"
+for (sp in spp) {
+#sp <- "Ahy"
+params <- params_orig 
+par.orig <- params[params$spp==sp, i]
+#pars2 <- p.types$pars[p.types$type==i]
+params[,i] <- params[,i]*1.1
+#params[,pars2] <- params[,pars2]*1.1
+rec.size <- params$rec.size[params$spp==sp]
+rec <- params$rec[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+sens <- rbind(sens, data.frame(spp=sp, param=i, lam=bigmatrix()$lam, morph=params$morphology[params$spp==sp], p = "plus10", par.val = params[params$spp==sp, i], par.orig))
+params <- params_orig 
+params[,i] <- params[,i]*0.9
+sens2 <- rbind(sens2, data.frame(spp=sp, param=i, lam=bigmatrix()$lam, morph=params$morphology[params$spp==sp], p ="minus10", par.val = params[params$spp==sp, i], par.orig))
+}}
+head(sens)
+
+(sens$par.val-sens$par.orig)/sens$par.orig *100
+
+sens$orig <- params$lam.est[match(sens$spp, params$spp)]
+sens$change <- (sens$lam-sens$orig)/sens$orig
+
+sens2$orig <- params$lam.est[match(sens2$spp, params$spp)]
+sens2$change <- (sens2$lam-sens2$orig)/sens2$orig
+
+sens.df <- data.frame(cbind(sens, sens2))
+
+
+plot_grid(
+ggplot(sens, aes(change, reorder(param, abs(change))))+
+geom_bar(stat="identity", aes(fill=spp), position="dodge")+
+facet_wrap(~morph, nrow=1)+
+scale_fill_manual(values=cols)+geom_vline(xintercept=0)+
+labs(x="% change in lambda", y="varying parameter")+
+guides(fill="none")
+,
+ggplot(sens.df, aes(change, change.1))+
+geom_abline(slope=-1)+
+geom_point(aes(col=spp))+
+geom_text_repel(data=sens.df[abs(sens.df$change) >0.2,], aes(label=param), size=2)+
+scale_colour_manual(values=cols)+
+labs(x="plus 10% change", y="minus 10% change")
+, rel_widths=c(1, 0.4))
+
+
+#######################################
+# SENSITIVITY ANALYSIS!!  
+# Demo differences affect lam differences..
+#######################################
+
+source("R/params_morph.R")
+head(p.morph)
+
+rec.morph <- aggregate(rec~morphology, params, mean)
+p.morph$rec <- rec.morph$rec[match(p.morph$morph, rec.morph$morph)]
+
+#pars <- c("m.int", "m.slp","f.int","f.slp","r.int","p.int","p.slp","p.sig", "s.int", "s.slp", "s.slp.2")
+pars <- c("m.int", "m.slp","f.int","f.slp","g.int","g.slp","g.var", "s.int", "s.slp", "s.slp.2", "rec")
+
+#p.types <- data.frame(pars, type = c("reproduction","reproduction","reproduction","reproduction","growth","growth","growth", "growth", "survival","survival","survival"))
+p.types <- data.frame(pars, type = c("maturity","maturity","fecundity","fecundity","growth","growth","growth", "survival","survival","survival", "recruitment"))
+#p.types <- data.frame(pars, type = c("intrinsic","intrinsic","intrinsic","intrinsic","intrinsic","extrinsic","extrinsic", "extrinsic", "extrinsic","extrinsic","extrinsic"))
+
+types <- unique(p.types$type)
+
+test <- NULL
+test2 <- NULL
+for (i in types) {
+#i <- "m.int"
+#i = "repro"
+params <- params_orig 
+params[,pars] <- p.morph[match(params$morphology, p.morph$morph), pars]
+pars2 <- p.types$pars[p.types$type==i]
+params[,pars2] <- params_orig[match(params$spp, params_orig$spp), pars2]
+params
+for (sp in spp) {
+	#sp <- "Ahy"
+rec.size <- params$rec.size[params$spp==sp]
+rec <- params$rec[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+test<-rbind(test, data.frame(spp=sp, param=i, lam=bigmatrix()$lam, morph=params$morphology[params$spp==sp], rec="normal"))
+rec <- params$rec[params$spp==sp] * 2
+test2<-rbind(test2, data.frame(spp=sp, param=i, lam=bigmatrix()$lam, morph=params$morphology[params$spp==sp], rec="double"))
+ } 
+}
+
+head(test)
+ggplot(rbind(test, test2), aes(lam, param, fill=rec))+geom_bar(stat="Identity", position="dodge")+facet_wrap(~spp)+geom_vline(xintercept=1)
+
+diffs <- NULL
+diffs2 <- NULL
+for (i in types) {
+	#i <- "m.int"
+	params <- params_orig 
+	sub <- test[test$param==i, ]
+	params$x <- sub$lam[match(params$spp, sub$spp)]
+	diffs <- rbind(diffs, data.frame(morph=comp$morph, d=(morph.diff("x")$x.common - morph.diff("x")$x.rare), param=i, rec="normal"))
+	sub2 <- test2[test2$param==i, ]
+	params$x <- sub2$lam[match(params$spp, sub2$spp)]
+	diffs2 <- rbind(diffs2, data.frame(morph=comp$morph, d=(morph.diff("x")$x.common - morph.diff("x")$x.rare), param=i, rec="double"))
+	}
+head(diffs)
+
+
+sums <- aggregate(d~morph+rec, diffs, sum)
+sums$lamdiff <- comp$lamdiff[match(sums$morph, comp$morp)]
+
+sums2 <- aggregate(d~morph+rec, diffs2, sum)
+sums2$lamdiff <- comp$doubdiff[match(sums2$morph, comp$morp)]
+
+
+plot_grid(
+ggplot(rbind(diffs, diffs2), aes(d, reorder(param, -abs(d)), fill=rec))+
+geom_bar(stat="Identity", position="dodge")+
+facet_wrap(~morph)+
+labs(x="Lamda difference (Common - Rare)", y = "Varying parameter")+
+geom_vline(xintercept=0),
+ggplot(rbind(sums,sums2), aes(lamdiff, d))+geom_point(aes(col=morph, shape=rec))+
+scale_y_sqrt()+scale_x_sqrt()+
+geom_abline(slope=1)+
+labs(x="Real lamda difference", y = "Sum of differences"), 
+rel_widths=c(1,0.5))
+
+
+
+#######################################
+# SENSITIVITY ANALYSIS!!  
+# BETWEEN ALL SPECIES !!! 
+#######################################
+
+source("R/params_all.R")
+head(p.all)
+
+p.all$rec <- mean(params$rec)
+p.all$rec.size <- mean(params$rec.size)
+
+pars <- c("m.int", "m.slp","f.int","f.slp","r.int","p.int","p.slp","p.sig", "s.int", "s.slp", "s.slp.2")
+
+p.types <- data.frame(pars, type = c("maturity","maturity","fecundity","fecundity","growth","partial","partial", "partial", "survival","survival","survival"))
+
+pars <- c("m.int", "m.slp","f.int","f.slp","g.int","g.slp","g.var", "s.int", "s.slp", "s.slp.2", "rec", "rec.size")
+
+p.types <- data.frame(pars, type = c("maturity","maturity","fecundity","fecundity","growth","growth","growth", "survival","survival","survival", "recruitment", "recruit size"))
+
+
+types <- unique(p.types$type)
+
+# general lamda
+params <- params_orig
+params[,pars] <- p.all[, pars]
+
+	sp <- "Gre"
+rec.size <- mean(params$rec.size)
+rec <- mean(params$rec) #params$rec.size[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+gen_lam <- bigmatrix()$lam
+gen_lam 
+ 
+
+
+
+test <- NULL
+for (i in types) {
+#i <- "m.int"
+#i = "fecundity"
+params <- params_orig
+params[,pars] <- p.all[, pars]
+pars2 <- p.types$pars[p.types$type==i]
+params[,pars2] <- params_orig[match(params$spp, params_orig$spp), pars2]
+params
+for (sp in spp) {
+	#sp <- "Ahy"
+rec.size <- params$rec.size[params$spp==sp]
+rec <- params$rec[params$spp==sp]
+h <- mesh()$h
+y <- mesh()$y
+test<-rbind(test, data.frame(spp=sp, param=i, lam=bigmatrix()$lam, morph=params$morphology[params$spp==sp], rec="normal"))
+ } 
+}
+
+head(test)
+ggplot(test, aes(lam, param))+geom_bar(stat="Identity", position="dodge")+facet_wrap(~spp)+geom_vline(xintercept=1)
+
+head(test)
+test$lam_orig <- params$lam_fit[match(test$spp, params$spp)]
+
+test$morph <- factor(test$morph, levels=c("massive","digitate","corymbose","staghorn","tabular"))
+
+
+test$diff <- test$lam - gen_lam #test$lam_orig #gen_lam
+ggplot(test, aes(diff, reorder(param, diff)))+geom_bar(stat="Identity", position="dodge", aes(fill=spp))+facet_wrap(~morph, nrow=1)+geom_vline(xintercept=0)+scale_fill_manual(values=cols)+
+labs(y="varying parameter", x="change in species lambda when parameter varies")
+
+
+#######################################
+# REPRODUCTIVE TRADEOFF
+#######################################
+ec$morph<-params$morphology[match(ec$spp, params$spp)]
+ecplot <- ggplot()+
+geom_boxplot(data=ec, aes(y=reorder(morph, -Carbon_ug_corrected), x=Carbon_ug_corrected, fill=spp), outlier.size=0.2, size=0.1,position = position_dodge(width = 1))+scale_fill_manual(values=cols)+guides(fill="none")
+
+#mat<-inv.logit(params$m.int[params$spp==sp]+params$m.slp[params$spp==sp]*x)
+params$fec1cm <- exp(params$f.int +  params$f.slp * log10(1)) /10000
+params2$fec1cm <- params$fec1cm[match(params2$spp, params$spp)]
+
+plot_grid(ecplot,ggplot(params, aes(fec1cm, eggC))+geom_text(aes(label=spp))+geom_smooth(data=params[params$family=="Acroporidae",], method="lm"), nrow=1, rel_widths=c(1.15,1))
+
+#######################################
+# ELASTICITY & IPM MEASURES 
+#######################################
+ # eigen-things combined to get sensitivity/elasticity matrices.
 
 s.list <- list()
 eK.list <- list()
@@ -517,50 +1007,32 @@ demovals <- NULL
 sizevals <- NULL
 
 for (sp in spp) {
-	sp <- "Gre"
-	# run IPM
+	#sp <- "Ahy"
 	rec <- params$rec[params$spp==sp]
-	#rec<-1*10^-4
 	rec.size <- params$rec.size[params$spp==sp]
 	h <- mesh()$h
 	y <- mesh()$y
 	K <- bigmatrix()$K
 	P <- bigmatrix()$P
 	R <- bigmatrix()$R
-	image(t(K^0.2))
-	# population growth
-	lam <- Re(eigen(K)$values[1])
+	#image(t(K^0.2))
 	
-	# sable size dist /right eigenvec
-	w.eigen<-Re(eigen(K)$vectors[,1]) 
-	stable.size <- w.eigen/sum(w.eigen)
+	lam <- Re(eigen(K)$values[1]) # population growth
+	w.eigen<-Re(eigen(K)$vectors[,1]) # right eigenvec
+	stable.size <- w.eigen/sum(w.eigen) # sable size dist 
+	v.eigen<-Re(eigen(t(K))$vectors[,1]) # left eigenvec
+	repro.val <- v.eigen/v.eigen[1] # rel. reprodutive values 
+	v.dot.w<-sum(stable.size*repro.val*h) # reproductive val * stable size
+	sens<-outer(repro.val,stable.size,"*")/v.dot.w   # sensitivity matrix
+	K.elas <- sens*(K/h)/lam *h^2 # elasticity matrices (h varies)
+	P.elas<-(P/h)*sens/lam # survival elasticity matrix
+	eP=sum(P.elas)*h^2 # total survival elasticity
+	R.elas<-(R/h)*sens/lam # reproduction elasticity matrix
+	eR=sum(R.elas)*h^2 # total reproduction elasticity
 	
-	# reprodutive values /left eigenvec (size contributions) # Gre goes wrong
-	v.eigen<-Re(eigen(t(K))$vectors[,1]) 
-	repro.val <- v.eigen/v.eigen[1] # relative
-	
-	# reproductive val * stable size
-	v.dot.w<-sum(stable.size*repro.val)*h 
-	
-	# sensitivity matrix
-	sens<-outer(repro.val,stable.size)/v.dot.w  
-	
-	# elasticity matrices
-	K.elas<-matrix(as.vector(sens)*(as.vector(K)/h)/lam, nrow=n)
-	
-	# survival elasticity
-	P.elas<-(P/h)*sens/lam
-	eP=sum(P.elas)*h^2
-
-	# reproduction elasticity
-	R.elas<-(R/h)*sens/lam
-	eR=sum(R.elas)*h^2
-	
-	# Net reproductive rate from IPMbook monocarp
+	# Net reproductive rate/Generation time from IPMbook monocarp
 	N <- solve(diag(n)-P)
 	R0 <- abs(eigen(R %*% N)$values[1])
-	
-	# Generation time
 	GT <- log(R0)/log(lam)
 	
 	demovals <- rbind(demovals, data.frame(spp=sp, eR, eP, R0, GT))
@@ -571,15 +1043,9 @@ for (sp in spp) {
 		eK.list[[sp]] <- K.elas
 		}
 
-summary(s.list)
-
-demovals
-head(sizevals)
 params[,colnames(demovals)]<- demovals[match(demovals$spp, params$spp),]
-
-#sum(analyses()$eK)*h^2
-lapply(eK.list, function(x){sum(x)*h^2})
-rowSums(demovals[,c("eP","eR")])
+lapply(eK.list, function(x){sum(x)})
+rowSums(demovals[,c("eP","eR")]) # summing to 1
 
 plot_grid(
 ggplot(sizevals, aes(x=area, y=repro.val, col=spp))+geom_line()+
@@ -589,102 +1055,55 @@ ggplot(sizevals, aes(x=area, y=stable.size, col=spp))+geom_line()+
 scale_colour_manual(values=cols)+guides(col="none"),
 ggplot(params, aes(reorder(spp, -eR), eR, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none"), 
 ggplot(params, aes(reorder(spp, -R0), R0, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none")+scale_y_log10(),
-ggplot(params, aes(reorder(spp, -GT), GT, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none")+scale_y_log10()
-)
-
+ggplot(params, aes(reorder(spp, -GT), GT, fill=spp))+geom_bar(stat="identity")+scale_fill_manual(values=cols)+guides(fill="none")+scale_y_log10(),
+ggplot(params, aes(r.int, eR))+geom_text(aes(label=spp))+scale_y_sqrt()+scale_x_log10())
 
 #######################################
-# R.ELASTICITY across sizes
+# ELASTICITY ACROSS SIZES
 #######################################
 
-#spp2 <- spp[!spp=="Gre"]
 spp2 <- spp
 ek.hist <- NULL
 for (sp in spp2) {
-	#sp <- "Gpe"
+#	sp <- "Gpe"
 	y <- y.list[[sp]]
-	e.k <- reshape(data.frame(t(eR.list[[sp]])),
-	direction="long", varying=list(c(1:100)), ids=y, times=y,
-	new.row.names=c(1:10000))
-	e.k.sum <- aggregate(X1~id, e.k, sum)
-	ek.hist <- rbind(ek.hist, cbind(e.k.sum, sp))
+	e.k <- melt(eK.list[[sp]])
+	e.k$y <- rep(y, length(y))
+	e.k.sum <- aggregate(value~Var1+y, e.k, sum)
+	ek.hist <- rbind(ek.hist, cbind(e.k.sum, spp=sp))
 	}
 head(ek.hist)
-colnames(ek.hist)[3]<-"spp"
 
+ek.hist$size <- round(ek.hist$y/0.45)*0.45
+ek.av <- aggregate(value~size+spp, ek.hist, sum)
+ek.av$morphology<-params$morphology[match(ek.av$spp, params$spp)]
+ek.av$X2 <- ek.av$value#*h^2  #/ek.av$max
 
-plot_grid(
-ggplot(ek.hist, aes(id, X1))+
-geom_line(aes(col=sp), size=0.5)+
-scale_y_sqrt()+
-guides(col="none")+
-xlim(c(-4,1))+
-geom_vline(xintercept=log10(pi*((15/2)/100)^2))+
-scale_colour_manual(values=cols)
-,
-ggplot(sdat, aes(area))+
-geom_density(aes(col=spp))+
-guides(col="none")+
-xlim(c(-4,1))+
-scale_colour_manual(values=cols),
-ncol=1)
-
-ggplot()+
-geom_density(data=sdat, aes(x=area, fill=spp))+
-#scale_y_sqrt()+
-geom_line(data=ek.hist, aes(id, X1/10, col=sp), size=0.5)+
-guides(col="none")+
-xlim(c(-4,1))+
-facet_wrap(~spp)+
-geom_vline(xintercept=log10(pi*((15/2)/100)^2))+
-scale_colour_manual(values=cols)+
+ggplot(ek.av[!ek.av$spp=="Asp",], aes(size,X2))+
+geom_bar(stat="identity", position=position_dodge(preserve = "single"), aes(fill=spp), col="black", size=0.1, width=0.33)+
+facet_wrap(~morphology, scales="free_x", nrow=2)+
 scale_fill_manual(values=cols)
 
-
 #######################################
-# R.ELASTICITY vs LAMBDA
+# Figure 4
 #######################################
-store[store$rec==max(rec.x),]
-#params$lam_4 <- store[store$rec==max(rec.x),"lam"]
-#params$lam_1 <- store[store$rec==min(rec.x),"lam"]
-params$lam_4 <- store[store$rec==0.01,"lam"]
-params$lam_1 <- store[store$rec==0.0001,"lam"]
+source("figs/fig.4.R")
+fig4 
+#ggsave("figs/fig.4.png", fig4, width=10, height=11, units="cm", dpi = 250)
 
-
-  ggplot(data=params, aes(x=eR, y=log(lam_4)-log(lam_1)))+
-geom_smooth(method="lm", formula=y~x, size=0.1, col="black")+
- geom_point(aes(fill=spp), shape=21, stroke=0.1, size=2)+
- scale_fill_manual(values=cols)+
- guides(fill="none", col="none")
-#Pvals <- big$P / h
-#P.elas <- Pvals * K.sens / lambda
-
-#######################################
-# Generation VS R0
-#######################################
-
-ggplot(demovals, aes(GT, R0))+geom_text(aes(label=spp))+scale_x_log10()
-# could calculate mean size of flowering plants. *stable size by p_maturity
-
-
-
-#source("R/fig.3.R")
-#fig.3
-
-ggplot(params, aes(eR, log(lam.est)))+geom_smooth(method="lm")+geom_hline(yintercept=0)+geom_point(aes(size=abundance_05, col=morphology))+geom_text(label=spp)
+# long
+#ggsave("figs/fig.4.png", fig4, width=10, height=12, units="cm", dpi = 250)
 
 
 #######################################
 # WITHIN VS BETWEEN
 #######################################
 
-
-params
-
-dems <- c("lam_1","lam_4", "eR", "lam.est")
-
+params <- params_orig
+#params <- params[!params$spp %in% c("Gre","Gpe"),]
+dems <- c("lam.est", "eR","lam.const", "lam_fit")
 vars <- NULL
-for (t in c(traits, "eggC", dems, "abundance_05")){
+for (t in c(traits, "eggC", dems,  "abundance_05")){
 	#t <- "f.cm2"
 	params$t <- scale(params[,t])
 mod <- aov(t~morphology, data=params)
@@ -695,282 +1114,70 @@ pval <- summary(mod)[[1]]["morphology","Pr(>F)"]
 summary(mod)
 vars <- rbind(vars, data.frame(t, within=100*(within/(within+between)), between=100*(between/(within+between)), pval))
 }
-vars$type <- ifelse(vars$t %in% dems, "demo", ifelse(vars$t=="abundance_05", "abun", "trait"))
 
-ggplot(vars, aes(y=reorder(t, -within), x=within))+geom_point(aes(col=type))+labs(y="% variation within morphologies", x="parameter")+
-coord_cartesian(xlim=c(0,55))
+ggplot(vars, aes(within,reorder(t, -within)))+geom_bar(stat="identity")
 
-params[,c("abundance_pair","spp")]
-
-vars2 <- NULL
-for (t in c(traits, "eggC", dems)){
-	#t <- "f.cm2"
-	abun <- "abundance_pair"
-	params$abun <- params[,abun]
-	params$t <- scale(params[,t])
-mod <- aov(t~abun+morphology, data=params)
-summary(mod)
-within <- summary(mod)[[1]]["Residuals","Sum Sq"]
-between <- summary(mod)[[1]]["abun","Sum Sq"]
-morph <- summary(mod)[[1]]["morphology","Sum Sq"]
-pval <- summary(mod)[[1]]["abun","Pr(>F)"]
-vars2 <- rbind(vars2, data.frame(t, within=100*(within/(within+between+morph)), between=100*(between/(within+between+morph)), pval))
-}
-vars2$type <- ifelse(vars2$t %in% dems, "demo", ifelse(vars2$t=="abundance_05", "abun", "trait"))
-vars2
-ggplot(vars2, aes(reorder(t, -between), between))+geom_point(aes(col=type))+coord_flip()+labs(y="% variation between", x="parameter")
-
-
-vars2$within_morph <- vars$within[match(vars2$t, vars$t)]
-ggplot(vars2, aes(within_morph, between))+geom_text(aes(label=t, col=type))
-
+source("figs/fig.5.R")
+fig.5
+#ggsave("figs/fig.5.png", withinplot, width=6, height=6, units="cm", dpi = 250)
 
 #######################################
-# MODEL ABUNDANCE
+# CORELLATE WITH FITNESS
 #######################################
 
 
-vars3 <- NULL
-for (t in c(traits, "eggC", dems)){
-	#t <- "f.cm2"
-	abun <- "abundance_05"
-	params3 <- params
-	params3$r.int <- log(params$r.int)
-	params3$abun <- log(params3[,abun])
-	params3$t <- scale(params3[,t])
-	mod <-lm(abun ~ t * r.int, data=params3) 
-    summary(mod)
-   coefs<-coef(mod)
-	se.x <- coef(summary(mod))["t","Std. Error"]
-	pval.x <- coef(summary(mod))["t","Pr(>|t|)"]
-	vars3 <- rbind(vars3, data.frame(x=coefs[2], se.x, pval.x, sd.resid=sd(residuals(mod, type="response")), t=t, row.names=NULL))
-}
-vars3$type <- ifelse(vars3$t %in% dems, "demo", ifelse(vars3$t=="abundance_05", "abun", "trait"))
-vars3$e.size <- vars3$x
-vars3$e.se <- vars3$se.x *1.96 
-vars3$sig <- ifelse(vars3$pval.x < 0.05, '*', "")
-vars3
-
-ggplot(vars3, aes(e.size/sd.resid, reorder(t, -e.size/sd.resid)))+
-geom_vline(xintercept=0)+
-geom_point(aes(col=type))+labs(x="effect size", y="parameter")
-
-#######################################
-# MODEL ABUNDANCE II
-#######################################
-
-
-vars3 <- NULL
-for (t in c(traits, "eggC", dems)){
-	#t <- "f.cm2"
-	params3 <- params
-	#params3$r.int <- log(params$r.int)
-	params3$abun <- params3$abundance_pair
-	params3$abun <- ifelse(params3$abun=="Common", 1, 0)
-	params3$t <- scale(params3[,t])
-	mod <-glm(abun ~ t, data=params3, family="binomial") 
-    summary(mod)
-   coefs<-coef(mod)
-	se.x <- coef(summary(mod))["t","Std. Error"]
-	pval.x <- coef(summary(mod))["t","Pr(>|z|)"]
-	vars3 <- rbind(vars3, data.frame(x=coefs[2], se.x, pval.x, sd.resid=sd(residuals(mod, type="response")), t=t, row.names=NULL))
-}
-vars3$type <- ifelse(vars3$t %in% dems, "demo", ifelse(vars3$t=="abundance_05", "abun", "trait"))
-vars3$e.size <- vars3$x
-vars3$e.se <- vars3$se.x *1.96 
-vars3$sig <- ifelse(vars3$pval.x < 0.05, '*', "")
-vars3
-
-ggplot(vars3, aes(e.size/sd.resid, reorder(t, -e.size/sd.resid)))+
-geom_vline(xintercept=0)+
-geom_point(aes(col=type))+labs(x="effect size", y="parameter")
-
-
-
-
-
-
-#######################################
-# PROJECTING LAMDA
-#######################################
-
-# Keep the same lams... some pops go to zero
-# impossible to get the same diffs 
-# but can get the same poportion diffs 
-# but some in small poulations
-
-n1 <- 100
-ngen <- 50
-pars <- params2[, c("spp","morph", "abundance_pair","lam.est")]
-pars
-
-proj <- merge(pars, data.frame(gen=1:ngen))
-proj$n <- n1*proj$lam.est^proj$gen
-proj$id <- paste(proj$morph, proj$gen, sep="_")
-proj$abun <- params$abundance_05[match(proj$spp, params$spp)]
-
-ggplot(proj, aes(gen, n))+geom_line(aes(group=spp, col=spp))+scale_colour_manual(values=cols)+facet_wrap(~morph, scales="free_y")
-
-a_diff <- unique(pairs[,c("morph","AC","AR")])
-a_diff$diff <- a_diff$AC / a_diff$AR
-
-proj2 <- data.frame(acast(morph+gen~abundance_pair, data=proj, value.var="n"))
-proj2[, c("morph","gen")]<- proj[match(rownames(proj2), proj$id), c("morph","gen")]
-proj2$diff <- proj2$Common/proj2$Rare
-proj2$real <- a_diff$diff[match(proj2$morph, a_diff$morph)]
-head(proj2)
-
-
-ggplot(subset(proj2, gen==ngen), aes( real, diff, col=morph))+geom_point()+scale_y_log10()+scale_x_log10()+guides(col="none")+scale_colour_manual(values=colsC)
-
-proj3 <- proj2
-proj3 <- proj3[proj3$diff<proj2$real,]
-gens <- aggregate(gen~morph, proj3, max)
-proj4 <- proj2
-proj4$max <- gens$gen[match(proj4$morph, gens$morph)] +2 #to cross the line
-proj4 <- proj4[proj4$gen<proj4$max,]
-
-
-ggplot(proj4, aes(gen, diff))+geom_line(aes(col=morph))+
-geom_segment(aes(x=-Inf, xend=Inf, y=real, yend=real, col=morph), linetype="dotted")+
-#scale_y_log10()+
-scale_colour_manual(values=colsC)
-
-#######################################
-# HIDDEN DIMENSION
-#######################################
-
-
-# size at maximum survival 
-max.surv<-do.call(rbind, lapply(split(s.pred, as.factor(s.pred$spp)), function(x) {return(x[which.max(x$pred),])}))
-params$safe.size2<-max.surv$area
-rec.cm <- 11
-params$survcm2<-aggregate(pred~spp, s.pred[s.pred$area<log10(pi*(rec.cm/100/2)^2),], FUN=mean)$pred
-
-# recruit survival
-min.S <- aggregate(area~morph, aggregate(area~spp+morph, s.pred, min), max)
-s.pred$min.s <- min.S$area[match(s.pred$morph, min.S$morph)]
-max.S <- aggregate(area~morph, aggregate(area~spp+morph, s.pred, max), min)
-s.pred$max.s <- max.S$area[match(s.pred$morph, min.S$morph)]
-quarts <- aggregate(area~morph, s.pred, FUN=function(x){quantile(x, 0.2 )})
-s.pred$quarts <- quarts$area[match(s.pred$morph, quarts$morph)]
-s.pred$less <-ifelse(s.pred$area < s.pred$quarts & s.pred$area>s.pred$min.s & s.pred$area < s.pred$max.s, "y", "n")
-head(s.pred)
-ggplot()+
-geom_line(data=s.pred, aes(area, pred, group=spp), size=0.1, col="grey")+
-geom_line(data=s.pred[s.pred$less=="y",], aes(area, pred, col=spp))+scale_colour_manual(values=cols)+guides(col="none")
-rec.surv<- do.call(rbind, lapply(split(s.pred, as.factor(s.pred$spp)), function(x) {
-	x[x$less=="y",]
-	}))
-head(rec.surv)
-avrec<-aggregate(pred~spp, rec.surv, mean)
-params$rec.surv <- avrec$pred[match(params$spp, avrec$spp)]
-
-# minimum at reproductive maturity
-params$min.r2<-aggregate(area_cm2~spp, fec[fec$reproductive==1,], min)$area_cm2
-
-# size 50% maturity (how delayed)
-mat50 <- aggregate(area~spp, m.pred[m.pred$pred>0.5,], min)
-params$mat50<-mat50$area[match(params$spp, mat50$spp)]
-
-# barplots
-bars <- function(t){
-	params$x <- params[,t]
-ggplot(params, aes(x=reorder(spp, -x), y=x, fill=spp))+guides(fill="none")+
-geom_bar(stat="identity")+
-ylab(t)+ggtitle(t)+
-theme(axis.title.x=element_blank())+
-facet_wrap(~morphology, scales="free_x", nrow=1)+
-scale_fill_manual(values=cols)}
 
 plot_grid(
-bars("eggC"),
-bars("f.slp")+coord_cartesian(ylim=c(2.3,2.8)),
-ncol=1)
-
-# lms
-lm.plot<-function(x, y, n){
-	dat<-params
-	dat$x<-params[,x]
-	dat$y<-params[,y]
-    ggplot(dat, aes(x,y))+	
-    geom_smooth(method="lm", formula=y~poly(x,n))+
-    geom_path(aes(group=morphology), linetype="dotted")+
-	geom_point(aes(fill=spp, size=abun), shape=21)+
-	geom_text(aes(label=spp), size=1.5)+
-	labs(x=x, y=y)+
-	scale_fill_manual(values=cols)+guides(fill="none")+	theme(axis.text=element_text(size=6),axis.title=element_text(size=10), plot.title=element_text(size=7))
-}
+ggplot(params, aes(r.int, lam.est))+geom_text(aes(label=spp))+
+scale_x_log10()+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(f.colony, lam.est))+geom_text(aes(label=spp))+
+scale_x_log10()+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(f.int2, lam.est))+geom_text(aes(label=spp))+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(av.surv, lam.est))+geom_text(aes(label=spp))+
+geom_smooth(method="lm", formula=y~poly(x, 2))
+)
 
 plot_grid(
-lm.plot("mat50","f.slp", 1)+
-ggtitle("delayed maturity = delayed eggs")+
-ylab("higher slope = more delayed"),
-lm.plot("f.slp", "rec.surv", 2)+scale_y_log10()+
-ggtitle("delayed eggs = juvenile survival"),
-lm.plot("eggC", "f.slp", 1),
-lm.plot("f.slp", "f.cm2", 1),
-lm.plot("r.int", "f.slp", 1)
+ggplot(params, aes(r.int, lam.const))+geom_text(aes(label=spp))+
+scale_x_log10()+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(f.colony, lam.const))+geom_text(aes(label=spp))+
+scale_x_log10()+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(f.int2, lam.const))+geom_text(aes(label=spp))+
+geom_smooth(method="lm", formula=y~poly(x, 2)),
+ggplot(params, aes(av.surv, lam.const))+geom_text(aes(label=spp))+
+geom_smooth(method="lm", formula=y~poly(x, 2))
 )
 
+#######################################
+# CONSTANT SLOPE MODEL
+#######################################
 
-# pca
-head(params)
-params$safe.sizex<-10^params$safe.size
-pca2<-prcomp(log10(params[,c("f.cm2", "f.slp", "eggC", "eR",  "lam.est", "Sgrow")]), scale=T, center=T)
-biplot(pca2)
-params$Rpca1 <- pca2$x[,1][match(params$spp, rownames(pca2$x))]
-params$Rpca2 <- pca2$x[,2][match(params$spp, rownames(pca2$x))]
-Rvecs <- data.frame(pca2$rotation, lab=rownames(pca2$rotation))
+fec.con<-glm.nb(fecundity~area+spp, data=fec[fec$reproductive==1,], link = log)
+summary(fec.con)
 
-
-ggplot()+
-geom_point(data=params, aes(Rpca1, Rpca2, col=spp, size=abundance_05))+
-geom_segment(data=Rvecs, aes(0,0, xend=PC1, yend=PC2))+
-geom_text(data=Rvecs, aes(PC1*1.2, PC2*1.2, label=lab))+
-scale_colour_manual(values=cols)+guides(col="none", size="none")
-
-ggplot(params, aes(eggC, Sgrow))+geom_point(aes(col=spp, size=abundance_05))+scale_colour_manual(values=cols)+guides(col="none", size="none")+geom_smooth(method="lm")
-
-
-gdat$growth <- 10^gdat$area_next - 10^gdat$area
-params$av.growth <- aggregate(growth~spp, gdat, mean)$growth
-params$av.pmort <- aggregate(p_mort~spp, gdat, mean)$p_mort
-gr.plots<-plot_grid(
-lm.plot("r.int","min.r",1)+scale_x_log10()+scale_y_log10(),
-lm.plot("r.int","p_mort",1)+scale_x_log10(), 
-lm.plot("r.int","safe.size",1)+scale_x_log10(),
-lm.plot("r.int","survcm",2)+scale_x_log10(),
-lm.plot("r.int","av.surv",2)+scale_x_log10(),
-lm.plot("r.int","f.cm2",2)+scale_x_log10(),
-lm.plot("r.int","eggC",2)+scale_x_log10(),
-lm.plot("r.int","av.growth",1)+scale_x_log10(),
-lm.plot("r.int","av.pmort",1)+scale_x_log10(),
-align="hv")
-gr.plots
+x2 <- spp # your second predictor (here, sites)
+int <-function(mod){ 
+	int <- rep(coef(mod)[[1]], length(x2))
+	for (i in 2:length(x2)) { int[i] <- int[i] + coef(mod)[grepl(x2[i],
+		 names(coef(mod))) & !grepl("area", names(coef(mod)))]}
+	int} 
+	
+slp <-function(mod){ 
+	slp <- rep(coef(mod)[[2]], length(x2))
+	for (i in 2:length(x2)) { slp[i] <- slp[i] + coef(mod)[grepl(x2[i],
+		names(coef(mod))) & grepl("area", names(coef(mod)))]}
+	slp} 
+# input your model, output in the same order as “x2”
+params$f.int2 <- int(fec.con) # intercept = effect of x2
+params$f.int
 
 
+ggplot(params, aes(spp, f.int2))+geom_bar(stat="identity")+facet_wrap(~morphology, scale="free_x")+coord_cartesian(ylim=c(15, 16))
 
-
-# escape in size - see Bak and Meesters 1998, Trapon MEPS, Babcock and mundy 96 
-
-
-
-
-
-
-  ############ SIZE VS NUMBER 
-  
-  plot_grid(
-ggplot(params, aes(size.av, abundance_05))+geom_text(aes(label=spp))+
-geom_path(aes(group=morphology), linetype="dotted")+
-geom_point(aes(col=spp))+scale_colour_manual(values=cols)+
-scale_y_log10()+guides(col="none")
-,
-ggplot(params, aes(eggC, f.slp))+geom_text(aes(label=spp))+
-geom_path(aes(group=morphology), linetype="dotted")+
-geom_point(aes(col=spp))+scale_colour_manual(values=cols)+
-scale_y_log10()+guides(col="none")
-)
-
+ggplot(params, aes(f.int2, eggC))+geom_text(aes(label=spp))
 
