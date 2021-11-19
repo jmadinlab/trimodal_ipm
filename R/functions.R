@@ -44,7 +44,7 @@ p.yx <- function(y, x) {
    } 
 
  #------------------------------- kernel
-pmort<-T
+pmort<-F
 
 bigmatrix <- function() {
     if (pmort) {
@@ -92,4 +92,8 @@ rec.ll <- function(x) {
   eig.vec <- mod$w[I]/sum(mod$w[I])
   return(-sum(cnt * log(eig.vec), na.rm=TRUE)) } # log-likelihood 
   
+
+
+
+
   

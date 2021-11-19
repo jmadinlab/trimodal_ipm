@@ -112,12 +112,15 @@ names(colsC2)[6]<-"massive"
 names(colsC2)[3]<-"arborescent"
 
 sp.points <- params2[,c("morph","rec.size", "spp")]
+sp.points$rec <- params$rec[match(sp.points$morph, params2$morph)]
+
 #sp.points <- sp.points[!sp.points$morph=="corymbose",]
-sp.points$rec <- ifelse(sp.points$morph=="massive", 10^-4, 10^-3)
+#sp.points$rec <- ifelse(sp.points$morph=="massive", 10^-4, 10^-3)
 #sp.points$morph <- ifelse(sp.points$morph=="corymbose_2", "corymbose", sp.points$morph)
 sp.points$morph <- ifelse(sp.points$morph=="staghorn", "arborescent", sp.points$morph)
 #sp.points$morph <- ifelse(sp.points$morph=="massive", "boulder", sp.points$morph)
 sp.points$morph <- factor(sp.points$morph, levels=rev(c("tabular", "arborescent", "corymbose","corymbose_2","digitate", "massive")))
+
 
 blueish <- colsC[2]
 
@@ -182,6 +185,8 @@ fig3<-plot_grid(
 plot_grid(lamcomp2, projplot, nrow=1, rel_widths=c(0.7,1), labels=c("A","B"), label_size=9), 
 NULL,
 contours,
-ncol=1, rel_heights=c(1,-0.0,0.9),labels=c("","C"), label_size=9)
+ncol=1, rel_heights=c(1,-0.0,0.9),labels=c("","","C"), label_size=9)
 fig3
+
+
 

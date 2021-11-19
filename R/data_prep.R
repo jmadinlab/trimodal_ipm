@@ -91,13 +91,31 @@ rsize <- read.csv("data/recruitment/recsize.csv")
 # ABUNDANCE TRIMODAL
 #######################################
 
+# 2005
+
+d08 <- read.csv("data/abundance/Trimodaldata2005forMike.csv")
+d08$Species[d08$Species == "Acropora fat dig"] <- "Acropora cf. digitifera"
+d08A <- d08[d08$Species %in% params$species,]
+
+params[,c("spp","abundance_05")]
+aggregate(Abundance~Species, d08A, sum)
+aggregate(Abundance/270/10~Species, d08A, sum)
+
+# add zeros 
+d08B<-data.frame(ID=rep(unique(d08A$ID), length(unique(d08A$Species))), Species=rep(unique(d08A$Species), each=length(unique(d08A$ID))))
+d08B$N <- d08A$Abundance[match(paste(d08B$ID, d08B$Species), paste(d08A$ID, d08A$Species))]
+d08B$N[is.na(d08B$N)]<-0
+
+aggregate(N/10~Species, d08B, mean)
+
+
+# 2011-14
+
 ab <- read.csv("data/abundance/lit_merged_20180412.csv")
 
 ab$species[ab$species %in% c("Acropora fat_digitifera", "Acropora difitifera_fat", "Acropora sp. Fat dig")] <- "Acropora cf. digitifera"
 
 ab$species[ab$species=="Acropora robustea"]<-"Acropora robusta"
-
-ab$species[ab$species=="Monitpora crassituberculata"]<-"Montipora crassituberculata"
 
 ab$genus <- substr(ab$species, 1, 5)
 

@@ -3,20 +3,22 @@
 
 
 triplot<-plot_grid(
-ggplot(params, aes(reorder(spp, -abundance_05), abundance_05/2700, fill=spp))+geom_bar(stat="identity", width=0.8, col="black", size=0.1)+
+ggplot(d08B, aes(reorder(spp, -abundance_05), N/10, fill=spp))+
+stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
+stat_summary(fun.data = mean_se, geom = "errorbar", width=0)+
 guides(fill="none")+
 labs(y=expression(Colonies~per~m^2))+
 scale_fill_manual(values=cols)+
 scale_y_continuous(expand=c(0,0))+
 geom_hline(yintercept=0)+
 theme_classic()+
-labs(title="27 x BTs",subtitle="2004")+
+labs(title="27 x BTs",subtitle="2005")+
 theme(axis.title.x=element_blank(), 
 axis.text.x=element_blank(),
 plot.title=element_text(size=8, hjust=0.5, face="bold"),
 plot.subtitle=element_text(size=9, hjust=0.5),strip.background=element_blank())
 ,
-ggplot(data=tri2, aes(reorder(species, -abun05), N/10, fill=spp))+
+ggplot(data=abun, aes(reorder(species, -abundance_05), N/10, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0)+
@@ -34,7 +36,7 @@ ncol=1, rel_heights=c(1,3))
 triplot
 
 
-covplot <- ggplot(data=tri2, aes(reorder(species, -abun05), cover, fill=spp))+
+covplot <- ggplot(data=abun, aes(reorder(species, -abundance_05), cover, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0)+
@@ -54,7 +56,7 @@ covplot
 # SADs
 #######################################
 
-sad <- read.csv("data/dornelas2008.csv")
+sad <- read.csv("data/abundance/dornelas2008.csv")
 
 head(sad)
 sad$species[sad$species=="Acropora fat dig"] <- "Acropora cf. digitifera"
@@ -78,7 +80,7 @@ theme_void()+
 guides(col="none"),
 ggplot(subset(sad, abundance>50), aes(rank, abundance/2700))+geom_segment(aes(rank, xend=rank, y=0, yend=abundance/2700, col=spp), size=1)+
 scale_colour_manual(values=cols2)+
-labs(x="Species abundance rank", y="Colony density (2004)")+
+labs(x="Species abundance rank", y="Colony density (2005)")+
 geom_text_repel(data=sad[!sad$spp=="Other",], aes(rank, y=(abundance/2700)+0.2, label=spp), angle=45, size=2, force=0.001, hjust=0)+
 xlim(c(0,70))+
 theme_classic()+

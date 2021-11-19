@@ -27,7 +27,7 @@ size.elas<-ggplot(ek.av[!ek.av$spp=="Asp",], aes(size,X2))+
 geom_bar(stat="identity", position=position_dodge(preserve = "single"), aes(fill=spp), col="black", size=0.1, width=0.33)+
 #geom_line()+
 #geom_point()+
-facet_wrap(~morphology, scales="free_x", nrow=1)+
+facet_wrap(~morphology, ncol=1)+
 scale_fill_manual(values=cols)+
 scale_colour_manual(values=cols)+
 geom_boxplot(data=sdat[!sdat$spp=="Asp",], aes(x=area, y=0.9, fill=spp), width=0.2, outlier.size=0.01, size=0.1, outlier.colour="grey")+
@@ -44,7 +44,7 @@ geom_segment(data=segs2, aes(x=0.5, xend=0.4, y=1, yend=1))+
 geom_segment(data=segs2, aes(x=0.5, xend=0.7, y=0.9, yend=0.9))+
 geom_segment(data=segs2, aes(x=0.7, xend=0.7, y=0.5, yend=0.9))+
 geom_text(data=segs2,aes(x=1, y=0.35, label="colony \nsizes"), size=2, hjust=1)+
-ggtitle(expression(bold(Influence~of~colony~size~classes~on~lambda)))+
+ggtitle(expression(bold(Effects~of~colony~sizes~on~lambda)))+
 #ggtitle("Demographic sensitivity to size")+
 scale_x_continuous(breaks=c(-4,-3,-2,-1,0), labels=c(expression(0.0001),expression(0.001), expression(0.01),  expression(0.1),  expression(1)))
 size.elas
@@ -96,7 +96,7 @@ scale_x_log10(breaks=c(400, 600, 900, 1200))+
 geom_text(data=NULL, aes(330, 10, label='C = Common'), size=1.8, hjust=0)+
 geom_text(data=NULL, aes(330, 6, label='R = Rare'), size=1.8, hjust=0)+
 #ylim(3,55)+
-labs(x=expression(Egg~number~(eggs~cm^-2)), y= "Egg mass (g)")+
+labs(x=expression(Egg~number~(eggs~cm^-2)), y= "Egg mass (g of Carbon)")+
 scale_fill_manual(values=cols)+guides(fill="none", col="none")+
 scale_colour_manual(values=colsC)+
 theme_classic()+rectheme+
@@ -104,13 +104,22 @@ theme(plot.title=element_text(size=8, hjust=0.5))
 reproplot
 
 
-fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, nrow=1, rel_widths=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=1, rel_heights=c(1,1.1),labels=c("A",""), label_size=9)+
-draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
-draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
-draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
-draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
-draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
+fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), nrow=1, rel_widths=c(1,1),labels=c("A",""), label_size=9)+
+draw_plot(mas, 0.92, 0.62, 0.06, 0.1)+
+draw_plot(dig, 0.85, 0.65, 0.06, 0.1)+
+draw_plot(cor, 0.79, 0.79, 0.06, 0.1)+
+draw_plot(tab, 0.67, 0.81, 0.094, 0.1)+
+draw_plot(brn, 0.62, 0.83, 0.035, 0.1)
 fig4 
+
+
+#fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, nrow=1, rel_widths=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=1, rel_heights=c(1,1.1),labels=c("A",""), label_size=9)+
+#draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
+#draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
+#draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
+#draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
+#draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
+#fig4 
 
 #fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=2, rel_widths=c(1.8,1),labels=c("A",""), label_size=9)+
 #draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+

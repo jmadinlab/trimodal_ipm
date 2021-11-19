@@ -117,15 +117,18 @@ pcplot
 
 abun[,c("spp","morphology","abundance_05")] <- params[match(abun$species, params$species), c("spp","morphology","abundance_05")]
 
+d08B[,c("spp","morphology","abundance_05")] <- params[match(d08B$Species, params$species), c("spp","morphology","abundance_05")]
+
+
 abunplot<-plot_grid(NULL,
 plot_grid(
-ggplot(data=params, aes(reorder(spp, -abundance_05), abundance_05/2700, fill=spp))+
+ggplot(data=d08B, aes(reorder(spp, -abundance_05), N/10, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
 facet_grid(.~morphology, scales="free_x", space="free_x")+
 guides(fill="none")+
-labs(subtitle="2004",y="Colonies per m")+
+labs(subtitle="2005",y="Colonies per m")+
 scale_fill_manual(values=cols)+
 scale_y_continuous(expand=c(0,0))+
 geom_hline(yintercept=0)+
