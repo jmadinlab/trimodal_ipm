@@ -130,16 +130,16 @@ rec.ss <- function(x) {
 # plot(ss ~ rec, store)
 # store[which.min(store$ss),]
 
-dev.off()  
+# dev.off()  
 par(mfcol=c(4, 3), mar=c(3,3,1,1))
 
 n <- 12
-
+lag <- 2
 params$rec_fit <- NA
 params$lam_fit <- NA 
 
 for (sp in spp) {
-#sp <- "Asp"
+# sp <- "Ahy"
   # Model
 rec.size <- params$rec.size[params$spp==sp]
 rec <- params$rec[params$spp==sp]
@@ -148,9 +148,9 @@ y <- mesh()$y
 b <- mesh()$b 
 I <- mesh()$I
 II <- I
-II[1:6] <- FALSE
+II[1:lag] <- FALSE
 
-max.size <- 1
+max.size <- 0.5
 size.dist <- hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b, plot=FALSE)
 
 # hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b)
@@ -158,28 +158,28 @@ size.dist <- hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size],
 # x is a startin rec value?
 # mle takes a function and finds the most likely value of x ? 
 
-	rec.fit <- optimise(rec.ss, c(0, 1))
-	rec <- rec.fit$minimum
-	rec
-	
-	#rec.fit <- mle(rec.ll, start = list(x = 0.001), method="Brent", lower = 0, upper=1 )
-	rec.fit <- optimise(rec.ll, c(0, 100))
-	rec <- rec.fit$minimum
-	rec
+# 	rec.fit2 <- optimise(rec.ll, c(0, 1))
+# 	rec <- rec.fit2$minimum
+# 	rec
+# 
+#   rec <- 0.0000001
+#   cnt <- size.dist$count[II] # non-recruits
+#   cnt <- cnt / sum(cnt)
+#   eig.vec <- mod$w[II]/sum(mod$w[II])
+#   sum((cnt - eig.vec)^2) 
 
-#rec <- 0.00001
+  rec.fit1 <- optimise(rec.ll, c(0, 1), tol=0.000000001)
+  rec <- rec.fit1$minimum
+  rec
+  
   mod <- bigmatrix()
-	#image(y, y, log(t(mod$K)))
-	#title(sp, line=-1)
-	#abline(0, 1, lty=2)
-mod$lam
-
+  
+  # mod$lam
 	hist(ss$area[ss$spp==sp & ss$area > rec.size & ss$area < max.size], breaks=b, freq=FALSE, main="", ylim=c(0, 2))
-	lines(y[II], (mod$w[II]/sum(mod$w[II]))/h/2, col="red")
-	abline(v=y[45], lty=2)
+	abline(v=y, col="lightgrey")
+	lines(y[II], (mod$w[II]/sum(mod$w[II]))/(h), col="red")
 	title(sp, line=-1)
-text(0,1, round(mod$lam, 3))
-
+  text(0,1, round(mod$lam, 3))
 
   params$lam_fit[params$spp==sp] <- mod$lam
   params$rec_fit[params$spp==sp]<- rec
