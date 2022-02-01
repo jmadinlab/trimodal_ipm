@@ -39,9 +39,13 @@ p.yx <- function(y, x) {
  	  params$f.slp[params$spp==sp] *x) 
    #siz<- rnorm(y,mean=params$rec.size[params$spp==sp], sd=0.05) 
    out <- (rec* mat * fec)
-   out[x < rec.size | y >= rec.size] <- 0 #if x is below recruitment size
+   out[x < rec.size | y > rec.size | y < rec.size-h] <- 0 #if x is below recruitment size/ y is above recruit size. 
+
    return(out)
    } 
+   
+
+
 
  #------------------------------- kernel
 pmort<-F

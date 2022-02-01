@@ -12,8 +12,6 @@ ss<-read.csv("data/size_structure.csv")
 spp<-params$spp[order(params$spp)]
 params$abundance<-ifelse(params$abundance_05<500, "Rare", ifelse(params$abundance_05>1500, "Dominant","Common"))
 params$abundance<-factor(params$abundance, levels=c("Rare", "Common", "Dominant"))
-cols<-as.character(params$cols)
-names(cols) <- params$spp
 
 #spp names
 #################################### 
@@ -24,13 +22,6 @@ sdat$spp <- params$spp[match(sdat$species, params$species)]
 fec$spp <- params$spp[match(fec$species, params$species)]
 ss$spp <- params$spp[match(ss$species, params$species)]
 
-
-# ordering
-#################################### 
-order <- c("Ahy","Acy","Ain","Aro","Ana","Asp","Ami","Adi","Ahu", "Gre","Gpe")
-params$spp <- factor(params$spp, levels=order)
-labs <- params$species[order(params$spp)]
-labs
 
 #################################### 
 # ---- remove F9 (hurricane)

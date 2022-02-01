@@ -27,13 +27,14 @@ for (sp in spp) {
 	ipm.r <- melt(ipm.r.list[[sp]])
 	ipm.r$y1 <- ydat$y[match(ipm.r$Var1, ydat$n)]
 	ipm.r$y2 <- ydat$y[match(ipm.r$Var2, ydat$n)]
+	sub <- gdat[gdat$spp==sp,]
 plot<-ggplot()+
 	geom_raster(data=ipm.p, aes(y2, y1,fill=value))+
 	geom_point(data=ipm.r[ipm.r$value>0,], aes(y2, y1, col=value, alpha=log(value)), size=0.1)+
 	ggtitle(paste(params$species[params$spp==sp]))+
 	geom_point(data=sub, aes(x=area, y=area_next), col="grey", size=0.01)+
-	scale_fill_viridis(n.breaks=3, trans="sqrt")+
-	scale_colour_viridis(option="C", trans="log", breaks=c(10^3, 10^5, 10^7), labels=c(expression(~10^3),expression(~10^5), expression(~10^7)))+
+	scale_fill_gradient(low="white", high="grey",n.breaks=3)+
+	scale_colour_viridis(trans="log", breaks=c(10^3, 10^5, 10^7), labels=c(expression(~10^3),expression(~10^5), expression(~10^7)))+
 	theme_bw()+
 	guides(alpha="none", fill=guide_colourbar(order=1), colour=guide_colourbar(order=2))+
 	geom_abline(col="black", slope=1, size=0.1, linetype="dashed")+
@@ -42,7 +43,7 @@ plot<-ggplot()+
 	xlab(expression(area[~t]~(m^2)))+
 	ylab(expression(area[~t~+1]~(m^2)))+
 	theme(legend.title=element_blank(), legend.key.size=unit(2,"mm"), 
-	legend.text=element_text(size=5, colour="white"), axis.title.x=element_text(size=8,color="white"), 
+	legend.text=element_text(size=5), axis.title.x=element_text(size=8,color="white"), 
 	legend.spacing.x = unit(0.05, "cm"),
 	legend.margin = margin(0,0.1,0,0, unit="cm"),
 	axis.title.y=element_blank(), 
@@ -51,8 +52,8 @@ plot<-ggplot()+
 	legend.background=element_blank(), 
 	legend.box = "horizontal", 
 	plot.background=element_blank(), 
-	axis.text.y=element_text(size=6, angle=90, hjust=0.5),
-	axis.text.x=element_text(size=6))
+	axis.text.y=element_text(size=4.5, angle=90, hjust=0.5),
+	axis.text.x=element_text(size=4.5))
 
 	plots[[sp]] <- plot
 	}
@@ -60,8 +61,10 @@ plot<-ggplot()+
 #fig.s4 <- plot_grid(plotlist=plots)
 #fig.s4
 
+plots[["Ahy"]]
+
 fig.s4 <- plot_grid(
-plot_grid(plots[["Ahy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.5), NULL, plots[["Acy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.5)+
+plot_grid(plots[["Ahy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.5), NULL, plots[["Acy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.3)+
 theme(axis.title.y=element_text(size=8, angle=90, hjust=1.2)), rel_heights=c(1,-0.12,1), ncol=1, align="v"),
 plot_grid(plots[["Ain"]]+annotation_custom(brn,-0.5,0.5,-2,-1.3), NULL, plots[["Aro"]]+annotation_custom(brn,-0.5,0.5,-2,-1.3), rel_heights=c(1,-0.12,1), ncol=1),
 plot_grid(plots[["Asp"]]+annotation_custom(cor,-1,0.5,-2.5,-2), NULL, plots[["Ami"]]+annotation_custom(cor,-1,0.5,-2.3,-1.8)+

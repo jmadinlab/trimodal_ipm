@@ -1,15 +1,15 @@
 
 examples1 <- 
 plot_grid(NULL, plot_grid(NULL, 
-plots[["Ahy"]]+annotation_custom(tab,-0.5, 0.2,-2,-1.4)+theme(plot.title=element_blank())+guides(col="none",fill="none"),
+plots[["Ahy"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
 NULL,
-plots[["Gre"]]+annotation_custom(mas,-0.7, 0.2,-3.5,-2.3)+theme(plot.title=element_blank(), legend.position="top")
+plots[["Gpe"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),NULL,
 #guides(col="none",fill="none")
-,
-ncol=1, rel_heights=c(0.1,1,-0.15,1))+
-draw_label(expression(size[" "*t]~(m^2)), 0.7, 0.15, size=8, hjust=1)+
+ncol=1, rel_heights=c(0.35,1,-0.1,1,0.1))+
+draw_label(expression(size[" "*t]~(m^2)), 0.65, 0.08, size=8, hjust=1)+
 draw_label(expression(size[" "*t+1]~(m^2)), -0.05, 0.55, size=8, angle=90)+
-draw_label("IPM matrices (examples)", 0.55, 0.97, fontface="bold", size=8),
+draw_label("Example IPMs", 0.45, 0.95, fontface="bold", size=8)+
+draw_label(expression("("*bold(before)~bolditalic(P[rec])*")"), 0.45, 0.9, fontface="bold", size=8),
 nrow=1, rel_widths=c(0.12,1))
 examples1
 
@@ -28,7 +28,7 @@ arrows2$Common2 <- arrows2$Common*0.95
 arrows2$Rare2 <- arrows2$Rare*1.05
 params$AB <- ifelse(params$abundance_pair=="Rare","R","C")
 
-arrows2$yaxis <- c(35,38,25,14,11)
+arrows2$yaxis <- c(30,38,35,14,11)
 params$yaxis <- arrows2$yaxis[match(params$morphology, arrows2$morphology)]
 arrows2
 
@@ -44,6 +44,7 @@ lab.point <- data.frame(morphology="massive", x=c(1.5, 1.5, 1.5), y=c(30, 20, 10
 lab.point$morphology <- factor(lab.point$morphology, levels=morph.ord)
 
 lam.dens <- plot_grid(NULL, ggplot(boot)+
+geom_rect(data=lab.point, aes(xmin=1.4, xmax=1.9, ymin=4, ymax=37), fill=NA, col="grey", size=0.5)+
 geom_segment(data=arrows2, aes(x=-Inf, xend=Inf, y=yaxis*1.2, yend=yaxis*1.2), col="white")+
 geom_segment(data=arrows2, aes(y=yaxis, yend=yaxis, x=Rare2, xend=Common2), arrow=arrow(length=unit(1, "mm")))+
 geom_text(data=lab.point, aes(x,y, label=lab), size=1.8, hjust=0, nudge_y=0.3)+
@@ -92,15 +93,13 @@ geom_path(data=r.long, aes(label, value, group=spp), size=0.1, col="grey")+
 geom_point(data=r.long, aes(label, value, col=spp), shape=4,  size=1, stroke=1)+
 #geom_point(data=params, aes(x="Constant",rec.mean), fill="grey", shape=21, stroke=0.5, size=2)+
 geom_point(data=params, aes(x="Constant",rec.mean), fill="grey", shape=4,  size=1, stroke=1)+
-geom_text(data=params[params$spp %in% c("Gre","Ahy"),], aes(x="Constant",rec.mean, label=genus), nudge_y=0, nudge_x=-0.3, angle=0, hjust=0.5, size=2.2, fontface="italic")+
+geom_text(data=params[params$spp %in% c("Gre","Ahy"),], aes(x="Constant",rec.mean, label=genus), nudge_y=0, nudge_x=-0.4, angle=0, hjust=0.5, size=2.2, fontface="italic")+
 theme_classic()+
 scale_y_log10(limits=c(min(storeDET$rec),max(storeDET$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
 		expression(10^-5), expression(10^-4), expression(10^-3),expression(10^-2), expression(10^-1)))+
 scale_fill_manual(values=cols)+scale_colour_manual(values=cols)+
 coord_flip()+
-guides(col="none", fill="none")+ggtitle(expression(bolditalic(P[rec])~bold(estimates)))+
-theme(plot.title=element_text(size=8, face="bold", hjust=0.5), 
-axis.line.y=element_blank(), axis.text.x=element_text(size=8),  axis.title=element_blank(), panel.grid.major.y=element_line())
+guides(col="none", fill="none")+ggtitle("Recruitment vs fitness")+theme_void()+theme(plot.title=element_text(size=8, face="bold", hjust=0.5))
 fitplot
 
 
@@ -111,7 +110,7 @@ scale_x_log10(limits=c(min(storeDET$rec),max(storeDET$rec)), breaks=c(10^-5, 10^
 geom_hline(yintercept=0, size=0.1)+
 guides(col="none")+
 theme_classic()+
-ggtitle("Recruitment vs fitness")+
+#ggtitle("Recruitment vs fitness")+
 labs(x=expression(Recruitment~probablity~(P[rec])), y=expression(log(lambda)))+
 coord_cartesian(ylim=c(-0.5,1))+
 #coord_cartesian(ylim=c(0.6,2))+
@@ -142,7 +141,8 @@ growplot
 
 
 figCD <- plot_grid(fitplot, ggplot()+theme_void(), rechange, ggplot()+theme_void(), growplot,
-ncol=1, rel_heights=c(0.8,-0.02, 1,-0.15,  1), align="v", axis="lr", labels=c("B","","D",""), label_size=9)
+ncol=1, rel_heights=c(0.4,-0.05, 1,-0.15,  1), align="v", axis="lr", labels=c("C","","",""), label_size=9)
+figCD
 
 fig.2 <- plot_grid(plot_grid(examples2, lam.dens, nrow=2, rel_heights=c(0.45, 1), labels=c("A","C"), label_size=9),figCD, nrow=1, rel_widths=c(1,1))+
 annotation_custom(dig,0.28,0.37,0.91,0.93)+
@@ -153,4 +153,31 @@ annotation_custom(cor,0.05,0.13,0.32,0.36)+
 annotation_custom(brn,0.04,0.14,0.22,0.27)+
 annotation_custom(tab,0.06,0.12,0.105,0.135)
 fig.2
+
+
+
+
+
+
+fig.2b <- plot_grid(examples1, figCD, lam.dens, nrow=1, rel_widths=c(0.55, 1, 0.75), labels=c("A","B","C"), label_size=9)+
+#annotation_custom(dig,0.28,0.37,0.91,0.93)+
+#annotation_custom(tab,0.07,0.11,0.91,0.94)+
+#annotation_custom(mas,0.05,0.13,0.54,0.57)+
+#annotation_custom(dig,0.05,0.13,0.43,0.47)+
+#annotation_custom(cor,0.05,0.13,0.32,0.36)+
+#annotation_custom(brn,0.04,0.14,0.22,0.27)+
+annotation_custom(tab,0.06,0.12,0.105,0.135)
+fig.2b
+
+
+
+fig.2c <- plot_grid(plot_grid(plot_grid(NULL, examples2, rel_widths=c(0.12, 1)), figCD,  nrow=2, rel_heights=c(0.45, 1), labels=c("A","B"), label_size=9),lam.dens, nrow=1, rel_widths=c(1,0.8))+
+#annotation_custom(dig,0.28,0.37,0.91,0.93)+
+#annotation_custom(tab,0.07,0.11,0.91,0.94)+
+#annotation_custom(mas,0.05,0.13,0.54,0.57)+
+#annotation_custom(dig,0.05,0.13,0.43,0.47)+
+#annotation_custom(cor,0.05,0.13,0.32,0.36)+
+#annotation_custom(brn,0.04,0.14,0.22,0.27)+
+annotation_custom(tab,0.06,0.12,0.105,0.135)
+fig.2c
 

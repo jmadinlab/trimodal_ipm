@@ -311,3 +311,247 @@ comp$AC<-params2$abundance_05[match(comp$Common, params2$spp)]#
 comp$AR<-params2$abundance_05[match(comp$Rare, params2$spp)]#
 comp$diff <- comp$AC/comp$AR#
 comp
+# ggplot course for molsa#
+#
+################################################
+# 5 steps to data visualization with ggplot: #
+################################################
+# Knowing the stats first#
+# Wrangling/formatting data ("long" format)#
+# Getting familiar with the ggplot language#
+# Googling the right things (using stack overflow)#
+# Being creative but keeping the message clear#
+#
+################################################
+# Today #
+################################################
+# Basic plots (barplot, boxplot, xy-plot, histogram, densityplot, lineplot, tile/contourplot)#
+# Themes, transformations, labels, legends, colours, annotations#
+# Inserting plots/images#
+# Multi-panel & Saving plots#
+# Inserting plots/images/text#
+# Complicated plot, requiring long format (species barplots)#
+# Complicated plot, multiple datasets (nMDS or PCA)#
+################################################
+# Data - bleaching in Indonesia (10x30m transects, 6 years )#
+################################################
+# Warwick, R.M., Clarke, K.R. & Suharsono (1990): A statistical analysis of coral community responses to the 1982-1983 El Nino in the Thousand Islands, Indonesia. - Coral Reefs, 8: 171-179.#
+#
+# isolate genera names - sub(" .*", "", colnames(corals))#
+#
+library("mvabund")#
+data(tikus)#
+#
+corals <- tikus$abun # cover#
+data <- tikus$x#
+#
+# species richness #
+pres_abs <- ifelse(corals>0, 1,0)#
+data$rich <- rowSums(pres_abs)#
+data$rich#
+#
+# coral cover #
+data$cover <- (rowSums(corals)/3000)*100#
+data$cover#
+#
+################################################
+# Basic plots#
+################################################
+#
+# let's create basic plots#
+library("ggplot2")#
+#
+# xy plot#
+ggplot(data=data, aes(cover,rich))+#
+geom_point()+#
+geom_smooth(method="lm", formula=y~x)#
+#
+# boxplot#
+ggplot(data=data, aes(x=time, y=cover))+#
+geom_boxplot()#
+#
+# barplot#
+ggplot(data=data, aes(x=time, y=rich))+#
+stat_summary(geom="bar", fun="mean")+#
+stat_summary(geom="errorbar", fun.data=mean_se)#
+#
+sites.av <- aggregate(rich~time, data, mean)#
+#
+se <- function(x){sd(x)/(sqrt(length(x)))}#
+sites.av$se <- aggregate(rich~time, data, se)$rich#
+#
+ggplot()+#
+geom_bar(data=sites.av, aes(x=time, y=rich), stat="identity")+#
+geom_segment(data=sites.av, aes(x=time, xend=time, y=rich-se, yend=rich+se))#
+#
+# violin plot#
+ggplot(data=data, aes(x=time, y=cover))+#
+geom_violin()#
+#
+# histogram#
+ggplot(data=data, aes(x=cover))+#
+geom_histogram(bins=20)+#
+scale_x_log10()#
+#
+# density#
+ggplot(data=data, aes(x=cover))+#
+geom_density()+#
+scale_x_log10()#
+#
+# line plot #
+coords <- data.frame(lat=rep(lat,length(long)), long=rep(long, each=length(lat)))#
+coords$z <- coords$lat*coords$long#
+#
+ggplot(coords, aes(lat, long))+ geom_raster(aes(fill=z))+geom_contour(aes(z=z))#
+# density plot#
+ggplot(data, aes(x=cover, y=rich))+#
+stat_density_2d()#
+################################################
+# Themes/colours/legends/transformations/labels#
+################################################
+#
+# other themes - https://mran.microsoft.com/snapshot/2017-02-04/web/packages/ggthemes/vignettes/ggthemes.html#
+#
+# colour schemes - https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/#
+#
+# other colour schemes - https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3#
+#
+ggplot(data=data, aes(cover,rich))+#
+geom_point(shape=21, aes(fill=rich), size=3)+#
+geom_smooth(method="lm", formula=y~x)+#
+scale_fill_distiller(palette="Spectral")+#
+theme_bw()#
+#
+# logging axes#
+ggplot(data=data, aes(log(cover),log(rich)))+#
+geom_point()+#
+geom_smooth(method="lm", formula=y~x)+#
+theme_classic()#
+#
+# logging axes but keeping the scale#
+ggplot(data=data, aes(cover,rich))+#
+geom_point()+#
+scale_x_log10()+#
+scale_y_log10()+#
+geom_smooth(method="lm", formula=y~x)+#
+theme_classic()#
+mod <- lm(rich~cover, data)#
+c <- round(coef(mod)[1], 1)#
+b <- round(coef(mod)[2], 2)#
+rsq <- summary(mod)$r.squared#
+#
+################################################
+# Inserting plots/images#
+################################################
+#
+library("png")#
+library("grid")#
+#
+img<-readPNG("~/desktop/image.png")#
+img<-rasterGrob(img, interpolate=TRUE)#
+plot <- ggplot(data=data, aes(cover,rich))+#
+geom_point()+#
+annotation_custom(img, xmin=0, xmax=10, ymin=20, ymax=30)+#
+#scale_x_log10()+#
+#scale_y_log10()+#
+geom_smooth(method="lm", formula=y~x)+#
+theme_classic()+theme(plot.background=element_blank(), panel.background=element_blank())#
+plot #
+#
+plot2 <- plot+#
+annotation_custom(ggplotGrob(plot), xmin=30, xmax=50, ymin=0, ymax=20)#
+plot2#
+################################################
+# Multipanel plots / saving#
+################################################
+#
+# library("cowplot")#
+#
+panel_a <- ggplot(data=data, aes(cover,rich))+#
+geom_point()+#
+scale_x_log10()+#
+scale_y_log10()+#
+geom_smooth(method="lm", formula=y~x)+#
+theme_classic()#
+#
+fig.1 <- plot_grid(panel_a, panel_a)#
+#
+#ggsave("~/Desktop/fig.1.png", fig.1, width=15, height=9.5, units="cm", dpi = 300)#
+################################################
+# Data wrangling/more complex plots#
+################################################
+#
+library("reshape2")#
+# tile plot - useful for maps#
+#
+lat <- c(1:20)#
+long <- c(1:100)#
+melt(outer(lat, long))#
+#
+ggplot(melt(outer(lat, long)), aes(Var1, Var2))+ geom_raster(aes(fill=value))+geom_contour(aes(z=value))#
+# which species are most abundant?#
+#
+head(corals)#
+#
+spp <- cbind(data, corals) # stick data by columns#
+head(spp)#
+#
+# average across times#
+#spp.av <- data.frame(aggregate(.~time, spp, mean)) #
+#
+# LONG FORMAT#
+#
+spp.long <- melt(spp, id.vars=c("time","rich","rep","cover"), value.name="cover.sp", variable.name="species")#
+head(spp.long)#
+#
+# work with genera#
+spp.long$species <- gsub("[.]", " ",spp.long$species)#
+spp.long$genus <- sub(" .*", "", spp.long$species)#
+head(spp.long)#
+gen.long <- aggregate(cover.sp~genus+time+rep, spp.long, sum)#
+gen.long.av <- aggregate(cover.sp~genus+time, gen.long, mean)#
+#
+ggplot(gen.long.av, aes(cover.sp, reorder(genus, -cover.sp)))+#
+geom_bar(stat="identity")+#
+facet_wrap(~time)#
+ggplot(gen.long.av, aes(as.numeric(as.character(time)), cover.sp))+#
+geom_area(aes(fill=genus))#
+library("vegan")#
+#
+mds<-metaMDS(corals, k=2, distance="bray", autotransform=FALSE, trymax=100)#
+stressplot(mds)#
+#
+points<-cbind(data.frame(scores(mds)), data)#
+vectors<-data.frame(mds$species)#
+#
+ggplot()+#
+geom_segment(data=vectors, aes(x=0, y=0, xend=MDS1, yend=MDS2), col="grey")+#
+geom_point(data=points, aes(NMDS1, NMDS2))+#
+geom_text(data=vectors, aes(MDS1, MDS2, label=rownames(vectors)))+#
+#facet_wrap(~time)+#
+theme_bw()#
+################################################
+# Mapping in ggplot#
+################################################
+#
+library("maptools")#
+library("raster")#
+library("rgdal")#
+#
+# source of this code: http://www.rpubs.com/spoonerf/countrymapggplot2#
+#
+usa<-getData("GADM", country="USA", level=1)  # choose country ISO code#
+usa_UTM<-spTransform(usa, CRS("+init=EPSG:32404"))  # set projection#
+# UTM square from: http://www.dmap.co.uk/utmworld.htm (longitude square + N/S)#
+# search this UTM code to get ESPG no at https://spatialreference.org #
+#
+hi<-usa_UTM[usa_UTM@data$NAME_1 == "Hawaii",] #
+hi = spTransform(hi, "+init=epsg:4326")#
+hi_df<-fortify(hi)  #
+mid<-c(21.5, -158.0) # midpoint#
+a<-0.35 # area#
+ggplot() + geom_polygon(data=hi_df, aes(long,lat, group=group), fill="whitesmoke", col="black", size=0.1)+#
+ xlim(min(hi_df$long),max(hi_df$long))+#
+ ylim(min(hi_df$lat),max(hi_df$lat))+#
+coord_cartesian(c(mid[2]-a, mid[2]+a) ,c(mid[1]-a, mid[1]+a))+#
+theme_void()

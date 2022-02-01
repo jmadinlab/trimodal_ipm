@@ -105,6 +105,31 @@ p2
 #ggplot(params, aes(f.slp, f.slp2))+geom_abline(slope=1, col="grey")+geom_text(aes(label=spp))
 #)
 
+
+#######################################
+# FECUNDITY - CONSTANT SLOPE
+#######################################
+fec.con<-glm.nb(fecundity~area+spp, data=fec[fec$reproductive==1,], link = log)
+summary(fec.con)
+
+x2 <- spp # your second predictor (here, sites)
+int <-function(mod){ 
+	int <- rep(coef(mod)[[1]], length(x2))
+	for (i in 2:length(x2)) { int[i] <- int[i] + coef(mod)[grepl(x2[i],
+		 names(coef(mod))) & !grepl("area", names(coef(mod)))]}
+	int} 
+	
+slp <-function(mod){ 
+	slp <- rep(coef(mod)[[2]], length(x2))
+	for (i in 2:length(x2)) { slp[i] <- slp[i] + coef(mod)[grepl(x2[i],
+		names(coef(mod))) & grepl("area", names(coef(mod)))]}
+	slp} 
+# input your model, output in the same order as “x2”
+params$f.int.const <- int(fec.con) # intercept = effect of x2
+params$f.int.const
+
+
+
 #######################################
 # GROWTH 
 #######################################
@@ -196,7 +221,7 @@ p4
 
 
 #######################################
-# MAXIMUM GROWTH  - look into AD
+# MAXIMUM GROWTH  
 #######################################
 library("quantreg")
 gdat$radius1<-sqrt(gdat$area_cm2/pi)/100
@@ -307,6 +332,7 @@ partheme <- theme(axis.text=element_text(size=7), axis.title=element_text(size=8
 plot.title=element_text(size=8, hjust=0.5, face="bold"), legend.title=element_blank(), legend.text=element_text(face="italic"))
 
 xlab <- expression(log[10]*(area[~t]))
+
 
 fig.s1 <- plot_grid(plot_grid(
 p1+guides(col="none")+partheme+ggtitle("reproductive maturity")+

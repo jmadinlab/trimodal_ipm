@@ -1,37 +1,3 @@
-
-rectheme <- theme(axis.text=element_text(size=7), axis.title=element_text(size=8), axis.line=element_line(size=0.25), axis.ticks=element_line(size=0.25), plot.title=element_text(size=8, face="bold", hjust=0.5),  panel.background=element_blank())
-
-comp$maxgen <- maxdat$gen[match(comp$morph, maxdat$morph)]
-
-projplot <- ggplot()+
-geom_line(data=proj2, aes(gen, diff, col=morph), linetype="dotted", size=0.2)+
-geom_line(data=proj2[proj2$gen <= proj2$maxgen,], aes(gen, diff, col=morph), size=0.75)+
-scale_y_log10()+
-#scale_x_log10()+
-#geom_segment(data=proj4[proj4$gen==proj4$max,], aes(xend=gen, x=gen,y=Inf, yend=-Inf), linetype="dotted", col="grey")+
-#geom_text(data=maxdat, aes(x, y, label=lab),  col="grey", angle=90, size=2, hjust=0)+
-#geom_segment(aes(x=-Inf, xend=Inf, y=real, yend=real, col=morph), linetype="dotted")+
-#geom_point(data=comp, inherit.aes=F, aes(difftime, diff, col=morph))+
-#geom_point(aes(max,real, col=morph))+
-#geom_segment(data=dmaxdat, aes(y=diff, yend=diff, x=norm, xend=gen), arrow=arrow(length=unit(1,"mm")))+
-#geom_segment(data=NULL, aes(y=5.769612, yend=5.769612, x=2, xend=1), arrow=arrow(length=unit(1,"mm")))+
-geom_point(data=proj2[proj2$gen==proj2$maxgen,], aes(gen, diff, fill=morph), shape=21, stroke=0.1, size=2)+
-scale_colour_manual(values=colsC)+
-scale_fill_manual(values=colsC)+
-theme_classic()+
-theme(axis.line=element_line(size=0.1), axis.title=element_text(size=8), 
-plot.title=element_text(size=8, hjust=0.5, face="bold"))+
-coord_cartesian(ylim=c(1,55), xlim=c(1,85))+
-guides(colour="none", fill="none")+
-#scale_x_continuous(expand=c(0,0))+
-labs(x="Time (years)", y=expression(N[" common "]/N[" rare"]))+
-ggtitle("Time taken to project \n observed gaps in abundance")
-projplot
-
-
-#######################################
-# RECRUITMENT PLOT
-#######################################
 tab<-readPNG("data/coral_silhouettes/tabularG.png")
 tab<-rasterGrob(tab, interpolate=TRUE)
 mas<-readPNG("data/coral_silhouettes/massiveG.png")
@@ -42,151 +8,125 @@ cor2<-readPNG("data/coral_silhouettes/corymboseG.png")
 cor2<-rasterGrob(cor2, interpolate=TRUE)
 dig<-readPNG("data/coral_silhouettes/digitateG.png")
 dig<-rasterGrob(dig, interpolate=TRUE)
-brn<-readPNG("data/coral_silhouettes/branchingGt.png")
+brn<-readPNG("data/coral_silhouettes/branchingG.png")
 brn<-rasterGrob(brn, interpolate=TRUE)
 
 
-comp$labels <- paste(comp$Common, "-", comp$Rare, sep="")
 
-mas_x <- comp$doubdiff[comp$morph=="massive"]
-tab_x <- comp$doubdiff[comp$morph=="tabular"]
-brn_x <- comp$doubdiff[comp$morph=="staghorn"]
-dig_x <- comp$doubdiff[comp$morph=="digitate"]
-cor_x <- comp$doubdiff[comp$morph=="corymbose"]
-cor2_x <- comp$doubdiff[comp$morph=="corymbose_2"]
-
-comp$rank<-NA
-comp$rank[order(comp$lamdiff)] <- 1:nrow(comp)
-mas_y <- comp$rank[comp$morph=="massive"]
-tab_y <- comp$rank[comp$morph=="tabular"]
-brn_y <- comp$rank[comp$morph=="staghorn"]
-dig_y <- comp$rank[comp$morph=="digitate"]
-cor_y <- comp$rank[comp$morph=="corymbose"]
-cor2_y <- comp$rank[comp$morph=="corymbose_2"]
-
-lamcomp2 <- ggplot()+
-geom_bar(data=comp, aes(x=lamdiff, y=reorder(labels, lamdiff), fill=morph), stat="Identity",  col="black", size=0.1, width=0.75)+
-labs(x=expression(Difference~"in"~lambda))+
-geom_segment(data=comp, aes(y=reorder(labels, -lamdiff), yend=reorder(labels, -lamdiff), x=lamdiff, xend=doubdiff), arrow=arrow(length=unit(1,"mm")))+
-guides(fill="none")+scale_fill_manual(values=colsC)+
-scale_x_continuous(expand=c(0,0), limits=c(0,1.1))+
-ggtitle("Difference in fitness \n(common-rare)")+
-geom_segment(data=NULL, aes(y=2, yend=2, x=0.8, xend=0.9), arrow=arrow(length=unit(1,"mm")))+
-geom_text(data=NULL,  aes(x=0.85, y=1.2, label="recruitment x2 in \nall taxa"), size=2)+
-annotation_custom(mas, mas_x+0.01, mas_x+0.13, mas_y-0.5, mas_y+0.5)+
-annotation_custom(brn, brn_x+0.01, brn_x+0.14, brn_y-0.5, brn_y+0.5)+
-annotation_custom(tab, tab_x+0.01, tab_x+0.18, tab_y-0.7, tab_y+0.7)+
-annotation_custom(cor, cor_x+0.01, cor_x+0.15, cor_y-0.5, cor_y+0.5)+
-annotation_custom(cor2, cor2_x+0.01, cor2_x+0.15, cor2_y-0.5, cor2_y+0.5)+
-annotation_custom(dig, dig_x+0.01, dig_x+0.15, dig_y-0.6, dig_y+0.6)+
-theme_classic()+theme(axis.title.y=element_blank(), axis.title.x=element_text(size=7), 
-plot.title=element_text(size=8, hjust=0.5, face="bold"),
-axis.text=element_text(size=7))
-lamcomp2
+params$AB <- ifelse(params$abundance_pair=="Rare","R","C")
+params2$AB <- ifelse(params2$abundance_pair=="Rare","R","C")
 
 
+ek.av$morphology<-factor(ek.av$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
+sdat$morphology<-factor(sdat$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
+s.avs <- aggregate(area~morphology, sdat, median)
+segs2<-data.frame(morphology="tabular")
+segs2$morphology<-factor(segs2$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
+
+size.elas<-ggplot(ek.av[!ek.av$spp=="Asp",], aes(size,X2))+
+geom_bar(stat="identity", position=position_dodge(preserve = "single"), aes(fill=spp), col="black", size=0.1, width=0.33)+
+#geom_line()+
+#geom_point()+
+facet_wrap(~morphology, ncol=1)+
+scale_fill_manual(values=cols)+
+scale_colour_manual(values=cols)+
+geom_boxplot(data=sdat[!sdat$spp=="Asp",], aes(x=area, y=0.9, fill=spp), width=0.2, outlier.size=0.01, size=0.1, outlier.colour="grey")+
+guides(fill="none", col="none")+
+geom_segment(data=s.avs, aes(x=area, xend=area, y=0, yend=0.7), linetype="dotted")+
+#geom_point(data=ek.av.av, aes(x=X3, y=0.6, col=spp))+
+labs(x=expression(size~(m^2)), y="elasticity")+
+scale_y_continuous(expand=c(0,0), breaks=c(0,0.5,1))+
+theme_classic()+theme(strip.background=element_blank(), strip.text=element_text(size=8),
+axis.text.y=element_text(size=6), axis.text.x=element_text(size=6, angle=45, hjust=1), axis.title=element_text(size=8), axis.line=element_line(size=0.1), plot.title=element_text(hjust=0.5, size=8, face="bold"))+
+geom_segment(data=segs2, aes(x=0.5, xend=0.5, y=0.8, yend=1))+
+geom_segment(data=segs2, aes(x=0.5, xend=0.4, y=0.8, yend=0.8))+
+geom_segment(data=segs2, aes(x=0.5, xend=0.4, y=1, yend=1))+
+geom_segment(data=segs2, aes(x=0.5, xend=0.7, y=0.9, yend=0.9))+
+geom_segment(data=segs2, aes(x=0.7, xend=0.7, y=0.5, yend=0.9))+
+geom_text(data=segs2,aes(x=1, y=0.35, label="colony \nsizes"), size=2, hjust=1)+
+ggtitle(expression(bold(Effects~of~colony~sizes~on~lambda)))+
+#ggtitle("Demographic sensitivity to size")+
+scale_x_continuous(breaks=c(-4,-3,-2,-1,0), labels=c(expression(0.0001),expression(0.001), expression(0.01),  expression(0.1),  expression(1)))
+size.elas
 
 
+params$morphology <- factor(params$morphology, levels=c("staghorn", "tabular", "corymbose","digitate","massive"))
+elasplot<-ggplot(params, aes(reorder(spp, eR), eR, fill=spp))+
+geom_bar(stat="identity", size=0.1, col="black")+
+scale_fill_manual(values=cols)+
+guides(fill="none")+
+facet_grid(.~morphology, scales="free_x", space="free_x")+
+labs(y=expression(R[elasticity]))+
+geom_text(aes(y=eR+0.02,label=AB), size=1.8)+
+scale_y_continuous(expand=c(0,0), limits=c(0,0.45), breaks=c(0,0.1, 0.2, 0.3))+
+ggtitle("Demographic sensitivity \nto reproduction")+
+theme_classic()+theme(strip.text=element_blank(),
+ strip.background=element_blank(), axis.title.x=element_blank(),  axis.text.y=element_text(size=7),axis.text.x=element_text(size=7, angle=90, vjust=0.5), axis.title.y=element_text(size=8), plot.title=element_text(size=8, hjust=0.5, face="bold"), axis.line.y=element_line(size=0.1))#+coord_flip()
+elasplot
 
 
+params$ec.se<-aggregate(Carbon_ug_corrected~spp+morph, ec, sd)$Carbon_ug_corrected
 
 
-lsize <- 0.5
-
-
-#######################################
-# CONTOURS
-#######################################
-
-#scapes <- pairs3[!pairs3$morph=="corymbose",]
-scapes <- pairs3
-head(pairs3)
-scapes$posi <- ifelse(scapes$X1 > 0, "common > rare", "rare > common")
-#scapes$morph <- ifelse(scapes$morph=="corymbose_2", "corymbose", scapes$morph)
-scapes$morph <- ifelse(scapes$morph=="staghorn", "arborescent", scapes$morph)
-#scapes$morph <- ifelse(scapes$morph=="massive", "boulder", scapes$morph)
-scapes$morph <- factor(scapes$morph, levels=rev(c("tabular", "arborescent", "corymbose","corymbose_2","digitate", "massive")))
-
-colsC2 <- colsC
-names(colsC2)[6]<-"massive"
-names(colsC2)[3]<-"arborescent"
-
-sp.points <- params2[,c("morph","rec.size", "spp")]
-sp.points$rec <- params$rec[match(sp.points$morph, params2$morph)]
-
-#sp.points <- sp.points[!sp.points$morph=="corymbose",]
-#sp.points$rec <- ifelse(sp.points$morph=="massive", 10^-4, 10^-3)
-#sp.points$morph <- ifelse(sp.points$morph=="corymbose_2", "corymbose", sp.points$morph)
-sp.points$morph <- ifelse(sp.points$morph=="staghorn", "arborescent", sp.points$morph)
-#sp.points$morph <- ifelse(sp.points$morph=="massive", "boulder", sp.points$morph)
-sp.points$morph <- factor(sp.points$morph, levels=rev(c("tabular", "arborescent", "corymbose","corymbose_2","digitate", "massive")))
-
-
-blueish <- colsC[2]
-
-legend <- ggplot()+
-geom_point(data=scapes, aes(x=id, y=sqrt(((10^time)*10000)), fill=posi), shape=22)+
+reproplot<-ggplot()+
+#geom_path(data=params2, aes(f.int, eggC, group=morph, col=morphology), linetype="dotted", size=0.2)+
+#geom_path(data=params2, aes(f.int, eggC, col=morph), arrow=arrow(type="closed", length=unit(3,"mm")),linetype="dotted", size=0.2)+
+#geom_point(col="white", stroke=0.1, size=6)+
+geom_smooth(data=params[params$family=="Acroporidae",], aes(fec1cm, eggC), method="lm", formula=y~poly(x,1), se=F, size=0.2, col="black")+
+geom_segment(data=params,aes(x=fec1cm, xend=fec1cm, y=eggC-ec.se, yend=eggC+ec.se), size=0.2)+
+geom_point(data=params,aes(fec1cm, eggC, fill=spp), shape=21, stroke=0.2, size=3)+
+#geom_point(data=params[params$spp %in% c("Aro","Acy","Ahu","Ami","Gpe"),], aes(f.int, eggC, fill=spp), shape=21, stroke=0.1, size=3.5)+
+geom_text(data=params, aes(fec1cm, eggC, label=AB), size=1.8)+
+#geom_text(data=params[params$AB=="R",], aes(fec1cm, eggC, label=AB), size=1.8)+
+#geom_text_repel(data=params, aes(f.int+0, eggC+0,label=spp), size=2, force=0.1)+
+geom_segment(aes(x=335, xend=350, y=47, yend=43),col="grey",#colsC[3], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=405, xend=435, y=41.5, yend=40),col="grey",#colsC[2], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=700, xend=800, y=38, yend=36),col="grey",#colsC[1], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=900, xend=1000, y=28, yend=33),col="grey",#colsC[4], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=920, xend=1020, y=27, yend=27.5),col="grey",#colsC[5], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=880, xend=930, y=10, yend=10.5),col="grey",#colsC[6], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+ggtitle("Reproductive investments")+
+scale_x_log10(breaks=c(400, 600, 900, 1200))+
+geom_text(data=NULL, aes(330, 10, label='C = Common'), size=1.8, hjust=0)+
+geom_text(data=NULL, aes(330, 6, label='R = Rare'), size=1.8, hjust=0)+
+#ylim(3,55)+
+labs(x=expression(Egg~number~(eggs~cm^-2)), y= "Egg mass (g of Carbon)")+
+scale_fill_manual(values=cols)+guides(fill="none", col="none")+
+scale_colour_manual(values=colsC)+
 theme_classic()+
-scale_fill_manual(values=c(blueish, "white"))+
-guides(col="none",  fill=guide_legend(direction="vertical", title=expression(Delta~log*(lambda)), title.hjust=0.5, title.vjust=-1, label.hjust=100))+
-theme(legend.text=element_text(size=6),
-	#legend.title=element_text(size=6, face="bold"),
-	legend.title=element_blank(),
-	plot.margin=unit(c(1, 4, 1, 1), "cm"),
-	legend.key.height=unit(1,"mm"),
-	legend.position=c(0.9,0 ),
-	legend.background=element_blank(),
-	legend.key.width=unit(5,"mm"))
-	
-	sp.points$eggC <- params$eggC[match(sp.points$spp, params$spp)]
-	sp.points$recEn <- sp.points$rec * (10^(scale(sp.points$eggC)/max(abs(scale(sp.points$eggC))))) 
-sp.points$rec.const <- params$rec.const[match(sp.points$spp, params$spp)]
+theme(plot.title=element_text(size=8, hjust=0.5))
+reproplot
 
 
-library("metR")
-
-sp.points<-aggregate(.~morph, subset(sp.points, select=-spp), mean)
-
-contours <- ggplot(data=scapes, aes(x=rec, y=sqrt(((10^recsize)*10000)), z=value))+
-geom_contour_filled(aes(fill=morph, alpha=..level..),breaks=c(0,0.05,0.1, 0.2, 0.4, 0.8), col="grey", size=lsize)+
-geom_contour(aes(col=morph), breaks=c(0,0.05,0.1, 0.2, 0.4, 0.8,1.6),size=lsize)+
-geom_text_contour(breaks = c(0,0.05, 0.1, 0.2, 0.4), size=1.5, skip=0, stroke=0.15)+
-#geom_segment(data=sp.points, inherit.aes=F, aes(x=5*10^-4, xend=rec, y=5, yend=sqrt(((10^rec.size)*10000))), col="black", arrow=arrow(length=unit(1, "mm")))+
-#geom_point(data=sp.points, inherit.aes=F, aes(x=5*10^-4,y=5), shape=21, col="black", size=0.5)+
-geom_point(data=sp.points, inherit.aes=F, aes(x=rec,y=sqrt(((10^rec.size)*10000))), shape=3, stroke=1, size=0.25, col="black")+
-facet_wrap(~morph, nrow=1)+
-labs(x="Probability of larval settlement", y="Recruit diameter")+
-scale_fill_manual(values=colsC2)+
-scale_colour_manual(values=colsC2)+
-guides(fill="none", alpha="none", col="none")+
-ggtitle(expression(bold(Delta*fitness~landscapes)))+
-	#scale_y_log10(expand=c(0,0))+
-	scale_y_continuous(expand=c(0,0))+
-	scale_x_log10(breaks=c(10^-5, 10^-4,10^-3), labels=c(
-		expression(10^-5),
-		expression(10^-4),
-		expression(10^-3)), expand=c(0,0))+
-	theme_bw()+
-	theme(strip.background=element_blank(),  
-	strip.text=element_text(size=7, vjust=-2),
-	panel.background=element_rect(fill="white"),
-	panel.grid.major=element_blank(),
-	panel.grid.minor=element_blank(),
-	plot.title=element_text(size=8, hjust=0.5, vjust=-7, face="bold"),
-	axis.text.x=element_text(size=5), 
-	axis.text.y=element_text(size=5, angle=90, hjust=0.5), 
-	axis.title=element_text(size=7))#+coord_flip()
-contours
+fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), nrow=1, rel_widths=c(1,1),labels=c("A",""), label_size=9)+
+draw_plot(mas, 0.92, 0.62, 0.06, 0.1)+
+draw_plot(dig, 0.85, 0.65, 0.06, 0.1)+
+draw_plot(cor, 0.79, 0.79, 0.06, 0.1)+
+draw_plot(tab, 0.67, 0.81, 0.094, 0.1)+
+draw_plot(brn, 0.62, 0.83, 0.035, 0.1)
+fig4 
 
 
+#fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, nrow=1, rel_widths=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=1, rel_heights=c(1,1.1),labels=c("A",""), label_size=9)+
+#draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
+#draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
+#draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
+#draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
+#draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
+#fig4 
 
-
-fig3<-plot_grid(
-plot_grid(lamcomp2, projplot, nrow=1, rel_widths=c(0.7,1), labels=c("A","B"), label_size=9), 
-NULL,
-contours,
-ncol=1, rel_heights=c(1,-0.0,0.9),labels=c("","","C"), label_size=9)
-fig3
-
+#fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=2, rel_widths=c(1.8,1),labels=c("A",""), label_size=9)+
+#draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
+#draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
+#draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
+#draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
+#draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
+#fig4 
 
 

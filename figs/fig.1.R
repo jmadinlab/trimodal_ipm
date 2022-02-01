@@ -77,7 +77,6 @@ rot$x2[rot$spp=="r.int"] <- rot$x[rot$spp=="r.int"]+0.03
 
 pcdat$spp <- factor(pcdat$spp, levels=order)
 
-
 labs2 <- paste(labs, " (", order, ")", sep="")
 
 pcplot <- ggplot()+
@@ -88,7 +87,7 @@ geom_text_repel(data=rot, aes(x2*1.6, y*1.5,label=num),  size=2, fontface="bold"
 geom_point(data=pcdat, aes(x,y, fill=spp), size=4, shape=21, stroke=0.15)+
 geom_text_repel(data=pcdat, aes(x+0.38,y-0, label=spp), size=2, force=0.0005)+
 #scale_colour_manual(values=c(cols), labels=labs)+
-scale_fill_manual(values=cols, labels=labs2)+
+scale_fill_manual(values=cols)+
 scale_radius(range=c(5,10))+
 xlim(c(min(pcdat$x)*1.1,max(pcdat$x)*1.2))+
 ylim(c(min(pcdat$y)*1.2,max(pcdat$y)*1.1))+
