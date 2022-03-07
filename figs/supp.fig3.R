@@ -15,6 +15,25 @@ dig<-rasterGrob(dig, interpolate=TRUE)
 brn<-readPNG("data/coral_silhouettes/branchingG.png")
 brn<-rasterGrob(brn, interpolate=TRUE)
 
+
+ipm.k.list <- list()
+ipm.p.list <- list()
+ipm.r.list <- list()
+y.list <- list()
+
+for (sp in spp) {
+	rec <- 1
+	rec.size <- params$rec.size[params$spp==sp]
+	h <- mesh()$h
+	y <- mesh()$y
+	sub<-gdat[gdat$spp==sp,]
+    mod <- bigmatrix()
+	y.list[[sp]] <- y 
+	ipm.k.list[[sp]] <- mod$P
+	ipm.p.list[[sp]] <- mod$P
+	ipm.r.list[[sp]] <- mod$R
+	}
+
 library("viridis")
 
 plots <- list()
@@ -58,12 +77,11 @@ plot<-ggplot()+
 	plots[[sp]] <- plot
 	}
 
-#fig.s4 <- plot_grid(plotlist=plots)
-#fig.s4
+#fig.s3 <- plot_grid(plotlist=plots)
+#fig.s3
+#plots[["Ahy"]]
 
-plots[["Ahy"]]
-
-fig.s4 <- plot_grid(
+fig.s3 <- plot_grid(
 plot_grid(plots[["Ahy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.5), NULL, plots[["Acy"]]+annotation_custom(tab,-0.5,0.2,-2,-1.3)+
 theme(axis.title.y=element_text(size=8, angle=90, hjust=1.2)), rel_heights=c(1,-0.12,1), ncol=1, align="v"),
 plot_grid(plots[["Ain"]]+annotation_custom(brn,-0.5,0.5,-2,-1.3), NULL, plots[["Aro"]]+annotation_custom(brn,-0.5,0.5,-2,-1.3), rel_heights=c(1,-0.12,1), ncol=1),
@@ -73,7 +91,7 @@ plot_grid(plots[["Adi"]]+annotation_custom(dig,-1,0.3,-2.8,-2.2), NULL, plots[["
 plot_grid(plots[["Gre"]]+annotation_custom(mas,-0.8,0,-3,-2.2), NULL, plots[["Gpe"]]+annotation_custom(mas,-0.8,0,-3,-2.2), rel_heights=c(1,-0.12,1), ncol=1),
 align="h",
 nrow=1, rel_widths=c(1.1,1,1,1,1))
-fig.s4
+fig.s3
 
-#ggsave("figs/supp/fig.s4.png", fig.s4, width=23, height=10.5, units="cm", dpi = 300)
+
 

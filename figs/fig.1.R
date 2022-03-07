@@ -19,6 +19,10 @@ brn<-rasterGrob(brn, interpolate=TRUE)
 # SIZE
 #######################################
 
+# average size
+size.av <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)
+params$size.av <- size.av$area[match(params$spp, size.av$spp)]
+
 size.av <- size.av[order(size.av$area, decreasing=TRUE),]
 size.av$spp <- factor(size.av$spp, levels=size.av$spp)
 ss$spp <- factor(ss$spp, levels=size.av$spp)
@@ -87,7 +91,7 @@ geom_text_repel(data=rot, aes(x2*1.6, y*1.5,label=num),  size=2, fontface="bold"
 geom_point(data=pcdat, aes(x,y, fill=spp), size=4, shape=21, stroke=0.15)+
 geom_text_repel(data=pcdat, aes(x+0.38,y-0, label=spp), size=2, force=0.0005)+
 #scale_colour_manual(values=c(cols), labels=labs)+
-scale_fill_manual(values=cols)+
+scale_fill_manual(values=cols, labels=labs2)+
 scale_radius(range=c(5,10))+
 xlim(c(min(pcdat$x)*1.1,max(pcdat$x)*1.2))+
 ylim(c(min(pcdat$y)*1.2,max(pcdat$y)*1.1))+
@@ -113,11 +117,6 @@ pcplot
 #######################################
 # ABUNDANCE
 #######################################
-
-abun[,c("spp","morphology","abundance_05")] <- params[match(abun$species, params$species), c("spp","morphology","abundance_05")]
-
-d08B[,c("spp","morphology","abundance_05")] <- params[match(d08B$Species, params$species), c("spp","morphology","abundance_05")]
-
 
 abunplot<-plot_grid(NULL,
 plot_grid(

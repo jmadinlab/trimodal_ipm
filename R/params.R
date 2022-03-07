@@ -1,5 +1,4 @@
 
-
 #######################################
 # MATURITY 
 #######################################
@@ -22,31 +21,12 @@ params$m.slp<-m.slp
 
 m.pred$spp <- factor(m.pred$spp, levels=order)
 
-# -------- plot
-#pdf("figs/p1_maturity.pdf" )
-
-p1<-ggplot()+
-  geom_jitter(data=fec, 
-    aes(x= area, reproductive), 
-      height=0.02, shape=21, col="grey")+
-  geom_line(data=m.pred, 
-    aes(area, pred, col=spp))+
-  scale_colour_manual(values=cols, labels=labs)+
-  theme_classic()
-
-#show(p1)
-#dev.off()
-
 #######################################
 # FECUNDITY  
 #######################################
-# eggs per cm2
-fec$f.cm2<-fec$polyps_cm2*fec$eggs 
-# eggs per colony
- fec$fecundity<-round(fec$f.cm2*fec$area_cm2)
-# egg energy per colony
-# make energy a survival proportion, and round to 0
-#fec$fecundity<-round(fec$f.cm2*fec$area_cm2 * (fec$eggC/max(fec$eggC)) ,0) 
+
+fec$f.cm2<-fec$polyps_cm2*fec$eggs  # eggs per cm2
+fec$fecundity<-round(fec$f.cm2*fec$area_cm2) # eggs per colony
 
 f.int<-NULL
 f.slp<-NULL
@@ -64,47 +44,6 @@ for(sp in spp){
 	}
 params$f.int<-f.int
 params$f.slp<-f.slp
-
-#f.int2<-NULL
-#f.slp2<-NULL
-#f.pred2<-NULL
-#for(sp in spp){
-	#sp <- "Ahy"
-#	sub<-fec[fec$spp==sp & fec$reproductive==1,]
-#	f.mod2 <- vglm(fecundity ~ area, family = posnegbinomial(), data = sub)
-	#summary(f.mod)
-#	f.int2<-c(f.int2, coef(f.mod2)[1])
-#	f.slp2<-c(f.slp2, coef(f.mod2)[3])
-#	new2<-data.frame(area=seq(min(sub$area), max(sub$area), 0.1),
-#	spp=sp, morph=sub$morphology[1])
-#	new2$pred<-predict(f.mod2, new2, type="response")
-#	f.pred2<-rbind(f.pred2, new2)
-#	}
-#params$f.int2<-f.int2
-#params$f.slp2<-f.slp2
-
-# -------- plot
-#pdf("figs/p2_fecundity.pdf")
-
-p2<-ggplot()+ 
-  geom_point(data=fec[fec$reproductive==1, ], 
-    aes(area, fecundity), 
-      shape=21, col="grey")+
-  geom_line(data=f.pred, aes(area, pred, col=spp))+
-     #geom_line(data=f.pred2, aes(area, pred, col=spp))+
-  scale_y_log10()+
-  #facet_wrap(~spp)+
-  scale_colour_manual(values=cols)+
-  theme_classic()
-p2
-#show(p2)
-#dev.off()
-
-#plot_grid(
-#ggplot(params, aes(f.int, f.int2))+geom_abline(slope=1, col="grey")+geom_text(aes(label=spp)),
-#ggplot(params, aes(f.slp, f.slp2))+geom_abline(slope=1, col="grey")+geom_text(aes(label=spp))
-#)
-
 
 #######################################
 # FECUNDITY - CONSTANT SLOPE
@@ -128,8 +67,6 @@ slp <-function(mod){
 params$f.int.const <- int(fec.con) # intercept = effect of x2
 params$f.int.const
 
-
-
 #######################################
 # GROWTH 
 #######################################
@@ -152,23 +89,6 @@ for(sp in spp){
 params$g.int<-g.int
 params$g.slp<-g.slp
 params$g.var<-g.var
-
-#pdf("figs/p3_growth.pdf")
-
-p3<-ggplot()+ 
-  geom_abline(slope=1, linetype="dotted")+
-  geom_point(data=gdat, 
-    aes(area, area_next), 
-      shape=21, col="grey")+
-  geom_line(data=g.pred, 
-    aes(area, pred, col=spp))+
-  scale_colour_manual(values=cols)+
-  #facet_wrap(~spp)+
- theme_classic()
-
-#show(p3)
-#dev.off() 
-  
 
 #######################################
 # SURVIVAL 
@@ -203,23 +123,6 @@ params$s.int<-s.int
 params$s.slp<-s.slp
 params$s.slp.2<-s.slp2
 
-#pdf("figs/p4_survival.pdf")
-
-p4<-ggplot()+ 
-  geom_jitter(data=sdat, 
-    aes(area, surv), 
-      shape=21, col="grey",height=0.02)+
-  geom_line(data=s.pred, 
-    aes(area, pred, col=spp))+
-      #facet_wrap(~spp)+
-  scale_colour_manual(values=cols)+
- theme_classic()
-p4
-#show(p4)
-#dev.off() 
-
-
-
 #######################################
 # MAXIMUM GROWTH  
 #######################################
@@ -248,22 +151,9 @@ params$r.int<-r.int
 params$r.slp<-r.slp
 params$r.err<-r.err
 
-#pdf("figs/p5_maxgrowth.pdf", )
-
-p5<-ggplot()+
- geom_point(data=gdat, aes(x=area, y=g_radius), col="grey", shape=21)+
-     geom_line(data=r.pred, aes(x=area, y=pred, col=spp))+
-   scale_colour_manual(values=c(cols))+
-   #+facet_wrap(~spp)+
-    theme_classic()
-
-#show(p5)
-#dev.off() 
-   
-
 
 #######################################
-# PARTIAL MORTALITY  - subset??
+# PARTIAL MORTALITY  
 #######################################
 logit <- function(x) { log(x/(1-x)) }
 inv.logit <- function(x) { exp(x)/(1+exp(x)) }
@@ -294,61 +184,3 @@ for(sp in spp){
 params$p.int<-p.int
 params$p.slp<-p.slp
 params$p.sig<-p.sig
-
-#pdf("figs/p6_partialmort.pdf")
-
-p6<-ggplot()+
-  geom_point(data=pdat, 
-    aes(x=area, y=pm_logit), 
-       shape=21, col="grey")+
-    geom_line(data=pdat, aes(x=area, y=logit(p_stasis), group=spp), linetype="dotted")+
-   geom_line(data=p.pred, 
-     aes(x=area, y=pred, col=spp))+
-     scale_colour_manual(values=c(cols))+
-     #facet_wrap(~spp)+
-     theme_classic()
-
-
-ggplot()+
-  geom_point(data=pdat, 
-    aes(x=area, y=inv.logit(pm_logit)), 
-       shape=21, col="grey")+
-    geom_line(data=pdat, aes(x=area, y=p_stasis, group=spp, col=spp), linetype="dotted")+
-   geom_line(data=p.pred, 
-     aes(x=area, y=inv.logit(pred), col=spp))+
-     scale_colour_manual(values=c(cols))+
-     facet_wrap(~spp)+
-     theme_classic()
-
-#show(p6)
-#dev.off() 
-
-
-#######################################
-# PLOT PARAMETERS
-#######################################
-
-partheme <- theme(axis.text=element_text(size=7), axis.title=element_text(size=8),
-plot.title=element_text(size=8, hjust=0.5, face="bold"), legend.title=element_blank(), legend.text=element_text(face="italic"))
-
-xlab <- expression(log[10]*(area[~t]))
-
-
-fig.s1 <- plot_grid(plot_grid(
-p1+guides(col="none")+partheme+ggtitle("reproductive maturity")+
-labs(x=xlab,y="probability of maturity"), 
-p2+guides(col="none")+partheme+ggtitle("fecundity")+
-labs(x=xlab,y=expression("eggs per colony")),
-p3+guides(col="none")+partheme+ggtitle("growth rate")+
-labs(x=xlab, y=expression(log[10]*(area[~t~+1]))),  
-p4+guides(col="none")+partheme+ggtitle("survival rate")+
-labs(x=xlab, y="annual survival rate"), 
-p5+guides(col="none")+partheme+ggtitle("maximum growth")+
-labs(x=xlab, y=expression(log[10]*(radial~growth))),
-p6+guides(col="none")+partheme+ggtitle("partial mortality")+
-labs(x=xlab, y="logit(proportion area lost)"), 
-nrow=2, align="hv", labels="AUTO", label_size=8),
-get_legend(p1+partheme), rel_widths=c(1,0.2))
-fig.s1
-
-

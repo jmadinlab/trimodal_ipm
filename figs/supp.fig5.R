@@ -55,7 +55,7 @@ library("metR")
 
 sp.points<-aggregate(.~morph, subset(sp.points, select=-spp), mean)
 
-contours <- ggplot(data=scapes, aes(x=rec, y=sqrt(((10^recsize)*10000)), z=value))+
+fig.s5 <- ggplot(data=scapes, aes(x=rec, y=sqrt(((10^recsize)*10000)), z=value))+
 geom_contour_filled(aes(fill=morph, alpha=..level..),breaks=c(0,0.05,0.1, 0.2, 0.4, 0.8), col="grey", size=lsize)+
 geom_contour(aes(col=morph), breaks=c(0,0.05,0.1, 0.2, 0.4, 0.8,1.6),size=lsize)+
 geom_text_contour(breaks = c(0,0.05, 0.1, 0.2, 0.4), size=1.5, skip=0, stroke=0.15)+
@@ -84,6 +84,5 @@ ggtitle(expression(bold(Delta*fitness~landscapes)))+
 	axis.text.x=element_text(size=5), 
 	axis.text.y=element_text(size=5, angle=90, hjust=0.5), 
 	axis.title=element_text(size=7))#+coord_flip()
-contours
-
+fig.s5
 

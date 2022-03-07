@@ -1,59 +1,69 @@
 
-vars$type <- ifelse(vars$t %in% dems, "Abundance", ifelse(vars$t=="abundance_05", "Abundance", "Demographic traits"))
-#vars$type <- factor(vars$type, levels=c("Demographic traits", "Abundance", "Abundance"))
-
-abunvar <- subset(vars, t=="abundance_05")
-vars2 <- vars[!vars$t=="abundance_05",]
 
 
-vars2$t[order(vars2$within)]
-group_name <- c(
-expression(italic(P[rec])),
-expression(Survival[juvenile]), 
-expression(Partial~mortality),
-expression(Growth[max]),  
-expression(Fecundity[colony]),
-expression(Mature~size),
-expression(Survival[adult]),
-"Egg Mass",
-expression(Fecundity[area]), 
-expression(Fitness~(lambda)),
-expression(Abundance["5yrs"]),
-expression(Abundance["10yrs"])
-)
 
-#pal[1:3]
-library("RColorBrewer")
-pal <- brewer.pal(n = 3, name = 'Greys')
-#https://www.schemecolor.com/leather.php
+params$AB <- ifelse(params$abundance_pair=="Common","C","R")
+params$AB[params$spp=="Ana"]<-"D"
 
-withinplot <- ggplot(vars2, aes(y=reorder(t, -within), x=within))+
-#geom_point(aes(col=type))+
-geom_bar(stat="Identity", col="black", size=0.1, width=0.75, aes(fill=type))+
-geom_bar(stat="Identity", col="black", size=0.1, width=0.75,fill="grey", alpha=0.5)+
-scale_x_continuous(expand=c(0,0), limits=c(0,80))+
-scale_y_discrete(labels=rev(group_name))+
-labs(x="% variation within \nmorphological groups", y="parameter")+
-guides(fill="none")+
-#coord_cartesian(xlim=c(0,55))+
+
+
+params$ec.se<-aggregate(Carbon_ug_corrected~spp+morph, ec, sd)$Carbon_ug_corrected
+
+reproplot<-ggplot()+
+#geom_path(data=params2, aes(f.int, eggC, group=morph, col=morphology), linetype="dotted", size=0.2)+
+#geom_path(data=params2, aes(f.int, eggC, col=morph), arrow=arrow(type="closed", length=unit(3,"mm")),linetype="dotted", size=0.2)+
+#geom_point(col="white", stroke=0.1, size=6)+
+geom_smooth(data=params[params$family=="Acroporidae",], aes(fec1cm, eggC), method="lm", formula=y~poly(x,1), se=F, size=0.2, col="black")+
+geom_segment(data=params,aes(x=fec1cm, xend=fec1cm, y=eggC-ec.se, yend=eggC+ec.se), size=0.2)+
+geom_point(data=params,aes(fec1cm, eggC, fill=spp), shape=21, stroke=0.2, size=3)+
+#geom_point(data=params[params$spp %in% c("Aro","Acy","Ahu","Ami","Gpe"),], aes(f.int, eggC, fill=spp), shape=21, stroke=0.1, size=3.5)+
+geom_text(data=params, aes(fec1cm, eggC, label=AB), size=1.8)+
+#geom_text(data=params[params$AB=="R",], aes(fec1cm, eggC, label=AB), size=1.8)+
+#geom_text_repel(data=params, aes(f.int+0, eggC+0,label=spp), size=2, force=0.1)+
+geom_segment(aes(x=335, xend=350, y=47, yend=43),col="grey",#colsC[3], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=405, xend=435, y=41.5, yend=40),col="grey",#colsC[2], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=700, xend=800, y=38, yend=36),col="grey",#colsC[1], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=900, xend=1000, y=28, yend=33),col="grey",#colsC[4], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=920, xend=1020, y=27, yend=27.5),col="grey",#colsC[5], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+geom_segment(aes(x=880, xend=930, y=10, yend=10.5),col="grey",#colsC[6], 
+arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
+ggtitle("Reproductive investments")+
+scale_x_log10(breaks=c(400, 600, 900, 1200))+
+geom_text(data=NULL, aes(330, 10, label='C = Common'), size=1.8, hjust=0)+
+geom_text(data=NULL, aes(330, 8, label='R = Rare'), size=1.8, hjust=0)+
+geom_text(data=NULL, aes(330, 6, label='D = Declined'), size=1.8, hjust=0)+
+#ylim(3,55)+
+labs(x=expression(Egg~number~(eggs~cm^-2)), y= "Egg mass (g of Carbon)")+
+scale_fill_manual(values=cols)+guides(fill="none", col="none")+
+scale_colour_manual(values=colsC)+
 theme_classic()+
-geom_point(data=abunvar, aes(y="Gen10", x=within), shape=4, stroke=0.7)+
-geom_segment(data=NULL, aes(y="f.cm2", yend="survcm", x=20, xend=20))+
-geom_segment(data=NULL, aes(y="f.cm2", yend="f.cm2", x=20, xend=19))+
-geom_segment(data=NULL, aes(y="survcm", yend="survcm", x=20, xend=19))+
-geom_text(data=NULL, aes(y="min.r", x=22, label="Demographic \ntraits"), size=2.5, hjust=0)+
-geom_text(data=NULL, aes(y="lam.est", x=80, label="Abundances\nin 2005"), size=2.5, hjust=1)+
-geom_segment(data=NULL, aes(y="Gen5", yend=1.5, x=77.3, xend=77.3))+
-scale_fill_manual(values=c("#9F7159","#DF9D6C"))+ #pal[c(2:3)]
-theme(axis.title.y=element_blank(), legend.title=element_blank(), legend.key.width=unit(2, "mm"), legend.key.height=unit(2, "mm"), legend.position=c(0.6, 0.9), 
-legend.background=element_blank(),
-panel.grid.major.x=element_line(),
-panel.grid.minor.x=element_line(),
-axis.line=element_line(size=0.1),
-legend.text=element_text(size=8),
-axis.title.x=element_text(size=8), axis.text.y=element_text(size=8))
-withinplot
+theme(plot.title=element_text(size=8, hjust=0.5, face="bold"), axis.title=element_text(size=10))
+reproplot
+
+arrows3 <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="lam.mn")
+arrows3$GT.C <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="GT")$Common
+arrows3$GT.R <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="GT")$Rare
+arrows3$Common2 <- ifelse(arrows3$GT.R > 20, arrows3$Common * 0.98, arrows3$Common * 0.95)
+arrows3$Rare2 <- ifelse(arrows3$GT.R > 20, arrows3$Rare * 1.02, arrows3$Rare * 1.1)
+arrows3$GT.C2 <- ifelse(arrows3$GT.C > 20, arrows3$GT.C *1.1, arrows3$GT.C * 1)
+arrows3$GT.R2 <- ifelse(arrows3$GT.R > 20, arrows3$GT.R *0.9, arrows3$GT.R * 1)
+
+GTplot<- ggplot()+geom_hline(yintercept=1, size=0.1)+
+geom_segment(data=params, aes(x=GT, xend=GT, y=lam.sd1, yend=lam.sd2), size=0.2)+
+#geom_segment(data=arrows3, aes(x=GT.R2, xend=GT.C2, y=Rare2, yend=Common2), col="grey", arrow=arrow(type="closed", length=unit(0.8,"mm")))+
+geom_point(data=params,aes(GT, lam.mn, fill=spp), shape=21, stroke=0.2, size=3)+
+geom_text(data=params, aes(GT, lam.mn, label=AB), size=1.8)+
+#scale_x_log10()+
+#scale_y_log10()+
+scale_fill_manual(values=cols)+guides(fill="none")+
+theme_classic()+
+ggtitle("Generation times")+
+labs(x="Generation Time (years)", y=expression(Fitness~(lambda)))+theme(plot.title=element_text(size=8, hjust=0.5, face="bold"), axis.title=element_text(size=10))
 
 
-Fig4AB <- plot_grid(projplot+guides(col="none")+labs(x="Time (years)", y=expression(N[common]/N[rare]))+ggtitle("Projected abundance \ndifferences")+theme(plot.title=element_text(size=8, hjust=0.5, face="bold")), withinplot+ggtitle("Disassociation from \nmorphology")+theme(plot.title=element_text(size=8, hjust=0.5, face="bold")), rel_widths=c(0.8, 1), labels=c("A","B"), label_size=9)
-	Fig4AB
+fig.4 <- reproplot #plot_grid(GTplot, reproplot, label_size=9, labels=c("A", "B"))

@@ -1,132 +1,141 @@
-tab<-readPNG("data/coral_silhouettes/tabularG.png")
-tab<-rasterGrob(tab, interpolate=TRUE)
-mas<-readPNG("data/coral_silhouettes/massiveG.png")
-mas<-rasterGrob(mas, interpolate=TRUE)
-cor<-readPNG("data/coral_silhouettes/corymboseG.png")
-cor<-rasterGrob(cor, interpolate=TRUE)
-cor2<-readPNG("data/coral_silhouettes/corymboseG.png")
-cor2<-rasterGrob(cor2, interpolate=TRUE)
-dig<-readPNG("data/coral_silhouettes/digitateG.png")
-dig<-rasterGrob(dig, interpolate=TRUE)
-brn<-readPNG("data/coral_silhouettes/branchingG.png")
-brn<-rasterGrob(brn, interpolate=TRUE)
 
 
+plotdat <- proj3
 
-params$AB <- ifelse(params$abundance_pair=="Rare","R","C")
-params2$AB <- ifelse(params2$abundance_pair=="Rare","R","C")
-
-
-ek.av$morphology<-factor(ek.av$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
-sdat$morphology<-factor(sdat$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
-s.avs <- aggregate(area~morphology, sdat, median)
-segs2<-data.frame(morphology="tabular")
-segs2$morphology<-factor(segs2$morphology, levels=c("massive","digitate","corymbose","staghorn","tabular"))
-
-size.elas<-ggplot(ek.av[!ek.av$spp=="Asp",], aes(size,X2))+
-geom_bar(stat="identity", position=position_dodge(preserve = "single"), aes(fill=spp), col="black", size=0.1, width=0.33)+
-#geom_line()+
-#geom_point()+
-facet_wrap(~morphology, ncol=1)+
-scale_fill_manual(values=cols)+
-scale_colour_manual(values=cols)+
-geom_boxplot(data=sdat[!sdat$spp=="Asp",], aes(x=area, y=0.9, fill=spp), width=0.2, outlier.size=0.01, size=0.1, outlier.colour="grey")+
-guides(fill="none", col="none")+
-geom_segment(data=s.avs, aes(x=area, xend=area, y=0, yend=0.7), linetype="dotted")+
-#geom_point(data=ek.av.av, aes(x=X3, y=0.6, col=spp))+
-labs(x=expression(size~(m^2)), y="elasticity")+
-scale_y_continuous(expand=c(0,0), breaks=c(0,0.5,1))+
-theme_classic()+theme(strip.background=element_blank(), strip.text=element_text(size=8),
-axis.text.y=element_text(size=6), axis.text.x=element_text(size=6, angle=45, hjust=1), axis.title=element_text(size=8), axis.line=element_line(size=0.1), plot.title=element_text(hjust=0.5, size=8, face="bold"))+
-geom_segment(data=segs2, aes(x=0.5, xend=0.5, y=0.8, yend=1))+
-geom_segment(data=segs2, aes(x=0.5, xend=0.4, y=0.8, yend=0.8))+
-geom_segment(data=segs2, aes(x=0.5, xend=0.4, y=1, yend=1))+
-geom_segment(data=segs2, aes(x=0.5, xend=0.7, y=0.9, yend=0.9))+
-geom_segment(data=segs2, aes(x=0.7, xend=0.7, y=0.5, yend=0.9))+
-geom_text(data=segs2,aes(x=1, y=0.35, label="colony \nsizes"), size=2, hjust=1)+
-ggtitle(expression(bold(Effects~of~colony~sizes~on~lambda)))+
-#ggtitle("Demographic sensitivity to size")+
-scale_x_continuous(breaks=c(-4,-3,-2,-1,0), labels=c(expression(0.0001),expression(0.001), expression(0.01),  expression(0.1),  expression(1)))
-size.elas
-
-
-params$morphology <- factor(params$morphology, levels=c("staghorn", "tabular", "corymbose","digitate","massive"))
-elasplot<-ggplot(params, aes(reorder(spp, eR), eR, fill=spp))+
-geom_bar(stat="identity", size=0.1, col="black")+
-scale_fill_manual(values=cols)+
-guides(fill="none")+
-facet_grid(.~morphology, scales="free_x", space="free_x")+
-labs(y=expression(R[elasticity]))+
-geom_text(aes(y=eR+0.02,label=AB), size=1.8)+
-scale_y_continuous(expand=c(0,0), limits=c(0,0.45), breaks=c(0,0.1, 0.2, 0.3))+
-ggtitle("Demographic sensitivity \nto reproduction")+
-theme_classic()+theme(strip.text=element_blank(),
- strip.background=element_blank(), axis.title.x=element_blank(),  axis.text.y=element_text(size=7),axis.text.x=element_text(size=7, angle=90, vjust=0.5), axis.title.y=element_text(size=8), plot.title=element_text(size=8, hjust=0.5, face="bold"), axis.line.y=element_line(size=0.1))#+coord_flip()
-elasplot
-
-
-params$ec.se<-aggregate(Carbon_ug_corrected~spp+morph, ec, sd)$Carbon_ug_corrected
-
-
-reproplot<-ggplot()+
-#geom_path(data=params2, aes(f.int, eggC, group=morph, col=morphology), linetype="dotted", size=0.2)+
-#geom_path(data=params2, aes(f.int, eggC, col=morph), arrow=arrow(type="closed", length=unit(3,"mm")),linetype="dotted", size=0.2)+
-#geom_point(col="white", stroke=0.1, size=6)+
-geom_smooth(data=params[params$family=="Acroporidae",], aes(fec1cm, eggC), method="lm", formula=y~poly(x,1), se=F, size=0.2, col="black")+
-geom_segment(data=params,aes(x=fec1cm, xend=fec1cm, y=eggC-ec.se, yend=eggC+ec.se), size=0.2)+
-geom_point(data=params,aes(fec1cm, eggC, fill=spp), shape=21, stroke=0.2, size=3)+
-#geom_point(data=params[params$spp %in% c("Aro","Acy","Ahu","Ami","Gpe"),], aes(f.int, eggC, fill=spp), shape=21, stroke=0.1, size=3.5)+
-geom_text(data=params, aes(fec1cm, eggC, label=AB), size=1.8)+
-#geom_text(data=params[params$AB=="R",], aes(fec1cm, eggC, label=AB), size=1.8)+
-#geom_text_repel(data=params, aes(f.int+0, eggC+0,label=spp), size=2, force=0.1)+
-geom_segment(aes(x=335, xend=350, y=47, yend=43),col="grey",#colsC[3], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-geom_segment(aes(x=405, xend=435, y=41.5, yend=40),col="grey",#colsC[2], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-geom_segment(aes(x=700, xend=800, y=38, yend=36),col="grey",#colsC[1], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-geom_segment(aes(x=900, xend=1000, y=28, yend=33),col="grey",#colsC[4], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-geom_segment(aes(x=920, xend=1020, y=27, yend=27.5),col="grey",#colsC[5], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-geom_segment(aes(x=880, xend=930, y=10, yend=10.5),col="grey",#colsC[6], 
-arrow=arrow(type="closed", length=unit(0.8,"mm")), size=0.2)+
-ggtitle("Reproductive investments")+
-scale_x_log10(breaks=c(400, 600, 900, 1200))+
-geom_text(data=NULL, aes(330, 10, label='C = Common'), size=1.8, hjust=0)+
-geom_text(data=NULL, aes(330, 6, label='R = Rare'), size=1.8, hjust=0)+
-#ylim(3,55)+
-labs(x=expression(Egg~number~(eggs~cm^-2)), y= "Egg mass (g of Carbon)")+
-scale_fill_manual(values=cols)+guides(fill="none", col="none")+
+projplot <- ggplot(plotdat, aes(gen, diff, col=morph))+
+geom_line(linetype="dotted")+
+#scale_x_log10()+scale_y_log10()+
+geom_line(data=plotdat[plotdat$gen<=plotdat$maxgen,])+
+geom_point(data=plotdat[plotdat$gen==plotdat$maxgen,])+
+#geom_text(data=proj3[proj3$gen==proj3$maxgen,], aes(x=gen*1.2, label=morph), size=2, col="black", hjust=0)+
+#geom_text(data=projdat[projdat$morph=="massive",], aes(x=gen-15, label=morph), size=2, hjust=1, angle=55)+
+#geom_text(data=projdat[projdat$morph=="digitate",], aes(x=gen-4, y=diff*1.2, label=morph), size=2, hjust=0, angle=65)+
+#geom_text(data=projdat[projdat$morph=="staghorn",], aes(x=gen-1, y=diff*1.2, label=morph), size=2, hjust=0, angle=70)+
+#geom_text(data=projdat[projdat$morph=="tabular",], aes(x=gen-5, y=diff/1.2, label=morph), size=2, hjust=1, angle=82)+
+#geom_text(data=projdat[projdat$morph=="corymbose",], aes(x=gen-2, y=diff*1.2, label=morph), size=2, hjust=0, angle=80)+
+#geom_text(data=projdat[projdat$morph=="corymbose_2",], aes(x=gen+4, y=diff*1.2, label=morph), size=2, hjust=0, angle=70)+
+#geom_text(data=proj3[proj3$Gen==proj3$maxgen & proj3$morph=="digitate",], aes(x=Gen-10, label=morph), size=2, hjust=1, angle=28)+
+coord_cartesian(ylim=c(0.5,65), xlim=c(0.7,45))+#scale_y_log10()+
+#guides(col="none")+
+scale_y_sqrt(expand=c(0,0))+
+#scale_x_sqrt(limits=c(1, max(gens$Gen+5)), breaks=c(10, 50, 90,130,170), expand=c(0,0))+
+scale_x_sqrt(expand=c(0,0))+
+#scale_x_sqrt(breaks=c(5, 40, 100, 150))+
+#scale_x_log10(breaks=c(1,3.2,10,32,100))+
 scale_colour_manual(values=colsC)+
+theme_classic()+theme(legend.position=c(0.75, 0.2), legend.title=element_blank(), legend.background=element_blank(), legend.key.height=unit(1,"mm"), legend.text=element_text(size=7), axis.title=element_text(size=9))
+projplot
+
+projdat <- proj3[proj3$gen==proj3$maxgen,]
+projdat 
+
+
+vars$type <- ifelse(vars$t %in% dems, "Abundance", ifelse(vars$t=="abundance_05", "Abundance", "Demographic traits"))
+#vars$type <- factor(vars$type, levels=c("Demographic traits", "Abundance", "Abundance"))
+
+abunvar <- subset(vars, t=="abundance_05")
+vars2 <- vars[!vars$t=="abundance_05",]
+
+
+vars2$t[order(vars2$within)]
+group_name <- c(
+expression(italic(P[rec])),
+expression(Survival[juvenile]), 
+expression(Partial~mortality),
+expression(Growth[max]),  
+expression(Fecundity[colony]),
+expression(Mature~size),
+expression(Survival[adult]),
+"Egg Mass",
+expression(Fecundity[area]), 
+expression(Fitness~(lambda)),
+expression(Abundance["5yrs"]),
+expression(Abundance["10yrs"])
+)
+
+#pal[1:3]
+library("RColorBrewer")
+pal <- brewer.pal(n = 3, name = 'Greys')
+#https://www.schemecolor.com/leather.php
+
+withinplot <- ggplot(vars2, aes(y=reorder(t, -within), x=within))+
+#geom_point(aes(col=type))+
+geom_bar(stat="Identity", col="black", size=0.1, width=0.75, aes(fill=type))+
+geom_bar(stat="Identity", col="black", size=0.1, width=0.75,fill="grey", alpha=0.5)+
+scale_x_continuous(expand=c(0,0), limits=c(0,80))+
+scale_y_discrete(labels=rev(group_name))+
+labs(x="% variation within \nmorphological groups", y="parameter")+
+guides(fill="none")+
+#coord_cartesian(xlim=c(0,55))+
 theme_classic()+
-theme(plot.title=element_text(size=8, hjust=0.5))
-reproplot
+geom_point(data=abunvar, aes(y="Gen10", x=within), shape=4, stroke=0.7)+
+geom_segment(data=NULL, aes(y="f.cm2", yend="survcm", x=20, xend=20))+
+geom_segment(data=NULL, aes(y="f.cm2", yend="f.cm2", x=20, xend=19))+
+geom_segment(data=NULL, aes(y="survcm", yend="survcm", x=20, xend=19))+
+geom_text(data=NULL, aes(y="min.r", x=22, label="Demographic \ntraits"), size=2.5, hjust=0)+
+geom_text(data=NULL, aes(y="lam.est", x=80, label="Abundances\nin 2005"), size=2.5, hjust=1)+
+geom_segment(data=NULL, aes(y="Gen5", yend=1.5, x=77.3, xend=77.3))+
+scale_fill_manual(values=c("#9F7159","#DF9D6C"))+ #pal[c(2:3)]
+theme(axis.title.y=element_blank(), legend.title=element_blank(), legend.key.width=unit(2, "mm"), legend.key.height=unit(2, "mm"), legend.position=c(0.6, 0.9), 
+legend.background=element_blank(),
+panel.grid.major.x=element_line(),
+panel.grid.minor.x=element_line(),
+axis.line=element_line(size=0.1),
+legend.text=element_text(size=8),
+axis.title.x=element_text(size=8), axis.text.y=element_text(size=8))
+withinplot
 
 
-fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), nrow=1, rel_widths=c(1,1),labels=c("A",""), label_size=9)+
-draw_plot(mas, 0.92, 0.62, 0.06, 0.1)+
-draw_plot(dig, 0.85, 0.65, 0.06, 0.1)+
-draw_plot(cor, 0.79, 0.79, 0.06, 0.1)+
-draw_plot(tab, 0.67, 0.81, 0.094, 0.1)+
-draw_plot(brn, 0.62, 0.83, 0.035, 0.1)
-fig4 
+Fig4AB <- plot_grid(projplot+labs(x="Time (years)", y=expression(N[common]/N[rare]))+ggtitle("Projected abundance \ndifferences")+theme(plot.title=element_text(size=8, hjust=0.5, face="bold")), withinplot+ggtitle("Disassociation from \nmorphology")+theme(plot.title=element_text(size=8, hjust=0.5, face="bold")), rel_widths=c(0.8, 1), labels=c("A","B"), label_size=9)
+	Fig4AB
 
 
-#fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, nrow=1, rel_widths=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=1, rel_heights=c(1,1.1),labels=c("A",""), label_size=9)+
-#draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
-#draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
-#draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
-#draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
-#draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
-#fig4 
+library("RColorBrewer")
+pal <- brewer.pal(n = 3, name = 'Greys')
 
-#fig4 <- plot_grid(size.elas, plot_grid(elasplot,reproplot, ncol=1, rel_heights=c(1, 1.2),labels=c("B","C"), label_size=9), ncol=2, rel_widths=c(1.8,1),labels=c("A",""), label_size=9)+
-#draw_plot(mas, 0.39, 0.1, 0.06, 0.1)+
-#draw_plot(dig, 0.33, 0.12, 0.06, 0.1)+
-#draw_plot(cor, 0.26, 0.29, 0.06, 0.1)+
-#draw_plot(tab, 0.16, 0.31, 0.094, 0.1)+
-#draw_plot(brn, 0.12, 0.36, 0.035, 0.1)
-#fig4 
+comp$labels <- paste(comp$Common, " - ", comp$Rare, sep="")
+
+mas_x <- comp$lamdiff[comp$morph=="massive"]
+tab_x <- comp$lamdiff[comp$morph=="tabular"]
+brn_x <- comp$lamdiff[comp$morph=="staghorn"]
+dig_x <- comp$lamdiff[comp$morph=="digitate"]
+cor_x <- comp$lamdiff[comp$morph=="corymbose"]
+
+comp$rank<-NA
+comp$rank[order(comp$lamdiff)] <- nrow(comp):1
+mas_y <- comp$rank[comp$morph=="massive"]
+tab_y <- comp$rank[comp$morph=="tabular"]
+brn_y <- comp$rank[comp$morph=="staghorn"]
+dig_y <- comp$rank[comp$morph=="digitate"]
+cor_y <- comp$rank[comp$morph=="corymbose"]
+cor2_y <- comp$rank[comp$morph=="corymbose_2"]
+
+diffs$label <- comp$label[match(diffs$morph, comp$morph)]
 
 
+fig4CD <- plot_grid(ggplot(diffs, aes(d, reorder(label, -d), fill=param))+
+geom_bar(stat="Identity", position="stack", col="black", size=0.2, width=0.6)+
+#geom_point(data=comp, aes(lamdiff, morph, fill=NA), shape=4)+
+#facet_wrap(~morph, nrow=2)+
+#scale_fill_manual(values=colsC)+
+scale_fill_manual(values=c("white",pal[c(2:3)]))+
+labs(x=expression(lambda~difference~(Common~-~Rare)))+
+xlim(c(-0.02, 0.6))+
+annotation_custom(mas, mas_x+0.01, mas_x+0.13, mas_y-0.4, mas_y+0.4)+
+annotation_custom(brn, brn_x+0.05, brn_x+0.14, brn_y-0.5, brn_y+0.5)+
+annotation_custom(tab, tab_x+0.03, tab_x+0.12, tab_y-0.5, tab_y+0.5)+
+annotation_custom(cor, cor_x+0.01, cor_x+0.15, cor_y-0.5, cor_y+0.5)+
+annotation_custom(dig, dig_x+0.01, dig_x+0.15, dig_y-0.5, dig_y+0.5)+
+geom_vline(xintercept=0)+
+#scale_x_sqrt()+
+theme_classic()+theme(axis.title.y=element_blank(), legend.title=element_blank(),  legend.key.width=unit(2,"mm"), legend.key.height=unit(1,"mm"), axis.line.y=element_blank(), legend.position=c(0.8,0.8),axis.text.x=element_text(size=9),axis.text.y=element_text(size=7, angle=30), axis.title=element_text(size=9)),
+ggplot(sums, aes(lamdiff, d))+geom_abline(slope=1, size=0.1)+geom_point(aes(col=morph), size=2)+
+#scale_y_sqrt()+scale_x_sqrt()+
+labs(x=expression(~Original~lambda~difference), y = "Sum of \ndifferences")+guides(col="none")+scale_colour_manual(values=colsC)+theme_classic()+theme(axis.text=element_text(size=9),axis.title=element_text(size=9)), 
+rel_widths=c(1,0.5), labels=c("C","D"), label_size=9)
+#fig4CD
+
+fig.3<- plot_grid(plot_grid(NULL, Fig4AB, rel_widths=c(0.02,1)), NULL, fig4CD, ncol=1, rel_heights=c(1,0.12, 0.7))+
+draw_label("Source of fitness differences\nwithin groups", 0.55, 0.41, size=8, fontface="bold")+
+draw_label("?", 0.63, 0.9, size=8, fontface="bold")
+fig.3

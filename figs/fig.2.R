@@ -1,38 +1,38 @@
 
+source("figs/supp.fig3.R")
+
 examples1 <- 
 plot_grid(NULL, plot_grid(NULL, 
-plots[["Ahy"]]+annotation_custom(tab,-0.5, 0.2,-2,-1.4)+theme(plot.title=element_blank())+guides(col="none",fill="none"),
+plots[["Ahy"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
 NULL,
-plots[["Gre"]]+annotation_custom(mas,-0.7, 0.2,-3.5,-2.3)+theme(plot.title=element_blank(), legend.position="top")
+plots[["Ahu"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),NULL,
 #guides(col="none",fill="none")
-,
-ncol=1, rel_heights=c(0.1,1,-0.15,1))+
-draw_label(expression(size[" "*t]~(m^2)), 0.7, 0.15, size=8, hjust=1)+
+ncol=1, rel_heights=c(0.35,1,-0.1,1,0.1))+
+draw_label(expression(size[" "*t]~(m^2)), 0.65, 0.08, size=8, hjust=1)+
 draw_label(expression(size[" "*t+1]~(m^2)), -0.05, 0.55, size=8, angle=90)+
-draw_label("IPM matrices (examples)", 0.55, 0.97, fontface="bold", size=8),
+draw_label("Example IPMs", 0.45, 0.95, fontface="bold", size=8)+
+draw_label(expression("("*bold(before)~bolditalic(P[rec])*")"), 0.45, 0.9, fontface="bold", size=8),
 nrow=1, rel_widths=c(0.12,1))
 examples1
 
 examples2 <- 
 plot_grid(NULL,plot_grid(NULL,
 plots[["Ahy"]]+ggtitle("Ahy")+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
-plots[["Gpe"]]+ggtitle("Adi")+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical", legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
-nrow=1, rel_widths=c(0.1,1,1))+
-draw_label(expression(size[" "*t]~(m^2)), 0.6, 0.17, size=8, hjust=1)+
-draw_label(expression(size[" "*t+1]~(m^2)), 0.03, 0.65, size=8, angle=90)+
+plots[["Ahu"]]+ggtitle("Adi")+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical", legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
+nrow=1, rel_widths=c(0.2,1,1))+
+draw_label(expression(size[" "*t]~(m^2)), 0.6, 0.14, size=8, hjust=1)+
+draw_label(expression(size[" "*t+1]~(m^2)), 0.06, 0.65, size=8, angle=90)+
 draw_label(expression(bold(Example~IPMs~(before~bolditalic(P[rec])))), 0.55, 1.05, fontface="bold", size=8), nrow=2, rel_heights=c(0.15,1))
 examples2
 
-arrows2 <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="lam.est")
-arrows2$Common2 <- arrows2$Common*0.95
-arrows2$Rare2 <- arrows2$Rare*1.05
+params$lam.est3 <- aggregate(lam~spp, boot, median)$lam
+params$log.lam3 <- log(params$lam.est)
+arrows2 <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="log.lam3")
+arrows2$Common2 <- arrows2$Common-0.03
+arrows2$Rare2 <- arrows2$Rare+0.02
 params$AB <- ifelse(params$abundance_pair=="Rare","R","C")
+params$AB[params$spp=="Ana"]<-"D"
 
-arrows2$yaxis <- c(35,38,25,14,11)
-params$yaxis <- arrows2$yaxis[match(params$morphology, arrows2$morphology)]
-arrows2
-
-arrows2$diff <- arrows2$Common - arrows2$Rare
 
 boot$morphology <- params$morphology[match(boot$spp, params$spp)]
 morph.ord <- c("massive","digitate","corymbose","staghorn","tabular")
@@ -40,117 +40,152 @@ boot$morphology <- factor(boot$morphology, levels=morph.ord)
 arrows2$morphology <- factor(arrows2$morphology, levels=morph.ord)
 params$morphology <- factor(params$morphology, levels=morph.ord)
 
-lab.point <- data.frame(morphology="massive", x=c(1.5, 1.5, 1.5), y=c(30, 20, 10), lab = c('C = Common','R = Rare','D = Declined'))
+#arrows2$yaxis <- c(15, 30,38,13,13)
+arrows2$yaxis <- c(38, 30,15,13,13)
+params$yaxis <- arrows2$yaxis[match(params$morphology, arrows2$morphology)]
+arrows2
+
+arrows2$diff <- arrows2$Common - arrows2$Rare
+
+lab.point <- data.frame(morphology="massive", x=c(0.2, 0.2, 0.2), y=c(30, 20, 10), lab = c('C = Common','R = Rare','D = Declined'))
 lab.point$morphology <- factor(lab.point$morphology, levels=morph.ord)
+
+params$log.lam3[params$spp=="Ana"]<-
+params$log.lam3[params$spp=="Ana"]+0.02
+params$log.lam3[params$spp=="Ami"]<-
+params$log.lam3[params$spp=="Ami"]-0.02
+
 
 lam.dens <- plot_grid(NULL, ggplot(boot)+
 geom_segment(data=arrows2, aes(x=-Inf, xend=Inf, y=yaxis*1.2, yend=yaxis*1.2), col="white")+
 geom_segment(data=arrows2, aes(y=yaxis, yend=yaxis, x=Rare2, xend=Common2), arrow=arrow(length=unit(1, "mm")))+
 geom_text(data=lab.point, aes(x,y, label=lab), size=1.8, hjust=0, nudge_y=0.3)+
-geom_density(aes(x=lam, col=spp, fill=spp), alpha=0.5)+
-geom_vline(xintercept=1, linetype="dotted")+
-geom_point(data=params, aes(lam.est, yaxis,col=spp), shape=21, size=3, stroke=0.7, fill="white")+
-geom_point(data=params, aes(lam.est, yaxis, col=spp), size=3, alpha=0.5)+
-geom_text(data=params[!params$spp=="Ana",], aes(lam.est, yaxis, label=AB), size=1.8, fontface="bold")+
-geom_text(data=params[params$spp=="Ana",], aes(lam.est, yaxis, label="D"), size=1.8, fontface="bold")+
-geom_hline(yintercept=0, size=1, col="white")+
+geom_density(aes(x=log(lam), col=spp, fill=spp), alpha=0.5)+
+geom_vline(xintercept=0, linetype="dotted")+
+geom_point(data=params, aes(log.lam3, yaxis,col=spp), shape=21, size=3, stroke=0.7, fill="white")+
+geom_point(data=params, aes(log.lam3, yaxis, col=spp), size=3, alpha=0.5)+
+geom_text(data=params[!params$spp=="Ana",], aes(log.lam3, yaxis, label=AB), size=1.8, fontface="bold")+
+geom_text(data=params[params$spp=="Ana",], aes(log.lam3, yaxis, label="D"), size=1.8, fontface="bold")+
+#geom_hline(yintercept=0, size=1, col="white")+
 geom_hline(yintercept=-0.1, size=1, col="black")+
 #scale_y_sqrt(expand=c(0,0))+
 scale_y_continuous(expand=c(0,0))+
-lims(x=c(min(boot$lam), max(boot$lam)))+
-ggtitle(expression(bold(Fitness~(lambda))))+
-xlim(c(0.5, 2))+
-#scale_x_log10()+
+#lims(x=c(min(boot$lam), max(boot$lam)))+
+ggtitle(expression(bold(Fitness)))+
+xlim(c(min(log(boot$lam)), max(log(boot$lam))-0.02))+
+coord_cartesian(xlim=c(-0.5, max(log(boot$lam))))+
+#scale_x_log10(limits=c(min(boot$lam), max(boot$lam)))+
 facet_wrap(~morphology, ncol=1, scales="free_y", strip.position="left")+
-labs(y="Density", x=expression(lambda))+
+labs(y="Density", x=expression(log(lambda)))+
 scale_colour_manual(values=cols)+scale_fill_manual(values=cols)+
 guides(fill="none", col="none")+
-theme_classic()+theme(strip.text=element_blank(), strip.background=element_blank(), axis.text.y=element_blank(), axis.title.y=element_blank(), axis.line.y=element_blank(), axis.ticks.y=element_blank(), plot.title=element_text(size=8, hjust=0.5, face="bold")), nrow=1, rel_widths=c(0.1,1))
+theme_classic()+theme(strip.text=element_blank(), strip.background=element_blank(), axis.text.y=element_blank(), axis.title.y=element_blank(), axis.line.y=element_blank(), axis.ticks.y=element_blank(), axis.text.x=element_text(size=8), axis.title.x=element_text(size=9),plot.title=element_text(size=8, hjust=0.5, face="bold")), nrow=1, rel_widths=c(0.1,1))
 lam.dens
 
 plot_grid(examples1, lam.dens, nrow=1, rel_widths=c(0.5, 1))
-
-
-
 
 r.long$label <-ifelse(r.long$variable=="rec.tran", "Transects","Constant")
 #r.long$label <- factor(r.long$label, levels=c("Fitted","Constant"))
 params$genus <- ifelse(params$family=="Acroporidae", "Acr","Gon")
 
-params$AB <- ifelse(params$abundance_pair=="Rare","R","C")
 
 arrows <- dcast(params[!params$spp=="Ana", ], morphology~abundance_pair,  value.var="rec.one")
-arrows$Common2 <- arrows$Common*1.5
-arrows$Rare2 <- arrows$Rare*0.6
+arrows$Common2 <- 10^(log10(arrows$Common)+0.2)
+arrows$Rare2 <- arrows$Rare
 arrows[arrows$morphology %in% c("staghorn", "tabular"),c("Rare2","Common2")] <- arrows[arrows$morphology %in% c("staghorn", "tabular"),c("Rare","Common")]
 
 arrows$diff <-   arrows$Rare/arrows$Common
 
-fitplot <- ggplot()+
-geom_path(data=r.long, aes(label, value, group=spp), size=0.1, col="grey")+
-#geom_point(data=r.long, aes(label, value, fill=spp), shape=21, stroke=0.1, size=2.7)+
-geom_point(data=r.long, aes(label, value, col=spp), shape=4,  size=1, stroke=1)+
-#geom_point(data=params, aes(x="Constant",rec.mean), fill="grey", shape=21, stroke=0.5, size=2)+
-geom_point(data=params, aes(x="Constant",rec.mean), fill="grey", shape=4,  size=1, stroke=1)+
-geom_text(data=params[params$spp %in% c("Gre","Ahy"),], aes(x="Constant",rec.mean, label=genus), nudge_y=0, nudge_x=-0.3, angle=0, hjust=0.5, size=2.2, fontface="italic")+
-theme_classic()+
-scale_y_log10(limits=c(min(storeDET$rec),max(storeDET$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
-		expression(10^-5), expression(10^-4), expression(10^-3),expression(10^-2), expression(10^-1)))+
-scale_fill_manual(values=cols)+scale_colour_manual(values=cols)+
-coord_flip()+
-guides(col="none", fill="none")+ggtitle(expression(bolditalic(P[rec])~bold(estimates)))+
-theme(plot.title=element_text(size=8, face="bold", hjust=0.5), 
-axis.line.y=element_blank(), axis.text.x=element_text(size=8),  axis.title=element_blank(), panel.grid.major.y=element_line())
-fitplot
 
+storeDET2 <- storeDET[storeDET$rec>1*10^-5 & storeDET$rec<2*10^-1,]
 
-
-rechange <- ggplot(storeDET, aes(rec, log(lam)))+geom_line(aes(col=spp))+
-scale_x_log10(limits=c(min(storeDET$rec),max(storeDET$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
+rechange <- ggplot()+geom_line(data=storeDET2, aes(rec, log(lam), col=spp))+
+scale_x_log10(limits=c(min(storeDET2$rec),max(storeDET2$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
 		expression(10^-5), expression(10^-4), expression(10^-3),expression(10^-2), expression(10^-1)))+
 geom_hline(yintercept=0, size=0.1)+
-guides(col="none")+
+geom_point(data=params, aes(x=rec.mean, y=log(lam.est2)), size=1, col="white")+
+geom_point(data=params, aes(x=rec.mean, y=log(lam.est2), col=spp, fill=spp), size=1, alpha=0.5)+
+labs(x=expression(Recruitment~probablity~(P[rec])))+
+#geom_segment(data=NULL, aes(y=-0.55, yend=-0.55, x=min(params$rec.tran), xend=max(params$rec.tran)), col="grey85")+
+#geom_segment(data=NULL, aes(y=-0.54, yend=-0.56, x=min(params$rec.tran), xend=min(params$rec.tran)), col="grey85")+
+#geom_segment(data=NULL, aes(y=-0.54, yend=-0.56, x=max(params$rec.tran), xend=max(params$rec.tran)), col="grey85")+
+#geom_label(data=NULL, aes(x=params$rec.mean[1], y=-0.55), label="range", hjust=0.65, size=2, col="grey", label.size=0)+
+geom_segment(data=params[params$family=="Acroporidae",], aes(x=rec.mean, xend=rec.mean,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
+geom_segment(data=params[params$family=="Merulinidae",], aes(x=rec.mean, xend=rec.mean,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
+geom_text(data=NULL, aes(x=params$rec.mean[1], y=-0.46), label="Acr", size=2.5, col="grey")+
+geom_text(data=NULL, aes(x=params$rec.mean[11], y=-0.46), label="Gon", size=2.5,col="grey")+
+#geom_text(data=NULL, aes(x=params$rec.mean[1], y=-0.55), label=expression(italic(P[rec])~~range), hjust=0.65, size=2, col="grey")+
+guides(col="none", fill="none")+
 theme_classic()+
-ggtitle("Recruitment vs fitness")+
 labs(x=expression(Recruitment~probablity~(P[rec])), y=expression(log(lambda)))+
-coord_cartesian(ylim=c(-0.5,1))+
-#coord_cartesian(ylim=c(0.6,2))+
-scale_colour_manual(values=cols)+
-theme(axis.title.x=element_blank(), plot.background=element_blank(), axis.text=element_text(size=8), axis.line.x=element_blank(), axis.ticks.x=element_blank(), axis.text.x=element_blank(), plot.title=element_text(size=8, hjust=0.5, face="bold"))
+coord_cartesian(ylim=c(-0.55,0.65))+
+scale_colour_manual(values=cols)+scale_fill_manual(values=cols)+
+theme( plot.background=element_blank(), axis.text=element_text(size=8), axis.title=element_text(size=9), plot.title=element_text(size=8, hjust=0.5, face="bold"), panel.background=element_blank())
 rechange 
 
+arrows$Common2[arrows$morphology=="tabular"] <- 9*10^-05
+arrows$Common2[arrows$morphology=="staghorn"] <- 5.5*10^-04 
 
 growplot <- ggplot()+
+geom_segment(data=arrows, aes(y=morphology, yend=morphology, x=1, xend=Common), col="grey95", size=1)+
 geom_segment(data=arrows, aes(y=morphology, yend=morphology, x=Rare2, xend=Common2), arrow=arrow(length=unit(1, "mm")))+
 #geom_point(aes(fill=spp), shape=21, size=3, stroke=0.1)+
 geom_point(data=params, aes(rec.one, morphology,col=spp), shape=21, size=3, stroke=0.7, fill="white")+
 geom_point(data=params, aes(rec.one, morphology, col=spp), size=3, alpha=0.5)+
-scale_x_log10(limits=c(min(storeDET$rec),max(storeDET$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
+scale_x_log10(limits=c(min(storeDET2$rec),1), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
 		expression(10^-5), expression(10^-4), expression(10^-3),expression(10^-2), expression(10^-1)))+
+		coord_cartesian(xlim=c(min(storeDET2$rec),max(storeDET2$rec)))+
 scale_colour_manual(values=cols)+scale_fill_manual(values=cols)+
 guides(fill="none", col="none")+
 #geom_text(data=NULL, aes(y="tabular", x=10^-2, label='C = Common'), size=1.8, hjust=0, nudge_y=0.3)+
 #geom_text(data=NULL, aes(y="tabular", x=10^-2, label='R = Rare'), size=1.8, hjust=0, nudge_y=-0.3)+
 #geom_text(data=NULL, aes(y="tabular", x=10^-2, label='D = Declined'), size=1.8, hjust=0, nudge_y=-0.9)+
+#geom_text(data=NULL, aes(y=2.5, x=min(storeDET2$rec), label="Recruitment needed\nfor population growth"), hjust=0, size=2.5)+
 theme_classic()+
+ggtitle("Recruitment vs fitness")+
 geom_text(data=params[!params$spp=="Ana",], aes(rec.one, morphology, label=AB), size=1.8, fontface="bold")+
 geom_text(data=params[params$spp=="Ana",], aes(rec.one, morphology, label="D"), size=1.8, fontface="bold")+
+scale_y_discrete(expand=c(0.3,0.3))+
 labs(x=expression(Recruitment~probablity~(P[rec])))+ 
-ggtitle("Recruitment needed\nfor pop. growth")+
-theme(plot.title=element_text( size=7, hjust=1, vjust=-10), axis.title.y=element_blank(), axis.text=element_text(size=8), axis.title.x=element_text(size=9), plot.background=element_blank())
+#labs(subtitle="Recruitment needed\nfor population growth")+
+theme(plot.subtitle=element_text( size=7, hjust=1, vjust=-5), axis.title.y=element_blank(), axis.title=element_blank(),axis.text=element_blank(), plot.background=element_blank(), plot.title=element_text(size=8, hjust=0.5, face="bold"), panel.background=element_blank(), axis.line=element_blank(),axis.ticks=element_blank())
 growplot
 
+GTplot<- ggplot(boot, aes(GT, log(lam)))+
+geom_hline(yintercept=0, size=0.1)+
+geom_segment(data=params, aes(x=GT, xend=GT, y=log(lam.sd1), yend=log(lam.sd2), col=spp), size=0.5)+
+geom_segment(data=params, aes(x=GT.sd1, xend=GT.sd2, y=log(lam.mn), yend=log(lam.mn), col=spp), size=0.5)+
+geom_point(data=params, aes(GT, log(lam.mn),col=spp), shape=21, size=3, stroke=0.7, fill="white")+
+geom_text(data=params[params$spp=="Adi",], aes(GT, log(lam.mn), label=AB), size=1.8, fontface="bold")+
+geom_point(data=params, aes(GT, log(lam.mn), col=spp), size=3, alpha=0.5)+
+#geom_point(shape=21, aes(col=spp), alpha=0.2)+
+#coord_cartesian(xlim=c(min(boot$GT),100))+
+scale_colour_manual(values=cols)+
+scale_fill_manual(values=cols)+
+scale_x_log10()+
+geom_text(data=params[!params$spp=="Adi",], aes(GT, log(lam.mn), label=AB), size=1.8, fontface="bold")+
+guides(col="none", fill="none")+
+theme_classic()+
+ggtitle("Generation times")+
+labs(x="Generation Time (years)", y=expression(log(lambda)))+theme(plot.title=element_text(size=8, hjust=0.5, face="bold"), axis.title=element_text(size=9), axis.text=element_text(size=8))
+GTplot
 
-figCD <- plot_grid(fitplot, ggplot()+theme_void(), rechange, ggplot()+theme_void(), growplot,
-ncol=1, rel_heights=c(0.8,-0.02, 1,-0.15,  1), align="v", axis="lr", labels=c("B","","D",""), label_size=9)
+
+
+figCD <- plot_grid(growplot,ggplot()+theme_void(),rechange, GTplot,
+ncol=1, rel_heights=c(0.44,-0.07,1, 1), align="v", axis="lr", labels=c("B","","","D"), label_size=9)
+#figCD
 
 fig.2 <- plot_grid(plot_grid(examples2, lam.dens, nrow=2, rel_heights=c(0.45, 1), labels=c("A","C"), label_size=9),figCD, nrow=1, rel_widths=c(1,1))+
-annotation_custom(dig,0.28,0.37,0.91,0.93)+
-annotation_custom(tab,0.07,0.11,0.91,0.94)+
-annotation_custom(mas,0.05,0.13,0.54,0.57)+
-annotation_custom(dig,0.05,0.13,0.43,0.47)+
-annotation_custom(cor,0.05,0.13,0.32,0.36)+
-annotation_custom(brn,0.04,0.14,0.22,0.27)+
-annotation_custom(tab,0.06,0.12,0.105,0.135)
+annotation_custom(dig,0.29,0.38,0.905,0.93)+
+annotation_custom(tab,0.09,0.13,0.9,0.94)+
+annotation_custom(mas,0.05,0.13,0.56,0.59)+
+annotation_custom(dig,0.05,0.13,0.45,0.49)+
+annotation_custom(cor,0.05,0.13,0.34,0.38)+
+annotation_custom(brn,0.04,0.14,0.24,0.29)+
+annotation_custom(tab,0.06,0.12,0.125,0.155)+
+#draw_text("Recruitment needed\nfor pop. growth", 0.55, 0.895, hjust=0, size=6.5)+
+draw_label(x=0.63, y=0.89, label=expression(italic(P[rec])~at~lambda>=1), hjust=0, size=7)
+#draw_label(x=0.9, y=0.955, label=expression(italic(P[rec])~at~lambda>=1), hjust=0, size=7.5)
+#draw_label(x=0.655, y=0.882, label=expression((lambda>=1)), hjust=0, size=6.5)
 fig.2
-

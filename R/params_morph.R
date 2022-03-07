@@ -110,6 +110,10 @@ p3<-ggplot()+
 
 #show(p3)
 #dev.off() 
+
+p.morph[p.morph$morph=="massive", c("p.int", "p.slp","p.sig")] <- params[params$spp=="Gpe", c("p.int", "p.slp","p.sig")]
+p.morph[p.morph$morph=="massive", c("g.int", "g.slp","g.var")] <- params[params$spp=="Gpe", c("g.int", "g.slp","g.var")]
+
   
 
 #######################################
