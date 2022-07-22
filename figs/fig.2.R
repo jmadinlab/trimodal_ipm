@@ -1,21 +1,7 @@
 
-source("figs/supp.fig3.R")
+source("figs/SUPPLEMENT/supp.fig5.R")
 
-examples1 <- 
-plot_grid(NULL, plot_grid(NULL, 
-plots[["Ahy"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
-NULL,
-plots[["Ahu"]]+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),NULL,
-#guides(col="none",fill="none")
-ncol=1, rel_heights=c(0.35,1,-0.1,1,0.1))+
-draw_label(expression(size[" "*t]~(m^2)), 0.65, 0.08, size=8, hjust=1)+
-draw_label(expression(size[" "*t+1]~(m^2)), -0.05, 0.55, size=8, angle=90)+
-draw_label("Example IPMs", 0.45, 0.95, fontface="bold", size=8)+
-draw_label(expression("("*bold(before)~bolditalic(P[rec])*")"), 0.45, 0.9, fontface="bold", size=8),
-nrow=1, rel_widths=c(0.12,1))
-examples1
-
-examples2 <- 
+examples <- 
 plot_grid(NULL,plot_grid(NULL,
 plots[["Ahy"]]+ggtitle("Ahy")+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical",legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
 plots[["Ahu"]]+ggtitle("Adi")+theme(legend.position="right", plot.title=element_blank(),legend.box="vertical", legend.spacing.y=unit(0.5,"mm"), legend.margin=margin(0,0,0,-7)),
@@ -23,7 +9,7 @@ nrow=1, rel_widths=c(0.2,1,1))+
 draw_label(expression(size[" "*t]~(m^2)), 0.6, 0.14, size=8, hjust=1)+
 draw_label(expression(size[" "*t+1]~(m^2)), 0.06, 0.65, size=8, angle=90)+
 draw_label(expression(bold(Example~IPMs~(before~bolditalic(P[rec])))), 0.55, 1.05, fontface="bold", size=8), nrow=2, rel_heights=c(0.15,1))
-examples2
+examples
 
 params$lam.est3 <- aggregate(lam~spp, boot, median)$lam
 params$log.lam3 <- log(params$lam.est)
@@ -40,7 +26,6 @@ boot$morphology <- factor(boot$morphology, levels=morph.ord)
 arrows2$morphology <- factor(arrows2$morphology, levels=morph.ord)
 params$morphology <- factor(params$morphology, levels=morph.ord)
 
-#arrows2$yaxis <- c(15, 30,38,13,13)
 arrows2$yaxis <- c(38, 30,15,13,13)
 params$yaxis <- arrows2$yaxis[match(params$morphology, arrows2$morphology)]
 arrows2
@@ -71,7 +56,7 @@ geom_hline(yintercept=-0.1, size=1, col="black")+
 #scale_y_sqrt(expand=c(0,0))+
 scale_y_continuous(expand=c(0,0))+
 #lims(x=c(min(boot$lam), max(boot$lam)))+
-ggtitle(expression(bold(Fitness)))+
+ggtitle(expression(bold(Population~growth)))+
 xlim(c(min(log(boot$lam)), max(log(boot$lam))-0.02))+
 coord_cartesian(xlim=c(-0.5, max(log(boot$lam))))+
 #scale_x_log10(limits=c(min(boot$lam), max(boot$lam)))+
@@ -82,9 +67,7 @@ guides(fill="none", col="none")+
 theme_classic()+theme(strip.text=element_blank(), strip.background=element_blank(), axis.text.y=element_blank(), axis.title.y=element_blank(), axis.line.y=element_blank(), axis.ticks.y=element_blank(), axis.text.x=element_text(size=8), axis.title.x=element_text(size=9),plot.title=element_text(size=8, hjust=0.5, face="bold")), nrow=1, rel_widths=c(0.1,1))
 lam.dens
 
-plot_grid(examples1, lam.dens, nrow=1, rel_widths=c(0.5, 1))
-
-r.long$label <-ifelse(r.long$variable=="rec.tran", "Transects","Constant")
+#r.long$label <-ifelse(r.long$variable=="rec.tran", "Transects","Constant")
 #r.long$label <- factor(r.long$label, levels=c("Fitted","Constant"))
 params$genus <- ifelse(params$family=="Acroporidae", "Acr","Gon")
 
@@ -103,18 +86,13 @@ rechange <- ggplot()+geom_line(data=storeDET2, aes(rec, log(lam), col=spp))+
 scale_x_log10(limits=c(min(storeDET2$rec),max(storeDET2$rec)), breaks=c(10^-5, 10^-4,10^-3,10^-2, 10^-1), labels=c(
 		expression(10^-5), expression(10^-4), expression(10^-3),expression(10^-2), expression(10^-1)))+
 geom_hline(yintercept=0, size=0.1)+
-geom_point(data=params, aes(x=rec.mean, y=log(lam.est2)), size=1, col="white")+
-geom_point(data=params, aes(x=rec.mean, y=log(lam.est2), col=spp, fill=spp), size=1, alpha=0.5)+
+geom_point(data=params, aes(x=rec, y=log(lam.est)), size=1, col="white")+
+geom_point(data=params, aes(x=rec, y=log(lam.est), col=spp, fill=spp), size=1, alpha=0.5)+
 labs(x=expression(Recruitment~probablity~(P[rec])))+
-#geom_segment(data=NULL, aes(y=-0.55, yend=-0.55, x=min(params$rec.tran), xend=max(params$rec.tran)), col="grey85")+
-#geom_segment(data=NULL, aes(y=-0.54, yend=-0.56, x=min(params$rec.tran), xend=min(params$rec.tran)), col="grey85")+
-#geom_segment(data=NULL, aes(y=-0.54, yend=-0.56, x=max(params$rec.tran), xend=max(params$rec.tran)), col="grey85")+
-#geom_label(data=NULL, aes(x=params$rec.mean[1], y=-0.55), label="range", hjust=0.65, size=2, col="grey", label.size=0)+
-geom_segment(data=params[params$family=="Acroporidae",], aes(x=rec.mean, xend=rec.mean,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
-geom_segment(data=params[params$family=="Merulinidae",], aes(x=rec.mean, xend=rec.mean,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
-geom_text(data=NULL, aes(x=params$rec.mean[1], y=-0.46), label="Acr", size=2.5, col="grey")+
-geom_text(data=NULL, aes(x=params$rec.mean[11], y=-0.46), label="Gon", size=2.5,col="grey")+
-#geom_text(data=NULL, aes(x=params$rec.mean[1], y=-0.55), label=expression(italic(P[rec])~~range), hjust=0.65, size=2, col="grey")+
+geom_segment(data=params[params$family=="Acroporidae",], aes(x=rec, xend=rec,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
+geom_segment(data=params[params$family=="Merulinidae",], aes(x=rec, xend=rec,y=-0.52, yend=-0.51), arrow=arrow(length=unit(1, "mm") ))+
+geom_text(data=NULL, aes(x=params$rec[1], y=-0.46), label="Acr", size=2.5, col="grey")+
+geom_text(data=NULL, aes(x=params$rec[11], y=-0.46), label="Gon", size=2.5,col="grey")+
 guides(col="none", fill="none")+
 theme_classic()+
 labs(x=expression(Recruitment~probablity~(P[rec])), y=expression(log(lambda)))+
@@ -137,19 +115,41 @@ scale_x_log10(limits=c(min(storeDET2$rec),1), breaks=c(10^-5, 10^-4,10^-3,10^-2,
 		coord_cartesian(xlim=c(min(storeDET2$rec),max(storeDET2$rec)))+
 scale_colour_manual(values=cols)+scale_fill_manual(values=cols)+
 guides(fill="none", col="none")+
-#geom_text(data=NULL, aes(y="tabular", x=10^-2, label='C = Common'), size=1.8, hjust=0, nudge_y=0.3)+
-#geom_text(data=NULL, aes(y="tabular", x=10^-2, label='R = Rare'), size=1.8, hjust=0, nudge_y=-0.3)+
-#geom_text(data=NULL, aes(y="tabular", x=10^-2, label='D = Declined'), size=1.8, hjust=0, nudge_y=-0.9)+
-#geom_text(data=NULL, aes(y=2.5, x=min(storeDET2$rec), label="Recruitment needed\nfor population growth"), hjust=0, size=2.5)+
 theme_classic()+
-ggtitle("Recruitment vs fitness")+
+ggtitle("Recruitment vs population growth")+
 geom_text(data=params[!params$spp=="Ana",], aes(rec.one, morphology, label=AB), size=1.8, fontface="bold")+
 geom_text(data=params[params$spp=="Ana",], aes(rec.one, morphology, label="D"), size=1.8, fontface="bold")+
 scale_y_discrete(expand=c(0.3,0.3))+
 labs(x=expression(Recruitment~probablity~(P[rec])))+ 
-#labs(subtitle="Recruitment needed\nfor population growth")+
 theme(plot.subtitle=element_text( size=7, hjust=1, vjust=-5), axis.title.y=element_blank(), axis.title=element_blank(),axis.text=element_blank(), plot.background=element_blank(), plot.title=element_text(size=8, hjust=0.5, face="bold"), panel.background=element_blank(), axis.line=element_blank(),axis.ticks=element_blank())
 growplot
+
+
+
+#######################################
+#GENERATION TIME
+#######################################	
+
+sds<-aggregate(lam~spp, boot, function(x){ quantile(x, 0.95) })
+params$lam.sd1 <- (sds$lam[match(params$spp, sds$spp)])
+sds<-aggregate(lam~spp, boot, function(x){ quantile(x, 0.05) })
+params$lam.sd2 <- (sds$lam[match(params$spp, sds$spp)])
+sds<-aggregate(lam~spp, boot, median)
+params$lam.mn <- (sds$lam[match(params$spp, sds$spp)])
+
+sds<-aggregate(GT~spp, boot, function(x){ quantile(x, 0.95) })
+params$GT.sd1 <- (sds$GT[match(params$spp, sds$spp)])
+sds<-aggregate(GT~spp, boot, function(x){ quantile(x, 0.05) })
+params$GT.sd2 <- (sds$GT[match(params$spp, sds$spp)])
+sds<-aggregate(GT~spp, boot, median)
+params$GT.mn <- (sds$GT[match(params$spp, sds$spp)])
+
+ggplot()+geom_hline(yintercept=1, size=0.1)+
+geom_segment(data=params, aes(x=GT, xend=GT, y=lam.sd1, yend=lam.sd2), size=0.2)+
+geom_point(data=params,aes(GT, lam.mn, fill=spp), shape=21, stroke=0.2, size=3)+
+scale_fill_manual(values=cols)+guides(fill="none")+
+theme_classic()
+
 
 GTplot<- ggplot(boot, aes(GT, log(lam)))+
 geom_hline(yintercept=0, size=0.1)+
@@ -173,10 +173,10 @@ GTplot
 
 
 figCD <- plot_grid(growplot,ggplot()+theme_void(),rechange, GTplot,
-ncol=1, rel_heights=c(0.44,-0.07,1, 1), align="v", axis="lr", labels=c("B","","","D"), label_size=9)
+ncol=1, rel_heights=c(0.44,-0.07,1, 1), align="v", axis="lr", labels=c("b","","","d"), label_size=9)
 #figCD
 
-fig.2 <- plot_grid(plot_grid(examples2, lam.dens, nrow=2, rel_heights=c(0.45, 1), labels=c("A","C"), label_size=9),figCD, nrow=1, rel_widths=c(1,1))+
+fig.2 <- plot_grid(plot_grid(examples, lam.dens, nrow=2, rel_heights=c(0.45, 1), labels=c("a","c"), label_size=9),figCD, nrow=1, rel_widths=c(1,1))+
 annotation_custom(dig,0.29,0.38,0.905,0.93)+
 annotation_custom(tab,0.09,0.13,0.9,0.94)+
 annotation_custom(mas,0.05,0.13,0.56,0.59)+
@@ -186,6 +186,5 @@ annotation_custom(brn,0.04,0.14,0.24,0.29)+
 annotation_custom(tab,0.06,0.12,0.125,0.155)+
 #draw_text("Recruitment needed\nfor pop. growth", 0.55, 0.895, hjust=0, size=6.5)+
 draw_label(x=0.63, y=0.89, label=expression(italic(P[rec])~at~lambda>=1), hjust=0, size=7)
-#draw_label(x=0.9, y=0.955, label=expression(italic(P[rec])~at~lambda>=1), hjust=0, size=7.5)
-#draw_label(x=0.655, y=0.882, label=expression((lambda>=1)), hjust=0, size=6.5)
+
 fig.2

@@ -1,0 +1,133 @@
+"","ID","species","N","cover","year","tran","spp","morphology","abundance_05"
+"1","Trimodal_2011_1","Acropora cytherea",0,0,2011,"1","Acy","tabular",81
+"2","Trimodal_2011_2","Acropora cytherea",0,0,2011,"2","Acy","tabular",81
+"3","Trimodal_2011_3","Acropora cytherea",0,0,2011,"3","Acy","tabular",81
+"4","Trimodal_2011_4","Acropora cytherea",0,0,2011,"4","Acy","tabular",81
+"5","Trimodal_2011_5","Acropora cytherea",0,0,2011,"5","Acy","tabular",81
+"6","Trimodal_2011_6","Acropora cytherea",0,0,2011,"6","Acy","tabular",81
+"7","Trimodal_2014_1","Acropora cytherea",0,0,2014,"1","Acy","tabular",81
+"8","Trimodal_2014_2","Acropora cytherea",1,1.6,2014,"2","Acy","tabular",81
+"9","Trimodal_2014_3","Acropora cytherea",1,2.6,2014,"3","Acy","tabular",81
+"10","Trimodal_2014_4","Acropora cytherea",0,0,2014,"4","Acy","tabular",81
+"11","Trimodal_2014_5","Acropora cytherea",0,0,2014,"5","Acy","tabular",81
+"12","Trimodal_2014_6","Acropora cytherea",0,0,2014,"6","Acy","tabular",81
+"13","Trimodal_2011_1","Acropora cf. digitifera",3,3.6,2011,"1","Adi","digitate",3624
+"14","Trimodal_2011_2","Acropora cf. digitifera",2,3.2,2011,"2","Adi","digitate",3624
+"15","Trimodal_2011_3","Acropora cf. digitifera",4,6.1,2011,"3","Adi","digitate",3624
+"16","Trimodal_2011_4","Acropora cf. digitifera",3,4.7,2011,"4","Adi","digitate",3624
+"17","Trimodal_2011_5","Acropora cf. digitifera",4,6.4,2011,"5","Adi","digitate",3624
+"18","Trimodal_2011_6","Acropora cf. digitifera",2,2.6,2011,"6","Adi","digitate",3624
+"19","Trimodal_2014_1","Acropora cf. digitifera",1,0.6,2014,"1","Adi","digitate",3624
+"20","Trimodal_2014_2","Acropora cf. digitifera",3,4.1,2014,"2","Adi","digitate",3624
+"21","Trimodal_2014_3","Acropora cf. digitifera",4,4.1,2014,"3","Adi","digitate",3624
+"22","Trimodal_2014_4","Acropora cf. digitifera",2,4.8,2014,"4","Adi","digitate",3624
+"23","Trimodal_2014_5","Acropora cf. digitifera",0,0,2014,"5","Adi","digitate",3624
+"24","Trimodal_2014_6","Acropora cf. digitifera",1,1.5,2014,"6","Adi","digitate",3624
+"25","Trimodal_2011_1","Acropora humilis",0,0,2011,"1","Ahu","digitate",700
+"26","Trimodal_2011_2","Acropora humilis",2,1.6,2011,"2","Ahu","digitate",700
+"27","Trimodal_2011_3","Acropora humilis",0,0,2011,"3","Ahu","digitate",700
+"28","Trimodal_2011_4","Acropora humilis",0,0,2011,"4","Ahu","digitate",700
+"29","Trimodal_2011_5","Acropora humilis",0,0,2011,"5","Ahu","digitate",700
+"30","Trimodal_2011_6","Acropora humilis",0,0,2011,"6","Ahu","digitate",700
+"31","Trimodal_2014_1","Acropora humilis",0,0,2014,"1","Ahu","digitate",700
+"32","Trimodal_2014_2","Acropora humilis",0,0,2014,"2","Ahu","digitate",700
+"33","Trimodal_2014_3","Acropora humilis",0,0,2014,"3","Ahu","digitate",700
+"34","Trimodal_2014_4","Acropora humilis",0,0,2014,"4","Ahu","digitate",700
+"35","Trimodal_2014_5","Acropora humilis",1,1.2,2014,"5","Ahu","digitate",700
+"36","Trimodal_2014_6","Acropora humilis",0,0,2014,"6","Ahu","digitate",700
+"37","Trimodal_2011_1","Acropora hyacinthus",3,8.1,2011,"1","Ahy","tabular",3666
+"38","Trimodal_2011_2","Acropora hyacinthus",3,10.8,2011,"2","Ahy","tabular",3666
+"39","Trimodal_2011_3","Acropora hyacinthus",2,5.4,2011,"3","Ahy","tabular",3666
+"40","Trimodal_2011_4","Acropora hyacinthus",6,13.4,2011,"4","Ahy","tabular",3666
+"41","Trimodal_2011_5","Acropora hyacinthus",2,3.3,2011,"5","Ahy","tabular",3666
+"42","Trimodal_2011_6","Acropora hyacinthus",6,13.2,2011,"6","Ahy","tabular",3666
+"43","Trimodal_2014_1","Acropora hyacinthus",5,14.3,2014,"1","Ahy","tabular",3666
+"44","Trimodal_2014_2","Acropora hyacinthus",7,22.2,2014,"2","Ahy","tabular",3666
+"45","Trimodal_2014_3","Acropora hyacinthus",5,14.2,2014,"3","Ahy","tabular",3666
+"46","Trimodal_2014_4","Acropora hyacinthus",3,7.4,2014,"4","Ahy","tabular",3666
+"47","Trimodal_2014_5","Acropora hyacinthus",0,0,2014,"5","Ahy","tabular",3666
+"48","Trimodal_2014_6","Acropora hyacinthus",0,0,2014,"6","Ahy","tabular",3666
+"49","Trimodal_2011_1","Acropora intermedia",1,9.5,2011,"1","Ain","staghorn",535
+"50","Trimodal_2011_2","Acropora intermedia",1,3,2011,"2","Ain","staghorn",535
+"51","Trimodal_2011_3","Acropora intermedia",0,0,2011,"3","Ain","staghorn",535
+"52","Trimodal_2011_4","Acropora intermedia",0,0,2011,"4","Ain","staghorn",535
+"53","Trimodal_2011_5","Acropora intermedia",1,2.2,2011,"5","Ain","staghorn",535
+"54","Trimodal_2011_6","Acropora intermedia",0,0,2011,"6","Ain","staghorn",535
+"55","Trimodal_2014_1","Acropora intermedia",2,3.7,2014,"1","Ain","staghorn",535
+"56","Trimodal_2014_2","Acropora intermedia",0,0,2014,"2","Ain","staghorn",535
+"57","Trimodal_2014_3","Acropora intermedia",0,0,2014,"3","Ain","staghorn",535
+"58","Trimodal_2014_4","Acropora intermedia",1,0.5,2014,"4","Ain","staghorn",535
+"59","Trimodal_2014_5","Acropora intermedia",1,0.4,2014,"5","Ain","staghorn",535
+"60","Trimodal_2014_6","Acropora intermedia",0,0,2014,"6","Ain","staghorn",535
+"61","Trimodal_2011_1","Acropora millepora",0,0,2011,"1","Ami","corymbose",240
+"62","Trimodal_2011_2","Acropora millepora",1,0.9,2011,"2","Ami","corymbose",240
+"63","Trimodal_2011_3","Acropora millepora",0,0,2011,"3","Ami","corymbose",240
+"64","Trimodal_2011_4","Acropora millepora",0,0,2011,"4","Ami","corymbose",240
+"65","Trimodal_2011_5","Acropora millepora",0,0,2011,"5","Ami","corymbose",240
+"66","Trimodal_2011_6","Acropora millepora",0,0,2011,"6","Ami","corymbose",240
+"67","Trimodal_2014_1","Acropora millepora",0,0,2014,"1","Ami","corymbose",240
+"68","Trimodal_2014_2","Acropora millepora",0,0,2014,"2","Ami","corymbose",240
+"69","Trimodal_2014_3","Acropora millepora",0,0,2014,"3","Ami","corymbose",240
+"70","Trimodal_2014_4","Acropora millepora",0,0,2014,"4","Ami","corymbose",240
+"71","Trimodal_2014_5","Acropora millepora",0,0,2014,"5","Ami","corymbose",240
+"72","Trimodal_2014_6","Acropora millepora",0,0,2014,"6","Ami","corymbose",240
+"73","Trimodal_2011_1","Acropora nasuta",0,0,2011,"1","Ana","corymbose",1624
+"74","Trimodal_2011_2","Acropora nasuta",1,1.6,2011,"2","Ana","corymbose",1624
+"75","Trimodal_2011_3","Acropora nasuta",1,1.2,2011,"3","Ana","corymbose",1624
+"76","Trimodal_2011_4","Acropora nasuta",0,0,2011,"4","Ana","corymbose",1624
+"77","Trimodal_2011_5","Acropora nasuta",1,2,2011,"5","Ana","corymbose",1624
+"78","Trimodal_2011_6","Acropora nasuta",0,0,2011,"6","Ana","corymbose",1624
+"79","Trimodal_2014_1","Acropora nasuta",0,0,2014,"1","Ana","corymbose",1624
+"80","Trimodal_2014_2","Acropora nasuta",1,1.2,2014,"2","Ana","corymbose",1624
+"81","Trimodal_2014_3","Acropora nasuta",0,0,2014,"3","Ana","corymbose",1624
+"82","Trimodal_2014_4","Acropora nasuta",0,0,2014,"4","Ana","corymbose",1624
+"83","Trimodal_2014_5","Acropora nasuta",0,0,2014,"5","Ana","corymbose",1624
+"84","Trimodal_2014_6","Acropora nasuta",0,0,2014,"6","Ana","corymbose",1624
+"85","Trimodal_2011_1","Acropora robusta",0,0,2011,"1","Aro","staghorn",249
+"86","Trimodal_2011_2","Acropora robusta",0,0,2011,"2","Aro","staghorn",249
+"87","Trimodal_2011_3","Acropora robusta",0,0,2011,"3","Aro","staghorn",249
+"88","Trimodal_2011_4","Acropora robusta",0,0,2011,"4","Aro","staghorn",249
+"89","Trimodal_2011_5","Acropora robusta",0,0,2011,"5","Aro","staghorn",249
+"90","Trimodal_2011_6","Acropora robusta",0,0,2011,"6","Aro","staghorn",249
+"91","Trimodal_2014_1","Acropora robusta",0,0,2014,"1","Aro","staghorn",249
+"92","Trimodal_2014_2","Acropora robusta",1,3.5,2014,"2","Aro","staghorn",249
+"93","Trimodal_2014_3","Acropora robusta",1,2,2014,"3","Aro","staghorn",249
+"94","Trimodal_2014_4","Acropora robusta",0,0,2014,"4","Aro","staghorn",249
+"95","Trimodal_2014_5","Acropora robusta",0,0,2014,"5","Aro","staghorn",249
+"96","Trimodal_2014_6","Acropora robusta",0,0,2014,"6","Aro","staghorn",249
+"97","Trimodal_2011_1","Acropora spathulata",0,0,2011,"1","Asp","corymbose",598
+"98","Trimodal_2011_2","Acropora spathulata",0,0,2011,"2","Asp","corymbose",598
+"99","Trimodal_2011_3","Acropora spathulata",0,0,2011,"3","Asp","corymbose",598
+"100","Trimodal_2011_4","Acropora spathulata",0,0,2011,"4","Asp","corymbose",598
+"101","Trimodal_2011_5","Acropora spathulata",0,0,2011,"5","Asp","corymbose",598
+"102","Trimodal_2011_6","Acropora spathulata",1,4.2,2011,"6","Asp","corymbose",598
+"103","Trimodal_2014_1","Acropora spathulata",1,0.5,2014,"1","Asp","corymbose",598
+"104","Trimodal_2014_2","Acropora spathulata",1,0.7,2014,"2","Asp","corymbose",598
+"105","Trimodal_2014_3","Acropora spathulata",0,0,2014,"3","Asp","corymbose",598
+"106","Trimodal_2014_4","Acropora spathulata",1,5.1,2014,"4","Asp","corymbose",598
+"107","Trimodal_2014_5","Acropora spathulata",0,0,2014,"5","Asp","corymbose",598
+"108","Trimodal_2014_6","Acropora spathulata",1,2.2,2014,"6","Asp","corymbose",598
+"109","Trimodal_2011_1","Goniastrea pectinata",0,0,2011,"1","Gpe","massive",135
+"110","Trimodal_2011_2","Goniastrea pectinata",0,0,2011,"2","Gpe","massive",135
+"111","Trimodal_2011_3","Goniastrea pectinata",0,0,2011,"3","Gpe","massive",135
+"112","Trimodal_2011_4","Goniastrea pectinata",0,0,2011,"4","Gpe","massive",135
+"113","Trimodal_2011_5","Goniastrea pectinata",0,0,2011,"5","Gpe","massive",135
+"114","Trimodal_2011_6","Goniastrea pectinata",0,0,2011,"6","Gpe","massive",135
+"115","Trimodal_2014_1","Goniastrea pectinata",0,0,2014,"1","Gpe","massive",135
+"116","Trimodal_2014_2","Goniastrea pectinata",0,0,2014,"2","Gpe","massive",135
+"117","Trimodal_2014_3","Goniastrea pectinata",0,0,2014,"3","Gpe","massive",135
+"118","Trimodal_2014_4","Goniastrea pectinata",0,0,2014,"4","Gpe","massive",135
+"119","Trimodal_2014_5","Goniastrea pectinata",0,0,2014,"5","Gpe","massive",135
+"120","Trimodal_2014_6","Goniastrea pectinata",0,0,2014,"6","Gpe","massive",135
+"121","Trimodal_2011_1","Goniastrea retiformis",2,1.8,2011,"1","Gre","massive",2938
+"122","Trimodal_2011_2","Goniastrea retiformis",1,0.5,2011,"2","Gre","massive",2938
+"123","Trimodal_2011_3","Goniastrea retiformis",0,0,2011,"3","Gre","massive",2938
+"124","Trimodal_2011_4","Goniastrea retiformis",2,3,2011,"4","Gre","massive",2938
+"125","Trimodal_2011_5","Goniastrea retiformis",2,1.9,2011,"5","Gre","massive",2938
+"126","Trimodal_2011_6","Goniastrea retiformis",4,7.4,2011,"6","Gre","massive",2938
+"127","Trimodal_2014_1","Goniastrea retiformis",1,0.5,2014,"1","Gre","massive",2938
+"128","Trimodal_2014_2","Goniastrea retiformis",1,0.7,2014,"2","Gre","massive",2938
+"129","Trimodal_2014_3","Goniastrea retiformis",2,1.2,2014,"3","Gre","massive",2938
+"130","Trimodal_2014_4","Goniastrea retiformis",0,0,2014,"4","Gre","massive",2938
+"131","Trimodal_2014_5","Goniastrea retiformis",0,0,2014,"5","Gre","massive",2938
+"132","Trimodal_2014_6","Goniastrea retiformis",2,5.9,2014,"6","Gre","massive",2938

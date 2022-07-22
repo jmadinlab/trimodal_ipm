@@ -1,2 +1,0 @@
-# growth functions
-

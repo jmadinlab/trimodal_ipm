@@ -2,38 +2,34 @@
 #######################################
 # IMAGES
 #######################################
-tab<-readPNG("data/coral_silhouettes/tabularG.png")
+tab<-readPNG("figs/coral_silhouettes/tabularG.png")
 tab<-rasterGrob(tab, interpolate=TRUE)
-mas<-readPNG("data/coral_silhouettes/massiveG.png")
+mas<-readPNG("figs/coral_silhouettes/massiveG.png")
 mas<-rasterGrob(mas, interpolate=TRUE)
-cor<-readPNG("data/coral_silhouettes/corymboseG.png")
+cor<-readPNG("figs/coral_silhouettes/corymboseG.png")
 cor<-rasterGrob(cor, interpolate=TRUE)
-cor<-readPNG("data/coral_silhouettes/corymboseG.png")
+cor<-readPNG("figs/coral_silhouettes/corymboseG.png")
 cor<-rasterGrob(cor, interpolate=TRUE)
-dig<-readPNG("data/coral_silhouettes/digitateG.png")
+dig<-readPNG("figs/coral_silhouettes/digitateG.png")
 dig<-rasterGrob(dig, interpolate=TRUE)
-brn<-readPNG("data/coral_silhouettes/branchingG.png")
+brn<-readPNG("figs/coral_silhouettes/branchingG.png")
 brn<-rasterGrob(brn, interpolate=TRUE)
 
 #######################################
 # SIZE
 #######################################
 
-# average size
-size.av <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)
-params$size.av <- size.av$area[match(params$spp, size.av$spp)]
-
-size.av <- size.av[order(size.av$area, decreasing=TRUE),]
-size.av$spp <- factor(size.av$spp, levels=size.av$spp)
-ss$spp <- factor(ss$spp, levels=size.av$spp)
-dat$spp <- factor(dat$spp, levels=size.av$spp)
+ss$spp <- params$spp[match(ss$species, params$species)]
+ord.size <- params[order(params$size.ss, decreasing=TRUE),"spp"]
+params$spp <- factor(params$spp, levels=ord.size)
+ss$spp <- factor(ss$spp, levels=ord.size)
 
 size <- ggplot()+
 #geom_density(data=dat[!is.na(dat$spp),], aes(x=area_cm2/10000), fill=NA, col="grey")+
 geom_density(data=ss[!is.na(ss$spp),], aes(x=10^area, fill=spp), col="black", size=0.15)+
-geom_text(data=size.av, aes(x=0.001, y=0.75, label=spp),size=2)+
-geom_segment(data=size.av, aes(x=10^area,xend=10^area, y=Inf, yend=-Inf), col="black", size=0.15)+
-geom_segment(data=aggregate(area_cm2~spp, dat[!is.na(dat$spp),], mean), aes(x=area_cm2/10000,xend=area_cm2/10000, y=Inf, yend=-Inf), col="slategrey", size=0.15)+
+geom_text(data=params, aes(x=0.001, y=0.75, label=spp),size=2)+
+geom_segment(data=params, aes(x=10^size.ss,xend=10^size.ss, y=Inf, yend=-Inf), col="black", size=0.15)+
+geom_segment(data=params, aes(x=10^size.dat,xend=10^size.dat, y=Inf, yend=-Inf), col="slategrey", size=0.15)+
 facet_wrap(~spp, ncol=1, strip.position="left")+
 scale_y_continuous(breaks=c(0.5))+
 scale_fill_manual(values=cols)+
@@ -55,6 +51,9 @@ axis.text.x=element_text(size=5, angle=30, hjust=1),
 axis.text.y=element_blank(),
 plot.title=element_text(size=8, face="bold", hjust=0.5))
 size
+
+params$spp <- factor(params$spp, levels=order)
+ss$spp <- factor(ss$spp, levels=order)
 
 #######################################
 # PCA
@@ -120,7 +119,7 @@ pcplot
 
 abunplot<-plot_grid(NULL,
 plot_grid(
-ggplot(data=d08B, aes(reorder(spp, -abundance_05), N/10, fill=spp))+
+ggplot(data=abun.BT, aes(reorder(spp, -abundance_05), N/10, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
@@ -141,7 +140,7 @@ plot.title=element_text(size=8, hjust=0.5, face="bold"),
 strip.text=element_blank(), strip.background=element_blank())
 ,
 ggplot()+theme_void(),
-ggplot(data=abun[abun$year==2011,], aes(reorder(spp, -abundance_05), N/10, fill=spp))+
+ggplot(data=abun.LIT[abun.LIT$year==2011,], aes(reorder(spp, -abundance_05), N/10, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
@@ -161,7 +160,7 @@ plot.title=element_text(size=8, hjust=0.5, face="bold"),
 strip.text=element_blank(), strip.background=element_blank())
 ,
 ggplot()+theme_void(),
-ggplot(data=abun[abun$year==2014,], aes(reorder(spp, -abundance_05), N/10, fill=spp))+
+ggplot(data=abun.LIT[abun.LIT$year==2014,], aes(reorder(spp, -abundance_05), N/10, fill=spp))+
 #geom_bar(data=tri2.av, aes(reorder(species, -abun05), N/10, fill=species),stat="identity")+
 stat_summary(fun="mean", geom = "bar", width=0.8, col="black", size=0.1)+
 stat_summary(fun.data = mean_se, geom = "errorbar", width=0, size=0.2)+
@@ -189,7 +188,7 @@ abunplot
 fig.1 <- plot_grid(size,
 plot_grid(pcplot+guides(fill="none"),NULL,
 get_legend(pcplot+guides(fill = guide_legend(ncol=2, override.aes = list(size=1.5)))), ncol=1, rel_heights=c(1,-0.02, 0.25)), abunplot,
-rel_widths=c(0.28,1, 0.47), labels=c("A", "B", "C"), label_size=8, hjust=c(0,-5, 0), nrow=1)+
+rel_widths=c(0.28,1, 0.47), labels=c("a", "b", "c"), label_size=8, hjust=c(0,-5, 0), nrow=1)+
 draw_label(expression(Colonies~per~m^2), 0.737, 0.78, size=6, angle=90)+
 draw_label("Colonies per m", 0.737, 0.5, size=6, angle=90)+
 draw_label("Colonies per m", 0.737, 0.18, size=6, angle=90)
