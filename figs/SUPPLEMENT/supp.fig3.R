@@ -12,6 +12,7 @@ p1<-ggplot()+
     aes(area, pred, col=spp))+
   scale_colour_manual(values=cols, labels=labs)+
   theme_classic()
+p1
 
 #show(p1)
 #dev.off()

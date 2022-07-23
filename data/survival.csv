@@ -1,0 +1,1654 @@
+colony_id,spp,species,year,area_cm2,surv
+1,AC,Acropora cytherea,2009,843.522517,1
+1,AC,Acropora cytherea,2010,2086.638917,1
+1,AC,Acropora cytherea,2011,3688.759325,1
+1,AC,Acropora cytherea,2012,1187.283798,1
+1,AC,Acropora cytherea,2013,586.7237686,0
+2,AC,Acropora cytherea,2009,1096.088705,1
+2,AC,Acropora cytherea,2010,1687.658831,0
+3,AC,Acropora cytherea,2009,453.8695853,0
+4,AC,Acropora cytherea,2009,3112.108209,1
+4,AC,Acropora cytherea,2010,3623.332542,0
+5,AC,Acropora cytherea,2009,2349.483903,0
+6,AC,Acropora cytherea,2009,819.8760464,1
+6,AC,Acropora cytherea,2010,688.2196901,1
+6,AC,Acropora cytherea,2011,832.7322625,1
+6,AC,Acropora cytherea,2012,300.4530926,0
+7,AC,Acropora cytherea,2009,211.2327066,1
+7,AC,Acropora cytherea,2010,672.3225095,1
+7,AC,Acropora cytherea,2011,848.3635246,1
+7,AC,Acropora cytherea,2012,990.2561465,1
+7,AC,Acropora cytherea,2013,2180.096902,1
+7,AC,Acropora cytherea,2014,2149.088961,0
+8,AC,Acropora cytherea,2009,1839.3629,1
+8,AC,Acropora cytherea,2010,2915.951305,1
+8,AC,Acropora cytherea,2011,2294.068524,1
+8,AC,Acropora cytherea,2012,904.2011058,1
+8,AC,Acropora cytherea,2013,337.5471445,0
+9,AC,Acropora cytherea,2009,6771.503045,1
+9,AC,Acropora cytherea,2010,8771.827338,1
+9,AC,Acropora cytherea,2011,11113.99526,1
+9,AC,Acropora cytherea,2012,6727.697032,1
+9,AC,Acropora cytherea,2013,3328.205801,0
+10,AC,Acropora cytherea,2009,2395.277959,1
+10,AC,Acropora cytherea,2010,2858.869385,1
+10,AC,Acropora cytherea,2011,3426.846326,1
+10,AC,Acropora cytherea,2012,881.8511098,0
+11,AC,Acropora cytherea,2009,708.3007857,1
+11,AC,Acropora cytherea,2010,668.019353,1
+11,AC,Acropora cytherea,2011,1153.55754,1
+11,AC,Acropora cytherea,2012,1349.223969,0
+12,AC,Acropora cytherea,2009,1177.106705,1
+12,AC,Acropora cytherea,2010,1617.418698,1
+12,AC,Acropora cytherea,2011,1730.029956,1
+12,AC,Acropora cytherea,2012,707.6813489,1
+12,AC,Acropora cytherea,2013,177.9558289,0
+13,AC,Acropora cytherea,2009,3062.340364,0
+14,AC,Acropora cytherea,2009,356.914438,0
+15,AC,Acropora cytherea,2009,1226.071097,1
+15,AC,Acropora cytherea,2010,1884.410771,1
+15,AC,Acropora cytherea,2011,2622.975952,1
+15,AC,Acropora cytherea,2012,1769.136531,1
+15,AC,Acropora cytherea,2013,386.4197495,1
+15,AC,Acropora cytherea,2014,36.98708149,0
+16,AC,Acropora cytherea,2009,3607.151919,1
+16,AC,Acropora cytherea,2010,3069.102653,1
+16,AC,Acropora cytherea,2011,3274.625767,0
+17,AC,Acropora cytherea,2009,1506.500731,1
+17,AC,Acropora cytherea,2010,2326.889901,1
+17,AC,Acropora cytherea,2011,3441.180243,0
+18,AC,Acropora cytherea,2009,429.8334105,0
+19,AC,Acropora cytherea,2009,104.7042521,1
+19,AC,Acropora cytherea,2010,148.4283493,1
+19,AC,Acropora cytherea,2011,218.10393,0
+20,AC,Acropora cytherea,2009,176.1765549,1
+20,AC,Acropora cytherea,2010,365.3786594,0
+21,AC,Acropora cytherea,2009,1898.276385,1
+21,AC,Acropora cytherea,2010,2827.415897,1
+21,AC,Acropora cytherea,2011,4298.510452,1
+21,AC,Acropora cytherea,2012,2689.503336,1
+21,AC,Acropora cytherea,2013,1229.83925,1
+21,AC,Acropora cytherea,2014,413.44011,0
+22,AC,Acropora cytherea,2009,616.4691231,1
+22,AC,Acropora cytherea,2010,1164.994635,1
+22,AC,Acropora cytherea,2011,1570.396124,1
+22,AC,Acropora cytherea,2012,920.9865186,0
+24,AC,Acropora cytherea,2009,2395.377,1
+24,AC,Acropora cytherea,2010,2238.260243,1
+24,AC,Acropora cytherea,2011,1951.361293,1
+24,AC,Acropora cytherea,2012,2087.520511,0
+25,AC,Acropora cytherea,2009,229.3895103,1
+25,AC,Acropora cytherea,2010,271.31019,0
+26,AC,Acropora cytherea,2009,4867.363207,1
+26,AC,Acropora cytherea,2010,6890.114334,1
+26,AC,Acropora cytherea,2011,6905.78969,0
+29,AC,Acropora cytherea,2009,15256.05317,1
+29,AC,Acropora cytherea,2010,17529.79034,1
+29,AC,Acropora cytherea,2011,7639.0202,1
+29,AC,Acropora cytherea,2012,10670.97948,1
+29,AC,Acropora cytherea,2013,10652.7759,1
+29,AC,Acropora cytherea,2014,9098.031338,0
+30,AC,Acropora cytherea,2009,3846.4272,1
+30,AC,Acropora cytherea,2010,720.3981064,1
+30,AC,Acropora cytherea,2011,830.6417405,1
+30,AC,Acropora cytherea,2012,951.0507836,1
+30,AC,Acropora cytherea,2013,426.2811636,1
+30,AC,Acropora cytherea,2014,73.55175707,0
+31,AC,Acropora cytherea,2010,87.08317949,0
+32,AC,Acropora cytherea,2010,107.9107692,1
+32,AC,Acropora cytherea,2011,144.805291,0
+33,AC,Acropora cytherea,2010,362.5262657,1
+33,AC,Acropora cytherea,2011,545.5258988,1
+33,AC,Acropora cytherea,2012,491.1506023,0
+34,AC,Acropora cytherea,2010,2161.894662,1
+34,AC,Acropora cytherea,2011,2581.530659,1
+34,AC,Acropora cytherea,2012,2808.387137,1
+34,AC,Acropora cytherea,2013,2711.143674,1
+34,AC,Acropora cytherea,2014,2453.674334,0
+35,AD,Acropora cf. digitifera,2009,748.9408496,1
+35,AD,Acropora cf. digitifera,2010,421.8960281,1
+35,AD,Acropora cf. digitifera,2011,397.6213156,1
+35,AD,Acropora cf. digitifera,2012,371.7141337,1
+35,AD,Acropora cf. digitifera,2013,303.3170761,1
+35,AD,Acropora cf. digitifera,2014,197.9151073,0
+36,AD,Acropora cf. digitifera,2009,577.627706,1
+36,AD,Acropora cf. digitifera,2010,509.6611453,1
+36,AD,Acropora cf. digitifera,2011,597.1709329,1
+36,AD,Acropora cf. digitifera,2012,660.8493603,1
+36,AD,Acropora cf. digitifera,2013,682.6378336,1
+36,AD,Acropora cf. digitifera,2014,839.3794386,0
+37,AD,Acropora cf. digitifera,2009,644.9433713,1
+37,AD,Acropora cf. digitifera,2010,540.5689293,1
+37,AD,Acropora cf. digitifera,2011,656.9084932,1
+37,AD,Acropora cf. digitifera,2012,740.2628566,1
+37,AD,Acropora cf. digitifera,2013,809.9567405,1
+37,AD,Acropora cf. digitifera,2014,774.2074557,0
+38,AD,Acropora cf. digitifera,2009,25.72824683,0
+39,AD,Acropora cf. digitifera,2009,565.6103058,1
+39,AD,Acropora cf. digitifera,2010,475.2161893,1
+39,AD,Acropora cf. digitifera,2011,409.438142,0
+40,AD,Acropora cf. digitifera,2009,791.1852738,1
+40,AD,Acropora cf. digitifera,2010,863.4666126,1
+40,AD,Acropora cf. digitifera,2011,900.1371294,1
+40,AD,Acropora cf. digitifera,2012,770.4293072,1
+40,AD,Acropora cf. digitifera,2013,296.537654,1
+40,AD,Acropora cf. digitifera,2014,65.66340229,0
+41,AD,Acropora cf. digitifera,2009,294.2141466,1
+41,AD,Acropora cf. digitifera,2010,234.0800788,0
+43,AD,Acropora cf. digitifera,2009,346.1340679,1
+43,AD,Acropora cf. digitifera,2010,361.1798907,1
+43,AD,Acropora cf. digitifera,2011,377.1710674,1
+43,AD,Acropora cf. digitifera,2012,280.6559285,1
+43,AD,Acropora cf. digitifera,2013,145.3008482,1
+43,AD,Acropora cf. digitifera,2014,100.0940366,0
+44,AD,Acropora cf. digitifera,2009,673.7545336,1
+44,AD,Acropora cf. digitifera,2010,590.8763077,1
+44,AD,Acropora cf. digitifera,2011,433.774869,1
+44,AD,Acropora cf. digitifera,2012,437.4735222,1
+44,AD,Acropora cf. digitifera,2013,318.0951138,1
+44,AD,Acropora cf. digitifera,2014,74.40878872,0
+45,AD,Acropora cf. digitifera,2009,89.94608401,1
+45,AD,Acropora cf. digitifera,2010,121.1605963,1
+45,AD,Acropora cf. digitifera,2011,145.7821132,1
+45,AD,Acropora cf. digitifera,2012,169.0114417,1
+45,AD,Acropora cf. digitifera,2013,149.2005675,0
+46,AD,Acropora cf. digitifera,2009,53.7837311,0
+47,AD,Acropora cf. digitifera,2009,434.0351853,1
+47,AD,Acropora cf. digitifera,2010,93.54182675,0
+48,AD,Acropora cf. digitifera,2009,1288.713861,1
+48,AD,Acropora cf. digitifera,2010,1449.663654,1
+48,AD,Acropora cf. digitifera,2011,1325.270517,1
+48,AD,Acropora cf. digitifera,2012,1178.025112,0
+49,AD,Acropora cf. digitifera,2009,298.7459061,1
+49,AD,Acropora cf. digitifera,2010,233.6285167,1
+49,AD,Acropora cf. digitifera,2011,142.233363,1
+49,AD,Acropora cf. digitifera,2012,140.5069909,1
+49,AD,Acropora cf. digitifera,2013,147.0421776,1
+49,AD,Acropora cf. digitifera,2014,143.4320527,0
+51,AD,Acropora cf. digitifera,2009,391.4327014,1
+51,AD,Acropora cf. digitifera,2010,438.9706725,1
+51,AD,Acropora cf. digitifera,2011,498.0333809,1
+51,AD,Acropora cf. digitifera,2012,469.7799807,1
+51,AD,Acropora cf. digitifera,2013,387.3817404,1
+51,AD,Acropora cf. digitifera,2014,351.0834601,0
+52,AD,Acropora cf. digitifera,2009,419.6549482,1
+52,AD,Acropora cf. digitifera,2010,462.5534857,1
+52,AD,Acropora cf. digitifera,2011,504.7606085,1
+52,AD,Acropora cf. digitifera,2012,511.759245,1
+52,AD,Acropora cf. digitifera,2013,515.7471138,1
+52,AD,Acropora cf. digitifera,2014,482.485129,0
+53,AD,Acropora cf. digitifera,2009,101.1953338,1
+53,AD,Acropora cf. digitifera,2010,145.0926181,1
+53,AD,Acropora cf. digitifera,2011,191.0771993,1
+53,AD,Acropora cf. digitifera,2012,243.9323345,1
+53,AD,Acropora cf. digitifera,2013,218.0167586,1
+53,AD,Acropora cf. digitifera,2014,188.5295698,0
+54,AD,Acropora cf. digitifera,2009,212.6819672,1
+54,AD,Acropora cf. digitifera,2010,422.3998377,1
+54,AD,Acropora cf. digitifera,2011,463.6308144,1
+54,AD,Acropora cf. digitifera,2012,563.6723741,1
+54,AD,Acropora cf. digitifera,2013,595.6278521,1
+54,AD,Acropora cf. digitifera,2014,694.1789512,0
+55,AD,Acropora cf. digitifera,2009,322.6135439,1
+55,AD,Acropora cf. digitifera,2010,510.0132072,1
+55,AD,Acropora cf. digitifera,2011,668.9673003,1
+55,AD,Acropora cf. digitifera,2012,870.8213067,1
+55,AD,Acropora cf. digitifera,2013,987.5759284,1
+55,AD,Acropora cf. digitifera,2014,1131.485664,0
+56,AD,Acropora cf. digitifera,2009,107.3670667,1
+56,AD,Acropora cf. digitifera,2010,121.790989,1
+56,AD,Acropora cf. digitifera,2011,158.620297,1
+56,AD,Acropora cf. digitifera,2012,125.3157679,1
+56,AD,Acropora cf. digitifera,2013,160.4091199,1
+56,AD,Acropora cf. digitifera,2014,220.6595536,0
+57,AD,Acropora cf. digitifera,2009,519.0331728,1
+57,AD,Acropora cf. digitifera,2010,456.2388798,1
+57,AD,Acropora cf. digitifera,2011,538.7358215,1
+57,AD,Acropora cf. digitifera,2012,546.2685014,1
+57,AD,Acropora cf. digitifera,2013,535.0552985,1
+57,AD,Acropora cf. digitifera,2014,612.1410856,0
+58,AD,Acropora cf. digitifera,2009,448.4630337,1
+58,AD,Acropora cf. digitifera,2010,552.6733764,0
+59,AD,Acropora cf. digitifera,2009,694.6239242,1
+59,AD,Acropora cf. digitifera,2010,775.214492,1
+59,AD,Acropora cf. digitifera,2011,758.755565,1
+59,AD,Acropora cf. digitifera,2012,765.1455838,1
+59,AD,Acropora cf. digitifera,2013,794.3925498,1
+59,AD,Acropora cf. digitifera,2014,868.0438552,0
+60,AD,Acropora cf. digitifera,2009,1251.734628,1
+60,AD,Acropora cf. digitifera,2010,1360.011543,1
+60,AD,Acropora cf. digitifera,2011,1103.650127,1
+60,AD,Acropora cf. digitifera,2012,1261.12657,1
+60,AD,Acropora cf. digitifera,2013,1135.68162,1
+60,AD,Acropora cf. digitifera,2014,1022.064249,0
+61,AD,Acropora cf. digitifera,2009,447.0898818,1
+61,AD,Acropora cf. digitifera,2010,405.3832618,1
+61,AD,Acropora cf. digitifera,2011,365.3204319,1
+61,AD,Acropora cf. digitifera,2012,271.580747,1
+61,AD,Acropora cf. digitifera,2013,171.1247633,1
+61,AD,Acropora cf. digitifera,2014,106.9854659,0
+62,AD,Acropora cf. digitifera,2009,515.4397366,1
+62,AD,Acropora cf. digitifera,2010,226.2618217,1
+62,AD,Acropora cf. digitifera,2011,260.5605747,0
+63,AD,Acropora cf. digitifera,2009,313.9874356,1
+63,AD,Acropora cf. digitifera,2010,302.5509783,1
+63,AD,Acropora cf. digitifera,2011,333.9341385,1
+63,AD,Acropora cf. digitifera,2012,353.416675,1
+63,AD,Acropora cf. digitifera,2013,360.1555748,1
+63,AD,Acropora cf. digitifera,2014,379.6319949,0
+64,AD,Acropora cf. digitifera,2009,1686.959131,1
+64,AD,Acropora cf. digitifera,2010,1640.806266,1
+64,AD,Acropora cf. digitifera,2011,1722.435009,0
+65,AD,Acropora cf. digitifera,2010,19.64595138,1
+65,AD,Acropora cf. digitifera,2011,18.21937617,1
+65,AD,Acropora cf. digitifera,2012,35.16009337,1
+65,AD,Acropora cf. digitifera,2013,56.09434687,1
+65,AD,Acropora cf. digitifera,2014,82.01845984,0
+66,AD,Acropora cf. digitifera,2010,481.8272684,1
+66,AD,Acropora cf. digitifera,2011,448.474185,1
+66,AD,Acropora cf. digitifera,2012,509.9869003,1
+66,AD,Acropora cf. digitifera,2013,437.4467641,1
+66,AD,Acropora cf. digitifera,2014,450.9972343,0
+67,AD,Acropora cf. digitifera,2010,453.1897055,1
+67,AD,Acropora cf. digitifera,2011,274.0681616,0
+68,AH,Acropora hyacinthus,2009,1163.480022,1
+68,AH,Acropora hyacinthus,2010,727.1530981,1
+68,AH,Acropora hyacinthus,2011,306.3761069,1
+68,AH,Acropora hyacinthus,2012,51.52173763,0
+69,AH,Acropora hyacinthus,2009,3268.459034,1
+69,AH,Acropora hyacinthus,2010,3841.918063,0
+70,AH,Acropora hyacinthus,2009,2322.538171,1
+70,AH,Acropora hyacinthus,2010,1619.592293,1
+70,AH,Acropora hyacinthus,2011,2699.736471,1
+70,AH,Acropora hyacinthus,2012,2562.169147,1
+70,AH,Acropora hyacinthus,2013,2466.227932,1
+70,AH,Acropora hyacinthus,2014,1147.653831,0
+71,AH,Acropora hyacinthus,2009,1000.756792,1
+71,AH,Acropora hyacinthus,2010,1601.30001,1
+71,AH,Acropora hyacinthus,2011,1357.049973,0
+72,AH,Acropora hyacinthus,2009,3368.789994,1
+72,AH,Acropora hyacinthus,2010,4495.647334,1
+72,AH,Acropora hyacinthus,2011,4788.88065,1
+72,AH,Acropora hyacinthus,2012,833.8711609,0
+73,AH,Acropora hyacinthus,2009,1923.365857,1
+73,AH,Acropora hyacinthus,2010,1601.655211,1
+73,AH,Acropora hyacinthus,2011,2557.590121,1
+73,AH,Acropora hyacinthus,2012,1851.010034,1
+73,AH,Acropora hyacinthus,2013,1667.446113,1
+73,AH,Acropora hyacinthus,2014,1707.629175,0
+74,AH,Acropora hyacinthus,2010,272.6453817,1
+74,AH,Acropora hyacinthus,2011,312.466132,0
+75,AH,Acropora hyacinthus,2009,529.1556938,1
+75,AH,Acropora hyacinthus,2010,620.2785856,1
+75,AH,Acropora hyacinthus,2011,791.5892914,1
+75,AH,Acropora hyacinthus,2012,42.88364726,0
+76,AH,Acropora hyacinthus,2009,2323.520017,1
+76,AH,Acropora hyacinthus,2010,3092.171014,1
+76,AH,Acropora hyacinthus,2011,665.3939261,1
+76,AH,Acropora hyacinthus,2012,769.9596626,1
+76,AH,Acropora hyacinthus,2013,182.5208307,1
+76,AH,Acropora hyacinthus,2014,236.0207811,0
+77,AH,Acropora hyacinthus,2009,323.6408298,1
+77,AH,Acropora hyacinthus,2010,577.4885501,1
+77,AH,Acropora hyacinthus,2011,982.2853391,1
+77,AH,Acropora hyacinthus,2012,217.8596545,1
+77,AH,Acropora hyacinthus,2013,170.7264297,1
+77,AH,Acropora hyacinthus,2014,100.8592836,0
+78,AH,Acropora hyacinthus,2009,1236.705653,1
+78,AH,Acropora hyacinthus,2010,2044.491896,1
+78,AH,Acropora hyacinthus,2011,3192.846208,1
+78,AH,Acropora hyacinthus,2012,362.8935,0
+79,AH,Acropora hyacinthus,2009,189.9391627,1
+79,AH,Acropora hyacinthus,2010,65.47720147,1
+79,AH,Acropora hyacinthus,2011,157.496741,1
+79,AH,Acropora hyacinthus,2012,231.6163952,0
+80,AH,Acropora hyacinthus,2009,6252.678566,1
+80,AH,Acropora hyacinthus,2010,8678.294348,1
+80,AH,Acropora hyacinthus,2011,10068.75781,0
+81,AH,Acropora hyacinthus,2009,10129.70042,1
+81,AH,Acropora hyacinthus,2010,9037.687864,0
+82,AH,Acropora hyacinthus,2009,452.2214381,1
+82,AH,Acropora hyacinthus,2010,304.8184755,1
+82,AH,Acropora hyacinthus,2011,61.69121884,0
+83,AH,Acropora hyacinthus,2009,1844.574151,1
+83,AH,Acropora hyacinthus,2010,2309.352143,1
+83,AH,Acropora hyacinthus,2011,2487.702044,0
+84,AH,Acropora hyacinthus,2009,935.5121724,1
+84,AH,Acropora hyacinthus,2010,424.5061141,1
+84,AH,Acropora hyacinthus,2011,486.3670333,1
+84,AH,Acropora hyacinthus,2012,262.7406407,0
+85,AH,Acropora hyacinthus,2009,1858.551145,0
+86,AH,Acropora hyacinthus,2009,2798.510794,1
+86,AH,Acropora hyacinthus,2010,3213.617898,1
+86,AH,Acropora hyacinthus,2011,3377.960221,1
+86,AH,Acropora hyacinthus,2012,4059.316579,1
+86,AH,Acropora hyacinthus,2013,3051.604888,0
+87,AH,Acropora hyacinthus,2009,437.5465479,0
+88,AH,Acropora hyacinthus,2009,1329.295941,1
+88,AH,Acropora hyacinthus,2010,1335.013333,0
+89,AH,Acropora hyacinthus,2009,355.2408308,0
+90,AH,Acropora hyacinthus,2009,2630.112655,1
+90,AH,Acropora hyacinthus,2010,3288.209933,1
+90,AH,Acropora hyacinthus,2011,4056.409187,1
+90,AH,Acropora hyacinthus,2012,578.8256987,0
+91,AH,Acropora hyacinthus,2009,871.74374,1
+91,AH,Acropora hyacinthus,2010,1664.897317,1
+91,AH,Acropora hyacinthus,2011,2130.809038,1
+91,AH,Acropora hyacinthus,2012,2544.132738,1
+91,AH,Acropora hyacinthus,2013,2581.579476,1
+91,AH,Acropora hyacinthus,2014,479.2405579,0
+92,AH,Acropora hyacinthus,2009,3155.404636,1
+92,AH,Acropora hyacinthus,2010,3764.439057,1
+92,AH,Acropora hyacinthus,2011,3781.2467,0
+93,AH,Acropora hyacinthus,2009,1005.169336,1
+93,AH,Acropora hyacinthus,2010,2047.059475,1
+93,AH,Acropora hyacinthus,2011,3049.819134,1
+93,AH,Acropora hyacinthus,2012,1624.502315,0
+94,AH,Acropora hyacinthus,2009,2036.115953,1
+94,AH,Acropora hyacinthus,2010,2890.568688,1
+94,AH,Acropora hyacinthus,2011,3473.835188,1
+94,AH,Acropora hyacinthus,2012,3279.528713,1
+94,AH,Acropora hyacinthus,2013,2450.525665,1
+94,AH,Acropora hyacinthus,2014,206.9544557,0
+95,AH,Acropora hyacinthus,2009,1881.415175,1
+95,AH,Acropora hyacinthus,2010,3203.919611,1
+95,AH,Acropora hyacinthus,2011,1823.48706,1
+95,AH,Acropora hyacinthus,2012,1319.891126,1
+95,AH,Acropora hyacinthus,2013,1636.132479,1
+95,AH,Acropora hyacinthus,2014,2169.85084,0
+96,AH,Acropora hyacinthus,2009,2356.744634,1
+96,AH,Acropora hyacinthus,2010,414.5328256,1
+96,AH,Acropora hyacinthus,2011,53.52896455,0
+97,AH,Acropora hyacinthus,2009,2739.224643,1
+97,AH,Acropora hyacinthus,2010,3898.892124,1
+97,AH,Acropora hyacinthus,2011,2553.41475,0
+98,AH,Acropora hyacinthus,2010,2624.433928,1
+98,AH,Acropora hyacinthus,2011,2441.170559,1
+98,AH,Acropora hyacinthus,2012,2272.663416,1
+98,AH,Acropora hyacinthus,2013,2418.318179,1
+98,AH,Acropora hyacinthus,2014,2481.667651,0
+99,AH,Acropora hyacinthus,2010,58.60921577,1
+99,AH,Acropora hyacinthus,2011,169.1579861,0
+100,AH,Acropora hyacinthus,2011,1581.665304,0
+101,AI,Acropora intermedia,2009,5242.061756,1
+101,AI,Acropora intermedia,2010,5474.995908,1
+101,AI,Acropora intermedia,2011,3848.460595,1
+101,AI,Acropora intermedia,2012,515.0113693,1
+101,AI,Acropora intermedia,2013,120.5178192,1
+101,AI,Acropora intermedia,2014,34.48011793,0
+102,AI,Acropora intermedia,2009,255.9169492,0
+103,AI,Acropora intermedia,2009,202.9335938,0
+104,AI,Acropora intermedia,2009,49.19723727,1
+104,AI,Acropora intermedia,2010,58.13982081,1
+104,AI,Acropora intermedia,2011,94.11025188,0
+105,AI,Acropora intermedia,2009,369.4471701,0
+106,AI,Acropora intermedia,2009,1314.005215,1
+106,AI,Acropora intermedia,2010,1246.007621,1
+106,AI,Acropora intermedia,2011,870.7935745,1
+106,AI,Acropora intermedia,2012,1035.724117,0
+107,AI,Acropora intermedia,2009,51.83150919,0
+108,AI,Acropora intermedia,2009,578.846449,1
+108,AI,Acropora intermedia,2010,729.869077,1
+108,AI,Acropora intermedia,2011,740.5354132,1
+108,AI,Acropora intermedia,2012,270.1192896,0
+109,AI,Acropora intermedia,2009,1268.002368,1
+109,AI,Acropora intermedia,2010,1980.808063,1
+109,AI,Acropora intermedia,2012,742.8458273,1
+109,AI,Acropora intermedia,2013,174.7948592,0
+110,AI,Acropora intermedia,2009,3050.521602,1
+110,AI,Acropora intermedia,2011,520.2565152,1
+110,AI,Acropora intermedia,2012,412.4695124,1
+110,AI,Acropora intermedia,2013,392.7461462,1
+110,AI,Acropora intermedia,2014,74.02637597,0
+111,AI,Acropora intermedia,2009,3281.554352,1
+111,AI,Acropora intermedia,2010,4178.395842,1
+111,AI,Acropora intermedia,2011,2396.153541,1
+111,AI,Acropora intermedia,2012,5976.245281,1
+111,AI,Acropora intermedia,2013,5074.035344,1
+111,AI,Acropora intermedia,2014,880.0070449,0
+112,AI,Acropora intermedia,2009,1132.286625,1
+112,AI,Acropora intermedia,2010,987.1299034,1
+112,AI,Acropora intermedia,2011,1324.659722,1
+112,AI,Acropora intermedia,2012,999.9952452,1
+112,AI,Acropora intermedia,2013,597.1323419,1
+112,AI,Acropora intermedia,2014,640.7925531,0
+114,AI,Acropora intermedia,2009,731.9292327,1
+114,AI,Acropora intermedia,2010,1071.881288,1
+114,AI,Acropora intermedia,2011,1363.265574,1
+114,AI,Acropora intermedia,2012,1336.658378,1
+114,AI,Acropora intermedia,2013,793.0619272,1
+114,AI,Acropora intermedia,2014,1078.315377,0
+115,AI,Acropora intermedia,2009,370.0266279,1
+115,AI,Acropora intermedia,2010,118.7841859,1
+115,AI,Acropora intermedia,2011,19.8430567,0
+117,AI,Acropora intermedia,2009,641.425284,1
+117,AI,Acropora intermedia,2010,441.6255095,1
+117,AI,Acropora intermedia,2011,311.4034537,1
+117,AI,Acropora intermedia,2012,61.53201258,1
+117,AI,Acropora intermedia,2013,23.31743133,0
+118,AI,Acropora intermedia,2009,1250.330241,1
+118,AI,Acropora intermedia,2010,45.84027058,1
+118,AI,Acropora intermedia,2012,10.44837135,0
+119,AI,Acropora intermedia,2009,461.271345,1
+119,AI,Acropora intermedia,2010,698.0271495,1
+119,AI,Acropora intermedia,2011,1066.806153,1
+119,AI,Acropora intermedia,2012,741.8782456,1
+119,AI,Acropora intermedia,2013,611.0197352,1
+119,AI,Acropora intermedia,2014,215.2859206,0
+120,AI,Acropora intermedia,2009,105.1324661,0
+121,AI,Acropora intermedia,2009,70.49985231,1
+121,AI,Acropora intermedia,2010,46.81389075,1
+121,AI,Acropora intermedia,2011,71.98904726,1
+121,AI,Acropora intermedia,2012,201.337386,1
+121,AI,Acropora intermedia,2013,161.3292645,0
+122,AI,Acropora intermedia,2009,316.1291717,1
+122,AI,Acropora intermedia,2010,35.29229606,0
+123,AI,Acropora intermedia,2010,134.345483,1
+123,AI,Acropora intermedia,2011,33.70127803,0
+124,AI,Acropora intermedia,2010,113.2611318,1
+124,AI,Acropora intermedia,2011,175.8048542,1
+124,AI,Acropora intermedia,2012,84.92904697,1
+124,AI,Acropora intermedia,2013,91.00002562,1
+124,AI,Acropora intermedia,2014,110.3442198,0
+125,AI,Acropora intermedia,2010,28.20339687,1
+125,AI,Acropora intermedia,2011,149.9323581,0
+126,AI,Acropora intermedia,2010,63.67177824,0
+127,AL,Acropora spathulata,2009,281.628397,1
+127,AL,Acropora spathulata,2010,313.724776,1
+127,AL,Acropora spathulata,2011,324.8538525,0
+128,AL,Acropora spathulata,2009,1447.650097,1
+128,AL,Acropora spathulata,2010,1754.690681,1
+128,AL,Acropora spathulata,2011,683.0917344,0
+129,AL,Acropora spathulata,2009,186.1600717,1
+129,AL,Acropora spathulata,2010,234.453007,1
+129,AL,Acropora spathulata,2011,196.0271762,0
+130,AL,Acropora spathulata,2009,382.5834956,1
+130,AL,Acropora spathulata,2010,524.6988849,1
+130,AL,Acropora spathulata,2011,603.4355084,1
+130,AL,Acropora spathulata,2012,1013.016077,1
+130,AL,Acropora spathulata,2013,829.5084373,1
+130,AL,Acropora spathulata,2014,818.1815572,0
+131,AL,Acropora spathulata,2009,715.8016847,0
+132,AL,Acropora spathulata,2009,44.88416475,1
+132,AL,Acropora spathulata,2010,56.25956992,1
+132,AL,Acropora spathulata,2011,44.83351749,0
+133,AL,Acropora spathulata,2009,442.626219,1
+133,AL,Acropora spathulata,2010,499.4073178,1
+133,AL,Acropora spathulata,2011,372.7665914,1
+133,AL,Acropora spathulata,2012,283.6677292,1
+133,AL,Acropora spathulata,2013,248.8074213,1
+133,AL,Acropora spathulata,2014,80.04132661,0
+134,AL,Acropora spathulata,2009,233.1178358,1
+134,AL,Acropora spathulata,2010,304.7608213,1
+134,AL,Acropora spathulata,2011,350.6042381,0
+135,AL,Acropora spathulata,2009,364.5767187,1
+135,AL,Acropora spathulata,2010,479.7265183,1
+135,AL,Acropora spathulata,2011,750.6035759,1
+135,AL,Acropora spathulata,2012,681.62137,1
+135,AL,Acropora spathulata,2013,832.7744545,1
+135,AL,Acropora spathulata,2014,882.0226356,0
+136,AL,Acropora spathulata,2009,535.4042431,1
+136,AL,Acropora spathulata,2010,590.7483633,1
+136,AL,Acropora spathulata,2011,967.1950825,1
+136,AL,Acropora spathulata,2012,960.2405302,1
+136,AL,Acropora spathulata,2013,1031.378039,1
+136,AL,Acropora spathulata,2014,1213.735077,0
+137,AL,Acropora spathulata,2009,368.7902418,1
+137,AL,Acropora spathulata,2010,300.4123665,1
+137,AL,Acropora spathulata,2011,277.5996472,0
+138,AL,Acropora spathulata,2009,137.2301383,1
+138,AL,Acropora spathulata,2010,47.78697622,1
+138,AL,Acropora spathulata,2011,10.6883479,0
+139,AL,Acropora spathulata,2009,383.8280498,1
+139,AL,Acropora spathulata,2010,568.6069497,1
+139,AL,Acropora spathulata,2011,813.5572433,1
+139,AL,Acropora spathulata,2012,1104.642301,1
+139,AL,Acropora spathulata,2013,751.1190997,1
+139,AL,Acropora spathulata,2014,55.77520561,0
+140,AL,Acropora spathulata,2009,1000.240833,1
+140,AL,Acropora spathulata,2010,920.5893956,1
+140,AL,Acropora spathulata,2011,875.8570529,1
+140,AL,Acropora spathulata,2012,874.9886709,1
+140,AL,Acropora spathulata,2013,619.2351634,1
+140,AL,Acropora spathulata,2014,445.0005103,0
+141,AL,Acropora spathulata,2009,235.6887026,1
+141,AL,Acropora spathulata,2010,292.250687,1
+141,AL,Acropora spathulata,2011,313.4934081,1
+141,AL,Acropora spathulata,2012,205.467077,1
+141,AL,Acropora spathulata,2013,144.5492528,1
+141,AL,Acropora spathulata,2014,62.17400311,0
+142,AL,Acropora spathulata,2009,361.0624454,1
+142,AL,Acropora spathulata,2010,311.0332079,1
+142,AL,Acropora spathulata,2011,418.4387562,1
+142,AL,Acropora spathulata,2012,449.5054155,1
+142,AL,Acropora spathulata,2013,504.5586146,1
+142,AL,Acropora spathulata,2014,576.0748539,0
+143,AL,Acropora spathulata,2009,131.2646256,1
+143,AL,Acropora spathulata,2010,182.5789484,0
+144,AL,Acropora spathulata,2009,387.7567096,1
+144,AL,Acropora spathulata,2010,268.7322603,0
+145,AL,Acropora spathulata,2009,307.3363107,1
+145,AL,Acropora spathulata,2010,321.8639837,1
+145,AL,Acropora spathulata,2011,358.738382,1
+145,AL,Acropora spathulata,2012,374.414749,1
+145,AL,Acropora spathulata,2013,190.3159043,0
+146,AL,Acropora spathulata,2009,227.9434516,1
+146,AL,Acropora spathulata,2010,413.5209516,1
+146,AL,Acropora spathulata,2011,581.6893135,1
+146,AL,Acropora spathulata,2012,274.6260537,0
+147,AL,Acropora spathulata,2009,344.9236398,1
+147,AL,Acropora spathulata,2010,329.3904913,1
+147,AL,Acropora spathulata,2011,342.5551836,1
+147,AL,Acropora spathulata,2012,240.2506262,1
+147,AL,Acropora spathulata,2013,13.55984934,0
+148,AL,Acropora spathulata,2009,273.4901707,1
+148,AL,Acropora spathulata,2010,330.6059238,1
+148,AL,Acropora spathulata,2011,362.9826133,1
+148,AL,Acropora spathulata,2012,389.9198904,1
+148,AL,Acropora spathulata,2013,385.8115071,1
+148,AL,Acropora spathulata,2014,449.4648938,0
+149,AL,Acropora spathulata,2009,356.5081601,0
+150,AL,Acropora spathulata,2009,254.0554009,0
+151,AL,Acropora spathulata,2009,418.2251273,1
+151,AL,Acropora spathulata,2010,434.581872,1
+151,AL,Acropora spathulata,2011,403.8207244,1
+151,AL,Acropora spathulata,2012,312.7625117,0
+152,AL,Acropora spathulata,2009,407.8486011,1
+152,AL,Acropora spathulata,2010,546.6193418,1
+152,AL,Acropora spathulata,2011,776.3251076,1
+152,AL,Acropora spathulata,2012,480.0707206,1
+152,AL,Acropora spathulata,2013,506.8555516,1
+152,AL,Acropora spathulata,2014,506.7351244,0
+153,AL,Acropora spathulata,2009,358.5558839,0
+154,AL,Acropora spathulata,2009,313.1985631,1
+154,AL,Acropora spathulata,2010,555.1509974,1
+154,AL,Acropora spathulata,2011,957.4357994,1
+154,AL,Acropora spathulata,2012,1195.729353,1
+154,AL,Acropora spathulata,2013,331.4901688,0
+155,AL,Acropora spathulata,2009,320.7990567,1
+155,AL,Acropora spathulata,2010,308.6674744,1
+155,AL,Acropora spathulata,2011,367.2365703,1
+155,AL,Acropora spathulata,2012,401.4473339,0
+156,AL,Acropora spathulata,2009,146.1949848,1
+156,AL,Acropora spathulata,2010,264.6516313,1
+156,AL,Acropora spathulata,2011,379.5840664,1
+156,AL,Acropora spathulata,2012,335.2238541,1
+156,AL,Acropora spathulata,2013,196.2459968,1
+156,AL,Acropora spathulata,2014,21.74912851,0
+157,AL,Acropora spathulata,2009,1421.82892,1
+157,AL,Acropora spathulata,2010,1865.753913,1
+157,AL,Acropora spathulata,2011,2358.748826,1
+157,AL,Acropora spathulata,2012,79.89124826,0
+158,AL,Acropora spathulata,2010,222.6611532,1
+158,AL,Acropora spathulata,2011,281.706456,1
+158,AL,Acropora spathulata,2012,284.9400856,0
+159,AL,Acropora spathulata,2010,526.6759792,1
+159,AL,Acropora spathulata,2011,603.7340516,1
+159,AL,Acropora spathulata,2012,785.2171799,1
+159,AL,Acropora spathulata,2013,320.0141452,1
+159,AL,Acropora spathulata,2014,197.3402775,0
+160,AM,Acropora millepora,2009,327.7897155,1
+160,AM,Acropora millepora,2010,87.33029987,1
+160,AM,Acropora millepora,2011,82.15283682,1
+160,AM,Acropora millepora,2012,49.70371812,1
+160,AM,Acropora millepora,2013,23.86765412,0
+161,AM,Acropora millepora,2009,189.9946239,1
+161,AM,Acropora millepora,2010,144.0737592,1
+161,AM,Acropora millepora,2011,247.6649025,1
+161,AM,Acropora millepora,2012,204.3247298,0
+163,AM,Acropora millepora,2009,251.9666594,1
+163,AM,Acropora millepora,2010,231.6077013,1
+163,AM,Acropora millepora,2011,225.3494738,0
+164,AM,Acropora millepora,2009,59.56483648,1
+164,AM,Acropora millepora,2010,53.65413749,1
+164,AM,Acropora millepora,2011,24.75569978,0
+165,AM,Acropora millepora,2009,220.639315,1
+165,AM,Acropora millepora,2010,47.91622198,1
+165,AM,Acropora millepora,2011,41.41329838,1
+165,AM,Acropora millepora,2012,30.664,0
+166,AM,Acropora millepora,2009,260.221134,1
+166,AM,Acropora millepora,2010,245.2602942,1
+166,AM,Acropora millepora,2011,304.06348,1
+166,AM,Acropora millepora,2012,221.0434504,1
+166,AM,Acropora millepora,2013,29.48712999,0
+167,AM,Acropora millepora,2009,524.591012,1
+167,AM,Acropora millepora,2010,626.5848004,1
+167,AM,Acropora millepora,2011,770.4025895,0
+168,AM,Acropora millepora,2009,263.5782569,1
+168,AM,Acropora millepora,2010,175.6852868,1
+168,AM,Acropora millepora,2011,58.6746192,0
+169,AM,Acropora millepora,2009,489.1662119,1
+169,AM,Acropora millepora,2010,517.7350606,1
+169,AM,Acropora millepora,2011,781.8723519,1
+169,AM,Acropora millepora,2012,444.4200709,0
+170,AM,Acropora millepora,2009,599.0084205,1
+170,AM,Acropora millepora,2010,549.9101641,1
+170,AM,Acropora millepora,2011,273.7665247,1
+170,AM,Acropora millepora,2012,125.0240645,0
+171,AM,Acropora millepora,2009,1246.074908,0
+172,AM,Acropora millepora,2009,272.2768444,1
+172,AM,Acropora millepora,2010,299.6223441,0
+173,AM,Acropora millepora,2009,562.3790602,1
+173,AM,Acropora millepora,2010,289.5618139,1
+173,AM,Acropora millepora,2011,350.3810236,1
+173,AM,Acropora millepora,2012,37.00345521,0
+174,AM,Acropora millepora,2009,1268.629101,1
+174,AM,Acropora millepora,2010,1390.671949,1
+174,AM,Acropora millepora,2011,1434.021437,1
+174,AM,Acropora millepora,2012,1022.472835,1
+174,AM,Acropora millepora,2013,26.01852145,0
+175,AL,Acropora spathulata,2009,139.2503344,1
+175,AL,Acropora spathulata,2010,297.4300329,1
+175,AL,Acropora spathulata,2011,424.5741699,1
+175,AL,Acropora spathulata,2012,579.4221727,1
+175,AL,Acropora spathulata,2013,780.2398364,1
+175,AL,Acropora spathulata,2014,478.0330741,0
+176,AM,Acropora millepora,2009,19.61826465,0
+177,AM,Acropora millepora,2009,393.1005849,1
+177,AM,Acropora millepora,2010,283.1697574,0
+178,AM,Acropora millepora,2009,297.1940477,1
+178,AM,Acropora millepora,2010,302.8063846,1
+178,AM,Acropora millepora,2011,378.2967269,0
+179,AM,Acropora millepora,2009,301.5679232,1
+179,AM,Acropora millepora,2010,321.8221733,1
+179,AM,Acropora millepora,2011,307.1300732,1
+179,AM,Acropora millepora,2012,307.1126479,0
+180,AM,Acropora millepora,2009,247.6437447,0
+181,AM,Acropora millepora,2009,507.7852235,0
+182,AM,Acropora millepora,2009,98.18946166,1
+182,AM,Acropora millepora,2010,173.7585424,1
+182,AM,Acropora millepora,2011,309.6210743,1
+182,AM,Acropora millepora,2012,394.2420823,1
+182,AM,Acropora millepora,2013,360.006822,1
+182,AM,Acropora millepora,2014,235.6693691,0
+183,AM,Acropora millepora,2009,132.3637459,1
+183,AM,Acropora millepora,2010,227.5060043,1
+183,AM,Acropora millepora,2011,309.5475135,1
+183,AM,Acropora millepora,2012,190.2218592,1
+183,AM,Acropora millepora,2013,173.1070517,0
+184,AM,Acropora millepora,2009,120.7143912,1
+184,AM,Acropora millepora,2010,199.9111357,1
+184,AM,Acropora millepora,2011,169.7013666,0
+185,AM,Acropora millepora,2009,192.9096431,1
+185,AM,Acropora millepora,2010,86.2505327,0
+186,AM,Acropora millepora,2009,186.5252534,1
+186,AM,Acropora millepora,2010,215.1667679,1
+186,AM,Acropora millepora,2011,264.530469,1
+186,AM,Acropora millepora,2012,112.3298439,0
+187,AM,Acropora millepora,2009,250.3922547,1
+187,AM,Acropora millepora,2010,350.7840054,1
+187,AM,Acropora millepora,2011,227.6472283,0
+188,AM,Acropora millepora,2009,356.0342259,1
+188,AM,Acropora millepora,2010,281.8860733,1
+188,AM,Acropora millepora,2011,202.6306511,1
+188,AM,Acropora millepora,2012,48.74072436,0
+189,AL,Acropora spathulata,2009,1189.016777,1
+189,AL,Acropora spathulata,2011,1211.271591,0
+190,AN,Acropora nasuta,2009,294.7614777,0
+191,AN,Acropora nasuta,2009,518.35944,1
+191,AN,Acropora nasuta,2010,382.8177264,1
+191,AN,Acropora nasuta,2011,303.4489662,1
+191,AN,Acropora nasuta,2012,523.7904111,1
+191,AN,Acropora nasuta,2013,339.5618479,0
+192,AN,Acropora nasuta,2009,858.6425127,1
+192,AN,Acropora nasuta,2010,1114.563585,1
+192,AN,Acropora nasuta,2011,1275.791647,0
+193,AN,Acropora nasuta,2009,648.5939219,1
+193,AN,Acropora nasuta,2010,701.2335267,1
+193,AN,Acropora nasuta,2011,746.5380947,1
+193,AN,Acropora nasuta,2012,470.7498411,0
+194,AN,Acropora nasuta,2009,216.4562568,1
+194,AN,Acropora nasuta,2010,258.5695616,1
+194,AN,Acropora nasuta,2011,200.2206813,1
+194,AN,Acropora nasuta,2012,159.8357006,1
+194,AN,Acropora nasuta,2013,36.55461065,0
+195,AN,Acropora nasuta,2009,339.3519144,1
+195,AN,Acropora nasuta,2010,308.3221104,1
+195,AN,Acropora nasuta,2011,137.0966595,0
+196,AN,Acropora nasuta,2009,323.1526822,1
+196,AN,Acropora nasuta,2010,495.2968068,1
+196,AN,Acropora nasuta,2011,455.8255255,1
+196,AN,Acropora nasuta,2012,298.8898823,1
+196,AN,Acropora nasuta,2013,214.2741076,1
+196,AN,Acropora nasuta,2014,97.017876,0
+197,AN,Acropora nasuta,2009,302.8456991,1
+197,AN,Acropora nasuta,2010,411.5750798,1
+197,AN,Acropora nasuta,2011,508.8502317,1
+197,AN,Acropora nasuta,2012,192.61014,1
+197,AN,Acropora nasuta,2013,269.8353218,1
+197,AN,Acropora nasuta,2014,435.5718609,0
+198,AN,Acropora nasuta,2009,640.1832886,1
+198,AN,Acropora nasuta,2010,526.8296937,1
+198,AN,Acropora nasuta,2011,327.6911146,1
+198,AN,Acropora nasuta,2012,297.1106571,0
+199,AN,Acropora nasuta,2009,233.9632574,1
+199,AN,Acropora nasuta,2010,92.63981166,1
+199,AN,Acropora nasuta,2011,218.5166121,1
+199,AN,Acropora nasuta,2012,333.1476175,1
+199,AN,Acropora nasuta,2013,402.1833087,1
+199,AN,Acropora nasuta,2014,544.4221656,0
+200,AN,Acropora nasuta,2009,693.6930984,0
+201,AN,Acropora nasuta,2009,616.8487259,1
+201,AN,Acropora nasuta,2010,576.2424333,1
+201,AN,Acropora nasuta,2011,261.5787868,1
+201,AN,Acropora nasuta,2012,153.4198445,0
+202,AN,Acropora nasuta,2009,483.3554163,0
+203,AN,Acropora nasuta,2009,150.3575843,1
+203,AN,Acropora nasuta,2010,178.0500107,1
+203,AN,Acropora nasuta,2011,180.1235394,1
+203,AN,Acropora nasuta,2012,203.2303643,1
+203,AN,Acropora nasuta,2013,65.76407846,0
+204,AN,Acropora nasuta,2009,1087.997264,1
+204,AN,Acropora nasuta,2010,1052.141921,1
+204,AN,Acropora nasuta,2011,1266.951031,0
+205,AN,Acropora nasuta,2009,316.7920826,1
+205,AN,Acropora nasuta,2010,299.0939572,0
+206,AN,Acropora nasuta,2009,194.2258123,0
+207,AN,Acropora nasuta,2009,235.6634493,1
+207,AN,Acropora nasuta,2010,151.7600388,0
+208,AN,Acropora nasuta,2009,177.0636016,1
+208,AN,Acropora nasuta,2010,221.8071274,1
+208,AN,Acropora nasuta,2011,385.8003386,0
+209,AN,Acropora nasuta,2009,807.9541752,1
+209,AN,Acropora nasuta,2010,559.9948576,0
+210,AN,Acropora nasuta,2009,113.4620427,0
+211,AN,Acropora nasuta,2009,204.0478675,1
+211,AN,Acropora nasuta,2010,96.2095835,0
+212,AN,Acropora nasuta,2009,694.507097,0
+213,AN,Acropora nasuta,2009,150.7571286,1
+213,AN,Acropora nasuta,2010,235.104901,0
+214,AN,Acropora nasuta,2009,672.6934101,1
+214,AN,Acropora nasuta,2010,990.5651396,1
+214,AN,Acropora nasuta,2011,1123.047035,1
+214,AN,Acropora nasuta,2012,1081.008458,0
+216,AN,Acropora nasuta,2009,92.96677578,0
+217,AN,Acropora nasuta,2009,229.6099986,1
+217,AN,Acropora nasuta,2010,228.4774832,1
+217,AN,Acropora nasuta,2011,81.20728495,1
+217,AN,Acropora nasuta,2012,15.45105681,0
+218,AN,Acropora nasuta,2009,538.766965,1
+218,AN,Acropora nasuta,2010,383.639647,1
+218,AN,Acropora nasuta,2011,392.2711981,1
+218,AN,Acropora nasuta,2012,437.9589863,0
+219,AN,Acropora nasuta,2009,618.8150611,1
+219,AN,Acropora nasuta,2010,545.4029628,1
+219,AN,Acropora nasuta,2011,605.3084523,1
+219,AN,Acropora nasuta,2012,679.3980378,1
+219,AN,Acropora nasuta,2013,194.2281939,0
+220,AN,Acropora nasuta,2009,296.775062,1
+220,AN,Acropora nasuta,2010,178.521191,1
+220,AN,Acropora nasuta,2011,234.3162149,1
+220,AN,Acropora nasuta,2012,346.0956123,1
+220,AN,Acropora nasuta,2013,297.5784299,1
+220,AN,Acropora nasuta,2014,360.7388396,0
+221,AN,Acropora nasuta,2009,323.3635065,1
+221,AN,Acropora nasuta,2010,460.2417382,1
+221,AN,Acropora nasuta,2011,577.6275309,1
+221,AN,Acropora nasuta,2012,321.9325672,0
+222,AN,Acropora nasuta,2009,630.4904945,1
+222,AN,Acropora nasuta,2010,576.5516786,1
+222,AN,Acropora nasuta,2011,637.7671644,0
+223,AN,Acropora nasuta,2009,438.5244377,1
+223,AN,Acropora nasuta,2010,516.7573037,1
+223,AN,Acropora nasuta,2011,465.4013275,0
+224,AN,Acropora nasuta,2009,223.1434928,1
+224,AN,Acropora nasuta,2010,372.9644921,1
+224,AN,Acropora nasuta,2011,434.9551527,1
+224,AN,Acropora nasuta,2012,275.0511858,0
+225,AN,Acropora nasuta,2009,733.2804935,1
+225,AN,Acropora nasuta,2010,742.8674522,1
+225,AN,Acropora nasuta,2011,786.8123609,1
+225,AN,Acropora nasuta,2012,819.9002445,0
+226,AN,Acropora nasuta,2009,519.8883667,1
+226,AN,Acropora nasuta,2010,463.730849,1
+226,AN,Acropora nasuta,2011,250.945749,0
+227,AN,Acropora nasuta,2009,597.9782419,1
+227,AN,Acropora nasuta,2010,620.2297748,1
+227,AN,Acropora nasuta,2011,436.3002005,0
+228,AN,Acropora nasuta,2009,535.8463983,1
+228,AN,Acropora nasuta,2010,507.4848311,1
+228,AN,Acropora nasuta,2011,548.0793672,0
+229,AN,Acropora nasuta,2009,796.3577185,1
+229,AN,Acropora nasuta,2010,753.9348938,1
+229,AN,Acropora nasuta,2011,872.2821502,0
+230,AN,Acropora nasuta,2009,1065.193803,1
+230,AN,Acropora nasuta,2010,1132.87022,1
+230,AN,Acropora nasuta,2011,1045.708634,1
+230,AN,Acropora nasuta,2012,743.4055909,0
+231,AN,Acropora nasuta,2010,783.8997302,1
+231,AN,Acropora nasuta,2011,889.8789403,1
+231,AN,Acropora nasuta,2012,365.2824577,0
+232,AN,Acropora nasuta,2010,112.176344,1
+232,AN,Acropora nasuta,2011,173.1427535,1
+232,AN,Acropora nasuta,2012,289.0856557,1
+232,AN,Acropora nasuta,2013,394.950351,1
+232,AN,Acropora nasuta,2014,660.388363,0
+233,AN,Acropora nasuta,2010,489.7538955,1
+233,AN,Acropora nasuta,2011,28.95921736,0
+235,AN,Acropora nasuta,2010,108.5060232,1
+235,AN,Acropora nasuta,2011,171.0285629,1
+235,AN,Acropora nasuta,2012,116.9785048,0
+236,AR,Acropora robusta,2009,771.0450856,1
+236,AR,Acropora robusta,2010,961.670324,1
+236,AR,Acropora robusta,2011,666.8349232,1
+236,AR,Acropora robusta,2012,302.4140222,1
+236,AR,Acropora robusta,2013,279.8223802,1
+236,AR,Acropora robusta,2014,75.418396,0
+237,AR,Acropora robusta,2009,414.5739906,1
+237,AR,Acropora robusta,2010,551.7197279,1
+237,AR,Acropora robusta,2011,875.8566816,1
+237,AR,Acropora robusta,2012,742.8670129,1
+237,AR,Acropora robusta,2013,600.1118282,1
+237,AR,Acropora robusta,2014,684.9724107,0
+238,AR,Acropora robusta,2009,566.9885674,1
+238,AR,Acropora robusta,2010,545.3609052,1
+238,AR,Acropora robusta,2011,756.4352207,0
+239,AR,Acropora robusta,2009,353.5799288,1
+239,AR,Acropora robusta,2010,448.7095373,1
+239,AR,Acropora robusta,2011,758.4960019,1
+239,AR,Acropora robusta,2012,376.6558952,1
+239,AR,Acropora robusta,2013,299.1938806,0
+240,AR,Acropora robusta,2009,85.31859462,0
+241,AR,Acropora robusta,2009,536.3966765,1
+241,AR,Acropora robusta,2010,582.7046838,1
+241,AR,Acropora robusta,2011,712.7641466,1
+241,AR,Acropora robusta,2012,703.5367699,1
+241,AR,Acropora robusta,2013,503.3791882,1
+241,AR,Acropora robusta,2014,579.2099733,0
+242,AR,Acropora robusta,2009,192.3552677,1
+242,AR,Acropora robusta,2010,103.7992316,1
+242,AR,Acropora robusta,2011,170.3750252,0
+243,AR,Acropora robusta,2009,1059.734183,1
+243,AR,Acropora robusta,2010,833.1732512,1
+243,AR,Acropora robusta,2011,1013.794878,0
+244,AR,Acropora robusta,2009,3278.008259,1
+244,AR,Acropora robusta,2010,2674.235182,1
+244,AR,Acropora robusta,2011,3291.439245,1
+244,AR,Acropora robusta,2012,2008.650058,1
+244,AR,Acropora robusta,2013,1452.552105,1
+244,AR,Acropora robusta,2014,1841.892985,0
+245,AR,Acropora robusta,2009,149.9189532,1
+245,AR,Acropora robusta,2010,281.5108032,1
+245,AR,Acropora robusta,2011,182.4347477,0
+246,AR,Acropora robusta,2009,2489.872839,1
+246,AR,Acropora robusta,2010,1042.758478,1
+246,AR,Acropora robusta,2011,1215.843128,1
+246,AR,Acropora robusta,2012,1523.275505,1
+246,AR,Acropora robusta,2013,1456.648679,1
+246,AR,Acropora robusta,2014,1469.428268,0
+247,AR,Acropora robusta,2009,2139.899075,1
+247,AR,Acropora robusta,2010,2722.203482,1
+247,AR,Acropora robusta,2011,2938.719461,1
+247,AR,Acropora robusta,2012,2422.271979,1
+247,AR,Acropora robusta,2013,395.8161368,1
+247,AR,Acropora robusta,2014,175.8300127,0
+248,AR,Acropora robusta,2009,705.7627799,1
+248,AR,Acropora robusta,2010,1263.530991,1
+248,AR,Acropora robusta,2011,1553.526488,1
+248,AR,Acropora robusta,2012,1405.498488,1
+248,AR,Acropora robusta,2013,1107.469006,1
+248,AR,Acropora robusta,2014,1581.116162,0
+249,AR,Acropora robusta,2009,1949.620422,1
+249,AR,Acropora robusta,2010,1327.572988,1
+249,AR,Acropora robusta,2011,1443.34835,1
+249,AR,Acropora robusta,2012,1108.858529,1
+249,AR,Acropora robusta,2013,368.4996044,1
+249,AR,Acropora robusta,2014,378.3838819,0
+250,AR,Acropora robusta,2009,534.5726497,1
+250,AR,Acropora robusta,2010,29.75410849,1
+250,AR,Acropora robusta,2011,57.26704875,0
+251,AR,Acropora robusta,2009,7505.183884,1
+251,AR,Acropora robusta,2010,10219.05941,1
+251,AR,Acropora robusta,2011,8486.189896,0
+252,AR,Acropora robusta,2009,237.0849399,1
+252,AR,Acropora robusta,2010,495.99637,1
+252,AR,Acropora robusta,2011,621.1677735,1
+252,AR,Acropora robusta,2012,662.7159004,1
+252,AR,Acropora robusta,2013,340.9814833,1
+252,AR,Acropora robusta,2014,149.6375109,0
+253,AR,Acropora robusta,2009,2918.551985,1
+253,AR,Acropora robusta,2010,3019.198023,1
+253,AR,Acropora robusta,2011,2897.812622,1
+253,AR,Acropora robusta,2012,1030.745008,1
+253,AR,Acropora robusta,2013,1014.483832,1
+253,AR,Acropora robusta,2014,927.6428495,0
+254,AR,Acropora robusta,2009,363.9052211,1
+254,AR,Acropora robusta,2010,443.6356463,1
+254,AR,Acropora robusta,2011,460.4474982,0
+255,AR,Acropora robusta,2009,773.3886061,1
+255,AR,Acropora robusta,2010,1339.76135,1
+255,AR,Acropora robusta,2011,1541.539987,1
+255,AR,Acropora robusta,2012,1108.800462,1
+255,AR,Acropora robusta,2013,378.1633573,1
+255,AR,Acropora robusta,2014,76.17804136,0
+256,AR,Acropora robusta,2009,396.7184729,1
+256,AR,Acropora robusta,2010,511.1781787,1
+256,AR,Acropora robusta,2011,188.2206665,1
+256,AR,Acropora robusta,2012,60.08708922,0
+257,AR,Acropora robusta,2009,1233.041349,1
+257,AR,Acropora robusta,2010,1913.969705,0
+258,AR,Acropora robusta,2009,698.0651067,0
+259,AR,Acropora robusta,2009,890.6294842,1
+259,AR,Acropora robusta,2010,1076.604864,1
+259,AR,Acropora robusta,2011,1080.258637,1
+259,AR,Acropora robusta,2012,1031.218078,1
+259,AR,Acropora robusta,2013,1070.992649,1
+259,AR,Acropora robusta,2014,1413.065671,0
+260,AR,Acropora robusta,2009,595.0002371,1
+260,AR,Acropora robusta,2010,643.3707131,1
+260,AR,Acropora robusta,2011,650.3862244,1
+260,AR,Acropora robusta,2012,673.2919621,1
+260,AR,Acropora robusta,2013,574.2492394,1
+260,AR,Acropora robusta,2014,671.9543143,0
+261,AR,Acropora robusta,2009,9452.908313,1
+261,AR,Acropora robusta,2010,8704.323915,1
+261,AR,Acropora robusta,2011,8146.008605,1
+261,AR,Acropora robusta,2012,9006.348109,1
+261,AR,Acropora robusta,2013,8524.429349,1
+261,AR,Acropora robusta,2014,10214.24169,0
+262,AR,Acropora robusta,2009,827.9810546,1
+262,AR,Acropora robusta,2010,798.7721164,1
+262,AR,Acropora robusta,2011,762.4732546,1
+262,AR,Acropora robusta,2012,844.02163,1
+262,AR,Acropora robusta,2013,547.1900858,1
+262,AR,Acropora robusta,2014,570.7746726,0
+263,AR,Acropora robusta,2009,322.1428498,1
+263,AR,Acropora robusta,2010,608.1679589,1
+263,AR,Acropora robusta,2011,373.0848561,1
+263,AR,Acropora robusta,2012,207.392455,1
+263,AR,Acropora robusta,2013,160.1318034,1
+263,AR,Acropora robusta,2014,228.2962712,0
+264,AR,Acropora robusta,2009,639.7037151,1
+264,AR,Acropora robusta,2010,714.3599646,1
+264,AR,Acropora robusta,2011,400.8759384,0
+265,AR,Acropora robusta,2009,379.5884761,1
+265,AR,Acropora robusta,2010,245.5292617,1
+265,AR,Acropora robusta,2011,204.1302136,0
+266,AR,Acropora robusta,2009,149.7939497,1
+266,AR,Acropora robusta,2010,339.090256,1
+266,AR,Acropora robusta,2011,461.9561641,0
+267,AS,Acropora humilis,2009,261.7847178,1
+267,AS,Acropora humilis,2010,174.0433734,1
+267,AS,Acropora humilis,2011,51.90467374,0
+268,AS,Acropora humilis,2009,72.34668385,1
+268,AS,Acropora humilis,2010,94.77252682,1
+268,AS,Acropora humilis,2011,126.1989141,0
+269,AS,Acropora humilis,2009,166.66921,1
+269,AS,Acropora humilis,2010,155.1631545,1
+269,AS,Acropora humilis,2011,164.4786117,1
+269,AS,Acropora humilis,2012,90.34508654,1
+269,AS,Acropora humilis,2013,88.75907444,1
+269,AS,Acropora humilis,2014,65.00283934,0
+270,AS,Acropora humilis,2009,265.1406223,0
+271,AS,Acropora humilis,2009,342.5933636,1
+271,AS,Acropora humilis,2010,265.2483285,1
+271,AS,Acropora humilis,2011,272.4644067,1
+271,AS,Acropora humilis,2012,353.5995569,1
+271,AS,Acropora humilis,2013,302.3143003,1
+271,AS,Acropora humilis,2014,331.2120614,0
+272,AS,Acropora humilis,2009,26.25364459,1
+272,AS,Acropora humilis,2010,44.72128253,1
+272,AS,Acropora humilis,2011,30.17173584,0
+273,AS,Acropora humilis,2009,481.6958325,0
+274,AS,Acropora humilis,2009,387.3643081,1
+274,AS,Acropora humilis,2010,209.992331,1
+274,AS,Acropora humilis,2011,192.6268094,0
+275,AS,Acropora humilis,2009,296.7128049,1
+275,AS,Acropora humilis,2010,477.7633996,1
+275,AS,Acropora humilis,2011,517.1061075,0
+276,AS,Acropora humilis,2009,23.15655408,0
+277,AS,Acropora humilis,2009,495.0662983,1
+277,AS,Acropora humilis,2010,462.3967472,1
+277,AS,Acropora humilis,2011,536.9807869,1
+277,AS,Acropora humilis,2012,471.4048641,1
+277,AS,Acropora humilis,2013,444.4603598,1
+277,AS,Acropora humilis,2014,437.426845,0
+278,AS,Acropora humilis,2009,577.7671672,1
+278,AS,Acropora humilis,2010,728.6136645,1
+278,AS,Acropora humilis,2011,730.3666971,1
+278,AS,Acropora humilis,2012,787.2670035,1
+278,AS,Acropora humilis,2013,819.4155294,1
+278,AS,Acropora humilis,2014,809.930396,0
+279,AS,Acropora humilis,2009,270.0769261,0
+280,AS,Acropora humilis,2009,426.686999,1
+280,AS,Acropora humilis,2010,361.5262939,1
+280,AS,Acropora humilis,2011,307.6584135,1
+280,AS,Acropora humilis,2012,266.9638181,1
+280,AS,Acropora humilis,2013,250.0073345,1
+280,AS,Acropora humilis,2014,110.3274909,0
+281,AS,Acropora humilis,2009,192.8930052,1
+281,AS,Acropora humilis,2010,168.0248524,1
+281,AS,Acropora humilis,2011,203.5680759,1
+281,AS,Acropora humilis,2012,213.4522416,1
+281,AS,Acropora humilis,2013,180.4947601,1
+281,AS,Acropora humilis,2014,135.7172624,0
+282,AS,Acropora humilis,2009,106.6323638,1
+282,AS,Acropora humilis,2010,121.0832232,1
+282,AS,Acropora humilis,2011,119.4618696,1
+282,AS,Acropora humilis,2012,100.7759754,1
+282,AS,Acropora humilis,2013,80.32680503,1
+282,AS,Acropora humilis,2014,4.869594391,0
+283,AS,Acropora humilis,2009,43.93783244,1
+283,AS,Acropora humilis,2010,89.86320471,1
+283,AS,Acropora humilis,2011,163.6282308,1
+283,AS,Acropora humilis,2012,175.1891902,1
+283,AS,Acropora humilis,2013,235.7514815,1
+283,AS,Acropora humilis,2014,250.8812392,0
+284,AS,Acropora humilis,2009,340.1846153,1
+284,AS,Acropora humilis,2010,349.5971987,1
+284,AS,Acropora humilis,2011,307.3402804,0
+285,AS,Acropora humilis,2009,119.1322736,1
+285,AS,Acropora humilis,2010,161.1572271,1
+285,AS,Acropora humilis,2011,168.9603054,1
+285,AS,Acropora humilis,2012,53.71103833,0
+286,AS,Acropora humilis,2009,216.2013345,1
+286,AS,Acropora humilis,2010,308.6492449,1
+286,AS,Acropora humilis,2011,372.2094348,1
+286,AS,Acropora humilis,2012,384.446994,1
+286,AS,Acropora humilis,2013,417.9231223,1
+286,AS,Acropora humilis,2014,296.3621949,0
+287,AS,Acropora humilis,2009,23.99396505,1
+287,AS,Acropora humilis,2010,7.559691176,0
+288,AS,Acropora humilis,2009,189.1505087,1
+288,AS,Acropora humilis,2010,177.7466593,1
+288,AS,Acropora humilis,2011,111.2624722,1
+288,AS,Acropora humilis,2012,102.91553,1
+288,AS,Acropora humilis,2013,77.01392271,1
+288,AS,Acropora humilis,2014,44.4676115,0
+289,AS,Acropora humilis,2009,116.7354199,1
+289,AS,Acropora humilis,2010,137.6589986,1
+289,AS,Acropora humilis,2011,96.05995724,1
+289,AS,Acropora humilis,2012,155.1571889,1
+289,AS,Acropora humilis,2013,147.3830821,1
+289,AS,Acropora humilis,2014,143.2394052,0
+290,AS,Acropora humilis,2009,749.1625943,1
+290,AS,Acropora humilis,2010,702.3371938,1
+290,AS,Acropora humilis,2011,798.1455073,1
+290,AS,Acropora humilis,2012,938.0721695,1
+290,AS,Acropora humilis,2013,832.6607772,1
+290,AS,Acropora humilis,2014,963.7504668,0
+291,AS,Acropora humilis,2009,471.8148959,1
+291,AS,Acropora humilis,2010,507.9563802,1
+291,AS,Acropora humilis,2011,210.9164805,1
+291,AS,Acropora humilis,2012,50.81295849,0
+292,AS,Acropora humilis,2009,111.7950197,1
+292,AS,Acropora humilis,2010,156.6220412,1
+292,AS,Acropora humilis,2011,135.3123633,0
+293,AS,Acropora humilis,2009,275.5194395,1
+293,AS,Acropora humilis,2010,343.3420621,1
+293,AS,Acropora humilis,2011,430.4911009,1
+293,AS,Acropora humilis,2012,390.003778,0
+294,AS,Acropora humilis,2009,122.9544293,1
+294,AS,Acropora humilis,2010,206.2783187,1
+294,AS,Acropora humilis,2011,192.8113297,1
+294,AS,Acropora humilis,2012,202.4634061,1
+294,AS,Acropora humilis,2013,166.796663,1
+294,AS,Acropora humilis,2014,187.6877799,0
+295,AS,Acropora humilis,2009,464.0821741,1
+295,AS,Acropora humilis,2010,572.5079864,1
+295,AS,Acropora humilis,2011,708.8862155,1
+295,AS,Acropora humilis,2012,808.1335147,1
+295,AS,Acropora humilis,2013,758.0789025,1
+295,AS,Acropora humilis,2014,609.2845216,0
+297,AS,Acropora humilis,2010,442.0247033,1
+297,AS,Acropora humilis,2011,342.1881274,1
+297,AS,Acropora humilis,2012,62.31069195,0
+298,GP,Goniastrea pectinata,2009,144.6900645,1
+298,GP,Goniastrea pectinata,2010,136.994312,1
+298,GP,Goniastrea pectinata,2011,62.85580461,1
+298,GP,Goniastrea pectinata,2012,132.2009858,1
+298,GP,Goniastrea pectinata,2013,141.7379975,1
+298,GP,Goniastrea pectinata,2014,183.5164187,0
+299,GP,Goniastrea pectinata,2009,90.38440947,1
+299,GP,Goniastrea pectinata,2010,79.46374281,1
+299,GP,Goniastrea pectinata,2011,81.67108611,1
+299,GP,Goniastrea pectinata,2012,93.30306877,1
+299,GP,Goniastrea pectinata,2013,88.55914872,1
+299,GP,Goniastrea pectinata,2014,55.44464701,0
+300,GP,Goniastrea pectinata,2009,25.72806546,1
+300,GP,Goniastrea pectinata,2010,27.35557012,1
+300,GP,Goniastrea pectinata,2011,15.98160608,1
+300,GP,Goniastrea pectinata,2012,27.1107021,1
+300,GP,Goniastrea pectinata,2013,27.39268748,1
+300,GP,Goniastrea pectinata,2014,26.17118646,0
+301,GP,Goniastrea pectinata,2009,74.86288967,1
+301,GP,Goniastrea pectinata,2010,105.6269475,1
+301,GP,Goniastrea pectinata,2011,72.38512779,1
+301,GP,Goniastrea pectinata,2012,62.99566291,1
+301,GP,Goniastrea pectinata,2013,61.50901641,1
+301,GP,Goniastrea pectinata,2014,48.6633461,0
+302,GP,Goniastrea pectinata,2009,58.22628428,1
+302,GP,Goniastrea pectinata,2010,56.4777267,1
+302,GP,Goniastrea pectinata,2011,75.69621687,1
+302,GP,Goniastrea pectinata,2012,91.25165458,1
+302,GP,Goniastrea pectinata,2013,82.83707677,1
+302,GP,Goniastrea pectinata,2014,89.61695585,0
+303,GP,Goniastrea pectinata,2009,21.47870311,0
+304,GP,Goniastrea pectinata,2009,78.92014642,1
+304,GP,Goniastrea pectinata,2010,64.9405842,1
+304,GP,Goniastrea pectinata,2011,87.49573481,1
+304,GP,Goniastrea pectinata,2012,106.5824831,1
+304,GP,Goniastrea pectinata,2013,86.2770103,0
+305,GP,Goniastrea pectinata,2009,125.6294452,1
+305,GP,Goniastrea pectinata,2010,120.2407027,1
+305,GP,Goniastrea pectinata,2011,141.5762551,1
+305,GP,Goniastrea pectinata,2012,164.2601328,1
+305,GP,Goniastrea pectinata,2013,135.2679316,1
+305,GP,Goniastrea pectinata,2014,125.494192,0
+306,GP,Goniastrea pectinata,2009,52.74295556,1
+306,GP,Goniastrea pectinata,2010,66.05771294,1
+306,GP,Goniastrea pectinata,2011,97.04843463,1
+306,GP,Goniastrea pectinata,2012,93.87029171,1
+306,GP,Goniastrea pectinata,2013,92.9543067,1
+306,GP,Goniastrea pectinata,2014,111.2699936,0
+307,GP,Goniastrea pectinata,2009,170.7665392,1
+307,GP,Goniastrea pectinata,2010,186.6184952,1
+307,GP,Goniastrea pectinata,2011,166.9309467,1
+307,GP,Goniastrea pectinata,2012,70.25715378,1
+307,GP,Goniastrea pectinata,2013,51.74280471,1
+307,GP,Goniastrea pectinata,2014,35.12955437,0
+308,GP,Goniastrea pectinata,2009,53.92210664,1
+308,GP,Goniastrea pectinata,2010,75.87992122,1
+308,GP,Goniastrea pectinata,2011,66.63465754,1
+308,GP,Goniastrea pectinata,2012,65.20584173,1
+308,GP,Goniastrea pectinata,2013,90.64689567,1
+308,GP,Goniastrea pectinata,2014,122.8841705,0
+309,GP,Goniastrea pectinata,2009,16.83845755,1
+309,GP,Goniastrea pectinata,2010,43.52420341,1
+309,GP,Goniastrea pectinata,2011,25.37133874,0
+310,GP,Goniastrea pectinata,2009,80.67647522,1
+310,GP,Goniastrea pectinata,2010,108.2006206,1
+310,GP,Goniastrea pectinata,2011,118.8111196,0
+311,GP,Goniastrea pectinata,2009,71.02087864,1
+311,GP,Goniastrea pectinata,2010,103.3857341,1
+311,GP,Goniastrea pectinata,2011,66.42964006,1
+311,GP,Goniastrea pectinata,2012,103.1270512,1
+311,GP,Goniastrea pectinata,2013,128.4214686,1
+311,GP,Goniastrea pectinata,2014,135.1293376,0
+312,GP,Goniastrea pectinata,2009,69.24084155,1
+312,GP,Goniastrea pectinata,2010,67.09065789,1
+312,GP,Goniastrea pectinata,2011,55.01052122,1
+312,GP,Goniastrea pectinata,2012,36.69798403,1
+312,GP,Goniastrea pectinata,2013,34.50180192,1
+312,GP,Goniastrea pectinata,2014,27.49415493,0
+313,GP,Goniastrea pectinata,2009,67.64654557,1
+313,GP,Goniastrea pectinata,2010,77.70339166,1
+313,GP,Goniastrea pectinata,2011,80.59264822,1
+313,GP,Goniastrea pectinata,2012,94.13522046,1
+313,GP,Goniastrea pectinata,2013,79.5125431,1
+313,GP,Goniastrea pectinata,2014,105.4363681,0
+314,GP,Goniastrea pectinata,2009,254.8669081,1
+314,GP,Goniastrea pectinata,2010,220.727991,1
+314,GP,Goniastrea pectinata,2011,218.3900908,1
+314,GP,Goniastrea pectinata,2012,222.9531527,1
+314,GP,Goniastrea pectinata,2013,210.673385,1
+314,GP,Goniastrea pectinata,2014,188.816547,0
+315,GP,Goniastrea pectinata,2009,98.30731153,1
+315,GP,Goniastrea pectinata,2010,109.9939837,1
+315,GP,Goniastrea pectinata,2011,105.0057216,1
+315,GP,Goniastrea pectinata,2012,131.2982205,1
+315,GP,Goniastrea pectinata,2013,91.94901854,1
+315,GP,Goniastrea pectinata,2014,107.7692583,1
+315,GP,Goniastrea pectinata,2015,68.44062052,NA
+316,GP,Goniastrea pectinata,2009,70.7614948,1
+316,GP,Goniastrea pectinata,2010,102.3660599,1
+316,GP,Goniastrea pectinata,2011,121.3079181,0
+318,GP,Goniastrea pectinata,2009,121.158768,1
+318,GP,Goniastrea pectinata,2010,154.8528442,1
+318,GP,Goniastrea pectinata,2011,137.0587668,1
+318,GP,Goniastrea pectinata,2012,166.5167385,1
+318,GP,Goniastrea pectinata,2013,30.53267808,1
+318,GP,Goniastrea pectinata,2014,37.58383226,0
+319,GP,Goniastrea pectinata,2009,56.05761475,1
+319,GP,Goniastrea pectinata,2010,59.94984324,1
+319,GP,Goniastrea pectinata,2011,49.93008589,1
+319,GP,Goniastrea pectinata,2012,16.61242816,1
+319,GP,Goniastrea pectinata,2013,22.89481566,1
+319,GP,Goniastrea pectinata,2014,24.53792086,0
+320,GP,Goniastrea pectinata,2009,7.277044089,0
+321,GP,Goniastrea pectinata,2009,63.5143633,1
+321,GP,Goniastrea pectinata,2010,63.37004983,1
+321,GP,Goniastrea pectinata,2011,50.7767582,1
+321,GP,Goniastrea pectinata,2012,67.92425445,1
+321,GP,Goniastrea pectinata,2013,6.495810448,1
+321,GP,Goniastrea pectinata,2014,8.799406814,0
+323,GP,Goniastrea pectinata,2011,13.35168649,1
+323,GP,Goniastrea pectinata,2012,29.30549988,1
+323,GP,Goniastrea pectinata,2013,20.84840927,1
+323,GP,Goniastrea pectinata,2014,27.06892616,0
+324,GP,Goniastrea pectinata,2009,46.79119759,1
+324,GP,Goniastrea pectinata,2010,44.83570613,1
+324,GP,Goniastrea pectinata,2012,3.225499794,1
+324,GP,Goniastrea pectinata,2013,6.992197387,1
+324,GP,Goniastrea pectinata,2014,6.977564428,0
+325,GP,Goniastrea pectinata,2009,283.2064092,1
+325,GP,Goniastrea pectinata,2010,243.0344772,1
+325,GP,Goniastrea pectinata,2011,322.261075,1
+325,GP,Goniastrea pectinata,2012,344.4716877,1
+325,GP,Goniastrea pectinata,2013,298.5885228,1
+325,GP,Goniastrea pectinata,2014,309.9991842,0
+326,GP,Goniastrea pectinata,2009,133.5807627,1
+326,GP,Goniastrea pectinata,2010,183.3187752,1
+326,GP,Goniastrea pectinata,2011,139.9420187,1
+326,GP,Goniastrea pectinata,2012,203.1455822,1
+326,GP,Goniastrea pectinata,2013,192.9219557,1
+326,GP,Goniastrea pectinata,2014,223.7037999,0
+327,GP,Goniastrea pectinata,2009,26.16474159,1
+327,GP,Goniastrea pectinata,2010,26.44164323,1
+327,GP,Goniastrea pectinata,2011,36.64392617,0
+328,GP,Goniastrea pectinata,2009,63.55834164,0
+330,GP,Goniastrea pectinata,2010,25.13464238,1
+330,GP,Goniastrea pectinata,2012,26.56511084,1
+330,GP,Goniastrea pectinata,2013,25.0705392,1
+330,GP,Goniastrea pectinata,2014,40.14450993,0
+331,GR,Goniastrea retiformis,2009,36.60314779,1
+331,GR,Goniastrea retiformis,2010,36.70435005,1
+331,GR,Goniastrea retiformis,2011,17.0238082,1
+331,GR,Goniastrea retiformis,2012,42.11577067,1
+331,GR,Goniastrea retiformis,2013,14.49246514,1
+331,GR,Goniastrea retiformis,2014,15.83073963,0
+332,GR,Goniastrea retiformis,2009,411.8532064,1
+332,GR,Goniastrea retiformis,2010,450.4107383,1
+332,GR,Goniastrea retiformis,2011,446.4403549,1
+332,GR,Goniastrea retiformis,2012,464.4539468,1
+332,GR,Goniastrea retiformis,2013,492.5842539,1
+332,GR,Goniastrea retiformis,2014,381.2928269,0
+333,GR,Goniastrea retiformis,2009,37.50693414,1
+333,GR,Goniastrea retiformis,2010,45.98095462,1
+333,GR,Goniastrea retiformis,2011,49.99890648,1
+333,GR,Goniastrea retiformis,2012,55.66371562,1
+333,GR,Goniastrea retiformis,2013,50.75889113,1
+333,GR,Goniastrea retiformis,2014,63.29690653,0
+334,GR,Goniastrea retiformis,2009,44.43346137,0
+335,GR,Goniastrea retiformis,2009,517.9074885,1
+335,GR,Goniastrea retiformis,2010,651.8984218,1
+335,GR,Goniastrea retiformis,2011,375.9852719,1
+335,GR,Goniastrea retiformis,2012,314.9254739,1
+335,GR,Goniastrea retiformis,2013,333.6747877,1
+335,GR,Goniastrea retiformis,2014,412.9873814,0
+336,GR,Goniastrea retiformis,2009,216.8340886,1
+336,GR,Goniastrea retiformis,2010,221.8871253,1
+336,GR,Goniastrea retiformis,2012,301.1694396,1
+336,GR,Goniastrea retiformis,2013,318.4136855,1
+336,GR,Goniastrea retiformis,2014,331.5852933,1
+336,GR,Goniastrea retiformis,2015,346.6003351,NA
+337,GR,Goniastrea retiformis,2009,171.5712728,1
+337,GR,Goniastrea retiformis,2010,182.6852115,1
+337,GR,Goniastrea retiformis,2011,184.2528541,1
+337,GR,Goniastrea retiformis,2012,241.0825802,1
+337,GR,Goniastrea retiformis,2013,240.817927,1
+337,GR,Goniastrea retiformis,2014,331.4184451,0
+338,GR,Goniastrea retiformis,2009,188.5581892,1
+338,GR,Goniastrea retiformis,2010,230.9411115,1
+338,GR,Goniastrea retiformis,2011,260.4730058,1
+338,GR,Goniastrea retiformis,2012,234.7662712,1
+338,GR,Goniastrea retiformis,2013,252.5400033,1
+338,GR,Goniastrea retiformis,2014,199.5172809,0
+339,GR,Goniastrea retiformis,2009,189.8358438,1
+339,GR,Goniastrea retiformis,2010,102.9434655,1
+339,GR,Goniastrea retiformis,2011,107.5429631,1
+339,GR,Goniastrea retiformis,2013,89.87706129,1
+339,GR,Goniastrea retiformis,2014,100.1838141,0
+340,GR,Goniastrea retiformis,2009,173.4950372,1
+340,GR,Goniastrea retiformis,2010,132.0983052,1
+340,GR,Goniastrea retiformis,2011,185.3552866,1
+340,GR,Goniastrea retiformis,2012,169.8718065,1
+340,GR,Goniastrea retiformis,2013,208.3162359,1
+340,GR,Goniastrea retiformis,2014,213.9528698,0
+341,GR,Goniastrea retiformis,2009,457.3946327,1
+341,GR,Goniastrea retiformis,2010,354.3281987,1
+341,GR,Goniastrea retiformis,2011,448.0958051,1
+341,GR,Goniastrea retiformis,2012,439.1678428,1
+341,GR,Goniastrea retiformis,2013,411.6320073,1
+341,GR,Goniastrea retiformis,2014,458.2319215,0
+342,GR,Goniastrea retiformis,2009,177.6798073,1
+342,GR,Goniastrea retiformis,2010,168.0588604,1
+342,GR,Goniastrea retiformis,2011,183.5899878,1
+342,GR,Goniastrea retiformis,2012,223.8518624,1
+342,GR,Goniastrea retiformis,2013,238.1515729,1
+342,GR,Goniastrea retiformis,2014,220.4089393,1
+342,GR,Goniastrea retiformis,2015,241.6253989,NA
+343,GR,Goniastrea retiformis,2009,182.6411982,1
+343,GR,Goniastrea retiformis,2010,200.3085606,1
+343,GR,Goniastrea retiformis,2011,174.4337648,1
+343,GR,Goniastrea retiformis,2012,224.6963488,1
+343,GR,Goniastrea retiformis,2013,236.7777631,1
+343,GR,Goniastrea retiformis,2014,268.417476,0
+344,GR,Goniastrea retiformis,2009,212.1357067,1
+344,GR,Goniastrea retiformis,2010,177.8851854,1
+344,GR,Goniastrea retiformis,2011,158.7419609,1
+344,GR,Goniastrea retiformis,2012,108.8836877,1
+344,GR,Goniastrea retiformis,2013,89.51600538,1
+344,GR,Goniastrea retiformis,2014,103.0529887,0
+345,GR,Goniastrea retiformis,2009,196.6999319,1
+345,GR,Goniastrea retiformis,2010,172.7124562,1
+345,GR,Goniastrea retiformis,2011,249.6889252,1
+345,GR,Goniastrea retiformis,2012,191.7867582,1
+345,GR,Goniastrea retiformis,2013,274.2826615,1
+345,GR,Goniastrea retiformis,2014,314.7057241,0
+346,GR,Goniastrea retiformis,2009,192.9442888,1
+346,GR,Goniastrea retiformis,2010,192.1898323,1
+346,GR,Goniastrea retiformis,2011,161.6275295,1
+346,GR,Goniastrea retiformis,2012,141.4363671,1
+346,GR,Goniastrea retiformis,2013,115.5214396,1
+346,GR,Goniastrea retiformis,2014,82.40952018,0
+347,GR,Goniastrea retiformis,2009,224.617495,1
+347,GR,Goniastrea retiformis,2010,199.0035677,1
+347,GR,Goniastrea retiformis,2011,149.0407309,1
+347,GR,Goniastrea retiformis,2012,171.6622816,1
+347,GR,Goniastrea retiformis,2013,179.4303422,1
+347,GR,Goniastrea retiformis,2014,202.9486138,0
+348,GR,Goniastrea retiformis,2009,109.1557738,1
+348,GR,Goniastrea retiformis,2011,79.06559231,1
+348,GR,Goniastrea retiformis,2012,58.00656987,1
+348,GR,Goniastrea retiformis,2013,60.66704428,1
+348,GR,Goniastrea retiformis,2014,62.89760797,0
+349,GR,Goniastrea retiformis,2009,71.4394997,1
+349,GR,Goniastrea retiformis,2010,81.61343614,1
+349,GR,Goniastrea retiformis,2011,33.31301475,0
+350,GR,Goniastrea retiformis,2009,247.4233397,1
+350,GR,Goniastrea retiformis,2010,235.8006589,1
+350,GR,Goniastrea retiformis,2011,252.0656038,1
+350,GR,Goniastrea retiformis,2012,314.6248957,1
+350,GR,Goniastrea retiformis,2013,352.8170007,1
+350,GR,Goniastrea retiformis,2014,344.6807563,0
+351,GR,Goniastrea retiformis,2009,20.23977432,1
+351,GR,Goniastrea retiformis,2010,18.61959402,1
+351,GR,Goniastrea retiformis,2011,7.135229908,0
+352,GR,Goniastrea retiformis,2009,239.9242896,1
+352,GR,Goniastrea retiformis,2010,261.8055276,1
+352,GR,Goniastrea retiformis,2011,292.0240579,1
+352,GR,Goniastrea retiformis,2012,307.7819895,1
+352,GR,Goniastrea retiformis,2013,312.7793299,1
+352,GR,Goniastrea retiformis,2014,329.0868264,1
+352,GR,Goniastrea retiformis,2015,193.2399349,NA
+353,GR,Goniastrea retiformis,2009,113.7943906,1
+353,GR,Goniastrea retiformis,2010,82.12475464,1
+353,GR,Goniastrea retiformis,2011,98.29942124,0
+354,GR,Goniastrea retiformis,2009,93.98494506,1
+354,GR,Goniastrea retiformis,2010,156.1540011,1
+354,GR,Goniastrea retiformis,2011,173.3508191,1
+354,GR,Goniastrea retiformis,2012,191.2340125,1
+354,GR,Goniastrea retiformis,2013,198.4365728,1
+354,GR,Goniastrea retiformis,2014,227.4107758,0
+355,GR,Goniastrea retiformis,2009,456.653583,1
+355,GR,Goniastrea retiformis,2010,508.4009243,1
+355,GR,Goniastrea retiformis,2011,504.1854645,1
+355,GR,Goniastrea retiformis,2012,447.2430273,1
+355,GR,Goniastrea retiformis,2013,461.4152522,1
+355,GR,Goniastrea retiformis,2014,551.9956898,0
+356,GR,Goniastrea retiformis,2009,85.77726685,1
+356,GR,Goniastrea retiformis,2010,77.1287682,1
+356,GR,Goniastrea retiformis,2011,20.43870232,1
+356,GR,Goniastrea retiformis,2012,12.11533327,1
+356,GR,Goniastrea retiformis,2013,8.923024049,1
+356,GR,Goniastrea retiformis,2014,5.291481551,0
+357,GR,Goniastrea retiformis,2009,93.84537049,1
+357,GR,Goniastrea retiformis,2010,101.907392,0
+358,GR,Goniastrea retiformis,2009,890.0255198,1
+358,GR,Goniastrea retiformis,2010,1062.387722,1
+358,GR,Goniastrea retiformis,2011,1180.46192,1
+358,GR,Goniastrea retiformis,2012,1221.908052,1
+358,GR,Goniastrea retiformis,2013,1529.610209,1
+358,GR,Goniastrea retiformis,2014,1732.323421,0
+359,GR,Goniastrea retiformis,2009,202.9867377,1
+359,GR,Goniastrea retiformis,2010,218.1147844,1
+359,GR,Goniastrea retiformis,2011,199.0867515,1
+359,GR,Goniastrea retiformis,2012,194.59271,1
+359,GR,Goniastrea retiformis,2013,202.0441053,1
+359,GR,Goniastrea retiformis,2014,197.9091498,0
+360,GR,Goniastrea retiformis,2009,246.331943,1
+360,GR,Goniastrea retiformis,2010,161.638127,1
+360,GR,Goniastrea retiformis,2011,140.5593225,1
+360,GR,Goniastrea retiformis,2012,131.2955746,1
+360,GR,Goniastrea retiformis,2013,87.71332985,1
+360,GR,Goniastrea retiformis,2014,107.8227864,0
+361,GR,Goniastrea retiformis,2010,48.85268844,1
+361,GR,Goniastrea retiformis,2011,73.53849756,1
+361,GR,Goniastrea retiformis,2012,62.42144835,1
+361,GR,Goniastrea retiformis,2013,66.39629684,1
+361,GR,Goniastrea retiformis,2014,84.86427104,0
+364,AN,Acropora nasuta,2011,36.43287856,0
+365,AR,Acropora robusta,2010,4283.378078,1
+365,AR,Acropora robusta,2011,3839.305818,1
+365,AR,Acropora robusta,2012,3987.578643,1
+365,AR,Acropora robusta,2013,3835.127026,1
+365,AR,Acropora robusta,2014,3940.421729,0
+366,AI,Acropora intermedia,2012,45.71652111,0
+367,AH,Acropora hyacinthus,2012,2284.053972,1
+367,AH,Acropora hyacinthus,2013,2362.68751,1
+367,AH,Acropora hyacinthus,2014,3188.418798,0
+368,AS,Acropora humilis,2012,130.3951208,1
+368,AS,Acropora humilis,2013,86.58188929,1
+368,AS,Acropora humilis,2014,138.8424927,0
+369,AH,Acropora hyacinthus,2012,1632.37416,1
+369,AH,Acropora hyacinthus,2013,1687.953894,1
+369,AH,Acropora hyacinthus,2014,190.4970152,0
+370,AS,Acropora humilis,2012,176.6870272,1
+370,AS,Acropora humilis,2013,196.7854754,1
+370,AS,Acropora humilis,2014,214.8223685,0
+371,AR,Acropora robusta,2012,187.6216753,1
+371,AR,Acropora robusta,2013,232.8140377,1
+371,AR,Acropora robusta,2014,279.1225498,0
+372,AH,Acropora hyacinthus,2012,1410.642923,0
+373,AS,Acropora humilis,2012,74.2353753,1
+373,AS,Acropora humilis,2013,131.5968596,1
+373,AS,Acropora humilis,2014,227.8108162,0
+374,AH,Acropora hyacinthus,2012,3448.135248,1
+374,AH,Acropora hyacinthus,2013,3720.030248,0
+375,AS,Acropora humilis,2012,156.5948833,1
+375,AS,Acropora humilis,2013,151.2009106,1
+375,AS,Acropora humilis,2014,139.4442758,1
+375,AS,Acropora humilis,2015,127.1745433,NA
+376,AS,Acropora humilis,2012,78.52560721,1
+376,AS,Acropora humilis,2013,102.2602053,1
+376,AS,Acropora humilis,2014,110.3827935,0
+377,AH,Acropora hyacinthus,2012,147.3191642,1
+377,AH,Acropora hyacinthus,2013,391.9631653,1
+377,AH,Acropora hyacinthus,2014,748.7731246,0
+378,AS,Acropora humilis,2012,100.617466,1
+378,AS,Acropora humilis,2013,84.9568958,1
+378,AS,Acropora humilis,2014,119.0040958,0
+379,AH,Acropora hyacinthus,2012,5185.34127,1
+379,AH,Acropora hyacinthus,2013,5068.435918,1
+379,AH,Acropora hyacinthus,2014,4933.266043,0
+380,AH,Acropora hyacinthus,2012,472.5453409,1
+380,AH,Acropora hyacinthus,2013,454.8493692,1
+380,AH,Acropora hyacinthus,2014,242.2117379,0
+381,AR,Acropora robusta,2012,361.0863517,1
+381,AR,Acropora robusta,2013,358.7378387,1
+381,AR,Acropora robusta,2014,371.8285763,0
+382,AH,Acropora hyacinthus,2012,92.68569228,1
+382,AH,Acropora hyacinthus,2013,258.1614401,1
+382,AH,Acropora hyacinthus,2014,60.98962719,0
+383,AH,Acropora hyacinthus,2012,6235.246007,1
+383,AH,Acropora hyacinthus,2013,7717.633429,1
+383,AH,Acropora hyacinthus,2014,8046.744834,0
+384,AL,Acropora spathulata,2012,474.2985689,1
+384,AL,Acropora spathulata,2013,499.2610297,1
+384,AL,Acropora spathulata,2014,157.1946503,0
+385,AD,Acropora cf. digitifera,2012,460.460341,1
+385,AD,Acropora cf. digitifera,2013,428.3171882,1
+385,AD,Acropora cf. digitifera,2014,439.1347558,0
+386,AS,Acropora humilis,2012,98.17918868,1
+386,AS,Acropora humilis,2013,100.1954235,1
+386,AS,Acropora humilis,2014,109.3955797,0
+387,AH,Acropora hyacinthus,2012,730.0604953,1
+387,AH,Acropora hyacinthus,2013,733.7948743,1
+387,AH,Acropora hyacinthus,2014,556.9104524,0
+388,AD,Acropora cf. digitifera,2012,388.7004885,1
+388,AD,Acropora cf. digitifera,2013,440.7211867,1
+388,AD,Acropora cf. digitifera,2014,437.1585296,0
+389,AD,Acropora cf. digitifera,2012,313.6644785,1
+389,AD,Acropora cf. digitifera,2013,306.1589988,1
+389,AD,Acropora cf. digitifera,2014,296.4733687,0
+390,AL,Acropora spathulata,2012,1198.562349,1
+390,AL,Acropora spathulata,2013,1347.606329,1
+390,AL,Acropora spathulata,2014,1525.55723,0
+391,AS,Acropora humilis,2012,199.1622513,1
+391,AS,Acropora humilis,2013,160.3329241,1
+391,AS,Acropora humilis,2014,160.9550965,0
+392,AC,Acropora cytherea,2012,1889.14108,1
+392,AC,Acropora cytherea,2013,1874.683999,1
+392,AC,Acropora cytherea,2014,1713.878671,0
+393,AS,Acropora humilis,2012,408.9473779,1
+393,AS,Acropora humilis,2013,398.1559716,1
+393,AS,Acropora humilis,2014,438.0787641,0
+394,AC,Acropora cytherea,2012,4083.160816,1
+394,AC,Acropora cytherea,2013,4240.651719,1
+394,AC,Acropora cytherea,2014,1314.405873,0
+395,AS,Acropora humilis,2012,55.95326925,1
+395,AS,Acropora humilis,2013,94.54229934,1
+395,AS,Acropora humilis,2014,109.1244597,0
+396,AH,Acropora hyacinthus,2012,5443.504784,1
+396,AH,Acropora hyacinthus,2013,6087.869789,1
+396,AH,Acropora hyacinthus,2014,6496.544923,0
+397,AN,Acropora nasuta,2012,436.47646,1
+397,AN,Acropora nasuta,2013,372.9125877,1
+397,AN,Acropora nasuta,2014,380.2749513,0
+398,AS,Acropora humilis,2012,189.6654086,1
+398,AS,Acropora humilis,2013,200.8705839,1
+398,AS,Acropora humilis,2014,179.320665,0
+399,AN,Acropora nasuta,2012,276.0779509,1
+399,AN,Acropora nasuta,2013,351.2544724,1
+399,AN,Acropora nasuta,2014,377.5023326,0
+400,AS,Acropora humilis,2012,290.6030953,1
+400,AS,Acropora humilis,2013,229.0448107,1
+400,AS,Acropora humilis,2014,190.4443111,0
+401,AD,Acropora cf. digitifera,2012,813.8129223,1
+401,AD,Acropora cf. digitifera,2013,818.8509399,1
+401,AD,Acropora cf. digitifera,2014,965.0641613,0
+402,AS,Acropora humilis,2012,331.6701485,1
+402,AS,Acropora humilis,2013,336.4250842,1
+402,AS,Acropora humilis,2014,304.9649477,0
+403,AN,Acropora nasuta,2012,2341.944052,1
+403,AN,Acropora nasuta,2013,2251.536531,1
+403,AN,Acropora nasuta,2014,460.8906642,0
+404,AH,Acropora hyacinthus,2012,891.980496,1
+404,AH,Acropora hyacinthus,2013,935.0301535,1
+404,AH,Acropora hyacinthus,2014,1000.241471,0
+405,AH,Acropora hyacinthus,2012,2809.270594,1
+405,AH,Acropora hyacinthus,2013,3457.205712,1
+405,AH,Acropora hyacinthus,2014,1888.769131,0
+406,AS,Acropora humilis,2012,32.33979419,1
+406,AS,Acropora humilis,2013,52.66100833,1
+406,AS,Acropora humilis,2014,102.8361289,0
+407,AC,Acropora cytherea,2012,488.090063,1
+407,AC,Acropora cytherea,2013,785.9113531,1
+407,AC,Acropora cytherea,2014,1074.061795,0
+408,AH,Acropora hyacinthus,2012,671.5146433,0
+409,AL,Acropora spathulata,2012,370.5824179,0
+410,AL,Acropora spathulata,2012,1012.328737,1
+410,AL,Acropora spathulata,2013,968.3795901,1
+410,AL,Acropora spathulata,2014,853.1912209,0
+411,AR,Acropora robusta,2012,722.3621241,1
+411,AR,Acropora robusta,2013,421.5078097,0
+412,AD,Acropora cf. digitifera,2012,1193.525552,1
+412,AD,Acropora cf. digitifera,2013,1301.034716,1
+412,AD,Acropora cf. digitifera,2014,1309.823512,0
+413,AL,Acropora spathulata,2012,306.8392275,1
+413,AL,Acropora spathulata,2013,231.1652105,1
+413,AL,Acropora spathulata,2014,251.6522364,0
+414,AN,Acropora nasuta,2012,394.8648458,1
+414,AN,Acropora nasuta,2013,551.4254819,1
+414,AN,Acropora nasuta,2014,738.3362564,0
+415,AN,Acropora nasuta,2012,106.3071736,1
+415,AN,Acropora nasuta,2013,212.8682396,1
+415,AN,Acropora nasuta,2014,53.41517123,0
+416,AC,Acropora cytherea,2012,5266.164608,1
+416,AC,Acropora cytherea,2013,5609.580386,1
+416,AC,Acropora cytherea,2014,7882.224459,0
+417,AR,Acropora robusta,2013,355.3555417,1
+417,AR,Acropora robusta,2014,376.5853362,0
+418,AL,Acropora spathulata,2013,273.8762752,0
+419,AC,Acropora cytherea,2013,2083.199183,1
+419,AC,Acropora cytherea,2014,3191.082643,0
+420,AR,Acropora robusta,2013,795.9912043,1
+420,AR,Acropora robusta,2014,286.6437153,0
+421,AL,Acropora spathulata,2013,413.2491377,1
+421,AL,Acropora spathulata,2014,573.5077491,0
+422,AS,Acropora humilis,2013,56.78600986,1
+422,AS,Acropora humilis,2014,62.85970294,0
+423,AL,Acropora spathulata,2014,281.9109787,0
+424,AN,Acropora nasuta,2013,530.5060059,1
+424,AN,Acropora nasuta,2014,369.7366819,0
+425,AS,Acropora humilis,2013,217.7325719,1
+425,AS,Acropora humilis,2014,225.2920058,0
+426,AN,Acropora nasuta,2013,131.3572769,1
+426,AN,Acropora nasuta,2014,232.6658041,0
+427,AL,Acropora spathulata,2013,558.3876378,1
+427,AL,Acropora spathulata,2014,607.9289919,0
+428,AS,Acropora humilis,2013,295.0795896,1
+428,AS,Acropora humilis,2014,439.6290075,0
+429,AL,Acropora spathulata,2013,1036.578328,1
+429,AL,Acropora spathulata,2014,1158.482715,0
+430,AS,Acropora humilis,2013,157.3410127,1
+430,AS,Acropora humilis,2014,184.0533569,0
+431,AN,Acropora nasuta,2013,447.6298438,1
+431,AN,Acropora nasuta,2014,391.3873865,0
+432,AN,Acropora nasuta,2013,32.6844759,1
+432,AN,Acropora nasuta,2014,19.71680523,0
+433,AL,Acropora spathulata,2013,96.07129521,1
+433,AL,Acropora spathulata,2014,179.8786755,0
+434,AN,Acropora nasuta,2013,715.5994099,1
+434,AN,Acropora nasuta,2014,840.8953468,0
+435,AL,Acropora spathulata,2013,991.0394741,1
+435,AL,Acropora spathulata,2014,788.878813,0
+436,AN,Acropora nasuta,2013,464.4203738,1
+436,AN,Acropora nasuta,2014,295.649848,0
+437,AC,Acropora cytherea,2013,1838.975405,1
+437,AC,Acropora cytherea,2014,2159.44413,0
+438,AC,Acropora cytherea,2013,5479.196065,1
+438,AC,Acropora cytherea,2014,4102.316962,0
+439,AH,Acropora hyacinthus,2013,371.0349953,1
+439,AH,Acropora hyacinthus,2014,699.7533972,0
+440,AH,Acropora hyacinthus,2013,1061.456975,1
+440,AH,Acropora hyacinthus,2014,1262.063023,0
+441,AC,Acropora cytherea,2013,1002.427809,1
+441,AC,Acropora cytherea,2014,530.9220262,0
+442,AC,Acropora cytherea,2013,607.9329374,1
+442,AC,Acropora cytherea,2014,1324.842672,0
+443,AC,Acropora cytherea,2013,2917.812355,1
+443,AC,Acropora cytherea,2014,2557.644731,0
+444,AC,Acropora cytherea,2014,439.2321697,0
+449,AD,Acropora cf. digitifera,2014,264.9398181,0
+450,AN,Acropora nasuta,2014,856.9944312,0
+451,AL,Acropora spathulata,2014,423.2905228,0
+452,AS,Acropora humilis,2014,207.9686284,0
+453,AH,Acropora hyacinthus,2014,1083.71635,0
+454,GR,Goniastrea retiformis,2014,139.4880444,0
+455,AD,Acropora cf. digitifera,2014,363.2066383,0
+456,AD,Acropora cf. digitifera,2014,804.3222559,0
+457,AL,Acropora spathulata,2014,253.2836949,0
+458,AN,Acropora nasuta,2014,109.9703224,0
+459,AR,Acropora robusta,2014,508.1007757,0
+460,AH,Acropora hyacinthus,2014,2157.846965,0
+461,AH,Acropora hyacinthus,2014,1118.815893,0
+462,AL,Acropora spathulata,2014,602.4328466,1
+462,AL,Acropora spathulata,2015,178.1744744,NA
+463,AN,Acropora nasuta,2014,60.15681834,0
+464,GP,Goniastrea pectinata,2014,38.66422463,0
+465,AN,Acropora nasuta,2014,151.4915314,0
+466,AN,Acropora nasuta,2014,68.73586473,0
+467,AR,Acropora robusta,2014,89.6623787,0
+468,AH,Acropora hyacinthus,2014,102.1084323,0
+469,AR,Acropora robusta,2014,167.4630917,0
+470,AC,Acropora cytherea,2014,91.01558296,0
+471,AC,Acropora cytherea,2014,878.1410885,0
+472,AC,Acropora cytherea,2014,5872.360234,0
+473,GP,Goniastrea pectinata,2014,50.62708263,1
+473,GP,Goniastrea pectinata,2015,96.89696544,NA
+474,GP,Goniastrea pectinata,2014,54.39607093,0
+476,AN,Acropora nasuta,2014,100.6428082,0
+477,GP,Goniastrea pectinata,2014,128.706108,0
+478,AN,Acropora nasuta,2014,273.9782895,0
+479,AC,Acropora cytherea,2014,144.8555037,0
+480,AH,Acropora hyacinthus,2014,82.83316523,0
+481,AN,Acropora nasuta,2014,129.5060288,0
+482,AN,Acropora nasuta,2014,272.6188013,0
+483,AN,Acropora nasuta,2014,140.9271731,0
+484,AR,Acropora robusta,2014,1925.283306,1
+484,AR,Acropora robusta,2015,633.8526441,NA
+485,AN,Acropora nasuta,2014,316.1259323,0
+486,AR,Acropora robusta,2014,121.0215012,0
+487,AH,Acropora hyacinthus,2014,4363.227574,0

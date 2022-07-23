@@ -45,12 +45,12 @@ for (sp in spp) {
 	ipm.r <- melt(ipm.r.list[[sp]])
 	ipm.r$y1 <- ydat$y[match(ipm.r$Var1, ydat$n)]
 	ipm.r$y2 <- ydat$y[match(ipm.r$Var2, ydat$n)]
-	#sub <- gdat[gdat$spp==sp,]
+	sub <- gdat[gdat$spp==sp,]
 plot<-ggplot()+
 	geom_raster(data=ipm.p, aes(y2, y1,fill=value))+
 	geom_point(data=ipm.r[ipm.r$value>0,], aes(y2, y1, col=value, alpha=log(value)), size=0.1)+
 	ggtitle(paste(params$species[params$spp==sp]))+
-	#geom_point(data=sub, aes(x=area, y=area_next), col="grey", size=0.01)+
+	geom_point(data=sub, aes(x=area, y=area_next), col="grey", size=0.01)+
 	scale_fill_gradient(low="white", high="grey",n.breaks=3)+
 	scale_colour_viridis(trans="log", breaks=c(10^3, 10^5, 10^7), labels=c(expression(~10^3),expression(~10^5), expression(~10^7)))+
 	theme_bw()+

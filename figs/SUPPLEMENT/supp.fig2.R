@@ -57,7 +57,7 @@ figS2B
 # SADs
 #######################################
 
-sad <- read.csv("data/raw_data/abundance/BT_counts_2005.csv")
+sad <- read.csv("data/BT_counts_2005.csv")
 sad <- aggregate(Abundance~Species, sad, sum)
 
 sad$Species[sad$Species=="Acropora fat dig"] <- "Acropora cf. digitifera"
