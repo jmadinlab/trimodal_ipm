@@ -106,7 +106,6 @@ for (sp in spp) {
 	  rec.size <- params$rec.size[params$spp==sp]
 	  h <- mesh()$h
 	  y <- mesh()$y
-   mod <- bigmatrix()
   storeDET<-rbind(storeDET, data.frame(spp=sp, rec=rec, lam=bigmatrix()$lam))
    } 
   }
@@ -153,9 +152,7 @@ geom_hline(yintercept=0)+
 geom_point(shape=21, aes(col=spp), alpha=0.2)+
 coord_cartesian(xlim=c(min(boot$GT),100))+
 scale_colour_manual(values=cols)+scale_x_log10()+
-geom_point(data=params, aes(GT, log(lam.est)))+
-guides(col="none")+
-theme_classic()
+geom_point(data=params, aes(GT, log(lam.est)))
 
 #######################################
 # FIG 2
