@@ -22,7 +22,7 @@ params$av.surv<-aggregate(pred~spp, s.pred,mean)$pred
 #######################################
 
 # average size in demo models
-size.dat <- aggregate(area_cm2~spp, dat[!is.na(dat$spp),], mean)
+size.dat <- aggregate(area_cm2~spp, sdat[!is.na(sdat$spp),], mean)
 params$size.dat <- size.dat$area_cm2[match(params$spp, size.dat$spp)]
 params$size.dat <- log10(params$size.dat/10000)
 

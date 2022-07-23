@@ -3,16 +3,15 @@
 # DEMOGRAPHIC DATA
 #######################################
 
-params<-read.csv("data/raw_data/info.csv") # basic info per species (e.g., morphology, abundance) 
-dat <-read.csv("data/raw_data/trimodal.csv") #raw colony size data used to make gdat & sdat
-gdat<-read.csv("data/raw_data/growth.csv") #area(t) and area(t+1) per colony ID per year
-sdat<-read.csv("data/raw_data/survival.csv") # survival(1) or mortality(0) per colony ID per year
-fec<-read.csv("data/raw_data/fecundity.csv") # egg numbers per branch per colony ID per year 
+# data per colony per year
+params<-read.csv("data/info.csv") # basic info
+gdat<-read.csv("data/growth.csv") #area(t)/(t+1)
+sdat<-read.csv("data/survival.csv") # (1/0) 
+fec<-read.csv("data/fecundity.csv") # N per branch
 spp<-params$spp[order(params$spp)]
 
 #spp names
 #################################### 
-dat$spp <- params$spp[match(dat$species, params$species)]
 gdat$spp <- params$spp[match(gdat$species, params$species)]
 sdat$spp <- params$spp[match(sdat$species, params$species)]
 fec$spp <- params$spp[match(fec$species, params$species)]
@@ -26,14 +25,14 @@ sdat$surv <- ifelse(sdat$year==2014, NA, sdat$surv)
 unique(sdat$year)
 
 # ----------------------------# mean polyp density
-pd <- read.csv("data/raw_data/polyp_density.csv")
+pd <- read.csv("data/polyp_density.csv")
 pd$spp <- params$spp[match(pd$species, params$species)] 
 pd.mean <- aggregate(list(polyps_cm2=pd$polyps_cm2),list(spp=pd$spp),mean)
 pd.mean <- rbind(pd.mean, data.frame(spp="Ami", polyps_cm2=pd.mean$polyps_cm2[pd.mean$spp=="Asp"]))
 params<-merge(params, pd.mean)
 
 # ---------------------------# mean energetics
-ec <- read.csv("data/raw_data/egg_energy.csv")
+ec <- read.csv("data/egg_energy.csv")
 ec$spp <- params$spp[match(ec$species, params$species)] 
 ec.mean <- aggregate(list(eggC=ec$Carbon_ug_corrected, eggN=ec$Nitrogen_ug) ,list(spp=ec$spp), mean)
 params<-merge(params, ec.mean)
@@ -74,7 +73,7 @@ fec <- subset(fec, area > min.area)
 # SIZE STRUCTURE
 #######################################
 
-ss<-read.csv("data/raw_data/size_structure.csv") 
+ss<-read.csv("data/size_structure.csv") 
 ss$spp <- params$spp[match(ss$species, params$species)]
 ss$area <- log10(ss$area_cm2 / 10000) 
 
@@ -85,7 +84,7 @@ ss$area <- log10(ss$area_cm2 / 10000)
 
 # BELT TRANSCTS (2005)
 
-a1 <- read.csv("data/raw_data/abundance/BT_counts_2005.csv")
+a1 <- read.csv("data/BT_counts_2005.csv")
 a1$Species[a1$Species == "Acropora fat dig"] <- "Acropora cf. digitifera"
 a1A <- a1[a1$Species %in% params$species,]
 
@@ -98,22 +97,17 @@ abun.BT <- a1B
 abun.BT[,c("spp","morphology","abundance_05")] <- params[match(abun.BT$Species, params$species), c("spp","morphology","abundance_05")]
 
 
-
 # LIT TRANSECTS (2011-14)
 #######################################
 
-a2 <- read.csv("data/raw_data/abundance/LIT_counts_1995_2017.csv")
-
+a2 <- read.csv("data/LIT_counts_1995_2017.csv")
 a2$species[a2$species %in% c("Acropora fat_digitifera", "Acropora difitifera_fat", "Acropora sp. Fat dig")] <- "Acropora cf. digitifera"
-
 a2$species[a2$species=="Acropora robustea"]<-"Acropora robusta"
-
+a2$species <- ifelse(a2$species=="Goniastrea sp." & a2$observer=="TB", "Goniastrea retiformis", a2$species)
 a2$genus <- substr(a2$species, 1, 5)
 
 # post 1990s
 a2 <- subset(a2, campaign >1997)
-
-a2$species <- ifelse(a2$species=="Goniastrea sp." & a2$observer=="TB", "Goniastrea retiformis", a2$species)
 
 # IDs
 a2$ID <- paste(a2$site, a2$campaign, a2$transect, sep="_")

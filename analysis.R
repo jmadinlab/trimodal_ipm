@@ -14,11 +14,11 @@ inv.logit <- function(x) {exp(x)/(1+exp(x))}
 # LOAD DEMOGRAPHIC DATA 
 #######################################
 
-# source("R/1_data_prep.R") # process raw data
-# source("R/2_params.R") # get model parameters
-# source("R/3_traits.R") # demographic traits
+ source("R/1_data_prep.R") # process raw data
+ source("R/2_params.R") # get model parameters
+ source("R/3_traits.R") # demographic traits
 
-params <- read.csv("data/params.csv") #skip 1-2-3
+#params <- read.csv("output/params.csv") #skip 1-2-3
 spp<-params$spp[order(params$spp)]
 
 # ordering
@@ -47,7 +47,7 @@ names(colsC)<-comp$morph[match(names(colsC), comp$Common)]
 # SIZE STRUCTURE
 #######################################
 
-ss<-read.csv("data/raw_data/size_structure.csv") 
+ss<-read.csv("data/size_structure.csv") 
 ss$area <- log10(ss$area_cm2 / 10000) 
 ggplot(ss, aes(x=area))+geom_histogram()+ facet_wrap(~species)
 
@@ -62,12 +62,15 @@ pca<-prcomp(params[,traits], scale=T, center=T)
 biplot(pca)
 exp<-round(c(summary(pca)[[1]][1]^2/sum(summary(pca)[[1]]^2),summary(pca)[[1]][2]^2/sum(summary(pca)[[1]]^2)),3)*100 # explained variation
 
+library("psych") # PCA matrix 
+pairs.panels(log(params[,traits]), scale=T, cex.cor=2)
+
 #######################################
 # ABUNDANCE
 #######################################
 
-abun.BT <- read.csv("data/abun.BT.csv")
-abun.LIT <- read.csv("data/abun.LIT.csv")
+#abun.BT <- read.csv("output/abun.BT.csv")
+#abun.LIT <- read.csv("output/abun.LIT.csv")
 
 aggregate(N/10~spp, abun.BT, mean) # N per m2
 aggregate(N/10~spp+year, abun.LIT, mean) # N per m
@@ -78,7 +81,7 @@ aggregate(N/10~spp+year, abun.LIT, mean) # N per m
 
 source("figs/fig.1.R")
 fig.1 # ggsave("figs/fig.1.jpeg", fig.1, width=15, height=9.5, units="cm", dpi = 600)
-	
+
 #######################################
 # IPMS
 #######################################
@@ -144,7 +147,7 @@ params[,c("spp","lam.est", "R0", "GT")]
 #######################################	
 
 # source("R/bootstap.R")
-boot <- read.csv("data/lam.range.csv")
+boot <- read.csv("output/lam.range.csv")
 boot$GT <- log(boot$r)/log(boot$lam)
 
 ggplot(boot, aes(GT, log(lam)))+
@@ -160,6 +163,17 @@ geom_point(data=params, aes(GT, log(lam.est)))
  
 source("figs/fig.2.R") 
 fig.2 #ggsave("figs/fig.2.jpeg", fig.2, width=15, height=12.7, units="cm", dpi = 600)
+
+#######################################
+# SUPPLEMENT
+#######################################
+
+# Plot abundance / demographic models
+source("figs/SUPPLEMENT/supp.fig2.R") # abundance
+source("figs/SUPPLEMENT/supp.fig3.R") # models
+
+# Plot IPMs
+source("figs/SUPPLEMENT/supp.fig5.R")
 
 #######################################
 # COMPARE LAMS
@@ -258,8 +272,8 @@ ggplot(vars, aes(within,reorder(t, -within)))+geom_bar(stat="identity")
 
 params_orig <- params # CAREFUL set original 
 	
-#source("R/7_morphology.R")
-p.morph <- read.csv("data/params_morph.csv") #skip 7
+source("R/7_morphology.R")
+# p.morph <- read.csv("output/params_morph.csv") #skip 7
 head(p.morph)
 
 pars <- c("m.int", "m.slp","f.int","f.slp","g.int","g.slp","g.var", "s.int", "s.slp", "s.slp.2")
@@ -323,16 +337,6 @@ fig.4 # ggsave("figs/fig.4.jpeg", fig.4, width=5.5, height=8, units="cm", dpi = 
 #######################################
 # SUPPLEMENT
 #######################################
-
-# Plot abundance / demographic models
-source("figs/SUPPLEMENT/supp.fig2.R") # abundance
-source("figs/SUPPLEMENT/supp.fig3.R") # models
-
-# PCA matrix library("psych")
-pairs.panels(log(params[,traits]), scale=T, cex.cor=2)
-
-# Plot IPMs
-source("figs/SUPPLEMENT/supp.fig5.R")
 
 # sensitivity analysis
 source("R/8_sensitivity.R")
