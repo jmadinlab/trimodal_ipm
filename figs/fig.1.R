@@ -70,7 +70,6 @@ expression(1*.~Fecundity[colony]),
 expression(2*.~Growth[max]), 
 expression(3*.~Partial~mortality[100]), 
 expression(4*.~Fecundity[area]), 
-#expression(5*.~Fecundity[intercept]),
 expression(5*.~Mature~size[min]), 
 expression(6*.~Survival[juvenile]), 
 expression(7*.~Survival[adult]))
@@ -86,7 +85,6 @@ pcplot <- ggplot()+
 geom_segment(data=rot, aes(x=0,y=0, xend=x*1.3, yend=y*1.3), arrow=arrow(length=unit(1, "mm")))+
 geom_text(data=NULL, aes(x=-3.47, y=seq(1.1,2.3,length.out=7)), label=rev(group_name),size=2, fontface="bold", hjust=0)+
 geom_text_repel(data=rot, aes(x2*1.6, y*1.5,label=num),  size=2, fontface="bold", force=0.001)+
-#geom_point(data=pcdat, aes(x,y, col=spp, size=abun))+
 geom_point(data=pcdat, aes(x,y, fill=spp), size=4, shape=21, stroke=0.15)+
 geom_text_repel(data=pcdat, aes(x+0.38,y-0, label=spp), size=2, force=0.0005)+
 #scale_colour_manual(values=c(cols), labels=labs)+
@@ -104,13 +102,11 @@ annotation_custom(mas, xmin=2.5, xmax=3.85, ymin=-1.1, ymax=-0.7)+
 guides(fill = guide_legend(override.aes = list(size=1.2)))+
 ggtitle("Demographic trade-offs")+
 theme_bw()+theme(legend.title=element_blank(), legend.text=element_text(size=7, face="italic"), legend.key.size=unit(0.1, "mm"), 
-#legend.position=c(0.8, 0.83), 
 panel.grid.minor=element_line(color="grey98"),
 panel.grid.major=element_line(color="grey98"),
 legend.background=element_blank(), 
 axis.text=element_text(size=6), axis.title=element_text(size=7),
 plot.title=element_text(face="bold", size=8, hjust=0.5))
-#dev.off()
 pcplot
 
 #######################################

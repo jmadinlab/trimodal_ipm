@@ -44,12 +44,37 @@ colsC <- cols[names(cols) %in% comp$Common]
 names(colsC)<-comp$morph[match(names(colsC), comp$Common)]
 
 #######################################
-# SIZE STRUCTURE
+# AVERAGE SIZE
 #######################################
 
-ss<-read.csv("data/size_structure.csv") 
-ss$area <- log10(ss$area_cm2 / 10000) 
 ggplot(ss, aes(x=area))+geom_histogram()+ facet_wrap(~species)
+
+# average size in demo models
+size.dat <- aggregate(area_cm2~spp, sdat[!is.na(sdat$spp),], mean)
+params$size.dat <- size.dat$area_cm2[match(params$spp, size.dat$spp)]
+params$size.dat <- log10(params$size.dat/10000)
+
+# average size in size structure data
+size.ss <- aggregate(area~spp, ss[!is.na(ss$spp),], mean)
+params$size.ss <- size.ss$area[match(params$spp, size.ss$spp)]
+10^params$size.ss
+#######################################
+# DEMOGRAPHIC TRAITS
+#######################################
+
+# 1 - total fecundity
+params$f.colony<-aggregate(fecundity~spp, fec,mean)$fecundity 
+# 2 - growth (r.int)
+# 3 - proportion mortality at 100cm2
+params$p_mort<-inv.logit((params$p.slp*log10(0.01))+params$p.int)
+# 4 - fecundity per area
+params$f.cm2<-aggregate(f.cm2~spp, fec,mean)$f.cm2
+# 5 - minimum at reproductive maturity
+params$min.r<-1/aggregate(area_cm2~spp, fec[fec$reproductive==1,], min)$area_cm2
+# 6 - recruit survival, rec.cm = 15
+params$survcm<-aggregate(pred~spp, s.pred[s.pred$area<log10(pi*(15/100/2)^2),], FUN=mean)$pred
+# 7 - average modelled survival
+params$av.surv<-aggregate(pred~spp, s.pred,mean)$pred
 
 #######################################
 # DEMOGRAPHIC SPACE (PCA)
@@ -86,7 +111,7 @@ fig.1 # ggsave("figs/fig.1.jpeg", fig.1, width=15, height=9.5, units="cm", dpi =
 # IPMS
 #######################################
 
-source("R/4_ipms.R") # IPM functions
+source("R/3_ipms.R") # IPM functions
 max.size <- 0.3 # max(ss$area)
 n <- 100
 
@@ -123,7 +148,7 @@ coord_cartesian(ylim=c(0.6,2))
 #######################################
 
 # Mean-family recruitment based on transects 
-source("R/5_recruitment.R")
+source("R/4_recruitment.R")
 params$log.rec.tran <- log10(params$rec.tran)
 agg <- aggregate(log.rec.tran~family, params, mean)
 params$rec <- 10^agg[match(params$family, agg$family),2]
@@ -272,8 +297,8 @@ ggplot(vars, aes(within,reorder(t, -within)))+geom_bar(stat="identity")
 
 params_orig <- params # CAREFUL set original 
 	
-source("R/7_morphology.R")
-# p.morph <- read.csv("output/params_morph.csv") #skip 7
+source("R/6_params_morph.R")
+# p.morph <- read.csv("output/params_morph.csv") 
 head(p.morph)
 
 pars <- c("m.int", "m.slp","f.int","f.slp","g.int","g.slp","g.var", "s.int", "s.slp", "s.slp.2")
@@ -339,5 +364,5 @@ fig.4 # ggsave("figs/fig.4.jpeg", fig.4, width=5.5, height=8, units="cm", dpi = 
 #######################################
 
 # sensitivity analysis
-source("R/8_sensitivity.R")
+source("R/7_sensitivity.R")
 source("figs/SUPPLEMENT/supp.fig6.R")
