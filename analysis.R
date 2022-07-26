@@ -16,9 +16,8 @@ inv.logit <- function(x) {exp(x)/(1+exp(x))}
 
  source("R/1_data_prep.R") # process raw data
  source("R/2_params.R") # get model parameters
- source("R/3_traits.R") # demographic traits
 
-#params <- read.csv("output/params.csv") #skip 1-2-3
+#params <- read.csv("output/params.csv") #skip 1-2
 spp<-params$spp[order(params$spp)]
 
 # ordering
@@ -93,9 +92,6 @@ pairs.panels(log(params[,traits]), scale=T, cex.cor=2)
 #######################################
 # ABUNDANCE
 #######################################
-
-#abun.BT <- read.csv("output/abun.BT.csv")
-#abun.LIT <- read.csv("output/abun.LIT.csv")
 
 aggregate(N/10~spp, abun.BT, mean) # N per m2
 aggregate(N/10~spp+year, abun.LIT, mean) # N per m

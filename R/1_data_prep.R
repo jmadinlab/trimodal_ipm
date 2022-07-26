@@ -100,28 +100,23 @@ abun.BT[,c("spp","morphology","abundance_05")] <- params[match(abun.BT$Species, 
 # LIT TRANSECTS (2011-14)
 #######################################
 
-a2 <- read.csv("data/LIT_counts_1995_2017.csv")
+a2 <- read.csv("data/LIT_counts_2011_2014.csv", row.names=1)
+head(a2)
+
 a2$species[a2$species %in% c("Acropora fat_digitifera", "Acropora difitifera_fat", "Acropora sp. Fat dig")] <- "Acropora cf. digitifera"
 a2$species[a2$species=="Acropora robustea"]<-"Acropora robusta"
 a2$species <- ifelse(a2$species=="Goniastrea sp." & a2$observer=="TB", "Goniastrea retiformis", a2$species)
 a2$genus <- substr(a2$species, 1, 5)
-
-# post 1990s
-a2 <- subset(a2, campaign >1997)
-
-# IDs
-a2$ID <- paste(a2$site, a2$campaign, a2$transect, sep="_")
+a2$ID <- paste(a2$site, a2$campaign, a2$transect, sep="_") # IDs
 
 # trimodal study site only
 a2A <- subset(a2, site=="Trimodal")
 a2A <- a2A[a2A$species %in% params$species,]
 a2A <- a2A[a2A$campaign %in% c(2011, 2014),]
-head(a2A)
 
 # cover and N
 a2B <- aggregate(intercept_cm~., subset(a2A, select=-c(site, observer,genus)), length)
 a2B$cover <- aggregate(intercept_cm~., subset(a2A, select=-c(site, observer,genus)), sum)$intercept_cm/10
-head(a2B)
 
 # add zeros
 a2C<-data.frame(ID=rep(unique(a2B$ID), length(unique(params$species))), species=rep(unique(params$species), each=length(unique(a2B$ID))))
@@ -131,11 +126,6 @@ a2C$cover[is.na(a2C$cover)]<-0
 a2C$N[is.na(a2C$N)]<-0
 a2C[,c("year")]<-a2B[match(a2C$ID, a2B$ID),"campaign"]
 a2C$tran<-substr(a2C$ID, 15,15)
-head(a2C)
 
 abun.LIT <- a2C
 abun.LIT[,c("spp","morphology","abundance_05")] <- params[match(abun.LIT$species, params$species), c("spp","morphology","abundance_05")]
-
-#write.csv(abun.BT, "data/abun.BT.csv")
-#write.csv(abun.LIT, "data/abun.LIT.csv")
-
